@@ -109,7 +109,6 @@ df_patients_directory['Gender'] = df_patients_directory['Gender'].replace({
 df_patients_directory['Gender'] = df_patients_directory['Gender'].fillna(value='Unknown')
 
 # Cleaning Contact_Details column
-
 df_patients_directory['Phone'] = df_patients_directory['Contact_Details'].str.extract(r'(?:TEL:|Phone:|Ph:)\s*([+\-\d\(\)]+)')
 df_patients_directory['Phone'] = df_patients_directory['Phone'].str.replace(r'[^\d+]', '', regex=True)
 df_patients_directory['Phone'] = df_patients_directory['Phone'].fillna(value='Unknown')
