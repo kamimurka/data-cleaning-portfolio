@@ -1,5 +1,8 @@
 import pandas as pd
 import re
+import numpy as np
+
+# Preparing
 pd.set_option('display.max_columns', None)
 df_orders_data = pd.read_excel('restaurant_orders.xlsx', sheet_name='Orders_Data')
 df_customer_directory = pd.read_excel('restaurant_orders.xlsx', sheet_name='Customer_Directory')
@@ -48,7 +51,10 @@ Q3 = df_orders_data['Total_Amount'].quantile(0.75)
 IQR = Q3 - Q1
 upper = Q3 + 1.5 * IQR
 lower = Q1 - 1.5 * IQR
-df_orders_data = df_orders_data[(df_orders_data['Total_Amount'] >= lower) & (df_orders_data['Total_Amount'] <= upper)]
+median = df_orders_data['Total_Amount'].median()
+df_orders_data['Total_Amount'] = np.where(df_orders_data['Total_Amount'].between(lower, upper),
+                          df_orders_data['Total_Amount'],
+                          median)
 
 # Cleaning Delivery_Status column
 df_orders_data['Delivery_Status'] = df_orders_data['Delivery_Status'].str.strip()
