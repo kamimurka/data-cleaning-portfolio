@@ -67,21 +67,20 @@ df_visits_data['Lab_Glucose_mgdL'] = np.where(df_visits_data['Lab_Glucose_mgdL']
 # Cleaning Billing_Amount_USD column
 Q1_USD = df_visits_data['Billing_Amount_USD'].quantile(0.25)
 Q3_USD = df_visits_data['Billing_Amount_USD'].quantile(0.75)
+median = df_visits_data['Billing_Amount_USD'].median()
 
 IQR_USD = Q3_USD - Q1_USD
 
 upper_USD = Q3_USD + 1.5 * IQR_USD
 lower_USD = Q1_USD - 1.5 * IQR_USD
 
-df_visits_data['Billing_Amount_USD'] = np.where(df_visits_data['Billing_Amount_USD'] <= upper_USD,
-                          df_visits_data['Billing_Amount_USD'],
-                          df_visits_data['Billing_Amount_USD'].median())
+df_visits_data['Billing_Amount_USD'] = np.where(df_visits_data['Billing_Amount_USD'].between(lower_USD, upper_USD),
+                                                df_visits_data['Billing_Amount_USD'],
+                                                median)
 
-df_visits_data['Billing_Amount_USD'] = np.where(df_visits_data['Billing_Amount_USD'] >= lower_USD,
-                          df_visits_data['Billing_Amount_USD'],
-                          df_visits_data['Billing_Amount_USD'].median())
-
-df_visits_data['Billing_Amount_USD'] = np.where(df_visits_data['Billing_Amount_USD'] > 0, df_visits_data['Billing_Amount_USD'], df_visits_data['Billing_Amount_USD'].median())
+df_visits_data['Billing_Amount_USD'] = np.where(df_visits_data['Billing_Amount_USD'] > 0,
+                                                df_visits_data['Billing_Amount_USD'],
+                                                median)
 
 # Cleaning Status column
 df_visits_data['Status'] = df_visits_data['Status'].str.strip()
