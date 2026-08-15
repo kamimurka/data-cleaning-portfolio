@@ -82,7 +82,7 @@ df_orders_dispatch['Order_Date'] = pd.to_datetime(df_orders_dispatch['Order_Date
                                                   format='mixed',
                                                   errors='coerce').dt.strftime('%Y-%m-%d')
 
-# Cleaning Weight_kg
+# Cleaning Weight_kg column
 df_orders_dispatch['Weight_kg'] = pd.to_numeric(
     df_orders_dispatch['Weight_kg']
     .astype(str)
@@ -104,7 +104,7 @@ df_orders_dispatch['Weight_kg'] = np.where(df_orders_dispatch['Weight_kg'] <= 0.
                               median,
                               df_orders_dispatch['Weight_kg'])
 
-# Cleaning Shipping_Cost_USD colum
+# Cleaning Shipping_Cost_USD column
 df_orders_dispatch['Shipping_Cost_USD'] = pd.to_numeric(df_orders_dispatch['Shipping_Cost_USD']
                                                         .astype(str)
                                                         .str.replace('$', '', regex=False),
