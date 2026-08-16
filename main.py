@@ -33,7 +33,7 @@ df_appointments_export['Visit_Date'] = pd.to_datetime(df_appointments_export['Vi
                                                       format='mixed',
                                                       errors='coerce')
 
-# Cleaning Doctor_ID
+# Cleaning Doctor_ID column
 df_appointments_export['Doctor_ID'] = (
     df_appointments_export['Doctor_ID']
     .str.strip()
@@ -42,7 +42,7 @@ df_appointments_export['Doctor_ID'] = (
     .str.replace('-', '', regex=False)
 )
 
-# Cleaning Primary_Diagnosis
+# Cleaning Primary_Diagnosis column
 diagnosis_mapping = {
     'Migraine without aura': 'Migraine',
     'Essential (primary) hypertension': 'Hypertension',
@@ -98,7 +98,7 @@ payment_status_mapping = {
 }
 df_appointments_export['Payment_Status'] = df_appointments_export['Payment_Status'].replace(payment_status_mapping)
 
-# Cleaning Contact_Notes
+# Cleaning Contact_Notes column
 visit_status_mapping = {
     'First visit': 'First visit',
     'Patient arrived 15 mins late': 'Arrived late',
@@ -116,7 +116,7 @@ df_appointments_export['Tasks_Reminder'] = df_appointments_export['Contact_Notes
 # SHEET 2: Doctor_Directory
 ###################################
 
-# Cleaning Full_Name
+# Cleaning Full_Name column
 df_doctor_directory['Full_Name'] = df_doctor_directory['Full_Name'].str.strip().str.title()
 # Exporting
 df_appointments_export = df_appointments_export.drop(columns=['Patient_Details', 'Contact_Notes'])
