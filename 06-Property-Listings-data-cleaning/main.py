@@ -1,7 +1,8 @@
 import pandas as pd
 import numpy as np
+import re
 
-df: pd.DataFrame = pd.read_csv('06-Property-Listings-data-cleaning/property_listings_raw.csv', engine='python', encoding='utf-8')
+df: pd.DataFrame = pd.read_csv('property_listings_raw.csv', engine='python', encoding='utf-8')
 
 # Cleaning Property_Address column
 df['Property_Address'] = (df['Property_Address']
@@ -9,6 +10,25 @@ df['Property_Address'] = (df['Property_Address']
     .str.title()
     .str.replace(r'\s{2,}', ' ', regex=True)
 )
+addr = df['Property_Address']
+
+df['Zip_Code'] = addr.str.extract(r'(\d{5})\s*$')[0]
+addr = addr.str.replace(r'\d{5}\s*$', '', regex=True).str.strip().str.rstrip(',').str.strip()
+
+state_regex = r'\bN\.Y\.|\bNy\b|\bNew York\b(?!\s+City)'
+has_state = addr.str.contains(state_regex, regex=True)
+df['State'] = np.where(has_state, 'NY', None)
+addr = addr.str.replace(state_regex, '', regex=True)
+addr = addr.str.replace(r'\s*,\s*,', ',', regex=True)
+addr = addr.str.replace(r',\s*$', '', regex=True).str.strip()
+
+city_pattern = r'(New York City|Staten Island|New-York|Brooklyn|Queens|Bronx)'
+df['City'] = addr.str.extract(city_pattern)[0].str.replace('-', ' ', regex=False)
+addr = addr.str.replace(city_pattern, '', regex=True)
+addr = addr.str.replace(r'\s*,\s*,', ',', regex=True)
+addr = addr.str.replace(r',\s*$', '', regex=True).str.strip()
+
+df['Street_Address'] = addr.str.rstrip(',').str.strip()
 
 # Cleaning Listing_Price column
 df['Listing_Price'] = (df['Listing_Price']
@@ -24,6 +44,7 @@ df['Square_Feet'] = (pd.to_numeric(
     .str.strip()
     , errors='coerce'
 )).astype('Int64')
+
 df['Square_Feet'] = np.where((df['Square_Feet'] <= 0).fillna(False),
     np.nan,
     df['Square_Feet'].astype('Int64'))
@@ -58,11 +79,5 @@ df['Agent_Phone'] = [cell if pd.isna(cell)
                     else '+1' + cell
                     for cell in df['Agent_Phone']]
 
-
-
-print('-'*200)
-print(df['Square_Feet'].head(30))
-print('-'*200)
-print(df['Agent_Phone'].head(30))
-print('-'*200)
-print(df['Property_Address'].head(30))
+# Exporting
+df.to_csv('property_listings_raw_cleaned.csv', index=False)
