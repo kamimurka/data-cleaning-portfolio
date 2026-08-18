@@ -4,6 +4,7 @@ import re
 
 df: pd.DataFrame = pd.read_csv('property_listings_raw.csv', engine='python', encoding='utf-8')
 
+
 # Cleaning Property_Address column
 df['Property_Address'] = (df['Property_Address']
     .str.strip()
@@ -78,6 +79,10 @@ df['Agent_Phone'] = [cell if pd.isna(cell)
                     else '+' + cell if cell.startswith('1')
                     else '+1' + cell
                     for cell in df['Agent_Phone']]
+
+# Validation
+df = df.drop_duplicates(subset=['Property_Address', 'Listing_Date'])
+df.drop(df[df['Agent_Phone'].str.len() < 11].index, inplace=True)
 
 # Exporting
 df.to_csv('property_listings_raw_cleaned.csv', index=False)
