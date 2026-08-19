@@ -61,7 +61,7 @@ df['Final Score'] = (df['Final Score']
                      .abs()
 )
 
-df['Final Score'] = df['Final Score'].where(df['Final Score'] < 100, np.nan)
+df['Final Score'] = df['Final Score'].where(df['Final Score'].between(0, 100), np.nan)
 
 # Amount Paid
 df['Amount Paid'] = (df['Amount Paid']
@@ -74,8 +74,8 @@ df['Amount Paid'] = (df['Amount Paid']
 Q1 = df['Amount Paid'].quantile(0.25)
 Q3 = df['Amount Paid'].quantile(0.75)
 IQR = Q3 - Q1
-lower = Q3 - 1.5 * IQR
-upper = Q1 + 1.5 * IQR
+lower = Q1 - 1.5 * IQR
+upper = Q3 + 1.5 * IQR
 
 df['Amount Paid'] = df['Amount Paid'].where(
     df['Amount Paid'].between(lower, upper),
@@ -100,15 +100,31 @@ df['Payment Status'] = (df['Payment Status']
     .map(payment_status_mapping)
 ) ###########
 
+# Validation
+course_prices = df.groupby(df['Enrolled Course'])['Amount Paid'].first().to_dict()
+df['Amount Paid'] = df['Amount Paid'].fillna(df['Enrolled Course'].map(course_prices))
 
+df['Amount Paid'] = np.where(
+    df['Payment Status'] == 'Refunded',
+    0,
+    df['Amount Paid']
+)
+print(f'df len: {len(df)}')
+df = df.drop_duplicates(subset=['Full Name', 'Enrolled Course'], keep='first')
+print(f'df len: {len(df)}')
 print('-'*90)
-print(df['Full Name'].head(30))
-print('-'*90)
-print(df['Email Address'].head(30))
-print('-'*90)
-print(df['Payment Status'].value_counts())
-print('-'*90)
-print(df['Registration Date'].head(30))
-print(f'total nans: {df['Registration Date'].isna().sum()}')
-print('-'*90)
-print(df['Amount Paid'].head(30))
+
+# Exporting
+df.to_csv('online_courses_cleaned.csv', index=False,)
+
+# print('-'*90)
+# print(df['Full Name'].head(30))
+# print('-'*90)
+# print(df['Email Address'].head(30))
+# print('-'*90)
+# print(df['Payment Status'].value_counts())
+# print('-'*90)
+# print(df['Registration Date'].head(30))
+# print(f'total nans: {df['Registration Date'].isna().sum()}')
+# print('-'*90)
+# print(df['Amount Paid'].head(30))
