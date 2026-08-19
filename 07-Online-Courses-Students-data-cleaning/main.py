@@ -97,7 +97,7 @@ df['Payment Status'] = (df['Payment Status']
     .str.strip()
     .str.title()
     .map(payment_status_mapping)
-) ###########
+)
 
 # Validation
 course_prices = df.groupby(df['Enrolled Course'])['Amount Paid'].first().to_dict()
