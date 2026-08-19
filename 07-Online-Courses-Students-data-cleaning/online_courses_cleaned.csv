@@ -31,6 +31,7 @@ STU-1153,Robert Smith,robert.smith34@edu.com,Data Science,26-07-2025,86,299,Unpa
 STU-1046,Amanda Martinez,amanda.martinez@gmail.com,UX/UI Design,11-03-2025,66,200,Failed
 STU-1026,Emma Hernandez,emma.hernandez63@hotmail.com,Web Development,27-01-2025,67,299,Unpaid
 STU-1109,David Johnson,david.johnson22@company.org,UX/UI Design,05-07-2025,65,499,Paid
+STU-1043,James Garcia,james.garcia27@outlook.com,UX/UI Design,27-10-2025,,0,Refunded
 STU-1169,Michael Martinez,michael.martinez55@company.org,Data Science,14-02-2025,,499,Unpaid
 STU-1158,Amanda Davis,amanda.davis80@outlook.com,Python for Beginners,05-05-2025,57,499,Unpaid
 STU-1115,Andrew Gonzalez,andrew.gonzalez78@outlook.com,UX/UI Design,19-03-2025,71,150,Paid
@@ -74,6 +75,8 @@ STU-1350,Jessica Rodriguez,jessica.rodriguez79@edu.com,Python for Beginners,21-0
 STU-1194,Olivia Garcia,olivia.garcia48@outlook.com,UX/UI Design,17-10-2025,69,150,Paid
 STU-1076,Robert Anderson,robert.anderson53@edu.com,Python for Beginners,08-02-2025,71,499,Paid
 STU-1085,Emma Williams,emma.williams47@company.org,UX/UI Design,20-05-2025,80,299,Unpaid
+STU-1017,James Lopez,james.lopez32@yahoo.com,Data Science,02-10-2025,67,150,Failed
+STU-1067,Michael Martinez,michael.martinez12@outlook.com,Data Science,29-07-2025,60,499,Unpaid
 STU-1285,Emma Davis,emma.davis95@outlook.com,Web Development,22-09-2025,82,150,Unpaid
 STU-1008,David Williams,david.williams34@edu.com,Digital Marketing,08-08-2025,64,0,Refunded
 STU-1114,Olivia Jones,olivia.jones12@company.org,Digital Marketing,17-09-2025,100,150,Failed
@@ -84,6 +87,7 @@ STU-1276,Daniel Rodriguez,daniel.rodriguez49@hotmail.com,Python for Beginners,17
 STU-1203,James Miller,james.miller72@yahoo.com,Digital Marketing,24-09-2025,58,0,Refunded
 STU-1111,Ashley Wilson,ashleywilson@gmail.com,Python for Beginners,12-05-2025,98,150,Paid
 STU-1278,Olivia Rodriguez,olivia.rodriguez61@company.org,Web Development,01-05-2025,,150,Paid
+STU-1061,Amanda Martinez,amanda.martinez67@outlook.com,UX/UI Design,15-08-2025,77,150,Paid
 STU-1159,James Williams,james.williams65@company.org,Web Development,30-08-2025,53,200,Unpaid
 STU-1266,Jessica Jones,jessica.jones94@outlook.com,Web Development,07-09-2025,85,299,Pending
 STU-1224,Olivia Brown,olivia.brown69@hotmail.com,Digital Marketing,03-10-2025,68,299,Paid
@@ -113,6 +117,7 @@ STU-1105,Michael Gonzalez,michael.gonzalez35@outlook.com,Digital Marketing,06-08
 STU-1287,John Anderson,john.anderson48@outlook.com,UX/UI Design,23-07-2025,15,150,Unpaid
 STU-1119,Olivia Williams,olivia.williams95@edu.com,Web Development,27-09-2025,82,299,Unpaid
 STU-1164,Daniel Anderson,daniel.anderson7@gmail.com,UX/UI Design,19-06-2025,,150,Paid
+STU-1032,Daniel Rodriguez,daniel.rodriguez69@hotmail.com,Python for Beginners,01-03-2025,87,299,Paid
 STU-1037,Emily Davis,emily.davis95@yahoo.com,Digital Marketing,13-02-2025,89,200,Unpaid
 STU-1166,Andrew Anderson,andrew.anderson23@gmail.com,Web Development,23-07-2025,97,299,Paid
 STU-1225,Michael Gonzalez,michael.gonzalez36@edu.com,Python for Beginners,09-03-2025,65,0,Refunded
@@ -120,6 +125,7 @@ STU-1228,James Wilson,james.wilson37@hotmail.com,UX/UI Design,23-10-2025,100,150
 STU-1272,Sarah Johnson,sarah.johnson21@edu.com,Python for Beginners,08-10-2025,71,499,Paid
 STU-1140,Emily Rodriguez,emily.rodriguez34@hotmail.com,Digital Marketing,17-08-2025,94,499,Paid
 STU-1176,Andrew Davis,andrew.davis99@yahoo.com,Web Development,04-08-2025,78,499,Unpaid
+STU-1177,Sarah Hernandez,sarah.hernandez18@edu.com,Web Development,28-06-2025,75,200,Paid
 STU-1060,Sarah Martinez,sarah.martinez@gmail.com,Python for Beginners,16-10-2025,,150,Unpaid
 STU-1112,Matthew Hernandez,matthew.hernandez98@company.org,UX/UI Design,17-10-2025,70,299,Paid
 STU-1279,Sarah Gonzalez,sarah.gonzalez22@yahoo.com,Web Development,09-04-2025,93,200,Pending
@@ -127,7 +133,9 @@ STU-1007,Matthew Garcia,matthew.garcia@gmail.com,Web Development,18-10-2025,91,4
 STU-1269,Jessica Williams,jessica.williams91@edu.com,Digital Marketing,21-06-2025,65,299,Pending
 STU-1259,Daniel Jones,daniel.jones62@gmail.com,Python for Beginners,24-05-2025,91,200,Paid
 STU-1011,Robert Gonzalez,robert.gonzalez81@hotmail.com,Web Development,17-09-2025,,150,Unpaid
+STU-1196,Emma Brown,emma.brown73@outlook.com,Data Science,24-01-2025,67,150,Paid
 STU-1104,Ashley Rodriguez,ashley.rodriguez44@yahoo.com,Data Science,09-06-2025,86,150,Paid
+STU-1082,James Martinez,james.martinez90@hotmail.com,Python for Beginners,22-07-2025,93,0,Refunded
 STU-1184,David Brown,david.brown@gmail.com,UX/UI Design,09-07-2025,62,499,Paid
 STU-1303,Matthew Brown,matthew.brown52@gmail.com,Data Science,25-04-2025,,200,Paid
 STU-1232,Ashley Garcia,ashley.garcia55@edu.com,Python for Beginners,02-09-2025,96,150,Unpaid
@@ -139,20 +147,25 @@ STU-1148,Amanda Hernandez,amanda.hernandez70@hotmail.com,Digital Marketing,04-06
 STU-1319,Olivia Smith,olivia.smith43@company.org,Web Development,31-08-2025,78,200,Paid
 STU-1093,Amanda Brown,amanda.brown19@company.org,Python for Beginners,22-05-2025,,299,Paid
 STU-1070,Andrew Lopez,,Digital Marketing,03-05-2025,50,150,Pending
+STU-1254,Michael Gonzalez,michael.gonzalez90@company.org,Python for Beginners,21-04-2025,55,299,Unpaid
 STU-1097,Andrew Johnson,andrewjohnson@yahoo.com,Data Science,27-10-2025,88,499,Unpaid
 STU-1144,Olivia Martinez,olivia.martinez83@gmail.com,UX/UI Design,27-08-2025,99,200,Paid
+STU-1283,Andrew Anderson,andrew.anderson96@outlook.com,Web Development,18-05-2025,,299,Unpaid
 STU-1098,Sarah Gonzalez,sarah.gonzalez84@company.org,Digital Marketing,21-04-2025,76,499,Unpaid
 STU-1305,John Lopez,john.lopez16@company.org,Data Science,31-08-2025,93,299,Unpaid
 STU-1069,James Smith,james.smith97@outlook.com,Digital Marketing,15-08-2025,85,299,Failed
+STU-1024,Robert Jones,robert.jones9@yahoo.com,Data Science,26-05-2025,95,150,Unpaid
 STU-1038,Emma Gonzalez,,Data Science,01-09-2025,79,200,Unpaid
 STU-1145,James Rodriguez,james.rodriguez@gmail.com,Python for Beginners,23-09-2025,85,200,Unpaid
 STU-1123,Matthew Jones,matthew.jones54@yahoo.com,Web Development,13-04-2025,,499,Unpaid
 STU-1068,Daniel Miller,daniel.miller59@gmail.com,Data Science,10-05-2025,75,150,Failed
 STU-1330,Andrew Hernandez,andrew.hernandez97@company.org,UX/UI Design,11-04-2025,68,150,Paid
 STU-1300,Michael Martinez,michael.martinez55@outlook.com,UX/UI Design,03-01-2025,73,299,Paid
+STU-1340,Jessica Anderson,jessica.anderson88@hotmail.com,Digital Marketing,14-02-2025,74,0,Refunded
 STU-1126,Andrew Johnson,andrew.johnson19@yahoo.com,Python for Beginners,27-05-2025,58,499,Failed
 STU-1147,Michael Hernandez,michael.hernandez44@company.org,Python for Beginners,15-01-2025,99,200,Unpaid
 STU-1212,John Davis,john.davis11@gmail.com,Web Development,14-03-2025,100,0,Refunded
+STU-1087,Matthew Miller,matthew.miller59@hotmail.com,Digital Marketing,15-05-2025,73,0,Refunded
 STU-1315,Daniel Lopez,daniel.lopez87@edu.com,UX/UI Design,18-03-2025,89,0,Refunded
 STU-1183,Emma Wilson,emma.wilson19@outlook.com,Web Development,30-01-2025,85,499,Pending
 STU-1327,Michael Smith,michael.smith97@yahoo.com,Data Science,09-05-2025,,200,Paid
@@ -192,52 +205,72 @@ STU-1075,Daniel Gonzalez,daniel.gonzalez64@gmail.com,Python for Beginners,15-09-
 STU-1301,John Hernandez,john.hernandez29@edu.com,Web Development,26-06-2025,,299,Paid
 STU-1030,John Williams,john.williams53@edu.com,Web Development,08-05-2025,56,0,Refunded
 STU-1084,Andrew Hernandez,andrew.hernandez57@gmail.com,Digital Marketing,06-07-2025,,499,Paid
+STU-1108,Sarah Miller,,Python for Beginners,24-08-2025,86,499,Unpaid
 STU-1223,Olivia Johnson,olivia.johnson95@company.org,Digital Marketing,29-06-2025,77,200,Paid
 STU-1230,Michael Wilson,michael.wilson84@hotmail.com,Data Science,12-02-2025,60,299,Pending
 STU-1134,David Garcia,,Digital Marketing,19-06-2025,77,499,Unpaid
 STU-1185,Olivia Johnson,olivia.johnson93@edu.com,UX/UI Design,22-04-2025,71,150,Paid
+STU-1045,Emily Smith,emily.smith52@edu.com,Python for Beginners,28-08-2025,84,150,Unpaid
 STU-1066,Sarah Brown,sarah.brown74@company.org,Python for Beginners,18-05-2025,61,499,Pending
+STU-1316,Olivia Davis,olivia.davis@gmail.com,UX/UI Design,14-06-2025,53,499,Unpaid
 STU-1086,Matthew Johnson,matthew.johnson@gmail.com,Web Development,26-04-2025,75,299,Paid
 STU-1187,James Davis,james.davis34@hotmail.com,UX/UI Design,12-09-2025,96,299,Paid
 STU-1071,Olivia Anderson,olivia.anderson83@yahoo.com,UX/UI Design,30-05-2025,80,200,Failed
 STU-1160,Daniel Davis,daniel.davis23@outlook.com,Web Development,30-09-2025,99,0,Refunded
 STU-1013,Michael Hernandez,michael.hernandez34@company.org,Web Development,05-08-2025,98,200,Unpaid
+STU-1036,Daniel Lopez,daniel.lopez39@outlook.com,UX/UI Design,01-01-2025,100,299,Failed
+STU-1029,Daniel Johnson,daniel.johnson53@company.org,Digital Marketing,21-03-2025,60,200,Unpaid
 STU-1171,Daniel Johnson,daniel.johnson88@company.org,Web Development,09-06-2025,68,200,Pending
 STU-1143,Robert Martinez,robert.martinez71@yahoo.com,Digital Marketing,14-02-2025,95,499,Unpaid
 STU-1297,Olivia Hernandez,olivia.hernandez10@outlook.com,Web Development,10-04-2025,74,499,Paid
 STU-1249,Daniel Wilson,,Data Science,01-01-2025,97,150,Paid
 STU-1151,Emma Wilson,emma.wilson74@edu.com,Data Science,08-04-2025,82,0,Refunded
+STU-1229,Sarah Hernandez,sarah.hernandez16@yahoo.com,UX/UI Design,22-08-2025,62,200,Unpaid
 STU-1222,Matthew Lopez,matthew.lopez55@gmail.com,Digital Marketing,07-05-2025,78,150,Failed
 STU-1132,Olivia Gonzalez,olivia.gonzalez62@edu.com,Python for Beginners,11-03-2025,79,150,Paid
 STU-1250,Robert Brown,robert.brown19@edu.com,Data Science,17-02-2025,83,299,Failed
 STU-1052,Ashley Williams,ashley.williams84@hotmail.com,Digital Marketing,03-10-2025,96,299,Pending
 STU-1241,Sarah Davis,sarah.davis@gmail.com,Digital Marketing,31-03-2025,94,0,Refunded
+STU-1096,Emily Hernandez,emily.hernandez@gmail.com,UX/UI Design,25-07-2025,,499,Paid
 STU-1284,David Wilson,david.wilson13@yahoo.com,Python for Beginners,03-06-2025,70,499,Paid
 STU-1179,Andrew Anderson,andrewanderson@edu.com,UX/UI Design,09-01-2025,,499,Paid
 STU-1205,Sarah Williams,sarah.williams43@company.org,UX/UI Design,18-06-2025,91,200,Unpaid
+STU-1124,Robert Anderson,robert.anderson16@hotmail.com,Python for Beginners,24-03-2025,59,150,Pending
 STU-1042,Sarah Lopez,sarah.lopez41@company.org,Python for Beginners,12-03-2025,59,150,Unpaid
 STU-1090,Andrew Miller,andrew.miller79@outlook.com,Data Science,17-01-2025,78,299,Paid
 STU-1289,John Miller,john.miller28@yahoo.com,Digital Marketing,26-04-2025,76,0,Refunded
 STU-1207,James Jones,james.jones15@company.org,Data Science,07-10-2025,51,499,Paid
 STU-1255,Robert Smith,robert.smith23@gmail.com,UX/UI Design,20-08-2025,56,200,Paid
+STU-1312,Matthew Miller,matthew.miller15@yahoo.com,Digital Marketing,31-01-2025,56,499,Failed
 STU-1005,Olivia Brown,olivia.brown59@edu.com,Web Development,06-07-2025,92,150,Paid
 STU-1257,John Johnson,john.johnson17@gmail.com,Web Development,19-06-2025,53,499,Unpaid
 STU-1335,Daniel Anderson,daniel.anderson15@outlook.com,Data Science,04-10-2025,,299,Failed
 STU-1101,David Martinez,davidmartinez@company.org,Data Science,21-03-2025,56,299,Paid
+STU-1227,Emily Garcia,emily.garcia94@gmail.com,Digital Marketing,23-08-2025,54,499,Paid
+STU-1336,Emily Smith,emily.smith42@company.org,Python for Beginners,19-02-2025,84,150,Paid
 STU-1214,Andrew Lopez,andrew.lopez21@hotmail.com,UX/UI Design,07-08-2025,75,200,Unpaid
 STU-1172,Michael Davis,michael.davis78@hotmail.com,UX/UI Design,09-10-2025,92,200,Paid
+STU-1099,James Lopez,james.lopez86@hotmail.com,Data Science,20-03-2025,55,150,Unpaid
 STU-1216,Matthew Wilson,matthew.wilson26@outlook.com,Python for Beginners,15-05-2025,90,499,Unpaid
+STU-1062,Matthew Brown,matthew.brown11@yahoo.com,Data Science,30-03-2025,,499,Unpaid
 STU-1048,Daniel Johnson,daniel.johnson97@gmail.com,Data Science,13-04-2025,65,150,Paid
+STU-1033,Sarah Martinez,sarah.martinez41@outlook.com,Digital Marketing,19-09-2025,62,499,Paid
 STU-1268,Michael Martinez,michael.martinez79@yahoo.com,Digital Marketing,17-10-2025,71,200,Unpaid
+STU-1201,Jessica Garcia,,Data Science,16-08-2025,58,499,Failed
 STU-1333,Michael Rodriguez,michael.rodriguez54@company.org,UX/UI Design,26-07-2025,63,299,Unpaid
 STU-1028,Olivia Garcia,oliviagarcia@yahoo.com,Python for Beginners,07-06-2025,52,200,Pending
 STU-1291,Emily Jones,emily.jones67@company.org,UX/UI Design,27-10-2025,92,299,Unpaid
+STU-1231,James Hernandez,james.hernandez@gmail.com,Data Science,02-09-2025,83,150,Paid
 STU-1261,John Anderson,john.anderson61@company.org,Data Science,27-10-2025,56,299,Pending
 STU-1163,Ashley Davis,ashley.davis35@company.org,Digital Marketing,20-05-2025,87,299,Paid
+STU-1318,James Miller,james.miller12@company.org,Digital Marketing,05-06-2025,91,299,Unpaid
 STU-1139,Jessica Davis,jessica.davis68@hotmail.com,UX/UI Design,10-06-2025,57,150,Paid
+STU-1063,John Brown,john.brown59@gmail.com,Digital Marketing,30-04-2025,90,200,Unpaid
 STU-1136,Jessica Johnson,jessica.johnson40@outlook.com,Digital Marketing,07-08-2025,78,299,Unpaid
 STU-1129,Ashley Williams,,Data Science,04-05-2025,92,299,Paid
 STU-1009,Sarah Gonzalez,sarahgonzalez@edu.com,Python for Beginners,05-08-2025,88,299,Paid
+STU-1065,Sarah Davis,sarah.davis35@company.org,UX/UI Design,10-09-2025,77,299,Paid
+STU-1015,Sarah Lopez,sarah.lopez5@hotmail.com,Python for Beginners,21-09-2025,63,499,Pending
 STU-1157,Olivia Smith,olivia.smith54@company.org,Data Science,14-01-2025,91,200,Paid
 STU-1041,Andrew Williams,andrew.williams34@yahoo.com,Web Development,22-05-2025,90,299,Failed
 STU-1343,Emma Miller,emma.miller19@yahoo.com,Python for Beginners,24-04-2025,57,150,Failed
@@ -248,12 +281,15 @@ STU-1323,Ashley Wilson,ashley.wilson77@company.org,Web Development,14-06-2025,88
 STU-1237,Emily Hernandez,emily.hernandez2@hotmail.com,Web Development,12-06-2025,86,0,Refunded
 STU-1208,Emily Gonzalez,emily.gonzalez53@edu.com,UX/UI Design,13-03-2025,92,499,Unpaid
 STU-1213,Jessica Davis,jessica.davis58@hotmail.com,Python for Beginners,03-06-2025,51,150,Paid
+STU-1296,Daniel Johnson,daniel.johnson40@outlook.com,Web Development,19-06-2025,79,499,Paid
+STU-1341,Michael Rodriguez,michael.rodriguez70@hotmail.com,Digital Marketing,15-03-2025,100,299,Paid
 STU-1252,Olivia Garcia,olivia.garcia95@hotmail.com,Data Science,20-08-2025,,0,Paid
 STU-1304,Jessica Lopez,,Web Development,11-05-2025,88,150,Paid
 STU-1270,Matthew Johnson,,UX/UI Design,03-08-2025,81,299,Unpaid
 STU-1202,Robert Rodriguez,robertrodriguez@gmail.com,Data Science,11-10-2025,70,150,Unpaid
 STU-1162,Sarah Martinez,sarah.martinez51@hotmail.com,Web Development,16-03-2025,95,499,Pending
 STU-1044,John Garcia,john.garcia54@company.org,Digital Marketing,07-10-2025,81,0,Unpaid
+STU-1218,David Johnson,david.johnson66@outlook.com,UX/UI Design,12-03-2025,81,200,Paid
 STU-1191,Olivia Hernandez,,Python for Beginners,29-04-2025,,0,Failed
 STU-1310,Jessica Gonzalez,jessica.gonzalez15@gmail.com,Web Development,24-01-2025,,299,Unpaid
 STU-1260,James Gonzalez,james.gonzalez63@hotmail.com,Web Development,17-10-2025,61,299,Pending
@@ -267,20 +303,26 @@ STU-1035,Daniel Wilson,daniel.wilson65@hotmail.com,Digital Marketing,29-07-2025,
 STU-1264,John Johnson,john.johnson3@company.org,UX/UI Design,01-01-2025,58,200,Unpaid
 STU-1092,Daniel Brown,daniel.brown3@gmail.com,Web Development,20-06-2025,15,150,Paid
 STU-1053,Olivia Anderson,olivia.anderson32@outlook.com,Digital Marketing,14-07-2025,70,200,Unpaid
+STU-1265,John Smith,john.smith19@gmail.com,Web Development,27-09-2025,73,499,Paid
 STU-1242,Jessica Rodriguez,jessica.rodriguez34@yahoo.com,Data Science,06-03-2025,96,150,Unpaid
+STU-1014,James Hernandez,james.hernandez67@outlook.com,Python for Beginners,07-05-2025,87,200,Paid
 STU-1089,Michael Smith,michael.smith64@gmail.com,Python for Beginners,01-05-2025,,499,Paid
 STU-1274,David Brown,david.brown71@outlook.com,Python for Beginners,28-01-2025,68,499,Paid
 STU-1167,John Jones,johnjones@hotmail.com,Data Science,21-08-2025,81,200,Failed
 STU-1329,Andrew Miller,andrew.miller88@hotmail.com,UX/UI Design,28-01-2025,89,499,Pending
 STU-1135,Jessica Williams,jessica.williams67@hotmail.com,Web Development,12-02-2025,,200,Unpaid
+STU-1307,Sarah Gonzalez,sarah.gonzalez26@hotmail.com,Web Development,25-09-2025,76,0,Refunded
 STU-1320,Jessica Garcia,jessica.garcia38@company.org,UX/UI Design,11-07-2025,,200,Unpaid
+STU-1244,Jessica Williams,jessicawilliams@company.org,Digital Marketing,01-03-2025,52,150,Pending
 STU-1055,Ashley Davis,ashley.davis3@gmail.com,Data Science,24-04-2025,92,499,Unpaid
+STU-1051,Jessica Rodriguez,jessica.rodriguez65@edu.com,Data Science,07-01-2025,56,299,Failed
 STU-1175,Ashley Smith,ashley.smith96@yahoo.com,Digital Marketing,07-02-2025,54,150,Paid
 STU-1190,Michael Lopez,michael.lopez93@company.org,UX/UI Design,05-04-2025,91,150,Paid
 STU-1188,Jessica Garcia,jessica.garcia29@edu.com,Python for Beginners,09-01-2025,87,299,Paid
 STU-1170,Andrew Brown,andrew.brown58@hotmail.com,Data Science,04-06-2025,66,200,Paid
 STU-1059,Olivia Smith,olivia.smith57@hotmail.com,Python for Beginners,27-01-2025,57,0,Refunded
 STU-1049,Emily Lopez,emily.lopez78@company.org,Digital Marketing,28-02-2025,85,150,Unpaid
+STU-1345,David Martinez,david.martinez63@outlook.com,Data Science,06-06-2025,,299,Unpaid
 STU-1236,Emma Rodriguez,emma.rodriguez51@hotmail.com,Digital Marketing,28-01-2025,65,150,Pending
 STU-1253,Michael Johnson,michael.johnson53@gmail.com,UX/UI Design,03-07-2025,69,150,Paid
 STU-1022,Sarah Anderson,sarah.anderson6@company.org,Python for Beginners,03-08-2025,70,200,Unpaid
@@ -291,10 +333,13 @@ STU-1192,Jessica Smith,jessica.smith79@outlook.com,Digital Marketing,07-09-2025,
 STU-1294,Andrew Miller,andrew.miller75@edu.com,Digital Marketing,08-04-2025,93,499,Unpaid
 STU-1344,Daniel Rodriguez,daniel.rodriguez33@gmail.com,Data Science,25-10-2025,58,200,Paid
 STU-1258,Emily Smith,emily.smith46@yahoo.com,Web Development,06-04-2025,59,299,Pending
+STU-1309,Ashley Lopez,ashley.lopez30@outlook.com,Data Science,16-05-2025,,150,Unpaid
 STU-1150,Michael Gonzalez,michael.gonzalez41@yahoo.com,UX/UI Design,04-03-2025,56,499,Unpaid
+STU-1131,Matthew Johnson,matthew.johnson81@gmail.com,Web Development,25-10-2025,52,299,Paid
 STU-1152,John Johnson,john.johnson31@yahoo.com,Digital Marketing,30-06-2025,88,499,Unpaid
 STU-1100,Sarah Lopez,sarah.lopez72@gmail.com,Digital Marketing,15-10-2025,76,499,Paid
 STU-1088,John Martinez,john.martinez79@yahoo.com,Digital Marketing,02-02-2025,94,499,Paid
+STU-1331,Michael Lopez,michael.lopez55@hotmail.com,UX/UI Design,16-05-2025,66,150,Failed
 STU-1215,James Smith,james.smith58@company.org,UX/UI Design,19-07-2025,67,150,Paid
 STU-1122,Amanda Jones,amanda.jones30@company.org,Data Science,08-06-2025,62,499,Failed
 STU-1021,John Smith,john.smith68@yahoo.com,Python for Beginners,18-09-2025,88,200,Unpaid

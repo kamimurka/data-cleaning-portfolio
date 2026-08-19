@@ -8,12 +8,11 @@ df['Full Name'] = (df['Full Name']
     .str.strip()
     .str.title()
     .str.replace('  ', ' ')
-    .str.replace(r'(Ms\.|Mr\.|Dr\.)', '', regex=True)
+    .str.replace(r'(Ms\.|Mr\.|Dr\.|Mrs\.)', '', regex=True)
     .str.strip()
 )
 
 # Cleaning Email Address column
-srs = df['Email Address'].str.extract(r'@([^;\s]+)')[0]
 df['Email Address'] = df['Email Address'].str.split(';').str[0].str.strip()
 df['Email Address'] = (df['Email Address']
     .str.strip()
@@ -116,15 +115,3 @@ print('-'*90)
 
 # Exporting
 df.to_csv('online_courses_cleaned.csv', index=False,)
-
-# print('-'*90)
-# print(df['Full Name'].head(30))
-# print('-'*90)
-# print(df['Email Address'].head(30))
-# print('-'*90)
-# print(df['Payment Status'].value_counts())
-# print('-'*90)
-# print(df['Registration Date'].head(30))
-# print(f'total nans: {df['Registration Date'].isna().sum()}')
-# print('-'*90)
-# print(df['Amount Paid'].head(30))
