@@ -110,7 +110,7 @@ df['Amount Paid'] = np.where(
     df['Amount Paid']
 )
 print(f'df len: {len(df)}')
-df = df.drop_duplicates(subset=['Full Name', 'Enrolled Course'], keep='first')
+df = df.drop_duplicates(subset=['Student ID', 'Enrolled Course'], keep='first')
 print(f'df len: {len(df)}')
 print('-'*90)
 
