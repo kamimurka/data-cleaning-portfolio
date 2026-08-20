@@ -68,7 +68,7 @@ df['Amount Paid'] = (df['Amount Paid']
     .str.strip()
     .str.replace(r'(\$|USD)', '', regex=True)
     .str.strip()
-    .astype('Int64') #####
+    .astype('Int64')
 )
 Q1 = df['Amount Paid'].quantile(0.25)
 Q3 = df['Amount Paid'].quantile(0.75)
@@ -100,7 +100,7 @@ df['Payment Status'] = (df['Payment Status']
 )
 
 # Validation
-course_prices = df.groupby(df['Enrolled Course'])['Amount Paid'].first().to_dict()
+course_prices = df.groupby(df['Enrolled Course'])['Amount Paid'].mode().to_dict()
 df['Amount Paid'] = df['Amount Paid'].fillna(df['Enrolled Course'].map(course_prices))
 
 df['Amount Paid'] = np.where(
