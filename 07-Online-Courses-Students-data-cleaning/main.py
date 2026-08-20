@@ -28,7 +28,7 @@ df['Email Address'] = (df['Email Address']
     .str.replace(r'@{2,}', '@', regex=True)
 )
 
-# Enrolled Course
+# Cleaning Enrolled Course column
 enrolled_course_mapping = {
     'Digital Marketing': 'Digital Marketing',
     'Digital Marketing Essentials': 'Digital Marketing',
@@ -48,7 +48,7 @@ enrolled_course_mapping = {
 }
 df['Enrolled Course'] = df['Enrolled Course'].map(enrolled_course_mapping).str.strip()
 
-# Cleaning Registration Date
+# Cleaning Registration Date column
 df['Registration Date'] = pd.to_datetime(df['Registration Date'],
                                          format='mixed',
                                          errors='coerce').dt.strftime('%d-%m-%Y')
@@ -62,7 +62,7 @@ df['Final Score'] = (df['Final Score']
 
 df['Final Score'] = df['Final Score'].where(df['Final Score'].between(0, 100), np.nan)
 
-# Amount Paid
+# Amount Paid column
 df['Amount Paid'] = (df['Amount Paid']
     .astype(str)
     .str.strip()
@@ -81,7 +81,7 @@ df['Amount Paid'] = df['Amount Paid'].where(
     np.nan
 )
 
-# Cleaning Payment Status
+# Cleaning Payment Status column
 payment_status_mapping = {
     "No": "Unpaid",
     "Unpaid": "Unpaid",
