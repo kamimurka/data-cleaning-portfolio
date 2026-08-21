@@ -27,7 +27,7 @@ df['Phone_Number'] = [cell if pd.isna(cell)
                       else '+1' + cell for cell in df['Phone_Number']]
 df['Phone_Number'] = df['Phone_Number'].where(df['Phone_Number'].str.len() == 12, np.nan)
 
-# Creating & вырезка from Customer_Details column
+# Creating & Extracting from Customer_Details column
 df['Email_Address'] = df['Customer_Details'].str.extract(
     r'Mail:\s*(.+)'
 )
