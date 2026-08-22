@@ -3,14 +3,15 @@ import re
 import numpy as np
 
 pd.set_option('display.max_rows', None)
+pd.set_option('display.max_columns', None)
 
 df_Student_Records_2023_2024 = pd.read_excel('09-School-Data-Export-data-cleaning/School_Data_Export_2023-2024_Raw.xlsx',
                                            engine='openpyxl',
                                            sheet_name='Student_Records_2023-2024')
 
-# df_Academic_Grades_Log = pd.read_excel('09-School-Data-Export-data-cleaning/Academic_Grades_Log.xlsx',
-#                                        engine='openpyxl',
-#                                        sheet_name='Academic_Grades_Log')
+df_Academic_Grades_Log = pd.read_excel('09-School-Data-Export-data-cleaning/School_Data_Export_2023-2024_Raw.xlsx',
+                                       engine='openpyxl',
+                                       sheet_name='Academic_Grades_Log')
 
 ##################################
 # SHEET 1: Student_Records_2023-2024
@@ -52,7 +53,7 @@ df_Student_Records_2023_2024.loc[127, 'Full Name & Title'] = 'Unknown Student'
 df_Student_Records_2023_2024['DOB / Date of Birth'] = pd.to_datetime(
     df_Student_Records_2023_2024['DOB / Date of Birth'],
     errors='coerce',
-    format='mixed').dt.strftime('%d-%m-%Y')
+    format='mixed').dt.strftime('%m/%d/%Y')
 
 # Cleaning Grade/Level column
 grade_level_mapping = {
@@ -137,14 +138,167 @@ relationship_pattern = r'''
 '''
 extracted = df_Student_Records_2023_2024['Primary Contact Person & Details'].str.extract(relationship_pattern, flags=re.X)
 df_Student_Records_2023_2024['Relationship'] = extracted[0].fillna(extracted[1])
+df_Student_Records_2023_2024['Relationship'] = df_Student_Records_2023_2024['Relationship'].str.replace(':', '').str.strip()
+
+# Cleaning Home Address column
+df_Student_Records_2023_2024['Home Address'] = (df_Student_Records_2023_2024['Home Address']
+                                                .str.replace(
+                                                {
+                                                    'Street': 'St',
+                                                    'Avenue': 'Ave',
+                                                    'Road': 'Rd',
+                                                    'Lane': 'Ln',
+                                                    'Drive': 'Dr',
+                                                    'Springfield': '',
+                                                    'Springfield IL': '',
+                                                    'Springield, IL': '',
+                                                    '  ': ' ',
+                                                    ',': '',
+                                                    'IL': '',
+                                                    r'\s{2,}': ' '
+                                                }, regex=True)
+                                                )
+# Cleaning Tuition Fee Paid ($) column
+df_Student_Records_2023_2024['Tuition Fee Paid ($)'] = pd.to_numeric(df_Student_Records_2023_2024['Tuition Fee Paid ($)']
+                                                                      .astype('string')
+                                                                      .str.replace('$', '')
+                                                                      .str.replace(',', '')
+                                                                      , errors='coerce')
+Q1 = df_Student_Records_2023_2024['Tuition Fee Paid ($)'].quantile(0.25)
+Q3 = df_Student_Records_2023_2024['Tuition Fee Paid ($)'].quantile(0.75)
+IQR = Q3 - Q1
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+df_Student_Records_2023_2024['Tuition Fee Paid ($)'] = df_Student_Records_2023_2024['Tuition Fee Paid ($)'].clip(lower=lower_bound, upper=upper_bound)
+
+# Cleaning Status / Remarks column
+df_Student_Records_2023_2024['Status / Remarks'] = df_Student_Records_2023_2024['Status / Remarks'].str.strip().str.title()
+status_mapping = {
+    'Active': 'Enrolled',
+    'Enrolled': 'Enrolled',
+    'Active - Full Scholarship?': 'Enrolled',
+    'Suspended': 'Enrolled',
+    'Graduating': 'Graduating',
+    'Withdrawn': 'Withdrawn',
+    'Inactive': 'Withdrawn',
+    'Pending': 'Withdrawn',
+}
+
+df_Student_Records_2023_2024['Status / Remarks'] = df_Student_Records_2023_2024['Status / Remarks'].map(status_mapping)
+
+##################################
+# SHEET 2: Academic_Grades_Log
+##################################
+
+# Cleaning Subject / Course Code column
+
+# Creating Subject column
+df_Academic_Grades_Log['Subject'] = (df_Academic_Grades_Log['Subject / Course Code']
+    .str.strip()
+    .str.extract(r'([A-Za-z\s]+)'))
+subject_mapping = {
+    'SCI': 'Science',
+    'ENG': 'English',
+    'Math': 'Math',
+    'Mathematics': 'Math',
+    'HIST': 'History',
+    'World History': 'History',
+    'BIO': 'Biology',
+    'Biology Lab': 'Biology',
+    'English Literature': 'English',
+    'Physics': 'Physics',
+}
+
+df_Academic_Grades_Log['Subject'] = df_Academic_Grades_Log['Subject'].map(subject_mapping)
+
+# Creating Course Code column
+df_Academic_Grades_Log['Course Code'] = (df_Academic_Grades_Log['Subject / Course Code']
+    .str.strip()
+    .str.extract(r'(\d{3})'))
+
+# Cleaning Exam Date column
+df_Academic_Grades_Log['Exam Date'] = pd.to_datetime(df_Academic_Grades_Log['Exam Date'],
+                                                     format='mixed',
+                                                     errors='coerce').dt.strftime('%m/%d/%Y')
 
 
 
 
-print('-'*120)
-print(df_Student_Records_2023_2024[['Student ID / Reg No', 'Full Name & Title']].head(130))
-print('-'*120)
-print(df_Student_Records_2023_2024['DOB / Date of Birth'].head(130))
-print('-'*120)
-print(df_Student_Records_2023_2024['Grade/Level'].value_counts())
-print(df_Student_Records_2023_2024[['Parent Name', 'Relationship']].head(130))
+# Cleaning Score / Grade column
+letter_grade_mapping = {
+    'A+': 98,
+    'A': 95,
+    'A-': 92,
+    'B+': 88,
+    'B': 85,
+    'B-': 82,
+    'C+': 78,
+    'C': 75,
+    'C-': 72,
+    'D+': 68,
+    'D': 65,
+    'D-': 62,
+    'F': 50,
+}
+
+def parse_score(value):
+    if pd.isna(value):
+        return np.nan
+    if value in letter_grade_mapping:
+        return letter_grade_mapping[value]
+    if value == 'EXEMPT':
+        return np.nan
+    if '/' in value:
+        return float(value.split('/')[0])
+    try:
+        return float(value)
+    except ValueError:
+        return np.nan
+df_Academic_Grades_Log['Score / Grade'] = df_Academic_Grades_Log['Score / Grade'].apply(parse_score)
+
+# Cleaning Attendance (%) column
+df_Academic_Grades_Log['Attendance (%)'] = pd.to_numeric(df_Academic_Grades_Log['Attendance (%)']
+                                            .astype('string')
+                                            .str.strip()
+                                            .str.replace('%', '')
+                                            , errors='coerce')
+def parse_attendance(value):
+    if pd.isna(value):
+        return np.nan
+    if value <= 1.00:
+        return str(value * 100) + '%'
+    if value > 100.0:
+        value = 100.0
+        return str(value) + '%'
+    return str(value) + '%'
+
+df_Academic_Grades_Log['Attendance (%)'] = df_Academic_Grades_Log['Attendance (%)'].apply(parse_attendance)
+
+######## Validation of Student Records ########
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates()
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subset=['Student ID / Reg No'],
+                                                                            keep='first')
+
+df_Student_Records_2023_2024['Full Name & Title'] = df_Student_Records_2023_2024['Full Name & Title'].str.strip()
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subset=['Full Name & Title'],
+                                                                            keep='first')
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.sort_values(by=['Full Name & Title'])
+
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop(columns=['Primary Contact Person & Details'])
+
+
+######## Validation of Academic Grades Log ########
+df_Academic_Grades_Log = df_Academic_Grades_Log.drop(columns=['Subject / Course Code'])
+
+# Exporting
+df_Student_Records_2023_2024 = pd.merge(left=df_Student_Records_2023_2024,
+                                        right=df_Academic_Grades_Log,
+                                        left_on='Student ID / Reg No',
+                                        right_on='Student ID',
+                                        how='left')
+
+df_Student_Records_2023_2024.to_excel('School_Data_Export_2023-2023_cleaned.xlsx', index=False)
+
+print(len(df_Student_Records_2023_2024))
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subset=['Student ID / Reg No'], keep='first')
+print(len)
