@@ -138,9 +138,6 @@ relationship_pattern = r'''
 extracted = df_Student_Records_2023_2024['Primary Contact Person & Details'].str.extract(relationship_pattern, flags=re.X)
 df_Student_Records_2023_2024['Relationship'] = extracted[0].fillna(extracted[1])
 
-# Cleaning Home Address column
-
-
 
 
 
