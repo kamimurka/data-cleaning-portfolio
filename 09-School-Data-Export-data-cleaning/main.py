@@ -95,7 +95,7 @@ name_pattern = r'''
 extracted = df_Student_Records_2023_2024['Primary Contact Person & Details'].str.extract(name_pattern, flags=re.X)
 df_Student_Records_2023_2024['Parent Name'] = extracted[0].fillna(extracted[1])
 df_Student_Records_2023_2024['Parent Name'] = [cell if pd.isna(cell)
-                                               else 'Unknown Student' if cell.startswith('Contact')
+                                               else 'Unknown Parent' if cell.startswith('Contact')
                                                else cell for cell in df_Student_Records_2023_2024['Parent Name']]
 
 # Extracting Parent Phone from Primary Contact Person & Details column
@@ -253,7 +253,7 @@ def parse_score(value):
     try:
         return float(value)
     except ValueError:
-        return np.nan
+        return np
 df_Academic_Grades_Log['Score / Grade'] = df_Academic_Grades_Log['Score / Grade'].apply(parse_score)
 
 # Cleaning Attendance (%) column
@@ -284,8 +284,9 @@ df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subs
                                                                             keep='first')
 df_Student_Records_2023_2024 = df_Student_Records_2023_2024.sort_values(by=['Full Name & Title'])
 
-df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop(columns=['Primary Contact Person & Details'])
+# df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop(columns=['Primary Contact Person & Details'])
 
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subset=['Student ID / Reg No'], keep='first')
 
 ######## Validation of Academic Grades Log ########
 df_Academic_Grades_Log = df_Academic_Grades_Log.drop(columns=['Subject / Course Code'])
@@ -293,12 +294,19 @@ df_Academic_Grades_Log = df_Academic_Grades_Log.drop(columns=['Subject / Course 
 # Exporting
 df_Student_Records_2023_2024 = pd.merge(left=df_Student_Records_2023_2024,
                                         right=df_Academic_Grades_Log,
-                                        left_on='Student ID / Reg No',
-                                        right_on='Student ID',
+                                        left_on=['Full Name & Title'],
+                                        right_on='Student Name',
                                         how='left')
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop(columns=['Student ID', 'Student Name'])
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subset=['Student ID / Reg No'], keep='first')
 
-df_Student_Records_2023_2024.to_excel('School_Data_Export_2023-2023_cleaned.xlsx', index=False)
+
+df_Student_Records_2023_2024.to_excel('09-School-Data-Export-data-cleaning/School_Data_Export_2023-2023_cleaned.xlsx', index=False)
+
+print(df_Student_Records_2023_2024['Full Name & Title'].duplicated().sum())
+print(df_Student_Records_2023_2024['Status / Remarks'].value_counts())
+print(df_Student_Records_2023_2024['Parent Email'].head(100))
 
 print(len(df_Student_Records_2023_2024))
-df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subset=['Student ID / Reg No'], keep='first')
-print(len)
+print(df_Student_Records_2023_2024.isna().sum())
+print(df_Student_Records_2023_2024[['Parent Name', 'Parent Phone', 'Parent Email']].sample(20))
