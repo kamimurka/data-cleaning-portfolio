@@ -1,0 +1,440 @@
+Service_ID,Customer_Name,Phone_Number,License_Plate,Service_Type,Date_Of_Service,Total_Cost,Payment_Status,Internal_Notes,Email_Address,Year,Make,Model
+SRV-1001,Sarah Smith,,,Air Conditioning,15-01-2025,145.0,Paid,Paid via cash,mike.w@hotmail.com,,Hyundai,Tucson
+SRV-1002,A. Brown,+15559876543,7XYZ123,Battery,28-02-2025,398.0,Paid,,,,Ford,Focus
+SRV-1003,,,K9922X,Engine Check,02-01-2025,820.0,Unpaid,Bring back next week,,2015,Mercedes-Benz,E-Class
+SRV-1004,Helen Smith,+15552345678,ABC8901,Diagnostics,03-11-2024,226.0,Unpaid,VIP client - gave 10% off,,,BMW,3 Series
+SRV-1005,Alex Miller,+15552345678,ABC8901,Diagnostics,28-02-2025,630.0,Paid,Need to re-check invoice,,,Hyundai,Elantra
+SRV-1006,Christian Thomas,+15559876543,,Air Conditioning,28-02-2025,897.0,Pending,Bring back next week,sarah_j@yahoo.com,,Honda,CR-V
+SRV-1007,Jon Smith,+15550192834,K9922X,Tire Rotation,28-02-2025,1038.0,Paid,Replaced front left light as well for free,,,Kia,Sportage
+SRV-1008,Dmitri Johnson,,7XYZ123,Battery,11-03-2024,445.0,Paid,Paid via cash,,,Ford,F-150
+SRV-1009,Anna Martinez,+15552345678,7XYZ123,Oil Change,,119.0,Paid,,,,Honda,Civic
+SRV-1010,Mike Smith,+15552345678,7XYZ123,Air Conditioning,15-01-2025,0.0,Paid,Duplicate record?,,,Toyota,Camry
+SRV-1011,Alexander Brown,+15552345678,ABC8901,Air Conditioning,28-02-2025,0.0,Paid,Paid via cash,,,Audi,A4
+SRV-1012,Robert Davis,+15550192834,7XYZ123,Diagnostics,15-01-2025,650.0,Pending,Contact wife for payment,,,Toyota,Camry
+SRV-1047,Robert Harris,+15552345678,7XYZ123,Diagnostics,28-02-2025,190.0,Pending,Paid via cash,,,Honda,CR-V
+SRV-1014,Mike Brown,+15552345678,ABC8901,Oil Change,28-02-2025,280.0,Paid,Duplicate record?,,,BMW,X5
+SRV-1015,Michael Jackson,+15558881122,7XYZ123,Tire Rotation,11-03-2024,1011.0,Pending,,,,BMW,X5
+SRV-1016,Dmitri Harris,+15550192834,,Battery,03-11-2024,199.0,Paid,Duplicate record?,mike.w@hotmail.com,,Toyota,Camry
+SRV-1017,Anna Smith,+15552345678,K9922X,Air Conditioning,03-11-2024,161.0,Unpaid,Paid via cash,,2020,Audi,A4
+SRV-1018,David Miller,+15552345678,K9922X,Major Service,03-11-2024,228.0,Paid,Contact wife for payment,,2022,Honda,CR-V
+SRV-1036,Jon Thompson,+15552345678,ABC8901,Brake Pad Change,28-02-2025,699.0,Unpaid,Duplicate record?,,,Ford,Mustang
+SRV-1020,Sarah Williams,,7XYZ123,Full Maintenance,03-11-2024,496.0,Pending,Replaced front left light as well for free,,,Hyundai,Tucson
+SRV-1021,Jon Jackson,,,Brake Pad Change,28-02-2025,955.0,Paid,Customer complained about noise,john.smith@gmail.com,,Hyundai,Elantra
+SRV-1022,S. Thompson,+15550192834,7XYZ123,Diagnostics,15-01-2025,510.0,Pending,Bring back next week,,2024,Honda,Civic
+SRV-1023,Alexander Martinez,+15550192834,K9922X,Battery,03-11-2024,923.0,Pending,Bring back next week,,2018,Kia,Sportage
+SRV-1024,Alex Smith,+15558881122,ABC8901,Rear Brakes,03-11-2024,630.0,Cancelled,,mike.w@hotmail.com,,BMW,3 Series
+SRV-1025,D. Martin,,7XYZ123,Diagnostics,15-01-2025,623.0,Paid,Paid via cash,,2023,Mercedes-Benz,E-Class
+SRV-1026,Alexander Martinez,+15550192834,7XYZ123,Oil Change,12-05-2023,1182.0,Pending,Bring back next week,,,Honda,CR-V
+SRV-1027,David Martinez,,,Tire Fitting,03-11-2024,685.0,Paid,VIP client - gave 10% off,,,Hyundai,Tucson
+SRV-1028,Dmitri Jones,,ABC8901,Air Conditioning,,1032.0,Paid,Contact wife for payment,,2022,Toyota,Camry
+SRV-1031,Michael Smith,,7XYZ123,Rear Brakes,03-11-2024,487.0,Paid,Customer complained about noise,,,Mercedes-Benz,E-Class
+SRV-1030,Chris Jackson,+15552345678,,Oil Change,28-02-2025,1140.0,Paid,Customer complained about noise,,,Honda,CR-V
+SRV-1031,Chris Williams,+15559876543,ABC8901,Wheel Alignment,,1113.0,Cancelled,Duplicate record?,,,Mercedes-Benz,E-Class
+SRV-1032,Chris Miller,+15552345678,K9922X,Diagnostics,28-02-2025,123.0,Paid,Replaced front left light as well for free,bob@test.com,,Hyundai,Elantra
+SRV-1033,S. Williams,+15552345678,7XYZ123,Diagnostics,05-12-2023,207.0,Paid,,,,Audi,Q7
+SRV-1034,John Garcia,+15552345678,7XYZ123,Tire Fitting,05-12-2023,1198.0,Unpaid,Bring back next week,,,Ford,Mustang
+SRV-1035,John Thomas,,K9922X,Full Maintenance,05-12-2023,630.0,Unpaid,Need to re-check invoice,,,BMW,X5
+SRV-1036,S. White,+15552345678,K9922X,Tire Rotation,11-03-2024,943.0,Pending,Paid via cash,john.smith@gmail.com,,Ford,F-150
+SRV-1037,D. Davis,+15550192834,ABC8901,Full Maintenance,15-01-2025,1049.0,Pending,Paid via cash,bob@test.com,,Toyota,Camry
+SRV-1038,Elena Anderson,+15552345678,7XYZ123,Engine Check,15-01-2025,718.0,Unpaid,,,,Hyundai,Tucson
+SRV-1039,,+15550192834,7XYZ123,Oil Change,28-02-2025,838.0,Paid,Duplicate record?,,,Mercedes-Benz,E-Class
+SRV-1040,Christian Johnson,+15559876543,,Brake Pad Change,12-05-2023,633.0,Unpaid,Duplicate record?,,2018,Volkswagen,Golf
+SRV-1041,Robert Miller,,K9922X,Wheel Alignment,,856.0,Pending,Customer complained about noise,,2022,Toyota,Camry
+SRV-1042,Mike Anderson,,,Brake Pad Change,15-01-2025,912.0,Paid,Duplicate record?,info@company.org,2022,Mercedes-Benz,E-Class
+SRV-1043,Dmitriy Harris,+15559876543,,Inspection + Oil,,1167.0,Pending,,john.smith@gmail.com,2024,Honda,CR-V
+SRV-1044,Dmitriy White,,ABC8901,Air Conditioning,15-01-2025,1071.0,Pending,Need to re-check invoice,alexander.t@domain.com,2020,Toyota,Corolla
+SRV-1045,Sarah Brown,,,Diagnostics,15-01-2025,678.0,,VIP client - gave 10% off,,,Ford,F-150
+SRV-1046,John Garcia,,7XYZ123,Wheel Alignment,15-01-2025,900.0,Paid,Paid via cash,,,Ford,F-150
+SRV-1047,S. Garcia,,7XYZ123,Full Maintenance,,1150.0,Cancelled,Contact wife for payment,,,Toyota,Corolla
+SRV-1048,Alexander Wilson,+15550192834,,Inspection + Oil,15-01-2025,435.0,Paid,Paid via cash,,2020,Toyota,Corolla
+SRV-1049,Bob Harris,,,Oil Change,03-11-2024,485.0,Cancelled,Paid via cash,john.smith@gmail.com,,Audi,Q7
+SRV-1050,S. Smith,+15550192834,ABC8901,Wheel Alignment,03-11-2024,637.0,Paid,Duplicate record?,,,Mercedes-Benz,E-Class
+SRV-1051,Alexander Taylor,,,Inspection + Oil,11-03-2024,438.0,Paid,Duplicate record?,john.smith@gmail.com,,Audi,A4
+SRV-1052,Robert Jackson,+15558881122,ABC8901,Brake Pad Change,03-11-2024,1094.0,Pending,,,,BMW,X5
+SRV-1053,Jon Taylor,,,Oil Change,05-12-2023,191.0,Paid,Duplicate record?,info@company.org,,Hyundai,Elantra
+SRV-1054,,+15552345678,,Oil Change,02-01-2025,570.0,,VIP client - gave 10% off,,,Ford,F-150
+SRV-1055,Jon Davis,+15550192834,K9922X,Engine Check,12-05-2023,930.0,Paid,Contact wife for payment,,,Audi,A4
+SRV-1056,Mike Martinez,+15550192834,ABC8901,Air Conditioning,11-03-2024,659.0,,Replaced front left light as well for free,j.smith@gmail.com,,Kia,Sportage
+SRV-1057,Christian Williams,+15559876543,7XYZ123,Wheel Alignment,03-11-2024,569.0,Unpaid,,,,Ford,F-150
+SRV-1058,David Harris,,7XYZ123,Oil Change,15-01-2025,759.0,Paid,Contact wife for payment,,,Kia,Sportage
+SRV-1059,S. Jackson,+15550192834,,Major Service,15-01-2025,1172.0,Cancelled,,,,Ford,Focus
+SRV-1060,A. Smith,+15550192834,,Oil Change,02-01-2025,285.0,Paid,VIP client - gave 10% off,,2020,Ford,F-150
+SRV-1061,David Smith,,,Inspection + Oil,15-01-2025,241.0,Unpaid,,,,Honda,Civic
+SRV-1062,S. Davis,+15559876543,7XYZ123,Wheel Alignment,03-11-2024,403.0,Paid,Contact wife for payment,bob@test.com,,Ford,Focus
+SRV-1043,Dmitry Jackson,,K9922X,Tire Rotation,,685.0,,Replaced front left light as well for free,,2024,Honda,CR-V
+SRV-1064,Robert Smith,+15558881122,7XYZ123,Major Service,03-11-2024,360.0,Pending,Paid via cash,,,Honda,CR-V
+SRV-1065,Chris Smith,,,Brake Pad Change,15-01-2025,829.0,Paid,Duplicate record?,sarah_j@yahoo.com,,Ford,F-150
+SRV-1035,Christian Wilson,,7XYZ123,Inspection + Oil,28-02-2025,829.0,Paid,,,,Toyota,Camry
+SRV-1067,Dmitri Miller,,ABC8901,Full Maintenance,05-12-2023,533.0,Pending,Paid via cash,,,Toyota,Corolla
+SRV-1068,Helen Jackson,+15550192834,K9922X,Rear Brakes,05-12-2023,0.0,Paid,,sarah_j@yahoo.com,2022,Toyota,Camry
+SRV-1069,Alexander Garcia,+15550192834,,Diagnostics,15-01-2025,524.0,Paid,Contact wife for payment,,,Volkswagen,Golf
+SRV-1070,Dmitri Anderson,,K9922X,Brake Pad Change,02-01-2025,123.0,Paid,,,2015,Honda,CR-V
+SRV-1071,Mike Smith,+15552345678,ABC8901,Full Maintenance,15-01-2025,630.0,Paid,VIP client - gave 10% off,,,Volkswagen,Golf
+SRV-1072,Dmitri Smith,+15550192834,,Brake Pad Change,11-03-2024,239.0,Cancelled,Duplicate record?,,,Kia,Sportage
+SRV-1073,D. Martin,+15550192834,,Inspection + Oil,12-05-2023,143.0,Paid,Contact wife for payment,,,Mercedes-Benz,E-Class
+SRV-1074,Christian White,+15550192834,7XYZ123,Major Service,,745.0,Cancelled,Need to re-check invoice,,,Honda,Civic
+SRV-1075,Alexander Johnson,+15550192834,,Tire Fitting,28-02-2025,927.0,Pending,Contact wife for payment,,,Hyundai,Elantra
+SRV-1036,Alexander Taylor,,7XYZ123,Oil Change,15-01-2025,843.0,Paid,Duplicate record?,,2018,Audi,A4
+SRV-1077,Sarah Jackson,,ABC8901,Diagnostics,15-01-2025,515.0,Paid,Contact wife for payment,,,BMW,X5
+SRV-1078,D. Johnson,,7XYZ123,Full Maintenance,02-01-2025,627.0,Paid,VIP client - gave 10% off,,,BMW,X5
+SRV-1079,D. Smith,+15552345678,7XYZ123,Oil Change,15-01-2025,520.0,Cancelled,,,,BMW,X5
+SRV-1080,David Garcia,+15550192834,7XYZ123,Diagnostics,28-02-2025,1074.0,Unpaid,Contact wife for payment,john.smith@gmail.com,,Hyundai,Elantra
+SRV-1081,Sarah Anderson,+15559876543,K9922X,Engine Check,15-01-2025,192.0,Paid,Bring back next week,j.smith@gmail.com,,Audi,A4
+SRV-1082,,,7XYZ123,Air Conditioning,03-11-2024,805.0,Paid,,,2024,Hyundai,Tucson
+SRV-1083,Chris Smith,,K9922X,Tire Rotation,15-01-2025,431.0,Unpaid,Contact wife for payment,,,BMW,X5
+SRV-1084,Alexander Johnson,+15552345678,K9922X,Battery,03-11-2024,424.0,Paid,Duplicate record?,,,Mercedes-Benz,E-Class
+SRV-1085,D. Anderson,+15550192834,7XYZ123,Major Service,15-01-2025,1091.0,Paid,Need to re-check invoice,mike.w@hotmail.com,,Ford,Focus
+SRV-1086,Dmitry Martinez,,K9922X,Engine Check,11-03-2024,800.0,Paid,Paid via cash,,,BMW,3 Series
+SRV-1087,D. Wilson,+15550192834,,Tire Rotation,28-02-2025,164.0,Paid,Need to re-check invoice,,,Volkswagen,Golf
+SRV-1088,Anna Williams,+15550192834,,Major Service,15-01-2025,630.0,Paid,Duplicate record?,,2023,Volkswagen,Golf
+SRV-1089,Helen Thomas,+15559876543,,Diagnostics,15-01-2025,871.0,Pending,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1090,S. Taylor,+15550192834,,Tire Rotation,15-01-2025,253.0,Pending,Duplicate record?,,,Ford,Mustang
+SRV-1091,Dmitri Martin,+15550192834,7XYZ123,Brake Pad Change,03-11-2024,1075.0,Paid,Bring back next week,,,Mercedes-Benz,E-Class
+SRV-1024,Sarah Martin,+15550192834,7XYZ123,Brake Pad Change,15-01-2025,419.0,,Contact wife for payment,,,Hyundai,Elantra
+SRV-1093,Chris Martinez,,7XYZ123,Brake Pad Change,28-02-2025,982.0,Paid,Replaced front left light as well for free,,,Honda,CR-V
+SRV-1094,Michael Brown,+15550192834,,Battery,12-05-2023,663.0,Paid,VIP client - gave 10% off,alexander.t@domain.com,,BMW,3 Series
+SRV-1007,Alexander Smith,+15552345678,7XYZ123,Diagnostics,03-11-2024,247.0,Pending,Bring back next week,,,Toyota,Camry
+SRV-1096,David Williams,+15550192834,,Battery,28-02-2025,90.0,Paid,Customer complained about noise,john.smith@gmail.com,,Volkswagen,Golf
+SRV-1097,Bob Martin,+15559876543,7XYZ123,Tire Fitting,02-01-2025,1016.0,Paid,Paid via cash,,2022,Honda,CR-V
+SRV-1034,John Martin,+15552345678,ABC8901,Tire Fitting,15-01-2025,255.0,Paid,,sarah_j@yahoo.com,,Toyota,Camry
+SRV-1099,A. Smith,+15552345678,ABC8901,Diagnostics,15-01-2025,292.0,Unpaid,,,,BMW,X5
+SRV-1100,Dmitry Jones,+15559876543,7XYZ123,Wheel Alignment,15-01-2025,630.0,Paid,Bring back next week,,,Kia,Sportage
+SRV-1101,Anna Thomas,+15558881122,ABC8901,Oil Change,02-01-2025,334.0,Pending,,alexander.t@domain.com,,Audi,A4
+SRV-1102,David Jones,+15558881122,ABC8901,Battery,28-02-2025,204.0,Paid,Duplicate record?,,,Kia,Sportage
+SRV-1103,Dmitri Wilson,,,Wheel Alignment,15-01-2025,802.0,Unpaid,,,,BMW,X5
+SRV-1104,Jon Thomas,,7XYZ123,Full Maintenance,28-02-2025,630.0,Paid,,,2018,Audi,A4
+SRV-1012,Bob Williams,+15559876543,,Diagnostics,28-02-2025,650.0,Paid,Paid via cash,,2015,Hyundai,Elantra
+SRV-1106,A. Johnson,,ABC8901,Wheel Alignment,03-11-2024,0.0,Paid,Contact wife for payment,,,Honda,CR-V
+SRV-1107,Dmitri Taylor,,7XYZ123,Battery,02-01-2025,820.0,Paid,Bring back next week,,,Ford,F-150
+SRV-1108,Mike Harris,+15550192834,7XYZ123,Brake Pad Change,,214.0,Pending,,,,Ford,Mustang
+SRV-1109,Alexander Jackson,+15550192834,K9922X,Air Conditioning,28-02-2025,0.0,Paid,Need to re-check invoice,,,Audi,A4
+SRV-1110,Anna Smith,+15550192834,ABC8901,Rear Brakes,28-02-2025,1142.0,Pending,Paid via cash,,,Honda,Civic
+SRV-1111,,,7XYZ123,Air Conditioning,15-01-2025,771.0,Unpaid,Customer complained about noise,,,Mercedes-Benz,E-Class
+SRV-1112,Dmitry Garcia,,,Wheel Alignment,02-01-2025,698.0,Paid,Bring back next week,bob@test.com,,Mercedes-Benz,C-Class
+SRV-1113,Chris Smith,+15550192834,ABC8901,Brake Pad Change,03-11-2024,733.0,,,,,BMW,3 Series
+SRV-1114,Anna Thompson,+15550192834,K9922X,Oil Change,15-01-2025,630.0,Cancelled,Need to re-check invoice,info@company.org,2022,Toyota,Corolla
+SRV-1115,David Garcia,,K9922X,Engine Check,28-02-2025,630.0,Paid,Contact wife for payment,,,BMW,3 Series
+SRV-1116,John Smith,,,Air Conditioning,15-01-2025,962.0,Paid,Replaced front left light as well for free,,,Volkswagen,Golf
+SRV-1117,John Thomas,+15550192834,ABC8901,Air Conditioning,28-02-2025,652.0,Unpaid,Need to re-check invoice,,2021,Ford,Mustang
+SRV-1118,D. Taylor,,,Oil Change,15-01-2025,1050.0,Paid,Contact wife for payment,sarah_j@yahoo.com,2024,Mercedes-Benz,E-Class
+SRV-1119,David Martinez,,,Air Conditioning,05-12-2023,693.0,Paid,Customer complained about noise,,,Mercedes-Benz,E-Class
+SRV-1120,Robert Wilson,+15550192834,,Oil Change,,1153.0,Pending,Need to re-check invoice,,,Audi,A4
+SRV-1121,Mike Smith,+15550192834,7XYZ123,Brake Pad Change,28-02-2025,1045.0,,Customer complained about noise,mike.w@hotmail.com,,Ford,F-150
+SRV-1122,David Harris,,ABC8901,Inspection + Oil,02-01-2025,621.0,Unpaid,Contact wife for payment,,,BMW,3 Series
+SRV-1123,Helen Davis,,ABC8901,Air Conditioning,11-03-2024,630.0,Unpaid,Duplicate record?,,,Audi,Q7
+SRV-1124,S. Wilson,+15550192834,K9922X,Battery,28-02-2025,1183.0,Pending,Duplicate record?,,,Toyota,Camry
+SRV-1036,Robert Davis,+15552345678,,Oil Change,28-02-2025,1047.0,Paid,VIP client - gave 10% off,,2020,Mercedes-Benz,E-Class
+SRV-1126,Alexander Harris,+15558881122,ABC8901,Oil Change,02-01-2025,1175.0,,Customer complained about noise,bob@test.com,,Ford,F-150
+SRV-1127,John Thomas,+15558881122,7XYZ123,Air Conditioning,,0.0,Pending,Replaced front left light as well for free,,2022,Volkswagen,Golf
+SRV-1128,Christian Williams,+15559876543,7XYZ123,Major Service,11-03-2024,108.0,,,alexander.t@domain.com,,Toyota,Corolla
+SRV-1129,Michael Martinez,,,Brake Pad Change,28-02-2025,588.0,Paid,Replaced front left light as well for free,,2024,Toyota,Camry
+SRV-1130,David Wilson,+15550192834,7XYZ123,Wheel Alignment,03-11-2024,1109.0,,Replaced front left light as well for free,,,Audi,Q7
+SRV-1131,D. Martinez,+15552345678,K9922X,Full Maintenance,28-02-2025,1044.0,Paid,Bring back next week,,,BMW,3 Series
+SRV-1132,Jon Martin,+15559876543,7XYZ123,Air Conditioning,12-05-2023,1179.0,Paid,VIP client - gave 10% off,,,Toyota,Camry
+SRV-1133,Dmitri Brown,+15558881122,K9922X,Tire Fitting,28-02-2025,1026.0,Pending,Replaced front left light as well for free,,2012,BMW,3 Series
+SRV-1134,Mike Garcia,+15550192834,,Oil Change,28-02-2025,630.0,Paid,VIP client - gave 10% off,,,Audi,Q7
+SRV-1135,Alexander Anderson,,7XYZ123,Inspection + Oil,05-12-2023,0.0,Pending,Paid via cash,,,BMW,X5
+SRV-1136,S. Davis,+15550192834,,Air Conditioning,28-02-2025,586.0,Paid,,,,BMW,3 Series
+SRV-1137,Sarah Smith,+15559876543,ABC8901,Full Maintenance,15-01-2025,179.0,Paid,Customer complained about noise,,2020,Toyota,Camry
+SRV-1138,John Williams,,ABC8901,Inspection + Oil,03-11-2024,373.0,Pending,Duplicate record?,,,Hyundai,Tucson
+SRV-1139,A. Garcia,+15552345678,7XYZ123,Major Service,28-02-2025,732.0,,,,,Mercedes-Benz,E-Class
+SRV-1140,A. Harris,+15552345678,7XYZ123,Oil Change,05-12-2023,933.0,Paid,Duplicate record?,,,Audi,Q7
+SRV-1141,David Smith,+15559876543,7XYZ123,Inspection + Oil,,229.0,Paid,Need to re-check invoice,info@company.org,,Hyundai,Tucson
+SRV-1142,Mike Taylor,,,Wheel Alignment,03-11-2024,498.0,Cancelled,Bring back next week,john.smith@gmail.com,,Honda,CR-V
+SRV-1143,,,K9922X,Battery,28-02-2025,735.0,Paid,,,2018,Mercedes-Benz,E-Class
+SRV-1145,Christian Harris,+15559876543,7XYZ123,Wheel Alignment,15-01-2025,1190.0,Pending,Customer complained about noise,,,Ford,Mustang
+SRV-1146,Dmitri Smith,+15550192834,7XYZ123,Oil Change,03-11-2024,844.0,Paid,Need to re-check invoice,none,,Audi,A4
+SRV-1147,Dmitri Harris,+15550192834,7XYZ123,Diagnostics,05-12-2023,115.0,Paid,,,,BMW,X5
+SRV-1148,Sarah Martin,+15550192834,ABC8901,Tire Rotation,15-01-2025,911.0,Paid,Need to re-check invoice,mike.w@hotmail.com,,Mercedes-Benz,E-Class
+SRV-1149,Dmitri Smith,+15550192834,K9922X,Oil Change,15-01-2025,266.0,Cancelled,,,2021,BMW,X5
+SRV-1014,Anna Smith,+15552345678,K9922X,Oil Change,11-03-2024,147.0,Paid,,,,Audi,Q7
+SRV-1151,Alex Smith,,,Diagnostics,28-02-2025,366.0,,Paid via cash,,,Mercedes-Benz,C-Class
+SRV-1152,Sarah Jackson,+15552345678,,Diagnostics,15-01-2025,1002.0,Paid,Bring back next week,,,Hyundai,Elantra
+SRV-1153,Michael Garcia,,,Diagnostics,15-01-2025,395.0,,,,2020,Ford,F-150
+SRV-1154,Helen White,,K9922X,Air Conditioning,12-05-2023,133.0,Paid,,alexander.t@domain.com,,Toyota,Camry
+SRV-1155,Alex Smith,,ABC8901,Brake Pad Change,28-02-2025,630.0,Pending,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1156,Elena Jackson,,ABC8901,Wheel Alignment,,1017.0,Paid,VIP client - gave 10% off,,,Ford,Mustang
+SRV-1157,Bob Thomas,,,Diagnostics,,491.0,Paid,,,,Volkswagen,Golf
+SRV-1047,Helen Harris,+15552345678,ABC8901,Air Conditioning,03-11-2024,1197.0,Paid,Duplicate record?,,2024,Volkswagen,Golf
+SRV-1159,Mike White,,,Major Service,03-11-2024,395.0,,,,,Kia,Sportage
+SRV-1160,Christian Garcia,,,Diagnostics,05-12-2023,254.0,Paid,Bring back next week,,2024,Volkswagen,Golf
+SRV-1161,Bob Smith,,7XYZ123,Rear Brakes,12-05-2023,532.0,Paid,,,2015,BMW,X5
+SRV-1162,Dmitriy Martin,+15550192834,ABC8901,Oil Change,15-01-2025,370.0,Pending,Replaced front left light as well for free,,,BMW,3 Series
+SRV-1163,Christian Anderson,+15558881122,ABC8901,Oil Change,15-01-2025,630.0,Pending,Paid via cash,,2018,Audi,Q7
+SRV-1164,Mike Martin,+15552345678,K9922X,Tire Rotation,02-01-2025,965.0,Cancelled,Customer complained about noise,,2024,Mercedes-Benz,E-Class
+SRV-1165,Robert Jackson,,7XYZ123,Oil Change,,0.0,Paid,VIP client - gave 10% off,,,Honda,CR-V
+SRV-1166,Elena Harris,,7XYZ123,Wheel Alignment,,689.0,Unpaid,Need to re-check invoice,,,BMW,X5
+SRV-1167,Mike Wilson,+15550192834,K9922X,Brake Pad Change,,460.0,Paid,Duplicate record?,,,Honda,Civic
+SRV-1168,A. Jones,+15558881122,,Diagnostics,15-01-2025,479.0,Cancelled,Duplicate record?,alexander.t@domain.com,2018,Ford,F-150
+SRV-1169,Christian Jackson,+15559876543,7XYZ123,Engine Check,15-01-2025,630.0,Paid,Replaced front left light as well for free,,,Mercedes-Benz,C-Class
+SRV-1170,Christian Thompson,+15550192834,ABC8901,Oil Change,28-02-2025,950.0,Paid,Bring back next week,,,Hyundai,Elantra
+SRV-1171,Elena Anderson,+15550192834,ABC8901,Air Conditioning,28-02-2025,956.0,Paid,Need to re-check invoice,,,Toyota,Corolla
+SRV-1172,John Garcia,,ABC8901,Engine Check,03-11-2024,1133.0,Pending,Paid via cash,,,Mercedes-Benz,E-Class
+SRV-1173,John Miller,+15550192834,ABC8901,Inspection + Oil,28-02-2025,630.0,Pending,,sarah_j@yahoo.com,,Audi,Q7
+SRV-1174,Alex Martin,,,Battery,15-01-2025,1018.0,Pending,,,2023,BMW,3 Series
+SRV-1041,Mike Jackson,+15552345678,ABC8901,Brake Pad Change,,783.0,Pending,Customer complained about noise,,,Volkswagen,Golf
+SRV-1176,John Johnson,+15552345678,,Major Service,03-11-2024,641.0,Paid,,,,BMW,X5
+SRV-1177,Michael Smith,,K9922X,Battery,15-01-2025,630.0,Paid,VIP client - gave 10% off,,,Audi,Q7
+SRV-1178,John Smith,,K9922X,Tire Rotation,15-01-2025,289.0,Paid,,,2018,BMW,X5
+SRV-1179,S. Williams,+15550192834,7XYZ123,Battery,03-11-2024,390.0,Cancelled,Need to re-check invoice,,,Mercedes-Benz,E-Class
+SRV-1180,Sarah Williams,+15550192834,ABC8901,Rear Brakes,11-03-2024,588.0,Paid,Need to re-check invoice,,,Ford,Mustang
+SRV-1001,John Wilson,+15552345678,ABC8901,Rear Brakes,28-02-2025,573.0,Paid,Need to re-check invoice,,,Honda,CR-V
+SRV-1182,S. Thomas,+15559876543,7XYZ123,Air Conditioning,15-01-2025,630.0,Paid,Customer complained about noise,,2018,Honda,Civic
+SRV-1183,Dmitry Martin,+15559876543,,Brake Pad Change,11-03-2024,70.0,Paid,Bring back next week,,,Toyota,Camry
+SRV-1184,Alex Garcia,+15550192834,7XYZ123,Tire Fitting,15-01-2025,192.0,Pending,VIP client - gave 10% off,,2020,Hyundai,Tucson
+SRV-1185,John Jones,+15558881122,7XYZ123,Battery,11-03-2024,321.0,Paid,,,,Kia,Sportage
+SRV-1186,Elena Garcia,+15550192834,K9922X,Brake Pad Change,28-02-2025,290.0,Unpaid,Paid via cash,,,Ford,Mustang
+SRV-1187,John Davis,+15550192834,7XYZ123,Battery,02-01-2025,739.0,Paid,,,,Honda,Civic
+SRV-1188,Robert Anderson,+15550192834,ABC8901,Oil Change,28-02-2025,169.0,Pending,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1189,D. Brown,,ABC8901,Air Conditioning,28-02-2025,480.0,,Duplicate record?,,,Hyundai,Tucson
+SRV-1190,Alexander Smith,+15552345678,ABC8901,Inspection + Oil,28-02-2025,709.0,Paid,Bring back next week,,2012,Volkswagen,Golf
+SRV-1191,John Williams,,K9922X,Diagnostics,28-02-2025,253.0,Unpaid,Paid via cash,j.smith@gmail.com,,Honda,CR-V
+SRV-1192,Jon Garcia,+15550192834,ABC8901,Diagnostics,28-02-2025,748.0,Pending,Contact wife for payment,,,Honda,Civic
+SRV-1193,S. Garcia,+15550192834,ABC8901,Air Conditioning,28-02-2025,505.0,Paid,Replaced front left light as well for free,sarah_j@yahoo.com,,BMW,3 Series
+SRV-1026,Michael Wilson,+15550192834,7XYZ123,Diagnostics,28-02-2025,692.0,Pending,VIP client - gave 10% off,,,Ford,F-150
+SRV-1195,A. Davis,+15550192834,7XYZ123,Rear Brakes,15-01-2025,900.0,Pending,Paid via cash,,2018,Kia,Sportage
+SRV-1196,John Smith,+15552345678,7XYZ123,Oil Change,28-02-2025,286.0,Unpaid,,,,Honda,Civic
+SRV-1197,Alex Jackson,+15552345678,ABC8901,Brake Pad Change,15-01-2025,583.0,Pending,Replaced front left light as well for free,info@company.org,,Honda,Civic
+SRV-1198,John Smith,,7XYZ123,Major Service,05-12-2023,863.0,,,none,,Honda,CR-V
+SRV-1199,Robert Martin,,,Diagnostics,15-01-2025,1046.0,Paid,,none,2023,Toyota,Camry
+SRV-1200,Sarah Davis,+15552345678,7XYZ123,Rear Brakes,,875.0,Pending,VIP client - gave 10% off,,,Kia,Sportage
+SRV-1039,Dmitriy Anderson,+15550192834,,Wheel Alignment,05-12-2023,1084.0,Paid,Paid via cash,,,Mercedes-Benz,C-Class
+SRV-1202,Christian Smith,,,Diagnostics,15-01-2025,630.0,Paid,Duplicate record?,,2023,Honda,Civic
+SRV-1203,Dmitriy Thomas,+15550192834,,Major Service,28-02-2025,436.0,,Duplicate record?,,,Honda,Civic
+SRV-1204,Mike Garcia,+15552345678,7XYZ123,Oil Change,,146.0,Paid,Need to re-check invoice,,2022,Audi,Q7
+SRV-1205,Mike Garcia,+15550192834,ABC8901,Diagnostics,15-01-2025,261.0,,,,,Hyundai,Tucson
+SRV-1206,Dmitriy Smith,,7XYZ123,Battery,28-02-2025,927.0,Paid,,,,Hyundai,Tucson
+SRV-1207,Robert Davis,+15552345678,ABC8901,Diagnostics,15-01-2025,93.0,Cancelled,VIP client - gave 10% off,,2012,Volkswagen,Golf
+SRV-1208,David Martinez,+15558881122,,Brake Pad Change,15-01-2025,0.0,Paid,Bring back next week,,,Audi,A4
+SRV-1209,A. Miller,,,Wheel Alignment,15-01-2025,50.0,Cancelled,Paid via cash,alexander.t@domain.com,,Toyota,Camry
+SRV-1210,Christian Brown,+15550192834,7XYZ123,Oil Change,03-11-2024,1044.0,Paid,Replaced front left light as well for free,john.smith@gmail.com,,Audi,A4
+SRV-1211,D. Thomas,,K9922X,Diagnostics,,242.0,,Paid via cash,,,Ford,Focus
+SRV-1213,Anna Garcia,+15550192834,7XYZ123,Brake Pad Change,15-01-2025,630.0,Pending,,,,BMW,3 Series
+SRV-1214,Bob Miller,,,Diagnostics,12-05-2023,105.0,,Need to re-check invoice,j.smith@gmail.com,,Mercedes-Benz,E-Class
+SRV-1215,Alexander Williams,+15550192834,7XYZ123,Oil Change,03-11-2024,784.0,Cancelled,Replaced front left light as well for free,,,Hyundai,Elantra
+SRV-1031,Christian Smith,+15552345678,,Oil Change,28-02-2025,758.0,,Bring back next week,,,Mercedes-Benz,E-Class
+SRV-1217,John Taylor,,7XYZ123,Rear Brakes,15-01-2025,987.0,Pending,Replaced front left light as well for free,alexander.t@domain.com,,BMW,3 Series
+SRV-1218,Mike White,+15552345678,ABC8901,Air Conditioning,15-01-2025,231.0,Paid,,,,Hyundai,Elantra
+SRV-1219,John Jones,+15552345678,K9922X,Diagnostics,03-11-2024,630.0,Paid,Duplicate record?,,2012,Honda,CR-V
+SRV-1220,John Davis,,,Diagnostics,15-01-2025,609.0,,Paid via cash,,,Honda,Civic
+SRV-1221,,,,Oil Change,15-01-2025,350.0,Pending,VIP client - gave 10% off,,,Honda,CR-V
+SRV-1043,Bob Wilson,,K9922X,Wheel Alignment,03-11-2024,893.0,Unpaid,Paid via cash,,,Volkswagen,Golf
+SRV-1223,A. Martinez,,ABC8901,Major Service,03-11-2024,614.0,Pending,Replaced front left light as well for free,,,BMW,3 Series
+SRV-1224,John Martinez,,,Engine Check,11-03-2024,908.0,Cancelled,Customer complained about noise,,,Honda,Civic
+SRV-1225,David Davis,+15558881122,,Brake Pad Change,03-11-2024,82.0,,Replaced front left light as well for free,,,Ford,F-150
+SRV-1226,Dmitri Taylor,+15550192834,K9922X,Diagnostics,28-02-2025,630.0,Pending,Contact wife for payment,,,Hyundai,Tucson
+SRV-1227,Robert Garcia,+15550192834,,Engine Check,28-02-2025,268.0,Paid,VIP client - gave 10% off,,,Mercedes-Benz,E-Class
+SRV-1228,Chris Williams,,,Diagnostics,02-01-2025,165.0,Pending,Bring back next week,,,BMW,3 Series
+SRV-1229,Christian Smith,+15550192834,K9922X,Tire Rotation,15-01-2025,630.0,,,,,BMW,X5
+SRV-1230,Mike Smith,+15550192834,ABC8901,Tire Rotation,12-05-2023,422.0,Paid,Customer complained about noise,,2023,Honda,CR-V
+SRV-1231,Anna Martinez,,K9922X,Brake Pad Change,15-01-2025,906.0,Paid,Bring back next week,,,Honda,Civic
+SRV-1232,,+15552345678,K9922X,Diagnostics,05-12-2023,178.0,Pending,Paid via cash,,,Audi,A4
+SRV-1233,Sarah Jackson,+15559876543,,Battery,02-01-2025,630.0,Pending,Paid via cash,none,2018,Ford,Focus
+SRV-1234,Dmitriy Williams,+15559876543,ABC8901,Oil Change,28-02-2025,489.0,Pending,Duplicate record?,,2015,Mercedes-Benz,E-Class
+SRV-1235,Helen Jones,+15550192834,ABC8901,Oil Change,15-01-2025,1091.0,Paid,Paid via cash,,2018,Honda,CR-V
+SRV-1236,Sarah Miller,+15552345678,K9922X,Brake Pad Change,15-01-2025,817.0,Pending,,,2022,Ford,F-150
+SRV-1237,John Williams,+15552345678,ABC8901,Oil Change,28-02-2025,454.0,Paid,,,,BMW,3 Series
+SRV-1238,Dmitriy Harris,+15559876543,7XYZ123,Oil Change,15-01-2025,0.0,Unpaid,Contact wife for payment,,,Honda,Civic
+SRV-1044,Bob Thomas,,K9922X,Oil Change,28-02-2025,209.0,Pending,,,,Audi,A4
+SRV-1241,A. Martinez,+15550192834,K9922X,Brake Pad Change,15-01-2025,736.0,Paid,,,,Honda,Civic
+SRV-1242,A. Thomas,+15552345678,K9922X,Wheel Alignment,28-02-2025,1098.0,,Customer complained about noise,mike.w@hotmail.com,,BMW,3 Series
+SRV-1243,A. Smith,+15550192834,,Major Service,28-02-2025,824.0,Paid,Bring back next week,,,Audi,A4
+SRV-1244,Bob Harris,,ABC8901,Diagnostics,02-01-2025,677.0,Paid,Duplicate record?,,,Hyundai,Elantra
+SRV-1246,Dmitri Garcia,+15550192834,7XYZ123,Oil Change,12-05-2023,966.0,Unpaid,Contact wife for payment,,,Mercedes-Benz,C-Class
+SRV-1247,Dmitriy Garcia,+15552345678,,Air Conditioning,28-02-2025,588.0,Pending,,sarah_j@yahoo.com,,Audi,A4
+SRV-1248,S. Williams,+15559876543,ABC8901,Air Conditioning,03-11-2024,525.0,Paid,Bring back next week,,,Hyundai,Tucson
+SRV-1249,Dmitri Williams,+15552345678,,Diagnostics,05-12-2023,934.0,Pending,Duplicate record?,,2023,Audi,A4
+SRV-1250,Anna Johnson,+15550192834,ABC8901,Brake Pad Change,03-11-2024,379.0,Paid,Replaced front left light as well for free,none,,Audi,A4
+SRV-1251,Chris Johnson,+15552345678,7XYZ123,Battery,03-11-2024,176.0,Cancelled,,,,Honda,CR-V
+SRV-1252,David Thompson,+15550192834,7XYZ123,Wheel Alignment,03-11-2024,833.0,Unpaid,Duplicate record?,,,Honda,CR-V
+SRV-1253,Mike Wilson,+15559876543,7XYZ123,Oil Change,28-02-2025,630.0,Paid,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1254,John Taylor,+15559876543,7XYZ123,Major Service,,696.0,Paid,Need to re-check invoice,sarah_j@yahoo.com,,Ford,F-150
+SRV-1255,David Martin,+15552345678,7XYZ123,Air Conditioning,28-02-2025,106.0,Paid,,,,Kia,Sportage
+SRV-1256,Anna Harris,+15550192834,,Full Maintenance,03-11-2024,737.0,Cancelled,Paid via cash,,,BMW,3 Series
+SRV-1257,John Martin,,7XYZ123,Major Service,03-11-2024,248.0,Paid,VIP client - gave 10% off,,,BMW,3 Series
+SRV-1258,John Smith,+15552345678,K9922X,Brake Pad Change,05-12-2023,971.0,Pending,Paid via cash,,,Honda,CR-V
+SRV-1259,,,,Rear Brakes,11-03-2024,1003.0,Pending,,,2022,Honda,Civic
+SRV-1260,Sarah Thompson,+15550192834,7XYZ123,Oil Change,28-02-2025,297.0,Pending,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1261,,,,Air Conditioning,03-11-2024,375.0,Pending,,,,Honda,CR-V
+SRV-1262,S. Johnson,+15550192834,,Engine Check,03-11-2024,784.0,Paid,,,,BMW,X5
+SRV-1043,Michael Jones,+15552345678,7XYZ123,Air Conditioning,15-01-2025,1024.0,Pending,Duplicate record?,,,Honda,CR-V
+SRV-1265,Robert Williams,,ABC8901,Rear Brakes,02-01-2025,816.0,Paid,,,2012,Honda,Civic
+SRV-1266,Helen Harris,+15550192834,7XYZ123,Brake Pad Change,11-03-2024,236.0,,Paid via cash,,,Toyota,Camry
+SRV-1267,John Garcia,+15552345678,ABC8901,Air Conditioning,28-02-2025,384.0,Pending,,,,Toyota,Camry
+SRV-1268,Helen Williams,+15559876543,,Rear Brakes,,1132.0,Paid,Contact wife for payment,,2023,BMW,X5
+SRV-1269,Dmitri Williams,+15558881122,ABC8901,Diagnostics,03-11-2024,630.0,Paid,,info@company.org,2018,Hyundai,Elantra
+SRV-1270,John Taylor,+15550192834,,Brake Pad Change,28-02-2025,828.0,Unpaid,Paid via cash,,,Ford,Focus
+SRV-1271,Anna Thomas,,7XYZ123,Brake Pad Change,28-02-2025,237.0,Paid,Replaced front left light as well for free,,,BMW,3 Series
+SRV-1037,Bob Johnson,+15552345678,K9922X,Wheel Alignment,03-11-2024,921.0,Paid,Bring back next week,,,Hyundai,Tucson
+SRV-1273,Dmitry Martin,+15550192834,7XYZ123,Tire Rotation,,118.0,,Replaced front left light as well for free,,,Honda,Civic
+SRV-1274,Christian Harris,+15552345678,7XYZ123,Brake Pad Change,,621.0,Paid,,,,Mercedes-Benz,E-Class
+SRV-1035,Mike Thomas,+15552345678,,Brake Pad Change,,171.0,Unpaid,Need to re-check invoice,sarah_j@yahoo.com,,Honda,CR-V
+SRV-1276,Jon Harris,+15550192834,,Tire Fitting,28-02-2025,1165.0,Cancelled,Bring back next week,,,Toyota,Camry
+SRV-1277,D. Garcia,+15550192834,7XYZ123,Air Conditioning,28-02-2025,630.0,Paid,Customer complained about noise,none,,BMW,3 Series
+SRV-1278,Alex Brown,,,Diagnostics,05-12-2023,828.0,Unpaid,Replaced front left light as well for free,,,Honda,Civic
+SRV-1279,Alexander Thompson,+15558881122,ABC8901,Air Conditioning,28-02-2025,895.0,,VIP client - gave 10% off,,,Mercedes-Benz,E-Class
+SRV-1280,Mike White,+15552345678,7XYZ123,Battery,15-01-2025,90.0,Paid,VIP client - gave 10% off,j.smith@gmail.com,,BMW,X5
+SRV-1281,Jon Miller,+15552345678,K9922X,Air Conditioning,03-11-2024,197.0,Paid,Contact wife for payment,info@company.org,,Toyota,Camry
+SRV-1282,Anna Wilson,+15552345678,,Brake Pad Change,15-01-2025,80.0,Paid,Paid via cash,,2021,Mercedes-Benz,E-Class
+SRV-1283,Dmitri Thomas,+15552345678,7XYZ123,Battery,05-12-2023,792.0,Pending,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1284,Alex Garcia,+15550192834,,Engine Check,03-11-2024,1131.0,Pending,Duplicate record?,alexander.t@domain.com,2015,Mercedes-Benz,E-Class
+SRV-1285,Chris Thomas,+15558881122,,Air Conditioning,15-01-2025,608.0,Paid,,,,Hyundai,Elantra
+SRV-1012,Dmitriy Davis,,7XYZ123,Diagnostics,03-11-2024,630.0,Cancelled,,,,Mercedes-Benz,E-Class
+SRV-1287,Mike Garcia,,K9922X,Rear Brakes,03-11-2024,503.0,Paid,Bring back next week,,,Audi,A4
+SRV-1288,S. Johnson,+15550192834,,Air Conditioning,15-01-2025,840.0,Unpaid,,,2018,Audi,A4
+SRV-1289,Elena Harris,+15552345678,7XYZ123,Tire Fitting,28-02-2025,146.0,Paid,,,,Honda,CR-V
+SRV-1290,Chris Johnson,+15559876543,ABC8901,Oil Change,03-11-2024,611.0,Paid,Duplicate record?,,,Toyota,Camry
+SRV-1291,David Anderson,+15552345678,ABC8901,Diagnostics,28-02-2025,348.0,Unpaid,Bring back next week,,,BMW,X5
+SRV-1292,A. Jackson,+15552345678,K9922X,Brake Pad Change,28-02-2025,1138.0,Paid,,mike.w@hotmail.com,,Hyundai,Tucson
+SRV-1293,Robert Smith,,ABC8901,Major Service,15-01-2025,765.0,Pending,,,,Toyota,Camry
+SRV-1294,D. Smith,+15559876543,ABC8901,Major Service,02-01-2025,662.0,Pending,,,,Audi,A4
+SRV-1295,Chris Smith,+15552345678,7XYZ123,Diagnostics,28-02-2025,908.0,Paid,Paid via cash,,,Audi,A4
+SRV-1296,,,7XYZ123,Diagnostics,,1002.0,Cancelled,VIP client - gave 10% off,,,Ford,Focus
+SRV-1297,Mike Miller,+15550192834,7XYZ123,Wheel Alignment,05-12-2023,247.0,Cancelled,Duplicate record?,mike.w@hotmail.com,,Toyota,Corolla
+SRV-1043,Bob Williams,+15550192834,ABC8901,Engine Check,28-02-2025,348.0,Paid,VIP client - gave 10% off,,2022,BMW,X5
+SRV-1299,Christian White,,7XYZ123,Wheel Alignment,02-01-2025,970.0,Paid,Duplicate record?,,,Audi,Q7
+SRV-1301,Helen Smith,+15559876543,,Tire Fitting,05-12-2023,591.0,Paid,,,,Kia,Sportage
+SRV-1302,Alexander Davis,,K9922X,Oil Change,15-01-2025,0.0,Paid,Contact wife for payment,,2022,Mercedes-Benz,E-Class
+SRV-1303,Christian Brown,,7XYZ123,Engine Check,11-03-2024,0.0,Paid,Customer complained about noise,john.smith@gmail.com,,Mercedes-Benz,E-Class
+SRV-1304,Mike Taylor,+15559876543,K9922X,Oil Change,03-11-2024,242.0,Paid,Customer complained about noise,,,BMW,3 Series
+SRV-1305,Christian Jones,+15552345678,7XYZ123,Battery,03-11-2024,987.0,Paid,Customer complained about noise,,,Volkswagen,Golf
+SRV-1306,Anna Brown,+15558881122,7XYZ123,Oil Change,05-12-2023,598.0,Paid,Replaced front left light as well for free,,,Ford,F-150
+SRV-1307,Mike Johnson,+15552345678,7XYZ123,Oil Change,28-02-2025,98.0,Paid,Need to re-check invoice,,,Toyota,Camry
+SRV-1308,S. Anderson,+15550192834,,Major Service,15-01-2025,215.0,Paid,Duplicate record?,mike.w@hotmail.com,,Toyota,Camry
+SRV-1309,David Thompson,,ABC8901,Diagnostics,15-01-2025,976.0,Paid,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1310,Michael Thompson,,,Air Conditioning,15-01-2025,619.0,Paid,,,,Ford,Focus
+SRV-1311,Alex Jones,+15550192834,ABC8901,Oil Change,05-12-2023,468.0,Paid,Contact wife for payment,,,Hyundai,Elantra
+SRV-1313,Alex Harris,,7XYZ123,Brake Pad Change,02-01-2025,243.0,Paid,Customer complained about noise,,,Mercedes-Benz,E-Class
+SRV-1315,Mike Garcia,+15552345678,7XYZ123,Diagnostics,28-02-2025,954.0,Paid,VIP client - gave 10% off,,,BMW,X5
+SRV-1317,Elena Anderson,+15559876543,ABC8901,Air Conditioning,15-01-2025,698.0,Paid,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1318,John Miller,+15550192834,7XYZ123,Air Conditioning,03-11-2024,695.0,Paid,Need to re-check invoice,j.smith@gmail.com,,Ford,Mustang
+SRV-1319,Jon Taylor,+15558881122,7XYZ123,Engine Check,15-01-2025,861.0,Paid,Customer complained about noise,,,Audi,Q7
+SRV-1320,Alexander Johnson,+15552345678,7XYZ123,Oil Change,03-11-2024,733.0,Paid,Need to re-check invoice,,,Toyota,Camry
+SRV-1321,S. Smith,,7XYZ123,Engine Check,28-02-2025,0.0,Pending,Paid via cash,,2021,Mercedes-Benz,C-Class
+SRV-1322,Alex Miller,+15550192834,7XYZ123,Air Conditioning,03-11-2024,481.0,Paid,Need to re-check invoice,,2018,Hyundai,Elantra
+SRV-1323,Jon Miller,+15559876543,7XYZ123,Tire Fitting,28-02-2025,736.0,Pending,Need to re-check invoice,,,Mercedes-Benz,C-Class
+SRV-1324,D. Martinez,+15559876543,ABC8901,Brake Pad Change,15-01-2025,0.0,Paid,Bring back next week,,,Toyota,Camry
+SRV-1325,John Taylor,+15550192834,ABC8901,Brake Pad Change,03-11-2024,609.0,Paid,Contact wife for payment,,,Toyota,Camry
+SRV-1326,,,ABC8901,Engine Check,03-11-2024,635.0,Paid,Contact wife for payment,,2012,Mercedes-Benz,E-Class
+SRV-1327,Dmitri Miller,,K9922X,Tire Rotation,12-05-2023,283.0,Pending,Contact wife for payment,j.smith@gmail.com,,Volkswagen,Golf
+SRV-1328,Mike Martin,+15559876543,ABC8901,Engine Check,03-11-2024,401.0,Paid,,,,Toyota,Camry
+SRV-1329,Mike Martin,,,Rear Brakes,15-01-2025,884.0,Pending,VIP client - gave 10% off,,,BMW,X5
+SRV-1330,Bob Davis,+15559876543,,Air Conditioning,15-01-2025,363.0,Unpaid,Duplicate record?,,,BMW,X5
+SRV-1331,Helen Martin,+15550192834,,Brake Pad Change,03-11-2024,186.0,,Paid via cash,,,Hyundai,Elantra
+SRV-1332,John Taylor,+15559876543,,Brake Pad Change,15-01-2025,0.0,Paid,Need to re-check invoice,,,Hyundai,Tucson
+SRV-1333,Mike Martinez,+15552345678,,Brake Pad Change,12-05-2023,1040.0,,,,,Ford,Mustang
+SRV-1334,S. Jones,+15552345678,ABC8901,Rear Brakes,03-11-2024,215.0,Paid,Contact wife for payment,mike.w@hotmail.com,,Hyundai,Elantra
+SRV-1335,Chris Davis,+15559876543,,Full Maintenance,,1155.0,Pending,Customer complained about noise,,,Mercedes-Benz,E-Class
+SRV-1336,Mike Martin,,7XYZ123,Wheel Alignment,28-02-2025,665.0,Paid,VIP client - gave 10% off,,,Mercedes-Benz,E-Class
+SRV-1337,Dmitriy Martin,+15550192834,,Brake Pad Change,,1199.0,Paid,,,,BMW,3 Series
+SRV-1338,Chris Garcia,+15552345678,,Battery,15-01-2025,230.0,Paid,,,,Ford,F-150
+SRV-1339,Anna Martinez,+15552345678,ABC8901,Inspection + Oil,15-01-2025,376.0,Paid,Customer complained about noise,,,Toyota,Camry
+SRV-1340,Helen Jones,+15550192834,7XYZ123,Wheel Alignment,28-02-2025,1193.0,Paid,Need to re-check invoice,,,Toyota,Camry
+SRV-1341,Dmitri Harris,+15559876543,7XYZ123,Air Conditioning,11-03-2024,505.0,Paid,VIP client - gave 10% off,,,Mercedes-Benz,E-Class
+SRV-1342,,,K9922X,Brake Pad Change,03-11-2024,443.0,Paid,Need to re-check invoice,,,Toyota,Camry
+SRV-1343,David Anderson,,7XYZ123,Brake Pad Change,15-01-2025,642.0,Pending,Duplicate record?,,,Volkswagen,Golf
+SRV-1344,Bob Smith,+15550192834,7XYZ123,Battery,,668.0,Cancelled,Need to re-check invoice,,,Audi,A4
+SRV-1345,Bob Anderson,+15550192834,K9922X,Brake Pad Change,,674.0,Paid,Customer complained about noise,,,Mercedes-Benz,E-Class
+SRV-1346,Mike Martinez,+15559876543,7XYZ123,Oil Change,02-01-2025,656.0,Pending,Paid via cash,none,,Ford,Mustang
+SRV-1347,John Johnson,,7XYZ123,Brake Pad Change,03-11-2024,1061.0,Paid,Customer complained about noise,,,Mercedes-Benz,C-Class
+SRV-1348,Chris Thompson,,,Battery,03-11-2024,118.0,Paid,Need to re-check invoice,,,BMW,X5
+SRV-1349,Jon Williams,,,Air Conditioning,,319.0,Pending,,,,BMW,X5
+SRV-1350,Christian Davis,,,Oil Change,28-02-2025,493.0,Paid,Contact wife for payment,,,Ford,F-150
+SRV-1351,S. Brown,,7XYZ123,Oil Change,12-05-2023,351.0,Paid,Customer complained about noise,,,Mercedes-Benz,E-Class
+SRV-1353,David Brown,+15552345678,,Brake Pad Change,15-01-2025,630.0,Paid,Need to re-check invoice,alexander.t@domain.com,2018,Ford,F-150
+SRV-1002,D. Thompson,,,Oil Change,03-11-2024,773.0,Paid,Contact wife for payment,alexander.t@domain.com,2022,Audi,Q7
+SRV-1355,John Johnson,+15552345678,,Air Conditioning,02-01-2025,993.0,Unpaid,,john.smith@gmail.com,,BMW,X5
+SRV-1356,Dmitri Thompson,+15550192834,7XYZ123,Inspection + Oil,02-01-2025,1033.0,Paid,Bring back next week,,,Toyota,Camry
+SRV-1357,Elena Anderson,,7XYZ123,Diagnostics,28-02-2025,213.0,Paid,Paid via cash,,,Audi,A4
+SRV-1358,Helen Anderson,+15550192834,ABC8901,Oil Change,03-11-2024,900.0,Unpaid,,,,Volkswagen,Golf
+SRV-1359,Christian Thomas,+15550192834,K9922X,Tire Fitting,,1195.0,,Bring back next week,info@company.org,,Audi,Q7
+SRV-1360,Dmitriy Garcia,+15558881122,,Wheel Alignment,15-01-2025,911.0,Paid,Need to re-check invoice,,2023,BMW,3 Series
+SRV-1362,Mike Taylor,,K9922X,Diagnostics,15-01-2025,1125.0,Cancelled,VIP client - gave 10% off,,,Audi,A4
+SRV-1363,John Smith,,ABC8901,Air Conditioning,28-02-2025,863.0,Cancelled,,,,Volkswagen,Golf
+SRV-1364,Christian Williams,+15552345678,7XYZ123,Inspection + Oil,15-01-2025,0.0,Paid,Customer complained about noise,,,Ford,Mustang
+SRV-1365,Alexander Williams,+15550192834,7XYZ123,Tire Fitting,,1123.0,Cancelled,Duplicate record?,,,BMW,X5
+SRV-1366,Michael Jackson,+15550192834,,Tire Fitting,05-12-2023,148.0,Paid,Need to re-check invoice,,,Hyundai,Tucson
+SRV-1367,Christian Smith,+15550192834,K9922X,Air Conditioning,,170.0,Pending,Paid via cash,,,Hyundai,Elantra
+SRV-1368,,+15550192834,K9922X,Wheel Alignment,,942.0,Pending,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1369,Helen Garcia,,,Engine Check,,630.0,Paid,VIP client - gave 10% off,,2018,Mercedes-Benz,C-Class
+SRV-1370,Elena Williams,,,Air Conditioning,15-01-2025,837.0,Paid,Replaced front left light as well for free,,2015,Toyota,Camry
+SRV-1371,Anna Smith,,K9922X,Tire Fitting,28-02-2025,981.0,,VIP client - gave 10% off,,,Mercedes-Benz,E-Class
+SRV-1372,John Miller,+15550192834,ABC8901,Air Conditioning,03-11-2024,878.0,Paid,Replaced front left light as well for free,john.smith@gmail.com,,BMW,X5
+SRV-1373,Helen White,,7XYZ123,Air Conditioning,02-01-2025,964.0,Unpaid,Replaced front left light as well for free,,,Mercedes-Benz,E-Class
+SRV-1001,Elena Garcia,,,Brake Pad Change,12-05-2023,448.0,Pending,Duplicate record?,,,Hyundai,Tucson
+SRV-1375,Alexander Johnson,+15550192834,ABC8901,Oil Change,,290.0,Unpaid,Bring back next week,,2022,Honda,CR-V
+SRV-1376,Sarah Smith,+15550192834,7XYZ123,Oil Change,15-01-2025,630.0,Paid,Paid via cash,,,Audi,A4
+SRV-1013,Alexander Taylor,,K9922X,Oil Change,11-03-2024,622.0,Paid,Contact wife for payment,,,Ford,Focus
+SRV-1378,Dmitry Harris,+15550192834,,Wheel Alignment,11-03-2024,0.0,Paid,Paid via cash,,,BMW,X5
+SRV-1379,John Harris,+15550192834,K9922X,Battery,03-11-2024,87.0,Paid,Contact wife for payment,,,Toyota,Camry
+SRV-1380,Jon Thompson,+15552345678,7XYZ123,Diagnostics,03-11-2024,900.0,Paid,Paid via cash,,,Audi,Q7
+SRV-1381,Jon White,,K9922X,Engine Check,28-02-2025,815.0,Paid,Paid via cash,bob@test.com,,Mercedes-Benz,E-Class
+SRV-1004,S. Smith,+15552345678,K9922X,Air Conditioning,02-01-2025,1173.0,Paid,Customer complained about noise,,,Mercedes-Benz,C-Class
+SRV-1383,John Thomas,+15550192834,K9922X,Air Conditioning,15-01-2025,557.0,Paid,Customer complained about noise,,,Audi,A4
+SRV-1384,Christian Martinez,+15550192834,7XYZ123,Engine Check,15-01-2025,429.0,Unpaid,Paid via cash,,,Honda,Civic
+SRV-1385,Bob Martinez,+15552345678,7XYZ123,Battery,28-02-2025,1197.0,Paid,,,,BMW,X5
+SRV-1386,Robert Jones,,7XYZ123,Air Conditioning,15-01-2025,163.0,Paid,Paid via cash,j.smith@gmail.com,,Honda,Civic
+SRV-1387,Michael Smith,+15558881122,,Engine Check,28-02-2025,1054.0,,VIP client - gave 10% off,j.smith@gmail.com,,Honda,Civic
+SRV-1016,Chris Jackson,+15552345678,7XYZ123,Full Maintenance,15-01-2025,696.0,Pending,,,,Toyota,Camry
+SRV-1389,Sarah Martinez,,,Oil Change,03-11-2024,0.0,Paid,Contact wife for payment,,,BMW,3 Series
+SRV-1390,John Anderson,,7XYZ123,Wheel Alignment,15-01-2025,0.0,Paid,Duplicate record?,,,Ford,F-150
+SRV-1392,Alex Davis,+15550192834,7XYZ123,Full Maintenance,28-02-2025,844.0,Paid,Contact wife for payment,,2024,Toyota,Camry
+SRV-1393,Mike Taylor,+15550192834,7XYZ123,Wheel Alignment,28-02-2025,783.0,Paid,Replaced front left light as well for free,,2022,Toyota,Camry
+SRV-1394,Bob Jones,+15552345678,ABC8901,Wheel Alignment,11-03-2024,630.0,,Bring back next week,,,Mercedes-Benz,E-Class
+SRV-1395,Robert Williams,+15550192834,,Oil Change,28-02-2025,1061.0,,Paid via cash,,,Toyota,Camry
+SRV-1030,John Jackson,+15552345678,7XYZ123,Inspection + Oil,03-11-2024,1020.0,Unpaid,Need to re-check invoice,,,Honda,CR-V
+SRV-1397,Dmitriy Thomas,+15552345678,7XYZ123,Oil Change,28-02-2025,761.0,Paid,Customer complained about noise,,,Audi,Q7
+SRV-1398,,,,Inspection + Oil,28-02-2025,307.0,Cancelled,,,,Ford,F-150
+SRV-1399,Michael Thompson,+15550192834,ABC8901,Oil Change,02-01-2025,509.0,,Bring back next week,,2018,Honda,CR-V
+SRV-1400,Dmitri Jackson,,K9922X,Oil Change,28-02-2025,1171.0,Pending,Contact wife for payment,john.smith@gmail.com,,Ford,Mustang
+SRV-1401,Jon Brown,+15559876543,7XYZ123,Diagnostics,15-01-2025,1096.0,Paid,Bring back next week,j.smith@gmail.com,2022,Honda,Civic
+SRV-1402,Alexander Thompson,+15550192834,7XYZ123,Oil Change,15-01-2025,555.0,Paid,,,,BMW,3 Series
+SRV-1403,David Harris,+15559876543,7XYZ123,Rear Brakes,28-02-2025,670.0,Paid,VIP client - gave 10% off,,,Honda,Civic
+SRV-1404,Bob Jones,,7XYZ123,Rear Brakes,15-01-2025,630.0,Unpaid,VIP client - gave 10% off,,,Volkswagen,Golf
+SRV-1405,A. Smith,,7XYZ123,Oil Change,15-01-2025,1102.0,Paid,Contact wife for payment,info@company.org,,BMW,3 Series
+SRV-1406,A. Martin,,7XYZ123,Air Conditioning,15-01-2025,985.0,Pending,Paid via cash,,,BMW,3 Series
+SRV-1407,Dmitri Thompson,+15550192834,K9922X,Diagnostics,15-01-2025,479.0,Unpaid,Duplicate record?,alexander.t@domain.com,,Mercedes-Benz,E-Class
+SRV-1408,Mike Smith,+15550192834,7XYZ123,Tire Rotation,03-11-2024,1127.0,Paid,,,,Audi,A4
+SRV-1409,D. Thomas,,K9922X,Oil Change,03-11-2024,989.0,,,john.smith@gmail.com,,Ford,Mustang
+SRV-1410,Alexander Jackson,+15550192834,ABC8901,Air Conditioning,03-11-2024,295.0,Unpaid,,,,Honda,Civic
+SRV-1411,Alexander Jones,+15559876543,7XYZ123,Engine Check,05-12-2023,698.0,Unpaid,Replaced front left light as well for free,,,Honda,Civic
+SRV-1049,John Smith,+15550192834,K9922X,Inspection + Oil,03-11-2024,1087.0,,Bring back next week,,,Audi,A4
+SRV-1413,Bob Anderson,+15558881122,,Battery,15-01-2025,115.0,Pending,VIP client - gave 10% off,,,Ford,Focus
+SRV-1414,Dmitriy Williams,,,Diagnostics,15-01-2025,630.0,Paid,Paid via cash,sarah_j@yahoo.com,,Ford,Mustang
+SRV-1034,Sarah Martinez,+15552345678,7XYZ123,Inspection + Oil,28-02-2025,198.0,Pending,VIP client - gave 10% off,,,Ford,F-150
+SRV-1416,Alexander Taylor,+15552345678,ABC8901,Air Conditioning,,1156.0,Paid,Duplicate record?,j.smith@gmail.com,,Mercedes-Benz,E-Class
+SRV-1417,,+15550192834,ABC8901,Brake Pad Change,28-02-2025,1151.0,Pending,VIP client - gave 10% off,,,BMW,3 Series
+SRV-1420,S. Miller,,ABC8901,Oil Change,15-01-2025,108.0,Paid,Bring back next week,info@company.org,,Mercedes-Benz,E-Class
+SRV-1421,A. Smith,+15550192834,ABC8901,Brake Pad Change,28-02-2025,299.0,Paid,,,,Volkswagen,Golf
+SRV-1422,Mike Jackson,+15550192834,7XYZ123,Diagnostics,03-11-2024,163.0,Paid,,info@company.org,,Toyota,Corolla
+SRV-1423,Bob Wilson,+15559876543,ABC8901,Wheel Alignment,28-02-2025,1086.0,Pending,Paid via cash,,,Ford,F-150
+SRV-1424,Jon Johnson,+15550192834,,Brake Pad Change,15-01-2025,487.0,Pending,Bring back next week,,,Mercedes-Benz,C-Class
+SRV-1425,Mike Jackson,+15558881122,,Major Service,28-02-2025,908.0,Paid,Duplicate record?,,,Hyundai,Elantra
+SRV-1426,Sarah Miller,+15558881122,7XYZ123,Oil Change,28-02-2025,446.0,Cancelled,Need to re-check invoice,,,Honda,Civic
+SRV-1427,Bob Johnson,+15550192834,7XYZ123,Engine Check,28-02-2025,615.0,Paid,,,,Hyundai,Elantra
+SRV-1428,John Jackson,+15550192834,K9922X,Oil Change,15-01-2025,700.0,,VIP client - gave 10% off,,,Volkswagen,Golf
+SRV-1429,Alex Harris,+15550192834,,Wheel Alignment,28-02-2025,400.0,Paid,Customer complained about noise,,,Audi,A4
+SRV-1430,Bob Anderson,,7XYZ123,Diagnostics,,630.0,Cancelled,Paid via cash,info@company.org,,Mercedes-Benz,C-Class
+SRV-1432,Alexander Garcia,+15559876543,7XYZ123,Tire Rotation,,280.0,Paid,Paid via cash,alexander.t@domain.com,,BMW,3 Series
+SRV-1433,Anna Taylor,+15552345678,K9922X,Oil Change,05-12-2023,623.0,Paid,Replaced front left light as well for free,,,BMW,X5
+SRV-1434,Bob Smith,+15550192834,7XYZ123,Tire Fitting,03-11-2024,237.0,Pending,Replaced front left light as well for free,,,Toyota,Camry
+SRV-1435,A. Taylor,+15552345678,K9922X,Air Conditioning,15-01-2025,1137.0,Paid,Need to re-check invoice,,,Mercedes-Benz,E-Class
+SRV-1436,Chris Miller,+15559876543,ABC8901,Brake Pad Change,03-11-2024,694.0,Cancelled,,,,Toyota,Camry
+SRV-1437,Dmitry Brown,+15559876543,ABC8901,Rear Brakes,28-02-2025,387.0,Paid,Customer complained about noise,,,Audi,A4
+SRV-1438,Christian Thompson,+15559876543,7XYZ123,Oil Change,11-03-2024,648.0,Pending,Duplicate record?,,,Toyota,Camry
+SRV-1440,Anna Garcia,,7XYZ123,Diagnostics,03-11-2024,878.0,,Bring back next week,,,Honda,CR-V
+SRV-1441,Michael Brown,,7XYZ123,Diagnostics,15-01-2025,947.0,Paid,Bring back next week,,,Volkswagen,Golf
+SRV-1442,D. Harris,,,Oil Change,03-11-2024,630.0,Cancelled,Replaced front left light as well for free,alexander.t@domain.com,,Mercedes-Benz,E-Class
+SRV-1443,Sarah Thompson,+15552345678,ABC8901,Rear Brakes,03-11-2024,408.0,Paid,,,2022,BMW,X5
+SRV-1444,John Miller,+15550192834,,Oil Change,15-01-2025,1116.0,Paid,,,,BMW,X5
+SRV-1445,David White,+15550192834,K9922X,Brake Pad Change,15-01-2025,705.0,Pending,Need to re-check invoice,,,Honda,Civic
+SRV-1446,Dmitriy Williams,+15559876543,ABC8901,Air Conditioning,03-11-2024,486.0,Paid,,,2018,Volkswagen,Golf
+SRV-1448,Jon Anderson,+15552345678,K9922X,Wheel Alignment,28-02-2025,0.0,,Bring back next week,,,Audi,Q7
+SRV-1450,Chris Davis,,7XYZ123,Diagnostics,28-02-2025,865.0,,,,,BMW,3 Series
+SRV-1034,Sarah Martinez,+15552345678,7XYZ123,Inspection + Oil,15-01-2025,150.0,Pending,VIP client - gave 10% off,,,Ford,F-150
+SRV-1196,John Smith,+15552345678,7XYZ123,Oil Change,15-01-2025,150.0,Unpaid,,,,Honda,Civic
+SRV-1287,Mike Garcia,,K9922X,Rear Brakes,15-01-2025,150.0,Paid,Bring back next week,,,Audi,A4
+SRV-1068,Helen Jackson,+15550192834,K9922X,Rear Brakes,15-01-2025,150.0,Paid,,sarah_j@yahoo.com,2022,Toyota,Camry
+SRV-1073,D. Martin,+15550192834,,Inspection + Oil,15-01-2025,150.0,Paid,Contact wife for payment,,,Mercedes-Benz,E-Class
+SRV-1161,Bob Smith,,7XYZ123,Rear Brakes,15-01-2025,150.0,Paid,,,2015,BMW,X5
+SRV-1035,Christian Wilson,,7XYZ123,Inspection + Oil,15-01-2025,150.0,Paid,,,,Toyota,Camry

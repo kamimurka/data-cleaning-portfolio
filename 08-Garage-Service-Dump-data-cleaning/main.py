@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 
-
 pd.set_option('display.max_rows', None)
 
 df = pd.read_csv('08-Garage-Service-Dump-data-cleaning/garage_service_dump.csv')
@@ -170,9 +169,12 @@ df['Internal_Notes'] = df['Internal_Notes'].str.strip()
 
 # Validating the cleaned data
 print(len(df))
-df = df.drop_duplicates(subset=['Customer_Name', 'Date_Of_Service', 'License_Plate'])
+df = df.drop_duplicates()
 print(len(df))
-
+df = df.drop_duplicates(
+    subset=['Customer_Name', 'Date_Of_Service', 'License_Plate', 'Service_Type', 'Make', 'Model']
+)
+print(len(df))
 
 # Exporting
 df.to_csv('garage_service_dump_cleaned.csv', index=False)
