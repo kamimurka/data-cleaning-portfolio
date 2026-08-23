@@ -195,7 +195,8 @@ df_Student_Records_2023_2024['Status / Remarks'] = df_Student_Records_2023_2024[
 # Creating Subject column
 df_Academic_Grades_Log['Subject'] = (df_Academic_Grades_Log['Subject / Course Code']
     .str.strip()
-    .str.extract(r'([A-Za-z\s]+)'))
+    .str.extract(r'([A-Za-z\s]+)')[0]
+    .str.strip())
 subject_mapping = {
     'SCI': 'Science',
     'ENG': 'English',
@@ -253,7 +254,7 @@ def parse_score(value):
     try:
         return float(value)
     except ValueError:
-        return np
+        return np.nan
 df_Academic_Grades_Log['Score / Grade'] = df_Academic_Grades_Log['Score / Grade'].apply(parse_score)
 
 # Cleaning Attendance (%) column
@@ -284,7 +285,7 @@ df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subs
                                                                             keep='first')
 df_Student_Records_2023_2024 = df_Student_Records_2023_2024.sort_values(by=['Full Name & Title'])
 
-# df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop(columns=['Primary Contact Person & Details'])
+df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop(columns=['Primary Contact Person & Details'])
 
 df_Student_Records_2023_2024 = df_Student_Records_2023_2024.drop_duplicates(subset=['Student ID / Reg No'], keep='first')
 
