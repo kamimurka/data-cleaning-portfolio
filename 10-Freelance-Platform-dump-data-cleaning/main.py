@@ -204,7 +204,7 @@ core_skills_mapping = {
 }
 df_Freelancer_Profiles['Core_Skills'] = df_Freelancer_Profiles['Core_Skills'].str.replace(core_skills_mapping, regex=True)
 
-# Cleaning Member_Since
+# Cleaning Member_Since column
 df_Freelancer_Profiles['Member_Since'] = pd.to_datetime(
     df_Freelancer_Profiles['Member_Since'],
     errors='coerce',
@@ -307,7 +307,7 @@ df_Feedback_and_Ratings['Client_Rating'] = (df_Feedback_and_Ratings['Client_Rati
 # Cleaning Feedback_Comment column
 df_Feedback_and_Ratings['Feedback_Comment'] = df_Feedback_and_Ratings['Feedback_Comment'].str.strip()
 
-# Cleaning Verified_Review
+# Cleaning Verified_Review column
 bool_mapping = {
     'yes': 'Yes', 'Y': 'Yes', 'YES': 'Yes', 'True': 'Yes', 'TRUE': 'Yes',
     'NO': 'No', 'N': 'No', 'FALSE': 'No', 'No': 'No', 'no': 'No'
