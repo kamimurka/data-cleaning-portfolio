@@ -177,5 +177,3 @@ df_carrier_directory['Base_Rate_Per_Kg']= df_carrier_directory['Base_Rate_Per_Kg
 with pd.ExcelWriter('Logistics_Orders_Export_Q1_2024_cleaned.xlsx', engine='openpyxl') as writer:
     df_orders_dispatch.to_excel(writer, sheet_name='Orders_Dispatch', index=False)
     df_carrier_directory.to_excel(writer, sheet_name='Carrier_Directory', index=False)
-
-print(df_orders_dispatch['Customer_Name'].tolist())
