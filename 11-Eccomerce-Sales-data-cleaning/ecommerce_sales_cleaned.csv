@@ -1,0 +1,1624 @@
+Transaction_ID,Customer_ID,Date,Customer_Age,Gender,Country,Product_Category,Purchase_Amount,Quantity,Rating,Payment_Method,Order_Status
+TXN-10000,,,18,Female,United States,Electronics,32.9,7,1.6,PayPal,Cancelled
+TXN-10001,CUST-160,2024-03-29,61,Male,Canada,Electronics,286.31,7,3.9,Cash,Cancelled
+TXN-10002,CUST-149,2024-03-18,23,,United Kingdom,Electronics,12.15,10,4.7,PayPal,Cancelled
+TXN-10003,CUST-273,2023-01-29,67,Male,France,Electronics,416.15,7,4.2,Cash,Completed
+TXN-10004,CUST-287,2023-12-19,39,Male,United States,Electronics,,4,4.4,Credit Card,Pending
+TXN-10005,CUST-201,2023-12-03,20,Male,Canada,Clothing,536.21,2,2.3,Bank Transfer,Returned
+TXN-10006,CUST-305,2022-08-31,41,Female,United States,Electronics,145.38,9,4.3,Bank Transfer,Pending
+TXN-10007,CUST-123,2024-07-20,34,Male,United Kingdom,,,3,2.9,Cash,Pending
+TXN-10008,CUST-270,2024-07-28,69,,Germany,Clothing,364.5,4,3.2,Credit Card,Returned
+TXN-10009,CUST-365,2024-08-16,18,,Germany,Clothing,329.83,7,2.0,Credit Card,Completed
+TXN-10010,CUST-363,2024-05-30,54,Other,Germany,Electronics,404.09,7,,Credit Card,Pending
+TXN-10011,CUST-263,2023-10-09,71,Other,United Kingdom,Electronics,,7,1.8,Credit Card,Cancelled
+TXN-10012,CUST-253,2024-02-25,29,Male,Germany,Home,197.48,8,4.1,Bank Transfer,Completed
+TXN-10414,CUST-359,2022-10-08,19,Female,France,Clothing,461.47,1,2.6,PayPal,Pending
+TXN-10014,CUST-372,2024-08-21,47,Male,Germany,Beauty,28.74,8,2.7,PayPal,Refunded
+TXN-10015,CUST-388,2023-02-27,46,Male,United States,Home,549.63,2,3.2,Bank Transfer,Pending
+TXN-10016,CUST-108,2024-06-16,58,Female,Canada,Beauty,242.61,9,4.5,PayPal,Returned
+TXN-10017,CUST-156,2023-12-17,31,Male,France,Clothing,378.86,5,2.9,Credit Card,Completed
+TXN-10018,CUST-398,2022-12-27,55,Male,United States,Beauty,17.52,1,4.5,Cash,Completed
+TXN-10019,CUST-113,2024-04-12,35,,France,Beauty,326.59,3,1.5,PayPal,Completed
+TXN-10020,CUST-235,2023-04-10,53,Female,Canada,Electronics,167.63,5,,Bank Transfer,Pending
+TXN-10021,CUST-396,2023-10-19,22,Male,Canada,Home,206.08,2,3.3,Credit Card,Cancelled
+TXN-10022,CUST-126,2024-03-21,34,Female,Canada,Clothing,232.37,7,4.7,Cash,Completed
+TXN-10023,CUST-187,,35,Female,United Kingdom,,427.03,3,2.1,Credit Card,Pending
+TXN-10024,CUST-294,2022-11-09,49,Male,United Kingdom,Home,109.82,4,1.8,Bank Transfer,Cancelled
+TXN-10025,CUST-224,2022-04-24,58,Male,France,Electronics,363.21,1,3.8,Credit Card,Completed
+TXN-10026,CUST-156,2024-01-01,73,Other,United States,Clothing,37.19,2,1.4,PayPal,Pending
+TXN-10027,CUST-325,2023-12-04,21,Male,United Kingdom,Clothing,492.87,5,4.9,Credit Card,Cancelled
+TXN-10028,CUST-177,2022-11-24,59,Female,France,Beauty,426.5,2,2.4,Credit Card,Pending
+TXN-10029,CUST-204,2024-01-23,46,,United Kingdom,Electronics,306.8,3,,Bank Transfer,Pending
+TXN-10030,CUST-341,2023-12-05,73,Female,United Kingdom,Beauty,156.04,2,3.4,Credit Card,Returned
+TXN-10031,CUST-131,2024-03-29,38,Female,Canada,Clothing,30.33,5,3.6,Credit Card,Completed
+TXN-10032,CUST-365,2023-03-01,46,Female,France,Electronics,365.05,2,4.4,PayPal,Completed
+TXN-10033,CUST-266,2024-06-16,21,Male,Germany,Clothing,581.45,9,,PayPal,Returned
+TXN-10034,CUST-344,2024-06-24,34,Female,France,Electronics,29.41,4,4.0,Bank Transfer,Cancelled
+TXN-10035,CUST-260,2024-08-28,19,Female,United Kingdom,Beauty,74.9,7,2.4,,Completed
+TXN-10036,CUST-335,2023-10-25,72,Other,Germany,Beauty,60.13,1,4.3,Bank Transfer,Completed
+TXN-10037,CUST-275,2024-07-17,52,Female,United Kingdom,Home,494.28,7,2.3,Bank Transfer,Completed
+TXN-10038,CUST-235,2022-07-23,56,Female,France,Clothing,587.55,9,1.7,Bank Transfer,Pending
+TXN-10039,CUST-198,2022-06-22,24,Female,France,Books,51.92,7,1.0,Credit Card,Refunded
+TXN-10040,CUST-242,2023-03-16,46,Female,United Kingdom,Beauty,429.52,8,4.1,Bank Transfer,Cancelled
+TXN-10041,CUST-215,2022-04-02,22,Female,Canada,Beauty,201.0,4,1.4,Credit Card,Completed
+TXN-10042,CUST-252,2023-08-04,38,Male,Canada,Books,174.29,9,1.2,Bank Transfer,
+TXN-10043,CUST-206,,71,Male,Canada,Home,175.87,4,2.7,Credit Card,
+TXN-10044,CUST-350,2024-03-02,44,Male,Germany,Books,,,4.4,Cash,Completed
+TXN-10045,CUST-278,2023-05-22,45,Female,United States,Electronics,205.68,4,3.2,PayPal,Cancelled
+TXN-10046,CUST-240,2022-07-28,27,Male,United Kingdom,Beauty,68.46,10,4.9,Bank Transfer,Pending
+TXN-10047,CUST-393,2024-04-12,46,,France,Clothing,244.95,4,3.5,Credit Card,Completed
+TXN-10048,CUST-294,2023-05-22,41,Male,Canada,Electronics,232.86,4,,Bank Transfer,Pending
+TXN-10049,CUST-302,2024-05-26,44,Female,United States,Clothing,592.73,2,1.0,Credit Card,Pending
+TXN-10050,,2024-04-23,41,Other,Canada,Clothing,163.63,10,3.2,Credit Card,Returned
+TXN-10051,CUST-247,2022-07-13,36,Male,France,Clothing,284.88,3,4.1,Bank Transfer,Refunded
+TXN-10052,CUST-140,2024-03-22,28,Female,United Kingdom,Books,,10,2.2,Cash,Completed
+TXN-10053,CUST-326,,36,Male,Canada,Home,167.22,3,4.3,Credit Card,Refunded
+TXN-10054,CUST-345,2022-08-30,55,Female,United States,Books,181.28,1,4.1,Bank Transfer,Completed
+TXN-10055,CUST-375,2022-09-12,46,Female,Canada,Home,575.36,10,4.6,Cash,Completed
+TXN-10056,CUST-387,2023-10-25,69,Female,Canada,Home,111.05,2,3.2,Cash,Returned
+TXN-10057,CUST-170,2023-04-26,63,Male,United Kingdom,Clothing,464.68,,1.5,Credit Card,Completed
+TXN-10058,CUST-400,2024-09-24,50,,Germany,Electronics,537.76,7,1.9,PayPal,Returned
+TXN-10059,CUST-125,2024-01-01,63,Male,France,Beauty,152.64,3,,Credit Card,Completed
+TXN-10060,CUST-371,2024-01-24,31,Female,France,Electronics,375.49,2,3.1,Bank Transfer,Completed
+TXN-10061,CUST-219,2022-04-08,55,Female,United States,Clothing,345.52,3,4.6,PayPal,
+TXN-10062,,2022-07-12,46,Male,,Home,348.06,3,4.8,Bank Transfer,Returned
+TXN-10063,CUST-341,2022-12-29,42,Male,United States,Electronics,476.64,2,5.0,Credit Card,
+TXN-10064,CUST-170,2024-09-17,59,Female,Germany,Home,598.69,1,4.8,Credit Card,Pending
+TXN-10216,CUST-381,2024-04-09,22,Male,United States,Electronics,209.65,1,3.9,Cash,Completed
+TXN-10066,CUST-180,,32,Female,United Kingdom,Electronics,354.53,10,,Bank Transfer,Pending
+TXN-10067,CUST-343,2023-01-26,54,Male,,Electronics,554.1,7,1.3,PayPal,Cancelled
+TXN-10068,CUST-202,2023-11-19,64,Male,,Clothing,585.85,8,3.2,Cash,Completed
+UNKNOWN_TXN_0,,2024-07-02,64,Male,Canada,Books,198.34,8,1.1,Credit Card,
+TXN-10070,CUST-130,,74,Male,Canada,Home,184.22,9,1.3,Bank Transfer,Pending
+TXN-10071,CUST-145,2022-06-23,21,Male,France,Clothing,248.22,10,2.6,Credit Card,Completed
+TXN-10072,CUST-218,2022-12-14,60,Male,Canada,Home,271.81,5,2.9,Credit Card,Completed
+TXN-10073,CUST-119,2022-11-21,46,Female,United Kingdom,Clothing,200.25,8,,Bank Transfer,Cancelled
+TXN-10074,CUST-189,2022-09-24,30,,Germany,Books,201.73,1,4.9,PayPal,Refunded
+TXN-10075,CUST-190,2022-05-11,36,Female,Germany,Clothing,239.06,3,1.1,Bank Transfer,Cancelled
+TXN-10076,CUST-118,2024-05-04,39,Female,France,Books,,2,2.0,PayPal,Completed
+TXN-10077,CUST-303,2024-08-06,67,Female,United States,Electronics,263.21,9,3.5,Credit Card,Completed
+TXN-10078,CUST-195,2024-06-16,32,Male,United States,Beauty,,6,2.7,Bank Transfer,Completed
+TXN-10079,CUST-248,2024-02-19,65,Male,United Kingdom,Home,,6,4.7,Credit Card,Cancelled
+TXN-10080,CUST-104,2023-03-23,62,Male,United Kingdom,Electronics,532.82,2,1.3,Cash,Completed
+TXN-10081,CUST-154,2023-05-19,64,Male,United States,Electronics,320.31,9,2.7,Credit Card,Pending
+TXN-10082,CUST-271,2024-08-03,44,Female,France,Clothing,13.93,1,,Credit Card,Cancelled
+TXN-10083,CUST-378,2022-06-02,40,Other,Canada,Clothing,76.81,8,1.9,Cash,Completed
+TXN-10084,CUST-168,2022-02-06,22,Female,United Kingdom,Electronics,354.05,6,1.3,Credit Card,Completed
+TXN-10085,CUST-339,2023-12-24,59,Male,France,Beauty,593.12,4,1.9,Bank Transfer,Returned
+TXN-10086,CUST-157,2024-07-05,32,Female,United States,Electronics,150.75,1,2.4,Cash,Cancelled
+TXN-10087,CUST-334,,44,Female,,,90.18,2,3.1,Bank Transfer,Refunded
+TXN-10413,CUST-195,2023-12-28,70,Female,France,Electronics,308.07,8,3.5,PayPal,Returned
+TXN-10089,CUST-272,2023-05-20,26,Other,France,Electronics,414.69,6,2.8,PayPal,Completed
+TXN-10090,CUST-390,2024-06-06,33,Male,United States,Electronics,278.74,8,2.5,Credit Card,Completed
+TXN-10091,CUST-198,2022-06-04,44,Female,United Kingdom,Beauty,283.16,7,2.8,Bank Transfer,Completed
+TXN-10092,CUST-307,2022-04-07,60,Female,France,Beauty,142.6,10,4.4,Cash,Returned
+UNKNOWN_TXN_1,CUST-363,2024-04-22,34,Male,United Kingdom,Books,328.14,7,4.4,Credit Card,Pending
+TXN-10094,CUST-305,2023-11-11,39,Male,France,Home,202.29,9,1.7,Bank Transfer,Cancelled
+UNKNOWN_TXN_2,CUST-194,2024-09-21,23,Male,Canada,Beauty,,2,3.5,Bank Transfer,Completed
+TXN-10096,CUST-344,2023-08-08,50,Female,France,Books,261.08,4,2.0,Credit Card,Completed
+TXN-10097,CUST-227,2022-03-20,54,Female,United States,Clothing,483.83,10,2.1,PayPal,Pending
+TXN-10098,CUST-296,2023-11-25,74,Female,United States,Home,489.76,10,4.2,PayPal,Cancelled
+TXN-10099,CUST-236,2022-01-27,75,Male,United States,Books,180.69,2,2.7,Credit Card,Completed
+TXN-10100,CUST-254,2023-11-28,47,Female,United Kingdom,Clothing,487.74,2,3.2,Bank Transfer,Completed
+TXN-10101,CUST-393,2023-08-28,46,Female,Canada,Books,356.37,1,4.5,Credit Card,Pending
+TXN-10102,CUST-284,2022-06-07,34,Male,United States,Electronics,166.32,7,1.3,Cash,Returned
+TXN-10103,CUST-131,2024-04-30,63,Other,United States,Clothing,577.77,6,1.9,Credit Card,Completed
+TXN-10104,CUST-338,2024-09-05,65,Female,Germany,Beauty,149.8,3,,Credit Card,Cancelled
+TXN-10105,CUST-307,2022-01-06,73,Other,United States,Home,310.71,4,3.4,,
+TXN-10106,CUST-259,2023-11-03,46,Female,United States,Home,17.98,4,2.3,Bank Transfer,Cancelled
+TXN-10107,,2022-11-29,62,Male,United States,Clothing,432.43,2,1.3,,
+TXN-10108,CUST-213,2024-06-02,22,Female,Germany,Home,211.98,4,3.8,Credit Card,Cancelled
+TXN-10109,CUST-168,2022-10-17,73,Male,France,Clothing,130.76,3,3.6,Bank Transfer,Pending
+TXN-10110,CUST-332,2024-02-01,42,Male,United Kingdom,Home,507.93,1,4.1,Cash,Refunded
+TXN-10111,CUST-291,2023-09-09,40,Male,United Kingdom,Electronics,241.89,1,3.8,Cash,Pending
+TXN-10112,CUST-381,2022-09-19,62,Male,,Books,520.84,10,2.9,Credit Card,Returned
+TXN-10113,CUST-375,2024-02-29,63,Female,Canada,Home,413.07,4,3.4,Credit Card,Refunded
+TXN-10114,CUST-211,2024-05-22,39,Female,United Kingdom,Clothing,251.73,3,2.4,PayPal,Completed
+TXN-10115,,2024-03-09,75,Female,United Kingdom,Beauty,192.36,5,,Credit Card,Returned
+TXN-10116,CUST-370,2024-10-02,56,Female,Germany,Clothing,12.18,6,,Cash,Pending
+TXN-10117,CUST-139,2023-05-18,64,Male,United States,Electronics,247.99,6,4.8,Bank Transfer,Refunded
+TXN-10118,CUST-157,2024-08-01,46,Female,Germany,Beauty,505.01,4,2.9,Bank Transfer,Pending
+TXN-10119,CUST-380,2023-10-09,40,Female,United States,Beauty,256.72,10,1.7,Credit Card,Cancelled
+TXN-10120,CUST-203,2022-04-09,44,Other,France,Clothing,181.32,2,2.6,PayPal,Pending
+TXN-10121,CUST-176,2023-05-17,65,Male,France,Beauty,96.79,5,1.9,Credit Card,Completed
+TXN-10122,CUST-366,2023-05-03,36,Female,Germany,Electronics,553.3,4,3.0,Bank Transfer,Completed
+TXN-10123,CUST-205,2023-03-10,62,Female,France,Clothing,,3,,PayPal,Refunded
+TXN-10124,CUST-350,2024-04-10,29,Female,United States,Books,401.89,6,2.3,PayPal,Refunded
+TXN-10125,CUST-361,2023-03-21,55,Female,Germany,Clothing,105.75,6,3.4,Credit Card,Completed
+TXN-10126,CUST-128,2023-06-10,50,Other,United States,Books,,5,2.9,Credit Card,Completed
+TXN-10127,CUST-362,2023-11-24,46,Female,France,Clothing,123.43,2,2.8,Credit Card,Returned
+TXN-10128,CUST-388,2024-01-01,41,Female,Germany,Home,,2,3.3,Credit Card,Completed
+TXN-10129,CUST-336,2023-06-24,47,Female,Germany,Clothing,409.24,5,2.4,Credit Card,
+TXN-10130,CUST-257,2023-04-25,46,Female,United States,Home,58.65,7,3.3,PayPal,Completed
+TXN-10131,CUST-302,2024-03-31,64,Male,United States,Electronics,60.86,2,1.3,Bank Transfer,Pending
+TXN-10132,CUST-101,2022-05-11,67,Female,United Kingdom,Electronics,211.38,3,4.3,PayPal,Cancelled
+TXN-10133,CUST-396,2023-06-20,46,Male,France,Clothing,41.79,7,2.8,PayPal,Cancelled
+TXN-10134,CUST-316,2022-02-18,21,,United States,Home,135.27,2,1.3,Credit Card,Completed
+TXN-10135,CUST-132,2022-02-16,75,Female,France,Electronics,56.61,7,1.9,Cash,Completed
+TXN-10136,CUST-130,2023-03-12,50,Male,United States,Electronics,268.19,10,4.7,Credit Card,Completed
+TXN-10137,CUST-135,2023-11-08,45,Male,United Kingdom,Home,357.73,5,,PayPal,Cancelled
+TXN-10138,CUST-341,2022-12-30,42,Female,United States,Electronics,440.49,1,2.7,PayPal,Completed
+TXN-10139,,2024-02-27,29,Other,United Kingdom,Home,62.76,9,2.6,Credit Card,Pending
+TXN-10140,CUST-169,,20,Female,Germany,Beauty,418.17,4,4.5,,Refunded
+TXN-10141,CUST-315,2023-04-19,65,Female,France,Home,283.19,1,1.6,Credit Card,Completed
+TXN-10142,CUST-295,2024-05-13,64,Female,Germany,Electronics,147.31,1,2.2,Credit Card,Cancelled
+TXN-10143,CUST-293,,51,Male,United States,Home,467.45,1,1.8,Bank Transfer,Cancelled
+TXN-10144,CUST-376,2023-12-23,74,Other,United States,Clothing,132.17,8,,Bank Transfer,Refunded
+TXN-10145,CUST-278,2024-01-12,24,Male,United States,Clothing,347.47,9,,Credit Card,Returned
+TXN-10146,CUST-375,2023-04-06,28,Female,United States,Home,578.83,6,,Cash,Pending
+TXN-10147,CUST-165,2022-12-16,35,Female,,Home,509.33,10,2.0,,Completed
+TXN-10148,CUST-214,2022-03-22,32,Female,United States,Books,132.81,,3.0,,Pending
+TXN-10149,CUST-111,2023-11-21,36,Female,Germany,Clothing,531.68,5,4.9,PayPal,Refunded
+TXN-10150,CUST-337,2022-01-19,34,Female,Canada,Home,120.91,10,5.0,Cash,Completed
+TXN-10151,CUST-378,2022-01-14,66,Other,Canada,Beauty,366.33,3,3.0,Cash,Pending
+TXN-10152,CUST-294,2023-04-17,32,Male,United Kingdom,Electronics,338.57,1,4.6,PayPal,Completed
+TXN-10153,CUST-226,2024-09-15,27,Female,United States,Beauty,330.43,10,4.2,PayPal,Returned
+TXN-10154,CUST-179,2022-11-07,46,Other,United States,Home,,3,,Bank Transfer,Returned
+TXN-10155,CUST-157,2023-09-24,46,,France,Clothing,34.26,8,3.9,Bank Transfer,Completed
+TXN-10156,CUST-314,2024-09-13,75,Male,,Beauty,129.01,4,1.3,Bank Transfer,Completed
+TXN-10157,CUST-108,2022-03-31,69,Male,United States,Electronics,289.57,2,1.9,Credit Card,Pending
+TXN-10158,CUST-134,2022-07-15,49,Male,France,Home,439.97,9,2.4,Cash,Cancelled
+TXN-10159,CUST-117,2023-12-14,19,Female,United States,Electronics,150.39,2,3.2,Credit Card,Refunded
+TXN-10160,CUST-124,2022-08-03,36,Female,United Kingdom,Home,,10,1.0,Credit Card,Cancelled
+TXN-10161,CUST-122,2023-10-28,54,Female,United Kingdom,Electronics,340.38,7,1.3,PayPal,Cancelled
+TXN-10162,CUST-219,2023-10-04,46,Female,United States,Clothing,305.7,8,1.1,Credit Card,Cancelled
+TXN-10163,CUST-128,2022-11-05,71,Male,Germany,Home,148.93,2,3.2,PayPal,Cancelled
+TXN-10164,CUST-248,2023-03-09,25,Male,,Books,410.52,4,3.7,Bank Transfer,Completed
+TXN-10165,CUST-394,2024-07-13,72,Female,United States,Home,364.2,1,3.9,Cash,Completed
+TXN-10166,CUST-264,2023-04-01,74,Female,Germany,Home,472.75,3,3.8,Credit Card,Refunded
+TXN-10167,CUST-173,2024-05-30,34,Female,France,Clothing,287.11,3,1.8,Bank Transfer,Cancelled
+TXN-10168,CUST-366,2022-07-26,46,Male,Canada,Books,177.01,5,1.3,Cash,Refunded
+TXN-10169,CUST-253,2024-05-03,64,Female,Germany,Beauty,,1,3.9,Cash,Refunded
+TXN-10170,CUST-385,2022-01-09,40,Male,Germany,,553.33,4,1.4,Bank Transfer,Completed
+TXN-10171,CUST-189,2024-01-01,65,Female,Germany,,459.04,1,1.1,PayPal,Completed
+TXN-10172,CUST-318,2024-05-18,64,,Canada,Books,561.19,4,1.3,,Returned
+TXN-10173,CUST-124,2023-09-03,28,Female,United Kingdom,Home,278.81,4,3.5,Credit Card,
+TXN-10174,CUST-295,2022-02-07,35,Male,United States,Electronics,358.27,5,4.1,Bank Transfer,Cancelled
+TXN-10175,CUST-263,2023-06-10,65,Female,United Kingdom,Clothing,91.02,2,1.5,Bank Transfer,Pending
+TXN-10176,,2024-08-15,67,Male,United States,Books,145.87,2,1.8,Credit Card,Completed
+TXN-10177,CUST-292,2022-03-04,62,Female,France,Electronics,99.87,5,,Bank Transfer,Completed
+TXN-10178,,,20,Female,United States,Electronics,521.14,3,1.0,Credit Card,Pending
+TXN-10179,CUST-215,2023-07-21,63,,France,Home,32.81,9,1.5,Bank Transfer,Completed
+TXN-10180,CUST-173,2023-10-26,38,Male,United Kingdom,Clothing,99.36,5,1.6,PayPal,Cancelled
+TXN-10181,CUST-129,2022-04-30,53,,,Electronics,154.56,1,1.9,,Completed
+TXN-10182,CUST-313,2023-10-24,74,Female,Canada,Home,43.83,5,1.8,PayPal,Returned
+TXN-10183,CUST-168,2023-03-23,58,Male,United States,Home,140.63,6,1.6,Bank Transfer,Refunded
+TXN-10184,CUST-230,2024-01-14,33,Male,United Kingdom,Clothing,312.18,,2.1,Bank Transfer,Cancelled
+TXN-10185,CUST-140,2023-03-25,42,Other,United States,Beauty,114.08,8,2.3,Credit Card,Refunded
+TXN-10186,CUST-289,2023-08-25,32,Female,Canada,Beauty,333.32,2,1.5,Credit Card,Refunded
+TXN-10187,CUST-197,2024-05-23,34,Other,France,Clothing,317.54,9,3.3,Credit Card,Pending
+TXN-10188,CUST-293,2022-10-28,49,Female,,Home,10.41,2,3.2,Cash,Cancelled
+TXN-10189,,2024-05-03,64,Male,Germany,Clothing,202.18,7,1.4,Credit Card,Completed
+TXN-10190,CUST-196,2024-03-29,26,Male,United States,Home,55.04,1,2.6,Credit Card,Pending
+TXN-10192,CUST-386,2022-05-13,46,Female,United States,Beauty,200.61,5,3.4,,Pending
+TXN-10193,CUST-206,2023-09-13,46,Female,United Kingdom,Home,268.33,4,2.9,Bank Transfer,Cancelled
+TXN-10194,CUST-270,2023-03-02,53,Female,Canada,Beauty,415.39,10,1.0,Bank Transfer,Pending
+TXN-10195,CUST-107,2022-08-03,63,Female,United Kingdom,Electronics,125.04,4,1.0,,Returned
+TXN-10196,CUST-197,,44,Female,United Kingdom,Home,78.97,6,4.6,PayPal,Cancelled
+TXN-10197,CUST-160,,57,Female,United States,Home,,3,,PayPal,Pending
+TXN-10198,CUST-345,2023-01-01,55,Female,Germany,Books,474.22,6,,Bank Transfer,Refunded
+TXN-10199,,2024-05-30,40,Male,France,Books,132.0,10,,PayPal,Returned
+TXN-10200,CUST-222,,60,Female,Canada,Beauty,388.99,2,2.9,Credit Card,Cancelled
+TXN-10201,CUST-244,2023-03-17,74,Female,Germany,Electronics,377.12,2,,Credit Card,Cancelled
+TXN-10202,CUST-373,2022-05-04,32,Male,United Kingdom,Home,548.6,2,2.2,Credit Card,Pending
+TXN-10203,CUST-257,2022-09-22,60,Male,,Books,283.13,,3.2,Credit Card,Returned
+TXN-10204,CUST-362,2024-02-27,68,Female,United Kingdom,Home,470.22,7,,Bank Transfer,Cancelled
+TXN-10205,CUST-338,2023-07-25,56,Other,France,Home,436.96,5,2.2,Cash,Cancelled
+TXN-10206,CUST-340,2024-05-23,48,Female,Canada,,25.09,10,2.7,PayPal,Completed
+TXN-10207,CUST-263,2022-04-17,32,Female,Canada,Books,557.5,3,3.1,Bank Transfer,Cancelled
+TXN-10208,CUST-289,2023-03-25,74,Female,Canada,Clothing,21.82,,2.2,Credit Card,Pending
+TXN-10210,CUST-213,2024-03-11,46,Female,United States,Clothing,36.15,7,3.6,PayPal,Cancelled
+TXN-10211,CUST-108,2024-05-28,60,Female,United Kingdom,Clothing,25.56,7,2.6,Bank Transfer,Completed
+TXN-10212,CUST-399,2022-02-12,29,Male,United Kingdom,Beauty,105.83,3,3.8,Bank Transfer,Cancelled
+TXN-10213,CUST-313,2023-10-08,38,Female,Canada,Home,186.02,4,,Credit Card,Pending
+TXN-10214,CUST-200,2024-07-21,40,Female,Canada,Home,55.46,7,4.3,Credit Card,Completed
+TXN-10215,,2022-10-27,63,Female,Canada,Electronics,385.99,1,2.5,Credit Card,Completed
+TXN-10217,CUST-272,2023-01-08,69,Other,United States,,180.58,9,4.2,PayPal,Pending
+TXN-10218,CUST-350,2022-06-05,56,Male,United States,Clothing,340.94,4,1.2,Cash,Cancelled
+TXN-10219,CUST-351,2023-03-02,33,Other,Canada,Beauty,286.58,1,3.2,Bank Transfer,Cancelled
+TXN-10220,CUST-280,2024-04-08,46,Female,,Beauty,306.27,4,3.6,Credit Card,Completed
+TXN-10221,CUST-379,2023-02-06,31,Male,United Kingdom,Clothing,255.05,5,1.9,PayPal,Returned
+TXN-10222,CUST-377,2023-01-17,68,Male,Canada,Home,555.97,3,4.0,Bank Transfer,Completed
+TXN-10223,CUST-130,2023-12-11,53,Male,Germany,Electronics,260.67,7,4.4,Bank Transfer,Pending
+TXN-10224,CUST-138,2024-02-11,34,Male,United States,Clothing,422.96,3,5.0,Credit Card,Completed
+TXN-10225,CUST-124,2022-08-22,44,Female,United States,Beauty,208.37,4,2.4,Bank Transfer,Pending
+TXN-10226,CUST-311,2023-02-28,46,Male,France,,399.1,4,1.8,PayPal,Completed
+TXN-10227,CUST-218,2024-09-01,34,Female,Canada,Books,508.93,5,4.1,Credit Card,Pending
+TXN-10327,CUST-177,2023-01-06,35,Female,United Kingdom,Beauty,245.11,9,,Bank Transfer,Pending
+TXN-10229,CUST-358,2024-02-28,32,Female,,Books,161.11,4,4.3,Cash,Completed
+TXN-10230,CUST-130,2023-06-14,70,Female,United Kingdom,Beauty,47.23,8,3.7,Credit Card,Refunded
+TXN-10231,CUST-347,2022-11-19,46,Female,France,Home,164.02,9,2.9,Bank Transfer,Pending
+TXN-10232,CUST-108,2022-06-18,32,Male,France,Clothing,389.18,10,3.2,,Cancelled
+TXN-10233,CUST-382,2024-02-17,28,Female,France,Home,266.13,1,1.2,Cash,Pending
+TXN-10234,CUST-108,2023-10-19,67,Female,United Kingdom,Home,297.67,6,,Cash,Completed
+TXN-10235,CUST-240,2022-03-01,57,Male,Germany,Clothing,409.24,3,3.4,Credit Card,Returned
+TXN-10236,CUST-246,2023-03-06,26,Male,United States,Clothing,503.99,9,1.1,Bank Transfer,Completed
+TXN-10237,CUST-320,2023-12-19,19,Male,United Kingdom,Beauty,506.06,10,2.4,PayPal,Pending
+UNKNOWN_TXN_3,CUST-191,2024-01-09,19,Female,,Beauty,51.05,9,4.6,Cash,Returned
+TXN-10239,CUST-149,2022-01-09,23,Other,France,Beauty,425.11,1,3.8,Cash,Cancelled
+TXN-10240,CUST-223,2023-09-18,39,Female,,,355.62,4,1.5,,Completed
+TXN-10241,CUST-369,2023-02-04,67,Other,Canada,Beauty,192.42,1,1.3,Credit Card,Cancelled
+TXN-10242,CUST-281,2023-10-02,22,Male,Germany,,520.73,6,4.4,Bank Transfer,Refunded
+TXN-10243,CUST-303,2023-12-16,51,Female,France,Clothing,481.26,9,1.5,Bank Transfer,Completed
+TXN-10244,CUST-307,2024-03-11,52,Male,United Kingdom,Books,413.54,9,4.6,Bank Transfer,Cancelled
+TXN-10245,CUST-224,2024-06-21,28,,United Kingdom,Beauty,264.73,6,3.8,PayPal,Returned
+TXN-10246,CUST-215,2023-07-05,43,Male,Canada,Electronics,74.58,8,4.1,Bank Transfer,Completed
+TXN-10247,CUST-141,2024-07-01,32,Male,Canada,Beauty,299.33,1,2.5,Credit Card,Pending
+TXN-10248,CUST-116,2023-07-08,28,Male,France,Electronics,65.35,7,1.2,PayPal,Returned
+TXN-10249,CUST-294,2023-06-08,39,Female,United States,Beauty,362.11,10,2.4,Credit Card,Cancelled
+TXN-10250,CUST-343,2022-12-15,53,Male,Germany,Beauty,561.06,7,2.3,Bank Transfer,Completed
+TXN-10251,CUST-104,,18,Female,United States,Home,392.3,4,3.4,Credit Card,Completed
+TXN-10252,CUST-142,2023-07-07,46,,Germany,Books,546.59,2,1.4,Credit Card,Cancelled
+TXN-10253,CUST-322,2024-05-02,46,Female,Canada,Clothing,176.55,8,2.8,PayPal,Pending
+TXN-10254,CUST-269,2023-06-02,24,Male,United Kingdom,Beauty,140.65,1,3.2,Credit Card,Completed
+TXN-10255,CUST-148,2024-05-11,68,Male,United Kingdom,Books,,2,,Credit Card,Pending
+TXN-10256,CUST-121,2023-06-04,28,Female,Canada,Home,113.56,9,2.3,Cash,Refunded
+TXN-10257,CUST-390,2024-02-14,19,Male,France,Home,446.08,1,1.6,PayPal,Completed
+TXN-10258,CUST-123,2023-08-10,67,Male,Germany,Beauty,526.03,10,2.3,Credit Card,Pending
+UNKNOWN_TXN_4,CUST-243,2022-08-30,20,Male,United States,Electronics,104.62,3,1.4,Credit Card,
+TXN-10260,CUST-388,2024-07-04,25,Male,Canada,Clothing,320.98,8,1.0,Cash,Returned
+TXN-10261,CUST-191,2022-08-28,42,Female,United States,Electronics,563.73,5,4.6,Bank Transfer,Cancelled
+TXN-10262,CUST-261,2023-11-14,26,Female,United Kingdom,Beauty,496.89,10,3.1,Cash,Completed
+TXN-10263,CUST-206,2024-01-02,74,Female,Canada,Home,101.16,7,4.8,Cash,
+TXN-10264,CUST-303,2022-09-11,23,Female,United States,Clothing,279.35,7,1.4,Bank Transfer,Completed
+TXN-10265,CUST-253,2023-08-20,50,Other,,Beauty,297.56,10,4.7,Cash,Pending
+UNKNOWN_TXN_5,CUST-223,2023-01-05,66,Male,France,Home,465.74,10,1.5,Credit Card,Pending
+TXN-10267,CUST-299,2023-12-30,19,Female,France,Beauty,545.85,1,2.5,PayPal,Returned
+TXN-10268,CUST-376,2022-03-25,46,Male,United States,Home,230.62,2,4.1,Bank Transfer,Cancelled
+TXN-10269,CUST-171,2024-06-28,56,Female,United States,Beauty,391.11,1,,Credit Card,Pending
+TXN-10270,CUST-140,2023-04-02,24,Female,United States,Beauty,134.88,7,1.8,Bank Transfer,Completed
+TXN-10271,CUST-277,2023-06-23,68,Female,United Kingdom,Books,177.62,2,3.7,PayPal,Completed
+TXN-10272,CUST-323,2023-06-16,71,Female,France,Clothing,34.44,10,,Credit Card,Cancelled
+TXN-10273,CUST-138,2023-08-22,37,Male,United States,Books,592.53,2,,Credit Card,
+TXN-10274,CUST-303,2023-03-27,45,Female,France,Electronics,364.43,1,3.0,Cash,Cancelled
+TXN-10275,CUST-267,2023-03-03,19,Male,France,Home,225.2,4,1.4,Credit Card,Completed
+TXN-10276,CUST-239,2022-05-11,47,Female,France,Beauty,449.82,5,2.0,Credit Card,Cancelled
+TXN-10277,CUST-330,2022-05-13,34,Male,United States,Beauty,324.21,8,3.4,PayPal,Refunded
+TXN-10278,CUST-282,2022-01-05,54,Female,United States,Electronics,166.26,7,3.3,Credit Card,Completed
+TXN-10279,CUST-292,2022-03-02,36,Male,United States,Clothing,,6,3.4,PayPal,Completed
+TXN-10280,CUST-399,2023-01-14,32,Other,France,Clothing,311.61,6,3.5,Cash,Completed
+TXN-10281,CUST-143,2023-02-23,53,Female,France,Clothing,376.0,,3.8,Credit Card,Refunded
+TXN-10282,CUST-251,2023-08-09,36,Female,France,Beauty,479.08,9,4.6,PayPal,Completed
+TXN-10283,,,52,Female,,Books,342.35,7,1.9,Credit Card,Completed
+TXN-10284,CUST-178,2023-01-16,42,Female,United States,Electronics,11.82,2,2.9,Credit Card,Pending
+TXN-10286,CUST-262,2024-03-21,43,Male,Germany,Electronics,203.54,3,4.3,Bank Transfer,Completed
+TXN-10287,CUST-146,2023-08-27,66,Female,United Kingdom,Clothing,421.31,4,3.9,Cash,Completed
+TXN-10288,CUST-257,,24,Male,Canada,Books,177.21,6,3.2,Bank Transfer,Completed
+TXN-10289,CUST-238,2024-06-29,54,Female,Germany,Books,233.59,7,2.6,Bank Transfer,Pending
+TXN-10290,CUST-144,2024-04-18,43,Female,United Kingdom,Home,58.49,6,3.2,PayPal,Completed
+TXN-10291,CUST-329,,46,Female,Canada,Home,541.02,,4.1,Bank Transfer,
+TXN-10292,CUST-362,2022-03-11,54,Female,Germany,Home,412.21,5,2.9,PayPal,Completed
+UNKNOWN_TXN_6,CUST-113,2023-08-10,37,Female,United States,,170.28,1,1.2,Credit Card,Refunded
+TXN-10294,CUST-383,2024-07-10,69,Female,United States,Books,556.44,7,3.3,Bank Transfer,Returned
+TXN-10295,CUST-266,2023-05-02,23,Male,United Kingdom,Beauty,196.87,10,2.9,Credit Card,Returned
+TXN-10296,CUST-106,2022-05-22,46,Male,Canada,Home,218.29,4,2.1,Bank Transfer,Completed
+TXN-10297,,2024-02-19,49,Female,Canada,,64.43,5,3.4,Cash,Completed
+TXN-10298,CUST-386,2022-06-02,23,Female,United Kingdom,Clothing,156.59,,3.9,Credit Card,Cancelled
+TXN-10299,CUST-224,2023-10-02,57,Male,Germany,Electronics,8.4,5,4.1,,Pending
+TXN-10300,CUST-186,2022-08-27,51,Male,Germany,Clothing,109.52,9,3.7,Credit Card,Returned
+TXN-10301,CUST-186,2022-02-16,54,Female,United States,Beauty,473.2,8,2.0,Credit Card,Cancelled
+TXN-10302,CUST-254,2023-10-24,21,Female,United States,Home,320.92,9,2.1,Bank Transfer,
+TXN-10303,CUST-174,2023-12-26,34,Female,France,Electronics,344.81,6,1.2,Credit Card,Cancelled
+TXN-10304,CUST-322,2024-03-26,65,Male,France,Beauty,251.76,2,4.6,PayPal,Refunded
+TXN-10305,CUST-253,2022-05-07,27,Female,United Kingdom,Clothing,198.43,1,2.7,Credit Card,Pending
+TXN-10306,CUST-139,2024-09-05,46,,Canada,Clothing,446.97,6,4.1,PayPal,Completed
+TXN-10307,CUST-226,2024-02-15,56,,France,Beauty,159.71,2,3.6,Bank Transfer,Pending
+TXN-10308,CUST-353,2023-06-19,18,Male,Germany,Clothing,355.29,8,2.8,PayPal,Pending
+TXN-10309,CUST-200,2023-05-30,31,Male,Canada,Clothing,181.18,3,3.3,Bank Transfer,Cancelled
+TXN-10310,CUST-169,2024-08-16,68,Male,United States,Clothing,425.53,5,1.1,,
+UNKNOWN_TXN_7,CUST-302,2022-01-20,49,Female,France,Electronics,269.35,2,2.0,Bank Transfer,Refunded
+TXN-10312,CUST-294,2022-09-09,59,Female,United States,Home,598.88,4,3.6,Credit Card,Returned
+TXN-10313,CUST-268,2024-04-06,47,,United States,Electronics,,5,4.7,Credit Card,Completed
+TXN-10314,CUST-320,2023-02-16,50,Female,Canada,Clothing,502.72,7,4.8,PayPal,Cancelled
+TXN-10315,CUST-169,,65,Female,Canada,,521.02,1,4.4,Credit Card,Completed
+TXN-10316,CUST-202,2022-01-24,23,Other,,Home,274.32,4,2.8,PayPal,Cancelled
+TXN-10317,CUST-190,2023-03-01,45,Male,United Kingdom,Electronics,247.88,6,4.1,PayPal,Pending
+TXN-10318,CUST-263,2022-11-21,42,Other,Germany,Home,,2,2.5,Credit Card,Cancelled
+TXN-10319,CUST-351,2022-04-28,18,,France,Clothing,486.88,,2.8,,Cancelled
+TXN-10320,CUST-224,2022-10-20,65,Male,Germany,Books,458.99,2,4.7,PayPal,Refunded
+TXN-10321,CUST-243,2024-02-26,30,Female,Germany,Electronics,249.67,10,2.7,Bank Transfer,Returned
+TXN-10322,CUST-301,2024-09-02,25,,Canada,Books,400.68,6,3.2,Credit Card,Pending
+TXN-10323,CUST-388,2022-03-02,46,Female,Germany,Clothing,33.86,1,3.1,Credit Card,
+TXN-10324,CUST-379,2022-07-05,28,Male,United States,Electronics,323.13,4,1.9,PayPal,Refunded
+TXN-10325,,2022-11-02,51,Other,Canada,Books,,,1.2,Credit Card,Returned
+TXN-10388,CUST-336,2022-05-26,65,Female,Germany,Home,524.23,9,3.8,Credit Card,Pending
+TXN-10328,CUST-249,2024-07-10,36,Female,United Kingdom,Beauty,12.21,8,3.7,Cash,
+TXN-10329,CUST-135,2022-09-03,36,,Canada,Beauty,384.59,9,4.4,Credit Card,Completed
+TXN-10330,CUST-309,2023-05-20,74,Male,,Beauty,288.0,8,2.6,Bank Transfer,
+TXN-10331,CUST-171,2023-01-30,51,Female,Germany,Books,507.56,,3.7,Bank Transfer,Pending
+TXN-10332,CUST-223,2022-11-22,74,Female,Canada,Home,347.63,6,2.3,Cash,Returned
+TXN-10333,CUST-178,2022-03-09,59,Male,,Beauty,505.22,1,,PayPal,Completed
+TXN-10334,CUST-293,,36,Female,United States,Books,95.95,7,3.0,PayPal,Pending
+TXN-10335,CUST-345,2024-07-24,31,Male,United Kingdom,Beauty,112.78,5,2.6,Credit Card,Pending
+TXN-10336,CUST-373,2024-09-13,63,,Germany,Clothing,165.83,4,1.8,PayPal,Cancelled
+UNKNOWN_TXN_8,CUST-314,2022-09-10,56,Male,United Kingdom,Clothing,,5,3.0,Bank Transfer,Completed
+TXN-10338,CUST-284,2022-05-09,47,Female,Canada,Beauty,30.13,10,1.9,Credit Card,Returned
+TXN-10339,CUST-374,2023-04-02,39,Male,France,Beauty,379.22,4,3.3,Bank Transfer,Cancelled
+TXN-10340,CUST-143,2023-05-28,64,Male,France,Home,416.32,9,1.5,Credit Card,Completed
+TXN-10341,CUST-227,2022-05-26,26,Male,United Kingdom,Home,259.63,2,3.7,PayPal,Cancelled
+TXN-10342,CUST-281,2022-06-22,63,Male,Germany,Home,345.96,6,,PayPal,Pending
+TXN-10343,,2023-03-10,18,Other,France,Clothing,385.3,7,1.3,Bank Transfer,Cancelled
+TXN-10344,CUST-304,2022-01-02,29,Female,United States,Electronics,133.1,1,1.6,Credit Card,
+TXN-10345,CUST-269,2023-09-28,22,Male,United States,Home,,1,4.2,Bank Transfer,Completed
+TXN-10346,CUST-320,2022-06-21,18,Male,Germany,Home,497.89,4,1.6,Credit Card,Completed
+TXN-10347,CUST-150,2024-08-01,30,Male,France,Beauty,31.87,8,3.8,Cash,Returned
+TXN-10348,CUST-361,2022-09-14,24,Male,France,Home,262.16,6,4.2,PayPal,Cancelled
+TXN-10349,CUST-385,2024-12-05,39,Male,United States,Beauty,312.33,7,2.8,Credit Card,Completed
+TXN-10350,CUST-394,2023-06-07,46,,United States,Beauty,328.83,7,3.8,Cash,Pending
+TXN-10351,CUST-291,,22,Female,United States,Electronics,31.36,7,4.9,Cash,Returned
+TXN-10352,CUST-356,2023-07-31,53,Male,United States,Clothing,54.11,7,2.9,PayPal,
+TXN-10353,CUST-112,2023-02-09,40,Male,United Kingdom,Beauty,362.28,6,,Bank Transfer,Pending
+TXN-10354,CUST-251,2024-01-13,30,Male,United Kingdom,Electronics,202.61,9,2.3,Bank Transfer,Pending
+TXN-10355,CUST-143,2024-06-18,70,Female,United Kingdom,Clothing,422.35,9,,Bank Transfer,Cancelled
+TXN-10356,,2023-06-01,45,Male,United States,Home,,10,2.4,PayPal,Pending
+TXN-10357,CUST-275,2024-08-26,37,Male,Canada,Clothing,162.97,8,3.8,Cash,Cancelled
+TXN-10358,CUST-205,2024-02-10,67,Female,United States,Clothing,,8,1.2,,Completed
+TXN-10359,CUST-278,2023-11-10,34,Other,United Kingdom,Clothing,374.61,6,1.1,Bank Transfer,Pending
+TXN-10360,CUST-324,2023-04-16,59,Female,,Beauty,285.34,5,2.9,Credit Card,Refunded
+TXN-10361,CUST-331,2024-07-24,22,Male,France,Electronics,278.86,5,,Bank Transfer,Cancelled
+TXN-10362,CUST-253,2022-01-03,24,Male,Germany,Electronics,573.62,6,2.1,Bank Transfer,
+UNKNOWN_TXN_9,CUST-158,2024-07-12,35,Other,United States,Electronics,161.29,6,2.4,Credit Card,Cancelled
+TXN-10364,CUST-275,2023-02-28,54,Male,Germany,Books,258.09,8,2.9,Credit Card,Cancelled
+TXN-10365,CUST-184,2023-12-22,69,Female,United Kingdom,Clothing,455.44,5,4.1,PayPal,Cancelled
+TXN-10366,CUST-224,2023-07-06,59,,Canada,Beauty,99.59,1,3.3,PayPal,Pending
+TXN-10367,CUST-382,2023-10-27,39,Female,United States,Home,,4,3.4,PayPal,Pending
+TXN-10368,CUST-386,2024-07-02,72,Male,Canada,Electronics,435.73,8,1.6,Credit Card,Cancelled
+TXN-10369,CUST-336,2022-12-28,35,Male,United States,Home,195.4,8,4.0,Credit Card,Completed
+TXN-10370,CUST-307,2023-01-02,65,Female,Germany,Clothing,524.91,5,,PayPal,Completed
+TXN-10371,CUST-195,2024-02-26,60,Male,France,Electronics,484.56,1,1.1,Cash,Cancelled
+TXN-10372,CUST-321,2023-01-15,31,Female,United States,Electronics,289.57,8,1.4,Bank Transfer,Returned
+TXN-10373,CUST-201,2022-08-15,68,Female,Canada,Electronics,326.88,6,4.5,Credit Card,Cancelled
+TXN-10374,CUST-319,2023-11-28,31,Female,United States,Clothing,485.83,1,3.2,Bank Transfer,Completed
+TXN-10375,CUST-209,2024-04-15,46,Male,United States,Books,443.41,6,3.8,Cash,Refunded
+TXN-10376,CUST-132,2024-07-04,48,Male,France,,331.44,2,,Bank Transfer,Completed
+TXN-10377,CUST-374,2023-05-21,38,Male,France,Home,455.26,5,2.1,PayPal,Refunded
+TXN-10378,CUST-266,,21,Male,France,Electronics,215.8,4,2.4,Cash,Completed
+TXN-10379,CUST-158,2023-12-22,69,Female,United States,Clothing,557.21,1,4.7,Bank Transfer,Cancelled
+TXN-10380,CUST-350,2022-07-20,60,Female,Canada,Electronics,426.16,1,2.3,Bank Transfer,Completed
+TXN-10381,CUST-260,2022-10-12,37,Male,United States,Home,421.38,5,3.3,Credit Card,Cancelled
+TXN-10382,,2022-06-24,25,Male,United States,Beauty,113.17,7,,Bank Transfer,Completed
+TXN-10383,CUST-278,2024-01-27,43,Female,Canada,Electronics,396.04,6,1.8,Credit Card,Pending
+UNKNOWN_TXN_10,CUST-334,2023-09-10,42,Female,United States,Electronics,410.42,3,1.0,Credit Card,Cancelled
+TXN-10385,CUST-252,2023-08-26,40,Female,Germany,Beauty,589.13,5,4.1,Bank Transfer,Refunded
+TXN-10386,CUST-143,2022-05-11,51,,Germany,Home,536.65,6,3.7,PayPal,
+TXN-10387,CUST-260,2024-05-26,23,,United Kingdom,Electronics,283.9,6,1.9,Credit Card,Completed
+TXN-10389,CUST-291,2023-11-26,28,Female,United Kingdom,Electronics,196.93,6,1.8,Cash,Pending
+TXN-10390,CUST-361,2023-12-11,71,Male,France,Electronics,207.23,4,1.2,Bank Transfer,Cancelled
+TXN-10391,CUST-170,2023-11-29,27,Male,France,Clothing,375.6,3,2.6,PayPal,Cancelled
+TXN-10392,CUST-316,2022-01-03,53,Female,France,Home,18.93,7,,Bank Transfer,Returned
+TXN-10393,CUST-375,2024-08-23,62,Female,Germany,,95.89,1,4.0,Cash,Pending
+TXN-10394,CUST-188,2022-11-27,61,Male,United States,Home,365.22,1,3.3,Bank Transfer,Refunded
+TXN-10395,CUST-350,2023-02-21,75,Female,France,Beauty,242.14,1,4.9,Cash,Pending
+UNKNOWN_TXN_11,CUST-195,2023-06-15,40,Female,Germany,Clothing,304.04,10,4.8,PayPal,Pending
+TXN-10397,CUST-330,2023-06-14,73,Female,United States,Books,588.51,2,4.7,,Pending
+TXN-10398,CUST-283,2022-08-18,47,Male,United States,Electronics,140.66,2,,Credit Card,Cancelled
+TXN-10399,CUST-348,2023-03-07,40,Male,United Kingdom,Electronics,346.06,10,1.7,Bank Transfer,Completed
+TXN-10400,CUST-296,2022-01-06,31,Male,Canada,Beauty,,6,,Credit Card,Returned
+TXN-10401,CUST-358,2022-03-25,74,Male,United Kingdom,Electronics,458.93,2,4.8,Bank Transfer,Completed
+TXN-10402,CUST-309,2024-01-26,30,Male,Germany,Electronics,495.23,5,2.6,PayPal,Pending
+TXN-10403,CUST-312,2023-03-10,29,Female,United States,Beauty,430.11,2,3.4,Credit Card,Cancelled
+TXN-10404,CUST-327,2022-07-21,18,Female,United States,Clothing,271.57,1,4.8,Bank Transfer,Returned
+TXN-10405,CUST-142,2022-03-06,41,Female,Canada,Electronics,333.55,6,4.7,Credit Card,Returned
+TXN-10406,CUST-212,,18,Female,United States,Beauty,590.74,8,,Bank Transfer,Refunded
+TXN-10407,CUST-240,2022-01-25,39,Female,France,Electronics,423.44,5,1.4,Credit Card,Completed
+TXN-10408,CUST-247,2024-08-15,46,,France,Home,160.3,2,,Bank Transfer,Cancelled
+TXN-10409,CUST-334,2022-09-11,50,Female,United Kingdom,Electronics,191.81,5,4.4,Bank Transfer,Pending
+TXN-10410,CUST-353,2024-09-08,56,,United Kingdom,Clothing,267.17,7,3.4,,Returned
+TXN-10411,CUST-157,2024-04-21,59,Female,United States,Electronics,527.72,9,3.4,Cash,
+TXN-10412,CUST-237,2022-08-31,48,Other,France,Home,376.47,7,4.6,PayPal,Completed
+TXN-10415,CUST-325,2022-03-29,54,Female,United States,Electronics,214.88,7,3.7,PayPal,Pending
+TXN-10416,CUST-317,2023-01-22,73,Male,,Beauty,103.88,7,3.9,Credit Card,Cancelled
+TXN-10417,CUST-226,2023-12-12,48,Female,France,Home,120.4,3,1.3,Credit Card,Completed
+TXN-10418,CUST-116,2022-03-05,58,Male,United States,Home,592.6,1,3.3,PayPal,Pending
+TXN-10419,CUST-278,2023-09-18,29,Male,France,Electronics,378.18,3,3.6,Credit Card,Cancelled
+TXN-10420,CUST-144,2023-11-25,73,Female,United States,Clothing,415.12,6,1.0,,Completed
+TXN-10421,CUST-160,2022-10-29,52,Male,Germany,Home,139.15,10,1.1,,Pending
+TXN-10422,CUST-221,2023-09-25,20,Male,United Kingdom,Electronics,249.56,9,,Credit Card,Refunded
+TXN-10423,CUST-279,2023-09-06,57,Female,France,Home,517.44,2,1.2,Credit Card,Returned
+TXN-10424,CUST-319,,27,Female,Canada,Electronics,412.72,3,,,
+TXN-10425,CUST-171,2024-03-25,29,Female,United States,Home,94.81,4,4.5,PayPal,Completed
+TXN-10426,CUST-205,2023-09-27,26,Female,Canada,Clothing,410.35,,3.6,Cash,
+TXN-10427,CUST-391,2024-08-18,46,Male,United States,Books,468.47,3,2.1,Cash,Cancelled
+TXN-10428,CUST-243,2022-12-03,58,Female,Germany,Electronics,363.56,5,1.2,Bank Transfer,Cancelled
+TXN-10429,CUST-186,2022-04-16,38,Other,Germany,Clothing,203.58,6,3.2,Credit Card,Refunded
+TXN-10430,CUST-249,2022-03-11,46,Other,Canada,Electronics,440.46,8,3.2,PayPal,Refunded
+TXN-10431,CUST-236,2022-07-18,30,Other,United States,Beauty,97.04,10,4.2,PayPal,Cancelled
+TXN-10432,CUST-363,2023-06-06,65,Female,Germany,,474.52,3,4.7,Bank Transfer,Refunded
+TXN-10433,CUST-148,2023-05-08,46,Male,United Kingdom,Electronics,235.25,2,,Credit Card,Cancelled
+TXN-10434,CUST-310,2022-06-09,72,Female,France,Clothing,458.64,6,1.6,PayPal,Cancelled
+TXN-10435,CUST-241,2022-03-03,75,Male,United States,Home,84.62,1,4.3,PayPal,Completed
+TXN-10436,CUST-164,2023-03-23,75,Female,United Kingdom,Beauty,391.07,7,1.1,,Returned
+TXN-10437,CUST-167,2024-02-12,64,Female,Germany,Electronics,549.67,,,Credit Card,Cancelled
+TXN-10438,CUST-264,2024-06-25,51,Female,Germany,Home,457.45,8,3.3,Credit Card,Pending
+TXN-10439,CUST-301,2022-05-31,46,Female,United States,Electronics,26.81,4,,Bank Transfer,Completed
+TXN-10441,CUST-312,2022-01-09,60,Female,Germany,Clothing,245.71,9,3.0,Credit Card,Pending
+TXN-10442,CUST-138,2023-11-26,30,Female,United States,Beauty,281.87,5,4.0,PayPal,Cancelled
+TXN-10443,CUST-147,2023-06-04,50,Female,Germany,Beauty,365.98,5,2.6,PayPal,Completed
+TXN-10444,CUST-242,2023-03-09,35,Other,Germany,Electronics,144.7,1,2.7,Credit Card,Completed
+TXN-10445,CUST-288,2022-07-25,46,Female,United States,Electronics,399.34,10,1.1,PayPal,Pending
+TXN-10446,CUST-349,2022-12-16,46,Male,,Home,398.51,2,4.3,Credit Card,Completed
+TXN-10447,CUST-101,2023-12-13,62,Female,Canada,Electronics,275.2,,1.6,Credit Card,Completed
+TXN-10448,CUST-147,2022-12-06,29,Female,United Kingdom,Electronics,,3,4.7,PayPal,Returned
+TXN-10449,CUST-334,2022-12-10,71,Female,United States,Clothing,31.32,4,1.7,,Completed
+UNKNOWN_TXN_12,CUST-283,2022-03-12,18,Male,Canada,Electronics,278.84,8,2.8,PayPal,Completed
+TXN-10451,CUST-373,2024-06-16,53,Male,Canada,Electronics,518.04,6,2.0,PayPal,Completed
+TXN-10452,CUST-319,2024-07-31,39,Female,Canada,Beauty,519.69,9,4.6,PayPal,Cancelled
+TXN-10453,CUST-353,2023-11-12,71,Female,United States,Beauty,118.65,7,2.8,Bank Transfer,
+TXN-10454,CUST-245,2022-07-08,54,Female,United States,Electronics,270.42,8,3.8,Credit Card,Completed
+TXN-10455,CUST-395,2024-02-26,23,Male,United States,Electronics,268.14,2,2.3,PayPal,Completed
+TXN-10456,CUST-348,2023-01-20,23,Female,United Kingdom,Home,460.74,4,4.1,Bank Transfer,Pending
+TXN-10457,CUST-124,2024-04-25,23,Female,United States,,396.63,2,,Bank Transfer,Returned
+TXN-10458,CUST-335,2022-03-17,55,Male,France,Clothing,64.59,4,1.6,Bank Transfer,Completed
+TXN-10459,CUST-180,,19,Male,United Kingdom,Clothing,381.11,,3.0,Cash,Cancelled
+TXN-10460,CUST-100,2022-10-25,68,Male,France,Electronics,461.74,6,4.7,Bank Transfer,Returned
+TXN-10461,CUST-319,2023-08-23,46,Female,United States,Books,543.52,7,1.6,Bank Transfer,Pending
+UNKNOWN_TXN_13,CUST-167,,47,Female,,Books,388.01,9,4.2,PayPal,Refunded
+TXN-10463,CUST-254,,46,,France,Beauty,372.63,6,4.2,PayPal,Refunded
+TXN-10464,CUST-240,2022-06-28,61,Female,,Beauty,444.79,10,2.6,Credit Card,Completed
+TXN-10465,CUST-284,2024-07-01,75,Male,France,Electronics,427.99,9,3.8,PayPal,Completed
+TXN-10466,CUST-290,2023-07-22,65,Female,Canada,Electronics,31.91,3,2.0,Bank Transfer,Cancelled
+TXN-10467,CUST-184,2022-01-23,26,Female,France,Electronics,307.91,8,1.0,Credit Card,Completed
+TXN-10468,CUST-256,2024-07-21,42,Female,United States,Books,486.21,6,3.0,Bank Transfer,Completed
+TXN-10469,CUST-219,,29,Male,Germany,Electronics,188.6,10,4.8,Bank Transfer,Cancelled
+UNKNOWN_TXN_14,CUST-146,2023-01-24,54,Male,United States,Electronics,35.59,1,,Credit Card,Pending
+TXN-10471,CUST-100,2022-08-04,32,Male,United Kingdom,Electronics,65.93,9,3.9,Credit Card,Completed
+TXN-10472,CUST-139,2023-01-14,35,Female,Canada,Books,121.14,2,1.0,Credit Card,Returned
+UNKNOWN_TXN_15,CUST-215,2024-08-21,29,Male,United Kingdom,Beauty,197.01,9,3.8,PayPal,Pending
+TXN-10474,CUST-327,2023-10-01,34,Male,Canada,Books,,6,2.6,Credit Card,Returned
+TXN-10475,CUST-275,2022-03-08,34,,United States,Clothing,594.34,9,2.9,Credit Card,Completed
+TXN-10477,CUST-344,2022-07-16,40,Female,United Kingdom,Clothing,560.96,6,1.6,PayPal,Cancelled
+TXN-10478,CUST-296,2023-01-19,51,Male,Canada,Electronics,49.42,3,1.8,PayPal,Cancelled
+TXN-10479,CUST-152,2024-09-27,58,Female,Canada,Electronics,,4,1.7,PayPal,Cancelled
+TXN-10480,CUST-288,2024-02-21,28,Other,France,Electronics,527.61,2,2.1,PayPal,Completed
+TXN-10481,CUST-170,2024-05-24,46,,France,Home,270.61,5,2.4,,Pending
+TXN-10482,CUST-168,2022-06-02,42,Other,,Beauty,177.67,10,3.7,Cash,Cancelled
+TXN-10483,CUST-173,2023-10-07,54,Female,United Kingdom,Beauty,487.03,1,4.4,Bank Transfer,Pending
+TXN-10484,CUST-388,2024-05-21,62,Female,United Kingdom,Home,378.4,1,1.3,Bank Transfer,Cancelled
+TXN-10485,CUST-184,2024-06-26,59,Other,United Kingdom,Beauty,309.86,4,4.9,Credit Card,Cancelled
+TXN-10486,CUST-209,2022-03-25,68,Female,United States,Books,488.4,2,2.0,Cash,Completed
+UNKNOWN_TXN_16,CUST-177,2023-09-22,39,Female,United Kingdom,Home,179.6,7,,Credit Card,
+TXN-10488,CUST-326,2023-02-02,50,Male,United Kingdom,Home,593.86,3,4.7,PayPal,Cancelled
+TXN-10489,CUST-144,2023-06-16,65,,United Kingdom,Home,256.84,3,1.0,,Completed
+TXN-10490,CUST-171,2023-12-31,23,Female,,Electronics,572.5,3,3.9,Bank Transfer,Returned
+TXN-10491,CUST-296,2023-05-10,31,Female,Canada,Home,44.5,10,4.5,Bank Transfer,Returned
+TXN-10492,CUST-319,2023-08-19,47,Other,Germany,Electronics,76.01,10,1.7,Bank Transfer,Pending
+TXN-10493,CUST-171,2024-03-20,25,,Canada,Clothing,135.08,4,3.6,Bank Transfer,Completed
+TXN-10494,CUST-143,2022-01-08,58,Other,United States,Clothing,398.83,1,1.2,Credit Card,Returned
+TXN-10495,CUST-245,2023-08-04,26,Female,United States,,216.27,2,1.2,Credit Card,Refunded
+TXN-10496,CUST-113,2022-11-10,38,Male,United Kingdom,Home,222.8,9,2.7,Credit Card,Cancelled
+UNKNOWN_TXN_17,,2023-09-08,42,Female,Canada,Home,100.3,8,2.5,Cash,Completed
+TXN-10498,CUST-360,2023-01-19,75,Male,France,Books,403.27,5,2.5,Credit Card,Pending
+TXN-10499,CUST-300,2022-05-18,46,Male,Canada,Electronics,143.95,1,3.6,Credit Card,Completed
+TXN-10500,CUST-127,2023-06-16,58,Female,United States,Books,577.23,1,1.3,,Pending
+TXN-10502,,2022-12-11,46,Female,United Kingdom,Clothing,,2,1.4,Bank Transfer,Cancelled
+TXN-10503,CUST-136,2023-03-19,39,Other,United Kingdom,Home,57.79,6,3.3,PayPal,Completed
+TXN-10504,CUST-106,2023-05-25,75,Male,United States,Beauty,553.45,1,,PayPal,Completed
+TXN-10505,CUST-262,2022-01-26,40,Male,France,Beauty,387.31,6,1.2,Credit Card,Pending
+TXN-10506,CUST-391,2022-09-29,47,Female,United Kingdom,Clothing,139.93,4,3.2,Bank Transfer,Refunded
+TXN-10507,CUST-379,2022-03-26,66,Male,Canada,Beauty,54.33,3,3.9,PayPal,Completed
+TXN-10508,CUST-341,2023-06-10,46,Female,United States,Beauty,443.15,8,,Credit Card,Refunded
+TXN-10509,CUST-137,2024-03-15,47,Female,United States,Clothing,75.92,2,,,Cancelled
+TXN-10510,CUST-134,2022-04-11,62,,United States,Clothing,324.84,2,2.2,Cash,
+TXN-10511,CUST-210,2022-02-09,43,Female,Germany,Home,479.27,10,3.7,Cash,Cancelled
+UNKNOWN_TXN_18,CUST-130,2022-07-21,33,Male,United States,Home,,7,1.9,Credit Card,Pending
+TXN-10513,CUST-303,2024-02-03,41,Female,United Kingdom,Electronics,128.35,9,1.7,,
+TXN-10514,CUST-356,2023-11-09,48,Male,,Electronics,198.31,6,,Credit Card,Completed
+TXN-10515,CUST-316,2024-02-10,37,Other,United Kingdom,Home,156.49,7,4.5,Credit Card,Completed
+TXN-10516,CUST-142,2022-01-09,46,Male,France,Clothing,69.94,7,3.5,Cash,Pending
+TXN-10517,CUST-375,2022-12-21,32,Female,United States,Electronics,345.52,5,2.1,Credit Card,Cancelled
+TXN-10518,CUST-242,2024-04-21,75,Male,United Kingdom,Electronics,391.93,5,3.8,Bank Transfer,Refunded
+TXN-10519,,2022-01-13,24,Female,United Kingdom,Electronics,294.8,9,4.7,PayPal,Completed
+TXN-10520,CUST-204,2024-02-19,67,Female,United States,Beauty,554.39,3,4.5,PayPal,Pending
+TXN-10521,CUST-179,2022-08-22,54,Female,,Beauty,257.69,2,3.4,Credit Card,Returned
+TXN-10522,CUST-300,2022-08-03,19,Female,United States,Electronics,205.32,10,2.8,Bank Transfer,Refunded
+TXN-10523,CUST-133,2023-08-25,28,Female,Germany,Clothing,539.05,10,4.3,Credit Card,Returned
+TXN-10524,CUST-323,2024-01-10,74,Female,France,,136.24,3,1.6,Credit Card,Completed
+TXN-10525,CUST-222,2022-03-29,62,Male,United States,Clothing,333.33,3,3.7,Bank Transfer,Completed
+TXN-10526,CUST-144,2023-03-16,30,Other,Germany,,565.96,10,2.0,Credit Card,Cancelled
+TXN-10527,CUST-159,2023-04-06,54,Male,United Kingdom,,63.83,2,1.2,PayPal,Returned
+TXN-10528,CUST-128,,26,Male,Germany,Home,183.41,,,PayPal,Cancelled
+TXN-10529,CUST-189,2024-06-13,68,Female,Canada,Clothing,244.96,7,4.1,,Completed
+TXN-10530,CUST-170,2024-01-26,23,Male,France,Home,39.85,7,2.2,Credit Card,Cancelled
+TXN-10531,CUST-183,2023-11-06,67,Male,France,Books,491.29,2,4.1,Bank Transfer,Cancelled
+TXN-10532,CUST-277,2023-03-06,40,Male,United States,Electronics,248.56,,1.4,Credit Card,Cancelled
+TXN-10533,CUST-232,2023-02-18,28,Female,United Kingdom,,20.37,9,1.8,PayPal,Pending
+TXN-10534,CUST-164,2023-08-25,60,Female,France,Beauty,356.94,3,4.1,Credit Card,Pending
+TXN-10535,CUST-237,2022-02-02,74,Female,Germany,Electronics,79.6,3,1.9,PayPal,Pending
+TXN-10536,CUST-160,2024-09-02,37,Male,United States,Electronics,400.34,2,2.7,Bank Transfer,Cancelled
+TXN-10537,CUST-115,2024-03-29,46,Other,Canada,Electronics,582.8,3,4.0,Credit Card,Cancelled
+TXN-10538,CUST-319,2023-08-11,45,Other,France,,22.06,9,3.7,,Cancelled
+TXN-10539,,2022-07-29,46,Female,France,Beauty,481.25,3,3.1,Cash,Cancelled
+TXN-10540,CUST-395,2023-01-31,53,Female,France,Books,581.7,8,4.6,Credit Card,Completed
+TXN-10542,CUST-284,2023-10-17,46,Male,United States,Clothing,233.76,7,2.4,Bank Transfer,Pending
+TXN-10543,CUST-390,2022-04-17,24,Female,United States,Home,74.36,10,4.2,Bank Transfer,Pending
+TXN-10544,CUST-180,2024-04-26,61,,Germany,Home,252.29,3,3.4,Bank Transfer,Completed
+TXN-10545,CUST-152,2022-11-07,31,Female,United States,Books,78.25,,,Credit Card,Cancelled
+TXN-10546,,2024-09-13,60,Female,United States,Beauty,594.02,5,2.2,Bank Transfer,Cancelled
+TXN-10547,,2022-08-27,47,Female,Canada,Home,571.77,2,3.1,Credit Card,Completed
+TXN-10548,CUST-106,2022-03-13,66,Male,United Kingdom,Books,,1,,Bank Transfer,Completed
+TXN-10549,CUST-341,2023-06-15,42,Female,United States,Electronics,449.23,4,1.1,Credit Card,Cancelled
+TXN-10550,CUST-176,2024-05-30,66,Male,France,Beauty,170.34,6,,Bank Transfer,Refunded
+TXN-10551,CUST-118,2022-04-24,43,Male,Germany,Home,553.42,3,4.2,PayPal,Pending
+TXN-10552,CUST-314,2023-05-05,75,Other,United Kingdom,Electronics,426.02,8,1.7,PayPal,Cancelled
+TXN-10553,CUST-227,2024-07-14,61,Male,United Kingdom,Beauty,343.22,,3.7,PayPal,Returned
+TXN-10554,CUST-263,2022-07-30,45,Male,United Kingdom,Home,164.86,3,2.1,Bank Transfer,Refunded
+TXN-10555,CUST-139,2023-12-28,52,Male,United Kingdom,Clothing,28.57,,,Credit Card,Returned
+TXN-10556,CUST-161,2023-08-12,49,Female,United Kingdom,Electronics,129.21,8,3.2,Bank Transfer,Cancelled
+TXN-10557,CUST-126,2023-05-30,55,Male,United States,Books,256.91,5,2.0,Credit Card,Completed
+UNKNOWN_TXN_19,CUST-364,2022-08-01,46,Male,United States,Books,216.28,10,2.3,Credit Card,Pending
+TXN-10559,CUST-305,2024-04-24,29,Male,France,Books,445.52,3,3.9,PayPal,Completed
+TXN-10560,CUST-338,2022-09-10,41,Male,Germany,Home,433.48,4,4.6,Credit Card,Completed
+TXN-10561,CUST-259,2023-08-06,50,Female,United Kingdom,Electronics,199.8,2,,Credit Card,Pending
+TXN-10562,CUST-383,2023-08-13,57,Male,France,Clothing,169.27,6,3.1,Credit Card,Completed
+TXN-10563,CUST-288,2022-10-22,43,Male,United Kingdom,Electronics,168.24,1,4.4,Credit Card,Cancelled
+TXN-10564,CUST-388,2024-05-12,59,Male,France,Home,,1,2.0,Credit Card,Completed
+TXN-10565,CUST-224,2024-04-23,49,Male,France,Clothing,130.2,9,4.6,,Completed
+TXN-10566,CUST-352,2022-07-03,31,Female,United Kingdom,Books,42.29,1,3.7,PayPal,Completed
+UNKNOWN_TXN_20,CUST-200,2023-04-14,23,Female,United States,Clothing,240.29,3,3.4,Bank Transfer,Pending
+TXN-10568,CUST-379,2022-07-07,59,Male,,Clothing,529.6,9,1.3,Credit Card,Completed
+TXN-10570,CUST-309,2024-10-06,42,,United States,Beauty,70.48,,3.7,Credit Card,Completed
+TXN-10571,,2023-10-06,48,Male,,Electronics,296.32,3,,Credit Card,Completed
+TXN-10572,CUST-104,2024-07-27,46,Other,Germany,Clothing,116.91,3,3.9,Credit Card,Returned
+TXN-10573,CUST-100,2024-10-01,44,Other,Germany,Books,470.47,7,2.1,Bank Transfer,Pending
+TXN-10574,CUST-292,2023-02-26,43,Male,United States,,543.23,5,3.1,Credit Card,Completed
+TXN-10575,CUST-257,2023-01-13,71,Male,France,Clothing,369.34,5,1.2,Bank Transfer,Cancelled
+TXN-10576,CUST-371,2023-06-01,69,Female,Canada,Clothing,351.68,7,3.6,Bank Transfer,Pending
+TXN-10577,CUST-314,2022-06-18,46,Other,United States,Electronics,99.53,10,1.6,Credit Card,Completed
+TXN-10578,CUST-130,2022-02-15,43,Male,,Home,228.5,1,4.8,Credit Card,Completed
+TXN-10579,CUST-172,,18,Male,Germany,Books,488.08,1,1.5,Bank Transfer,Completed
+TXN-10580,CUST-147,2023-11-23,26,,Germany,Clothing,32.04,2,2.3,Bank Transfer,Cancelled
+TXN-10581,CUST-218,2024-02-03,42,Male,Germany,Beauty,430.57,10,1.7,Credit Card,Pending
+TXN-10582,CUST-366,2023-02-11,18,Female,United Kingdom,Home,489.54,7,4.5,PayPal,Cancelled
+TXN-10583,CUST-290,,60,Female,Germany,Electronics,583.82,5,4.7,Bank Transfer,Cancelled
+TXN-10584,CUST-143,2024-07-28,67,Male,United Kingdom,Electronics,204.04,2,1.4,Credit Card,Pending
+TXN-10585,CUST-358,2024-02-06,45,Female,United States,Electronics,147.18,6,4.9,Bank Transfer,Returned
+TXN-10586,CUST-301,2022-03-11,58,Other,United States,Books,469.03,6,4.2,Credit Card,Completed
+TXN-10587,CUST-390,2022-09-06,69,Female,United Kingdom,Beauty,468.8,3,3.7,PayPal,
+TXN-10588,CUST-166,2024-04-20,46,Female,France,Beauty,157.21,9,3.2,Credit Card,Completed
+TXN-10589,CUST-233,2022-06-24,67,Male,United Kingdom,Electronics,291.26,9,2.5,Credit Card,Completed
+TXN-10590,CUST-301,2022-07-01,39,Male,Canada,Electronics,456.2,8,3.3,Cash,Completed
+TXN-10591,,2024-01-30,41,Male,France,Books,10.39,7,4.8,Bank Transfer,Completed
+TXN-10592,CUST-239,2023-11-19,29,Other,United States,Home,148.51,10,3.2,PayPal,Completed
+TXN-10593,CUST-203,2022-06-07,52,Female,,Beauty,133.82,4,2.9,Credit Card,Returned
+TXN-10594,CUST-399,2022-08-10,73,Female,United States,Electronics,229.89,5,1.7,Credit Card,Refunded
+TXN-10595,CUST-154,2023-06-30,27,Female,Germany,Home,54.8,1,1.3,Credit Card,Cancelled
+TXN-10596,CUST-338,2022-02-18,46,Female,United States,Home,178.98,3,2.3,Credit Card,Cancelled
+TXN-10597,CUST-161,2024-01-04,63,Male,United Kingdom,Electronics,93.55,3,,Cash,Pending
+TXN-10598,CUST-206,2022-11-12,30,Male,France,Beauty,137.75,1,4.2,PayPal,Cancelled
+TXN-10599,CUST-337,2022-01-05,57,Other,United States,Electronics,277.5,2,4.6,Bank Transfer,Returned
+TXN-10600,CUST-161,2024-02-25,47,Male,United States,Beauty,355.84,4,4.5,Cash,Completed
+TXN-10601,CUST-255,2023-01-19,47,Female,Germany,Books,42.8,1,3.5,PayPal,
+TXN-10602,CUST-120,2022-01-17,25,Male,United States,Home,9.81,8,3.6,Credit Card,Returned
+TXN-10603,CUST-267,,47,,Germany,Clothing,,5,5.0,PayPal,
+TXN-10604,CUST-227,,74,Male,Germany,Home,150.1,8,4.8,Credit Card,Cancelled
+TXN-10605,CUST-302,2023-11-28,41,Female,United States,,264.09,2,2.1,PayPal,Cancelled
+UNKNOWN_TXN_21,CUST-253,2024-06-22,39,Male,United Kingdom,Electronics,105.22,10,4.5,Bank Transfer,Completed
+TXN-10607,CUST-189,2024-04-30,67,Female,United States,Beauty,483.61,,4.9,Bank Transfer,Pending
+TXN-10608,CUST-307,2022-02-15,52,Female,France,Electronics,40.57,4,1.0,Credit Card,Completed
+TXN-10609,CUST-384,2024-04-15,36,Female,Germany,Clothing,323.87,5,4.7,Credit Card,Completed
+TXN-10610,CUST-227,2023-04-10,19,Male,France,Electronics,56.04,9,4.7,Credit Card,Completed
+TXN-10611,,2024-08-14,37,Male,Canada,Electronics,51.31,6,4.9,PayPal,Completed
+TXN-10612,CUST-171,2023-03-15,56,Female,,Beauty,41.81,9,4.6,PayPal,Completed
+TXN-10613,CUST-131,2022-04-19,64,Female,Germany,Clothing,245.88,10,,PayPal,Pending
+TXN-10614,CUST-213,2022-01-16,46,Female,United Kingdom,Electronics,380.63,2,3.4,PayPal,Cancelled
+TXN-10615,CUST-305,2022-01-13,33,Female,France,Beauty,13.8,2,2.8,Credit Card,Pending
+TXN-10616,CUST-143,2022-08-14,52,Male,France,Electronics,51.18,10,1.3,Credit Card,Pending
+TXN-10617,CUST-232,2022-10-13,46,Male,France,Electronics,31.98,6,1.8,Bank Transfer,Returned
+TXN-10618,CUST-138,2022-10-03,45,Female,France,Electronics,380.36,8,2.0,Credit Card,Pending
+TXN-10619,CUST-133,2024-02-25,40,Female,United Kingdom,Clothing,184.21,4,1.4,PayPal,Cancelled
+TXN-10620,CUST-327,2022-04-15,62,Male,Canada,Electronics,275.21,2,4.4,Bank Transfer,Pending
+TXN-10621,CUST-147,2024-08-02,70,Female,France,Electronics,132.04,7,4.2,PayPal,Pending
+TXN-10622,CUST-269,2024-09-09,64,Male,Canada,Home,6.37,1,2.0,Cash,Refunded
+TXN-10623,CUST-336,2023-10-09,54,Female,France,Electronics,494.07,6,3.7,Credit Card,Completed
+TXN-10624,CUST-393,2024-09-22,22,Male,France,,150.41,3,4.7,Credit Card,Pending
+TXN-10625,CUST-302,2023-10-13,20,Other,France,Beauty,47.9,7,,PayPal,Completed
+TXN-10626,CUST-295,2023-11-14,64,Other,Canada,Clothing,111.63,9,3.2,PayPal,Refunded
+TXN-10627,CUST-188,2022-01-19,74,Female,United States,Electronics,12.28,9,3.8,Bank Transfer,Cancelled
+TXN-10628,CUST-195,2023-04-05,50,,Germany,Books,,7,2.0,PayPal,Pending
+TXN-10629,CUST-328,2024-01-30,23,Male,Canada,Clothing,36.57,9,4.9,PayPal,Completed
+TXN-10630,CUST-117,2023-12-23,58,Male,Canada,Electronics,261.88,7,1.1,PayPal,Completed
+TXN-10631,CUST-225,2023-09-24,45,Female,France,Clothing,389.98,6,3.5,Credit Card,Cancelled
+TXN-10632,CUST-355,2024-01-26,29,,Germany,Beauty,546.42,3,4.5,Credit Card,Refunded
+TXN-10633,CUST-381,2023-09-27,34,Other,,Home,,3,1.4,Bank Transfer,Cancelled
+TXN-10634,CUST-144,2023-01-19,65,Male,United States,Home,499.41,9,,Credit Card,Completed
+TXN-10635,CUST-170,2022-06-05,71,Female,,Clothing,373.04,3,2.8,Cash,Cancelled
+TXN-10636,CUST-369,2022-08-02,25,Male,Canada,Beauty,396.25,3,2.0,Credit Card,
+TXN-10637,CUST-378,2023-09-05,54,Female,Germany,Beauty,,1,,Credit Card,Pending
+TXN-10638,CUST-295,2022-03-12,37,Female,France,Home,26.82,2,4.8,Credit Card,Cancelled
+TXN-10639,CUST-283,2023-10-22,52,Female,United Kingdom,Clothing,157.38,3,4.5,Credit Card,Returned
+TXN-10640,CUST-348,2023-03-01,33,Female,Germany,Electronics,342.0,4,4.0,Credit Card,Completed
+TXN-10641,CUST-389,2022-08-23,21,,France,Home,,,3.1,PayPal,Cancelled
+TXN-10642,CUST-298,2022-07-30,48,Male,France,Beauty,244.07,9,1.6,PayPal,Pending
+TXN-10643,CUST-113,2024-07-28,45,Other,United States,Home,127.45,9,4.5,PayPal,Pending
+TXN-10644,CUST-212,2023-12-14,62,Male,Canada,Electronics,88.69,7,1.8,Bank Transfer,Completed
+TXN-10645,CUST-243,2023-01-26,35,Other,France,Electronics,76.95,7,,PayPal,Completed
+TXN-10646,CUST-341,2023-03-29,20,Female,United States,Electronics,,9,1.5,Credit Card,Returned
+TXN-10647,CUST-399,2023-05-19,29,,Canada,Beauty,143.1,,,Bank Transfer,Returned
+TXN-10648,CUST-181,2022-02-23,35,Male,United States,Books,82.64,5,4.4,Credit Card,Completed
+TXN-10649,CUST-223,2022-05-09,46,Male,United States,Beauty,33.08,9,3.0,PayPal,Completed
+TXN-10650,CUST-128,2023-07-17,68,Female,Germany,Beauty,394.73,5,1.2,Credit Card,Pending
+TXN-10651,CUST-212,2022-03-22,26,Male,United States,Clothing,334.99,10,1.3,Cash,Refunded
+TXN-10652,CUST-298,2022-11-15,47,Male,France,Home,32.58,10,2.2,PayPal,Pending
+UNKNOWN_TXN_22,CUST-188,2022-09-08,58,Male,United States,Home,154.05,3,3.0,Bank Transfer,Pending
+TXN-10654,CUST-262,2022-09-12,32,Female,France,Electronics,160.31,3,2.5,Bank Transfer,Completed
+TXN-10655,CUST-283,2023-05-04,63,Female,United States,Beauty,59.5,2,2.3,PayPal,Cancelled
+TXN-10656,CUST-114,2024-03-11,22,Female,United Kingdom,Books,95.41,6,1.3,Cash,Cancelled
+TXN-10657,CUST-280,2024-09-22,64,Female,Canada,Home,195.63,6,1.7,Credit Card,Completed
+TXN-10658,CUST-388,2022-06-21,70,Female,France,Electronics,478.98,3,3.7,Bank Transfer,Cancelled
+TXN-10659,CUST-196,2023-06-02,44,Female,United States,Electronics,369.14,10,1.6,Credit Card,Cancelled
+TXN-10660,CUST-352,2024-02-18,39,Other,United Kingdom,Beauty,417.88,9,4.7,Bank Transfer,Completed
+TXN-10661,CUST-189,2024-03-23,48,Female,Germany,Beauty,173.57,5,3.2,Bank Transfer,Completed
+TXN-10662,CUST-146,,18,Female,United States,Clothing,159.1,1,1.2,Cash,Returned
+TXN-10663,CUST-212,2024-05-24,38,Male,France,Beauty,182.55,5,4.3,Cash,Pending
+TXN-10664,CUST-344,2024-08-01,46,Female,Germany,Electronics,367.6,7,2.6,Credit Card,Pending
+TXN-10665,CUST-203,2022-06-06,72,Female,United States,Clothing,7.96,3,3.4,Credit Card,Cancelled
+TXN-10666,,2022-09-21,31,Female,France,Books,260.88,6,1.7,,Cancelled
+TXN-10667,,2023-04-10,28,,France,Home,164.24,2,1.6,Credit Card,Completed
+TXN-10668,CUST-175,2023-09-13,34,Female,Germany,Home,439.16,10,3.1,Credit Card,Pending
+TXN-10669,CUST-172,2022-05-20,60,Male,United States,Beauty,217.18,5,4.5,PayPal,Returned
+TXN-10670,CUST-369,2024-07-27,23,Female,United States,Books,275.02,5,1.2,PayPal,Cancelled
+TXN-10671,CUST-137,,53,Female,United States,Home,376.94,6,,Credit Card,Completed
+TXN-10672,CUST-302,2024-01-18,23,Male,Germany,Books,149.29,2,1.7,Credit Card,Completed
+TXN-10673,CUST-272,2024-08-05,51,Female,Germany,Electronics,332.34,7,3.2,Bank Transfer,Completed
+TXN-10674,CUST-169,2024-09-20,36,Female,United States,Clothing,110.52,2,1.4,Credit Card,Cancelled
+TXN-10675,,2022-11-12,46,Female,United Kingdom,,143.07,8,4.5,PayPal,Refunded
+TXN-10676,CUST-349,2024-06-25,19,Female,United Kingdom,Electronics,465.77,7,1.6,PayPal,Completed
+TXN-10677,CUST-189,2022-05-08,55,Male,Canada,Clothing,110.65,1,,Bank Transfer,Cancelled
+TXN-10678,CUST-387,2022-06-16,40,Male,France,Home,576.09,1,4.8,Cash,Pending
+TXN-10679,CUST-282,2024-09-07,44,Male,France,Electronics,202.85,4,4.9,Credit Card,Completed
+TXN-10680,CUST-189,2024-02-09,19,Female,United Kingdom,Clothing,164.17,9,2.8,Bank Transfer,Pending
+TXN-10681,CUST-250,2023-05-16,36,Male,,Beauty,237.1,1,2.9,Credit Card,Refunded
+TXN-10682,CUST-100,2023-10-29,49,Female,France,Electronics,395.89,7,2.7,Cash,
+TXN-10683,CUST-393,2024-01-24,42,Male,France,Home,308.98,1,3.7,Bank Transfer,Returned
+TXN-10684,CUST-390,2022-02-05,26,Male,United Kingdom,Beauty,252.85,1,2.9,Credit Card,Pending
+TXN-10685,CUST-262,2023-11-24,72,Male,United Kingdom,Electronics,163.63,10,4.0,Bank Transfer,Returned
+TXN-10686,CUST-213,2023-10-23,43,Female,Canada,Electronics,224.84,3,3.9,PayPal,Completed
+TXN-10687,CUST-153,2023-12-04,25,Female,France,Beauty,426.01,5,3.0,Cash,Refunded
+TXN-10688,CUST-172,2023-09-09,29,Female,Germany,Beauty,99.76,9,2.8,Bank Transfer,Completed
+TXN-10689,CUST-139,2024-11-05,67,Other,,Beauty,467.59,9,2.1,Cash,
+TXN-10690,CUST-263,,65,Female,Germany,Electronics,554.66,4,4.8,PayPal,Pending
+TXN-10691,CUST-145,2023-10-22,53,Female,United States,Books,433.21,10,,,Pending
+TXN-10692,CUST-271,2023-08-24,66,Male,France,Electronics,206.15,7,3.1,Credit Card,Returned
+TXN-10693,CUST-235,2022-07-13,75,Male,United States,Books,420.75,1,2.1,Bank Transfer,Completed
+TXN-10694,CUST-134,2023-03-14,38,Male,Canada,Beauty,247.59,9,4.3,Bank Transfer,Cancelled
+TXN-10695,CUST-155,2023-05-28,58,Female,United States,Beauty,529.01,7,4.9,PayPal,Refunded
+TXN-10696,CUST-124,2023-01-27,74,Male,United States,Electronics,533.49,1,2.5,PayPal,Pending
+TXN-10697,CUST-314,2023-02-26,58,Male,Canada,Beauty,96.69,9,4.6,Credit Card,Completed
+TXN-10698,CUST-311,2023-08-10,38,Male,United States,Beauty,456.28,5,4.8,Credit Card,Refunded
+TXN-10699,CUST-293,2022-03-10,52,Male,United Kingdom,Home,236.01,,4.2,PayPal,Pending
+TXN-10700,CUST-292,2023-02-12,72,Female,Canada,Electronics,94.69,5,3.0,PayPal,Cancelled
+TXN-10701,CUST-345,,66,Female,France,Electronics,242.66,2,1.1,Bank Transfer,Refunded
+TXN-10702,CUST-395,2023-05-19,70,Male,United States,Home,234.26,6,1.9,Bank Transfer,
+TXN-10703,CUST-215,2024-03-03,28,,,Clothing,560.74,8,3.8,Cash,Completed
+TXN-10705,CUST-117,2022-06-24,18,Other,United States,Home,138.64,9,2.8,Credit Card,Pending
+TXN-10706,CUST-263,2023-12-22,39,Male,,Home,470.69,8,3.7,PayPal,Pending
+TXN-10707,CUST-153,2022-07-06,59,Female,United States,Beauty,278.78,6,3.2,Credit Card,Refunded
+TXN-10708,CUST-187,2023-04-07,24,Female,France,Home,260.35,5,4.2,Bank Transfer,Cancelled
+TXN-10709,CUST-182,2022-10-07,59,Male,France,Beauty,20.55,1,1.1,PayPal,Refunded
+TXN-10710,CUST-380,2022-07-07,44,Other,Germany,Electronics,239.01,10,4.2,Credit Card,Pending
+TXN-10711,CUST-147,2024-07-12,58,Female,United States,Home,181.14,7,,Credit Card,Pending
+TXN-10712,CUST-347,2024-07-23,46,Other,France,Beauty,385.15,,1.6,Credit Card,Completed
+TXN-10713,CUST-320,2023-10-14,57,Male,France,,452.47,8,2.2,PayPal,Cancelled
+TXN-10714,CUST-184,2022-03-29,23,Female,United Kingdom,Beauty,473.46,7,3.4,Credit Card,Cancelled
+TXN-10715,CUST-322,2022-03-07,64,Female,Canada,Electronics,28.27,3,3.7,Bank Transfer,Returned
+TXN-10716,CUST-151,,19,Other,United Kingdom,Electronics,405.92,1,4.2,Credit Card,Pending
+TXN-10717,CUST-197,2023-05-12,33,Female,Canada,Clothing,65.4,4,4.9,Bank Transfer,Completed
+TXN-10718,CUST-383,,58,,Canada,Books,311.59,5,2.2,Credit Card,Returned
+TXN-10719,CUST-376,2024-09-05,23,Male,United States,Electronics,236.33,2,2.9,Bank Transfer,Cancelled
+TXN-10720,CUST-244,2024-03-19,19,Male,France,Electronics,,3,4.4,PayPal,Completed
+TXN-10721,CUST-149,2023-06-19,74,Female,Canada,Electronics,,6,,PayPal,Cancelled
+TXN-10722,CUST-392,2023-06-17,42,Female,Germany,Home,287.02,3,2.7,Bank Transfer,Completed
+TXN-10723,,2023-04-30,73,Female,United States,Books,285.56,6,2.1,Credit Card,Completed
+TXN-10724,CUST-284,2022-12-11,28,Female,United States,Home,416.75,3,2.8,Bank Transfer,Cancelled
+TXN-10725,CUST-144,2022-12-18,64,Female,,Beauty,,6,4.4,Credit Card,Pending
+TXN-10726,CUST-345,2024-08-21,29,Male,United States,Home,272.79,4,2.4,Bank Transfer,Returned
+TXN-10727,,2023-01-23,63,Male,France,Beauty,291.77,1,2.2,Bank Transfer,Completed
+TXN-10728,CUST-249,2022-12-31,38,Other,Germany,Beauty,428.39,8,3.1,Credit Card,Returned
+TXN-10729,CUST-342,2022-01-04,22,Male,United Kingdom,Electronics,88.26,6,2.1,Credit Card,Completed
+TXN-10730,,2023-02-16,31,Male,Germany,Clothing,346.44,2,3.0,Credit Card,Pending
+TXN-10731,,,47,Male,Germany,Beauty,489.81,7,1.7,Credit Card,Cancelled
+TXN-10732,CUST-235,2023-06-28,56,Female,France,Books,241.95,5,4.4,PayPal,Refunded
+TXN-10733,CUST-378,2024-09-02,33,Other,United Kingdom,Beauty,386.42,10,1.7,Cash,Completed
+TXN-10734,CUST-289,2023-09-26,47,Male,United States,Books,268.0,8,2.3,PayPal,
+TXN-10736,,,71,Female,United Kingdom,Beauty,450.46,7,1.0,Credit Card,Completed
+TXN-10737,CUST-338,2024-08-22,28,Female,Canada,Electronics,381.54,,4.6,PayPal,Returned
+TXN-10738,CUST-237,,64,Female,,Home,423.01,1,3.5,Cash,Cancelled
+TXN-10739,CUST-177,2022-02-16,18,Male,United Kingdom,Clothing,246.25,6,3.3,Cash,Refunded
+TXN-10740,CUST-149,2022-08-28,61,Female,United Kingdom,Beauty,118.8,1,4.4,Credit Card,Pending
+TXN-10741,CUST-276,2024-01-27,73,Male,United Kingdom,Electronics,77.96,10,2.7,PayPal,Refunded
+TXN-10742,CUST-311,2022-12-23,48,,France,Home,517.04,2,,Bank Transfer,Cancelled
+TXN-10743,CUST-216,2024-08-22,22,Female,France,Home,540.07,2,3.5,Bank Transfer,Pending
+TXN-10744,CUST-298,2024-05-27,34,Male,United Kingdom,Beauty,,6,1.8,PayPal,Completed
+TXN-10745,CUST-314,2022-10-28,52,Female,United Kingdom,Books,345.73,3,,Cash,Pending
+TXN-10746,CUST-343,2022-05-27,67,Female,Germany,Electronics,400.64,5,4.8,Bank Transfer,Completed
+TXN-10747,CUST-220,2024-03-14,52,Female,United States,Clothing,70.35,5,1.1,Credit Card,Cancelled
+TXN-10748,CUST-140,,46,Female,Germany,Books,423.0,3,3.9,PayPal,Cancelled
+TXN-10749,CUST-117,2022-03-31,64,Other,Canada,Electronics,178.82,2,1.4,Credit Card,Returned
+TXN-10750,CUST-364,2023-07-16,69,Male,United Kingdom,Clothing,374.15,5,1.6,Cash,Completed
+TXN-10751,CUST-175,2023-04-02,70,,Germany,Books,404.98,3,2.4,PayPal,Completed
+TXN-10752,CUST-329,2023-08-07,20,Female,Germany,Books,533.96,4,1.2,Cash,Completed
+TXN-10753,CUST-185,2022-06-24,63,Male,Germany,Home,171.03,6,3.2,Bank Transfer,Returned
+TXN-10754,CUST-198,2024-01-03,58,Female,United Kingdom,Clothing,24.55,8,1.2,Bank Transfer,Completed
+TXN-10755,CUST-316,2024-08-09,45,Male,United Kingdom,Books,68.92,8,4.8,Cash,Completed
+TXN-10756,CUST-322,2024-02-24,24,Other,United States,Clothing,465.15,7,1.9,PayPal,Completed
+TXN-10757,CUST-175,2022-09-21,34,Female,France,Clothing,,10,4.4,Credit Card,Cancelled
+TXN-10758,CUST-232,2023-11-18,55,Male,Germany,Home,432.46,8,2.6,Bank Transfer,Completed
+TXN-10759,CUST-134,2024-08-02,25,Male,Canada,Electronics,166.9,,,Bank Transfer,Completed
+TXN-10760,CUST-384,2023-05-19,41,Female,Germany,,458.04,10,2.8,Credit Card,Pending
+TXN-10761,CUST-266,2022-07-12,39,Female,United States,Home,120.95,4,4.1,Cash,Completed
+TXN-10762,CUST-366,2024-02-24,33,Male,United States,Beauty,143.23,5,,Credit Card,Refunded
+TXN-10763,CUST-106,2022-12-18,31,Female,United States,Home,401.2,7,2.5,Bank Transfer,Completed
+TXN-10764,CUST-400,2024-01-31,39,Male,France,Home,395.79,8,3.5,PayPal,Pending
+TXN-10765,CUST-314,2024-03-14,22,Female,United States,Home,345.97,7,4.7,Credit Card,Completed
+TXN-10766,CUST-176,2023-03-24,63,Female,United States,Electronics,64.73,3,2.2,Credit Card,Returned
+TXN-10767,CUST-398,2022-04-29,33,Other,Germany,Home,,1,2.4,Bank Transfer,Cancelled
+TXN-10768,CUST-151,2022-04-02,39,Other,Canada,Home,479.3,5,3.3,PayPal,Cancelled
+TXN-10769,CUST-388,2024-08-17,46,Male,United States,Electronics,366.9,1,1.1,Bank Transfer,Completed
+TXN-10770,CUST-246,2022-04-29,46,Other,United Kingdom,Home,519.66,4,4.6,PayPal,Cancelled
+TXN-10771,CUST-276,2024-05-23,54,Female,United States,Books,133.82,2,3.5,PayPal,Returned
+TXN-10772,CUST-235,2023-08-14,20,Male,Germany,Beauty,57.7,6,3.8,Cash,Cancelled
+TXN-10773,CUST-348,2023-08-28,27,,Germany,Clothing,66.72,8,,Credit Card,Completed
+TXN-10774,,2023-02-02,19,Female,United Kingdom,Beauty,,1,2.5,PayPal,Pending
+TXN-10775,,2023-09-01,41,Male,United States,Home,330.68,2,4.4,Cash,
+TXN-10776,CUST-305,2023-09-09,63,Female,United States,Home,396.33,6,3.2,Bank Transfer,Refunded
+TXN-10777,CUST-269,2023-02-09,63,Other,United States,Home,33.3,8,4.8,Credit Card,Returned
+TXN-10779,CUST-237,2024-08-23,63,Female,France,Electronics,456.81,10,4.6,,Pending
+TXN-10780,CUST-110,2023-05-27,36,Female,United States,Home,285.29,4,4.7,PayPal,
+TXN-10781,CUST-255,2022-10-18,69,Male,,Electronics,512.66,5,4.6,Cash,Pending
+TXN-10782,CUST-351,2024-05-19,27,Other,United States,Electronics,245.5,8,3.6,Bank Transfer,Completed
+TXN-10783,CUST-150,2022-11-13,72,Female,United States,Clothing,24.62,6,4.1,Credit Card,Pending
+TXN-10784,CUST-216,2022-05-07,58,,United Kingdom,Books,526.32,8,,Credit Card,Refunded
+TXN-10785,,2023-12-25,72,Female,Germany,Home,151.64,6,,Cash,Completed
+TXN-10786,CUST-264,2024-04-28,37,Male,France,Clothing,477.84,2,3.8,PayPal,Cancelled
+TXN-10787,CUST-313,2023-12-23,18,Male,Germany,Home,158.4,5,,Credit Card,Completed
+TXN-10788,CUST-145,2024-04-09,64,Male,,,561.05,8,3.8,Bank Transfer,Refunded
+TXN-10789,CUST-208,2024-04-01,73,Female,Canada,Clothing,160.37,7,1.2,Credit Card,Pending
+TXN-10790,CUST-308,2024-08-14,43,Female,Canada,Clothing,39.36,6,4.2,Credit Card,Returned
+TXN-10791,CUST-364,2022-02-23,75,Male,United States,Beauty,49.44,10,2.9,PayPal,Pending
+TXN-10792,CUST-128,2024-01-15,40,Female,France,Home,100.83,3,3.5,Credit Card,Completed
+TXN-10793,CUST-181,2024-04-14,55,Male,,Electronics,62.22,3,1.8,PayPal,Refunded
+TXN-10794,CUST-359,2023-07-16,38,Other,France,Electronics,557.24,6,4.1,Credit Card,Completed
+TXN-10795,CUST-368,2023-11-26,42,Female,United States,Electronics,461.18,1,4.8,,Refunded
+TXN-10796,CUST-114,2024-02-15,49,Male,United States,Home,52.5,10,3.9,Credit Card,Refunded
+TXN-10797,CUST-202,2023-06-25,73,Female,,Beauty,63.83,6,2.0,Bank Transfer,Completed
+TXN-10798,CUST-227,2024-03-08,29,Female,Germany,Clothing,56.41,10,1.4,Credit Card,Returned
+TXN-10799,CUST-125,2023-07-16,42,Female,United Kingdom,Clothing,125.95,8,5.0,Credit Card,Completed
+TXN-10800,CUST-201,2022-11-28,46,,United States,Home,355.66,9,2.1,PayPal,Pending
+TXN-10801,,2022-02-25,39,Female,France,,189.12,1,1.7,Credit Card,Completed
+TXN-10802,CUST-163,2022-06-17,31,Male,United Kingdom,Books,14.65,1,4.1,PayPal,Refunded
+TXN-10803,CUST-223,2023-12-14,35,,United States,Electronics,454.04,9,3.6,PayPal,Refunded
+TXN-10804,CUST-328,2022-05-29,64,Female,Canada,Beauty,7.56,5,1.1,Cash,Cancelled
+TXN-10805,CUST-342,2024-06-02,59,Female,,Books,314.85,2,1.7,Bank Transfer,Completed
+TXN-10806,,2022-01-10,49,Female,Germany,Clothing,57.52,7,4.3,PayPal,Completed
+TXN-10807,CUST-232,2023-08-13,58,Female,France,Electronics,74.93,4,2.4,Credit Card,Completed
+TXN-10808,CUST-146,2024-05-29,71,Male,United States,Electronics,511.4,5,1.7,Bank Transfer,Refunded
+TXN-10809,CUST-297,2023-03-14,70,Female,Germany,Beauty,76.99,5,2.3,PayPal,Completed
+TXN-10810,CUST-392,2022-04-09,51,Female,United Kingdom,Clothing,419.83,,3.8,Bank Transfer,Completed
+TXN-10811,CUST-209,2022-07-03,65,Male,Germany,Home,366.51,7,4.3,PayPal,Refunded
+TXN-10812,CUST-215,2023-06-12,60,Male,United Kingdom,Home,288.48,8,2.0,Credit Card,Completed
+TXN-10813,CUST-237,2024-09-20,46,Male,France,Clothing,297.06,2,4.6,PayPal,Cancelled
+TXN-10814,CUST-362,2023-02-18,39,Male,United States,Electronics,220.06,8,1.6,PayPal,Refunded
+TXN-10815,CUST-104,,35,Female,United States,Beauty,147.11,8,1.0,PayPal,Cancelled
+TXN-10816,CUST-167,2023-05-16,52,Male,,Beauty,52.42,4,3.4,PayPal,Cancelled
+TXN-10817,CUST-104,2024-04-09,52,Female,Canada,Beauty,302.09,2,4.1,Credit Card,Pending
+TXN-10818,CUST-256,2023-01-20,69,Female,France,Beauty,71.16,6,2.2,Bank Transfer,Completed
+TXN-10819,CUST-240,2024-06-04,54,Male,,Beauty,77.66,1,4.9,Credit Card,Pending
+TXN-10820,CUST-292,2023-10-31,33,Other,,Books,175.33,4,3.0,Credit Card,Refunded
+TXN-10821,CUST-335,2022-05-03,65,Male,France,Clothing,84.36,5,1.3,PayPal,Completed
+TXN-10822,CUST-338,2023-05-16,59,Male,France,Clothing,526.8,7,4.1,Credit Card,Pending
+TXN-10823,CUST-366,2023-08-24,32,Female,Canada,Clothing,55.12,,3.8,PayPal,Pending
+TXN-10824,CUST-303,2023-05-07,47,Female,United States,Clothing,134.59,4,2.7,Bank Transfer,Returned
+TXN-10825,CUST-103,2022-04-07,56,Male,United Kingdom,,123.39,7,1.7,Credit Card,Cancelled
+TXN-10826,CUST-291,2023-05-11,35,Other,France,Electronics,398.82,2,4.3,Bank Transfer,Cancelled
+TXN-10827,CUST-244,2022-05-09,46,Male,United States,Books,246.88,10,1.5,PayPal,Completed
+TXN-10828,CUST-155,2024-01-01,22,Male,United Kingdom,Electronics,178.75,1,,PayPal,Returned
+TXN-10829,CUST-272,2024-04-12,26,Male,France,Clothing,168.36,8,1.3,Cash,Completed
+TXN-10830,CUST-266,2024-04-17,21,Female,Germany,Electronics,300.62,7,1.8,Credit Card,Completed
+TXN-10831,CUST-233,2023-06-27,33,Female,Germany,Clothing,49.66,5,,Credit Card,Cancelled
+TXN-10832,CUST-252,2024-05-07,55,,United States,Home,188.01,8,,Credit Card,Refunded
+TXN-10833,CUST-364,2024-04-18,24,Female,,Clothing,486.19,10,4.4,Bank Transfer,Pending
+TXN-10834,CUST-129,2022-08-01,68,Female,Germany,Beauty,282.59,9,1.7,,Cancelled
+TXN-10835,CUST-306,2023-06-09,68,Female,United Kingdom,Home,424.35,2,3.4,Cash,Refunded
+TXN-10836,CUST-171,,30,Female,United States,Home,267.6,3,3.6,Bank Transfer,Cancelled
+TXN-10837,CUST-354,2022-11-18,46,Male,Germany,Clothing,258.42,6,3.3,Bank Transfer,Completed
+TXN-10838,CUST-232,,46,Male,United States,Beauty,306.48,4,2.2,Bank Transfer,Completed
+TXN-10839,CUST-307,2023-10-31,46,Female,Germany,Beauty,360.74,10,1.8,Bank Transfer,Returned
+TXN-10840,CUST-118,2022-09-20,37,Male,United States,Clothing,23.22,7,1.4,Credit Card,
+TXN-10841,CUST-392,2022-05-08,55,Male,United Kingdom,Electronics,495.3,6,3.4,Credit Card,Pending
+TXN-10842,CUST-275,2024-09-16,75,Female,Canada,,207.74,7,1.3,Bank Transfer,Pending
+TXN-10843,CUST-213,2024-09-27,74,Male,United Kingdom,,563.75,4,2.3,Cash,Pending
+TXN-10844,CUST-343,2022-02-17,59,,United Kingdom,Beauty,128.88,6,3.9,Bank Transfer,Cancelled
+TXN-10845,CUST-283,2022-10-28,69,Other,France,Home,305.4,10,1.4,PayPal,Completed
+TXN-10846,CUST-187,2023-08-14,66,Female,United States,Beauty,511.78,8,1.9,Bank Transfer,Cancelled
+TXN-10847,,2023-06-20,18,Female,United Kingdom,Home,322.69,2,4.5,Bank Transfer,Cancelled
+TXN-10848,CUST-149,2023-07-06,44,Male,United States,Beauty,86.47,9,1.2,PayPal,Pending
+TXN-10849,CUST-232,2023-11-10,49,Male,United States,Home,457.45,2,4.7,Bank Transfer,Cancelled
+TXN-10850,CUST-386,2022-12-07,39,Male,Canada,Electronics,223.34,4,5.0,Bank Transfer,Pending
+UNKNOWN_TXN_23,CUST-193,2024-02-05,50,Female,United States,Clothing,438.24,2,1.3,Bank Transfer,Returned
+TXN-10852,CUST-271,2023-09-09,59,Other,United States,Clothing,399.69,10,1.9,Bank Transfer,Pending
+TXN-10853,CUST-213,2023-01-03,73,Male,France,Beauty,430.92,,3.3,Credit Card,Cancelled
+TXN-10854,CUST-257,2023-09-30,39,Female,Canada,Home,168.3,1,4.6,,Cancelled
+TXN-10855,CUST-269,2022-09-19,53,Female,United Kingdom,Home,8.03,5,2.9,Cash,Cancelled
+TXN-10856,CUST-399,2024-07-14,58,Male,,Clothing,308.0,5,,PayPal,Cancelled
+TXN-10857,CUST-160,2022-03-27,66,Female,United States,Electronics,255.48,4,1.1,Bank Transfer,Returned
+TXN-10858,CUST-398,2024-08-20,49,Female,Germany,Clothing,29.86,4,1.8,Bank Transfer,Completed
+TXN-10860,CUST-199,2023-12-15,50,,United States,Clothing,526.78,2,2.1,Bank Transfer,Pending
+TXN-10861,CUST-295,2023-08-01,28,Female,Germany,Electronics,,5,3.4,Cash,Pending
+TXN-10862,CUST-311,2023-06-03,66,Male,Canada,Books,488.57,1,4.8,PayPal,Completed
+TXN-10863,CUST-177,2024-03-17,37,Female,France,Books,361.71,1,,PayPal,Cancelled
+TXN-10864,CUST-202,2024-09-14,46,Female,France,Home,593.02,8,2.4,Cash,Returned
+TXN-10866,CUST-334,2023-12-02,29,Female,United States,Electronics,78.95,7,3.8,Credit Card,Returned
+TXN-10867,CUST-192,2022-12-04,24,Male,France,Clothing,105.26,9,4.4,Credit Card,Cancelled
+TXN-10868,CUST-349,2022-12-08,31,Female,Germany,Beauty,71.24,7,1.9,PayPal,Refunded
+TXN-10869,CUST-190,2024-03-28,37,Male,United States,Clothing,476.68,9,4.0,PayPal,Pending
+TXN-10870,CUST-129,2022-04-11,51,Female,United Kingdom,Home,122.39,6,2.6,Credit Card,Completed
+TXN-10871,CUST-240,2022-08-16,61,Male,United Kingdom,Home,112.68,7,3.6,Credit Card,Pending
+TXN-10872,CUST-186,2024-03-12,57,Female,United States,Clothing,173.93,8,3.0,PayPal,Completed
+TXN-10873,CUST-181,2024-01-16,61,Male,Germany,Electronics,285.27,5,,Cash,Returned
+TXN-10874,CUST-145,2024-04-06,28,Male,United States,,317.98,2,4.6,Bank Transfer,Pending
+TXN-10875,CUST-322,2022-12-24,43,Female,Canada,Beauty,365.57,9,4.9,Credit Card,Refunded
+TXN-10876,CUST-306,2023-07-19,72,Male,United States,Electronics,24.01,9,4.8,PayPal,Completed
+TXN-10877,CUST-344,2024-07-07,60,Female,,Beauty,29.12,10,3.3,Bank Transfer,Completed
+TXN-10878,CUST-119,2024-08-27,51,Male,United States,Books,164.45,3,4.1,Bank Transfer,Pending
+TXN-10879,CUST-291,2024-04-05,59,Female,United Kingdom,Books,73.91,4,,Credit Card,Completed
+TXN-10880,CUST-264,2024-06-22,44,Female,France,Home,470.14,3,2.8,PayPal,Pending
+TXN-10881,CUST-371,2022-05-11,35,Male,,Electronics,561.93,2,,Cash,Completed
+TXN-10882,CUST-102,,34,Female,United Kingdom,Home,22.67,3,2.1,PayPal,Pending
+TXN-10883,CUST-227,2022-09-06,72,Female,United Kingdom,Clothing,465.71,2,4.5,Credit Card,Completed
+TXN-10884,CUST-276,2023-08-05,41,Female,France,Beauty,483.92,10,2.6,Bank Transfer,Cancelled
+TXN-10885,CUST-152,2024-01-13,39,Male,France,Home,556.95,9,4.4,PayPal,Pending
+TXN-10886,CUST-256,2022-09-13,71,Male,Canada,Electronics,325.13,3,4.1,Bank Transfer,Pending
+TXN-10887,CUST-123,2023-04-14,46,Female,Germany,Home,554.5,10,2.8,Bank Transfer,Completed
+TXN-10888,CUST-248,2022-12-29,54,Female,Canada,Beauty,,7,,Cash,Cancelled
+TXN-10889,CUST-366,2022-10-10,44,Male,United States,Electronics,177.11,6,3.7,Credit Card,Cancelled
+TXN-10890,CUST-272,2024-06-01,46,Male,United Kingdom,Electronics,561.92,5,1.0,,Returned
+TXN-10891,CUST-168,2024-05-28,21,Other,Germany,Clothing,296.18,5,,Credit Card,Cancelled
+TXN-10892,CUST-350,2023-02-21,40,,United States,Beauty,361.28,6,4.7,Credit Card,Returned
+TXN-10893,CUST-196,2023-10-12,26,Male,Germany,Home,147.96,3,1.2,Bank Transfer,Pending
+TXN-10894,CUST-306,2022-09-03,67,Female,Canada,Electronics,274.82,6,2.0,Bank Transfer,Completed
+TXN-10895,CUST-214,2022-02-28,70,Male,Canada,Electronics,19.12,2,1.9,Credit Card,Pending
+TXN-10896,CUST-167,2023-07-22,31,Other,United States,Beauty,375.13,2,,PayPal,Pending
+TXN-10897,CUST-111,2022-01-11,34,Female,France,Electronics,428.82,9,2.4,PayPal,
+TXN-10898,CUST-186,2024-12-08,41,Male,,Home,184.26,6,3.0,Cash,Completed
+TXN-10899,,2023-06-12,46,Other,Germany,Electronics,523.59,1,3.8,,Cancelled
+TXN-10900,CUST-230,2023-02-20,42,Male,Canada,Home,383.44,8,3.2,Credit Card,Cancelled
+TXN-10901,CUST-124,2024-07-21,53,Male,United Kingdom,Electronics,61.89,1,3.6,Cash,Completed
+TXN-10902,CUST-124,2023-12-21,69,Male,Germany,Electronics,176.31,3,2.3,Credit Card,Refunded
+TXN-10903,CUST-110,2022-09-08,50,Female,United States,Beauty,480.92,1,4.4,Credit Card,Returned
+TXN-10904,CUST-159,2022-02-13,35,Female,France,Clothing,443.06,4,1.6,PayPal,Cancelled
+TXN-10905,CUST-294,2022-06-22,33,,United Kingdom,Home,27.84,7,2.3,Credit Card,Cancelled
+TXN-10906,CUST-229,2022-06-29,64,Female,United Kingdom,Home,259.87,2,3.8,Credit Card,Returned
+TXN-10907,CUST-178,2022-05-17,64,Female,Germany,Beauty,368.09,5,3.2,Credit Card,Cancelled
+TXN-10908,CUST-104,2022-02-22,20,Female,United States,Books,,2,2.1,PayPal,Completed
+TXN-10909,CUST-151,2022-06-24,42,,United States,Home,178.73,3,4.5,Cash,Cancelled
+TXN-10910,CUST-238,2022-12-13,63,Female,Canada,Home,337.75,2,4.1,Cash,Cancelled
+TXN-10911,CUST-170,2024-05-21,35,Female,United States,Books,19.84,9,4.8,Cash,Returned
+TXN-10912,CUST-153,2023-05-10,55,Male,United Kingdom,Books,281.47,4,4.9,PayPal,Returned
+TXN-10913,CUST-160,2022-01-03,24,Other,France,Beauty,73.67,1,3.1,PayPal,Pending
+TXN-10914,CUST-154,2024-08-03,39,Other,United Kingdom,Home,118.74,2,4.0,Bank Transfer,Pending
+TXN-10915,CUST-202,2024-09-09,41,Female,United States,Books,436.6,3,3.2,Credit Card,Cancelled
+TXN-10916,CUST-367,2022-02-06,36,Male,United States,Electronics,154.1,7,3.2,Cash,Returned
+TXN-10917,CUST-283,2024-05-18,26,Female,Canada,Clothing,147.53,,2.6,Credit Card,Returned
+TXN-10918,CUST-251,2022-01-07,22,Male,United Kingdom,Beauty,359.78,,3.5,Cash,Completed
+TXN-10920,CUST-206,2022-12-25,70,Other,United States,Electronics,333.77,8,,Bank Transfer,Completed
+TXN-10921,CUST-346,2022-01-10,27,Female,Germany,Beauty,549.41,1,1.9,Credit Card,Pending
+TXN-10922,CUST-101,2022-07-22,54,Other,United Kingdom,Electronics,357.45,1,2.5,PayPal,Pending
+TXN-10923,CUST-145,2024-09-07,23,Other,United States,Books,462.05,8,2.7,,Completed
+TXN-10924,CUST-393,2024-07-24,38,Female,United States,Electronics,170.56,9,3.1,PayPal,Pending
+UNKNOWN_TXN_24,CUST-176,,66,Male,United Kingdom,Clothing,443.26,8,4.8,PayPal,
+TXN-10926,CUST-361,2022-09-14,53,Female,United Kingdom,Home,363.63,10,2.6,Bank Transfer,Cancelled
+TXN-10927,CUST-151,2023-01-19,36,Male,United States,Clothing,384.39,8,1.4,Credit Card,
+TXN-10928,,2024-02-07,26,Male,United States,Clothing,218.78,8,,Credit Card,Cancelled
+TXN-10929,CUST-251,2022-10-03,22,Female,Canada,Books,307.79,2,2.8,Credit Card,Completed
+TXN-10930,CUST-125,2023-11-04,62,Other,United States,Home,13.79,3,1.7,Credit Card,Completed
+TXN-10931,CUST-189,2022-12-29,38,,United States,Beauty,19.21,8,2.6,Credit Card,Pending
+TXN-10932,CUST-248,,41,Male,United Kingdom,Books,278.52,5,2.4,Credit Card,Cancelled
+TXN-10933,CUST-260,2023-12-28,46,Male,,Home,380.51,9,3.1,Bank Transfer,Completed
+TXN-10934,CUST-159,2022-10-19,31,Female,United States,Clothing,536.74,1,4.1,PayPal,Pending
+UNKNOWN_TXN_25,CUST-123,2023-03-08,47,Male,Canada,Home,165.99,2,1.3,Credit Card,Refunded
+TXN-10936,CUST-170,2022-06-14,41,Male,United States,Books,60.47,10,3.2,PayPal,Completed
+TXN-10937,CUST-187,2024-09-09,61,Female,Germany,Electronics,335.3,4,3.8,Credit Card,Cancelled
+TXN-10938,CUST-324,2023-05-16,34,Female,United States,Beauty,121.67,3,4.6,PayPal,Pending
+TXN-10939,CUST-237,2023-11-30,65,Female,United Kingdom,Electronics,88.31,5,,PayPal,Pending
+TXN-10940,CUST-147,2024-02-22,26,Female,Canada,Home,20.04,7,2.2,,Completed
+TXN-10941,CUST-275,2024-08-03,44,Male,Germany,Home,244.67,7,4.4,PayPal,Completed
+TXN-10942,CUST-305,2024-09-07,69,Female,France,Electronics,370.2,2,1.3,,Completed
+TXN-10943,CUST-333,2022-10-05,21,Female,France,Clothing,510.08,2,1.7,Cash,Pending
+TXN-10944,CUST-297,2022-01-14,21,Female,United States,Beauty,157.63,6,1.1,Bank Transfer,Cancelled
+TXN-10945,CUST-344,2024-04-29,50,Female,United Kingdom,Books,301.84,4,2.4,Credit Card,Completed
+TXN-10946,CUST-185,2023-09-04,54,,United States,Electronics,197.25,1,2.5,Credit Card,Cancelled
+TXN-10947,CUST-130,2022-10-24,20,Male,United States,Electronics,10.44,5,2.0,PayPal,Pending
+TXN-10948,CUST-181,2024-02-19,73,Male,Germany,Beauty,100.25,10,3.0,Credit Card,Completed
+TXN-10949,CUST-347,2022-06-06,68,Female,United States,Home,541.07,,3.0,Bank Transfer,Cancelled
+TXN-10950,,2022-10-15,36,Female,United Kingdom,Electronics,157.73,8,4.4,Credit Card,Cancelled
+TXN-10951,CUST-294,2023-12-19,58,Female,France,Electronics,,4,4.4,Credit Card,Cancelled
+TXN-10952,CUST-114,2023-03-16,22,Female,United States,Electronics,,6,2.8,Credit Card,Completed
+TXN-10953,CUST-166,2024-03-12,53,Male,France,Electronics,357.62,2,4.2,Bank Transfer,Returned
+TXN-10954,CUST-349,2023-05-30,52,Female,United States,Home,433.49,10,4.5,Credit Card,Cancelled
+TXN-10955,CUST-310,2024-05-25,50,Male,Germany,Clothing,565.67,1,3.5,Bank Transfer,Cancelled
+TXN-10956,CUST-132,2022-02-06,23,Female,France,Home,69.27,2,5.0,Bank Transfer,Cancelled
+TXN-10957,CUST-260,2023-02-15,47,Female,United Kingdom,Home,192.62,6,2.4,Credit Card,Completed
+TXN-10958,CUST-368,2022-07-16,30,Female,Canada,Clothing,478.78,2,2.7,Cash,Cancelled
+TXN-10959,CUST-395,2023-09-24,67,Male,France,Electronics,233.58,9,,PayPal,Pending
+TXN-10960,CUST-214,2022-02-22,70,Male,Germany,Books,340.04,7,4.4,PayPal,Completed
+TXN-10961,CUST-273,2022-10-11,46,,Germany,,101.48,1,,Bank Transfer,Refunded
+TXN-10962,CUST-148,2023-03-13,65,Male,Canada,Beauty,231.57,3,1.6,Bank Transfer,Cancelled
+TXN-10963,CUST-227,2023-03-14,39,Female,Germany,Electronics,383.82,6,1.6,Bank Transfer,Completed
+TXN-10964,CUST-297,2022-10-03,59,Male,United States,Beauty,80.76,2,3.1,Credit Card,Cancelled
+TXN-10965,CUST-385,2022-12-26,47,Female,Germany,Books,407.02,7,2.9,,Completed
+TXN-10966,CUST-127,2024-07-05,62,Male,United States,Electronics,98.83,6,1.5,Credit Card,Pending
+TXN-10967,CUST-180,2022-01-01,45,Female,Germany,Clothing,50.46,7,,Credit Card,Completed
+TXN-10968,CUST-340,2022-11-26,43,Female,United States,Home,553.37,3,4.2,PayPal,Refunded
+TXN-10969,CUST-184,2022-10-14,18,,Germany,Beauty,199.57,7,3.1,Cash,Pending
+TXN-10970,CUST-351,2022-07-09,42,Male,United Kingdom,Home,,1,3.6,Bank Transfer,Refunded
+TXN-10971,CUST-269,2023-01-08,46,Female,United States,Beauty,,9,4.8,Bank Transfer,Pending
+TXN-10972,CUST-125,2022-04-10,45,Female,Canada,Home,365.04,5,3.7,PayPal,Completed
+TXN-10973,CUST-381,2024-02-28,72,Female,United Kingdom,Beauty,543.37,3,4.9,Cash,Cancelled
+TXN-10974,CUST-306,2024-01-30,61,Other,United Kingdom,,362.06,10,2.0,Credit Card,Completed
+TXN-10975,CUST-140,2023-08-27,52,Female,France,Electronics,64.03,6,3.4,Bank Transfer,Pending
+TXN-10976,CUST-393,2022-09-01,60,Male,United States,Clothing,86.92,9,,PayPal,Pending
+TXN-10977,CUST-355,2023-01-29,70,Male,Germany,Beauty,74.2,4,,PayPal,Pending
+TXN-10978,CUST-160,2022-05-14,40,Male,United Kingdom,,247.33,10,1.8,Credit Card,Pending
+TXN-10979,,2023-08-24,63,Female,United Kingdom,Electronics,462.61,1,4.2,Credit Card,Completed
+TXN-10980,CUST-311,2023-04-02,27,Female,Canada,Clothing,218.71,8,4.0,Credit Card,Completed
+TXN-10981,CUST-381,2023-07-14,27,,United States,Clothing,96.29,6,2.0,Credit Card,Completed
+UNKNOWN_TXN_26,CUST-146,2024-01-13,29,Male,United States,Beauty,364.45,8,3.5,Credit Card,Completed
+TXN-10983,CUST-255,2022-07-26,52,Female,Canada,Clothing,594.36,5,1.8,Cash,Cancelled
+TXN-10984,CUST-387,2022-02-14,72,Female,Germany,Home,,4,2.9,Credit Card,
+TXN-10985,CUST-333,2023-07-18,46,Female,France,Beauty,71.84,6,1.1,PayPal,Completed
+TXN-10986,CUST-286,2024-02-17,40,Other,United Kingdom,Beauty,24.65,3,4.2,Credit Card,Completed
+TXN-10987,CUST-214,2024-07-05,38,Female,United States,Books,421.11,5,2.3,Bank Transfer,Cancelled
+TXN-10988,CUST-269,2024-01-05,32,Male,France,Home,302.57,,2.3,Credit Card,Pending
+TXN-10989,CUST-342,2022-03-11,30,Female,United States,Clothing,469.24,2,2.2,Cash,Pending
+TXN-10990,CUST-286,2024-08-11,45,Female,Canada,Electronics,9.52,9,4.8,Credit Card,Pending
+TXN-10991,CUST-158,2022-06-20,32,Female,United States,Books,214.81,2,3.5,Cash,Refunded
+TXN-10992,CUST-213,2024-09-17,31,Male,Canada,,34.01,6,3.3,Bank Transfer,Pending
+TXN-10993,,2024-09-05,19,Female,United Kingdom,Clothing,387.58,10,4.3,Bank Transfer,Cancelled
+TXN-10994,CUST-249,2024-09-22,75,,United States,Electronics,313.31,10,4.0,Cash,Completed
+UNKNOWN_TXN_27,CUST-291,2023-02-12,25,Other,France,Books,294.89,4,3.8,Bank Transfer,Returned
+TXN-10996,CUST-123,2024-06-10,42,Female,United Kingdom,Beauty,6.23,10,4.4,Cash,Pending
+TXN-10997,CUST-352,2022-06-19,46,Male,France,Clothing,114.37,8,2.4,Credit Card,Completed
+TXN-10998,CUST-309,2023-01-29,72,Female,United Kingdom,Books,208.25,2,4.9,Cash,Completed
+TXN-10999,CUST-200,2023-02-15,42,Male,Germany,Books,81.65,1,4.9,Bank Transfer,Returned
+TXN-11000,CUST-301,2022-07-08,46,Female,United Kingdom,Home,229.06,6,5.0,Credit Card,Completed
+TXN-11001,CUST-197,2022-08-12,30,Male,United States,Beauty,172.06,8,4.5,Credit Card,
+UNKNOWN_TXN_28,CUST-155,2024-06-19,42,Female,United Kingdom,Home,310.9,10,2.8,Credit Card,Cancelled
+UNKNOWN_TXN_29,CUST-123,2023-12-26,25,Male,United Kingdom,Electronics,582.05,3,2.8,PayPal,Refunded
+TXN-11004,CUST-163,2024-05-22,46,,United States,Electronics,437.62,7,2.1,Bank Transfer,Returned
+TXN-11005,CUST-330,2022-10-02,55,,United Kingdom,Clothing,374.88,,3.3,Credit Card,
+TXN-11006,CUST-358,2022-08-18,25,Male,Germany,Electronics,140.01,1,3.7,Cash,Completed
+TXN-11007,CUST-355,2022-10-26,31,Other,France,Beauty,392.02,9,3.8,Credit Card,Cancelled
+TXN-11008,CUST-124,2024-08-22,49,Female,United States,Home,586.56,9,4.3,PayPal,Completed
+TXN-11009,CUST-321,2022-10-04,40,Female,United Kingdom,Beauty,124.82,4,4.6,Bank Transfer,Completed
+TXN-11010,CUST-347,2022-12-09,38,Male,Canada,Home,392.28,7,2.9,Credit Card,Pending
+TXN-11011,CUST-190,2022-01-02,31,Other,Germany,Books,550.05,2,,Cash,Completed
+TXN-11012,CUST-188,2024-09-22,69,Female,France,Electronics,49.9,8,,Credit Card,Completed
+TXN-11013,CUST-165,2024-08-27,48,,Canada,Electronics,177.33,7,2.9,Credit Card,Pending
+TXN-11014,CUST-264,2022-05-17,25,Female,Canada,Clothing,503.53,7,1.4,PayPal,Pending
+TXN-11015,CUST-296,2022-10-29,19,Male,United Kingdom,Clothing,470.51,1,3.5,Credit Card,Completed
+TXN-11016,CUST-227,2023-10-03,46,Male,Germany,Clothing,154.9,4,2.4,Credit Card,Completed
+TXN-11017,CUST-275,2022-08-13,43,Female,Germany,Books,121.51,10,1.3,PayPal,Cancelled
+TXN-11018,CUST-331,2024-09-21,24,Female,Canada,Electronics,547.9,8,1.2,PayPal,Pending
+TXN-11019,CUST-170,2024-06-07,37,Female,Canada,Electronics,403.7,4,5.0,Credit Card,Returned
+TXN-11020,CUST-362,2024-02-03,45,Other,United Kingdom,Home,259.61,8,3.3,Credit Card,Pending
+TXN-11021,CUST-380,2022-09-21,59,Female,France,Beauty,259.67,1,1.4,PayPal,
+TXN-11022,CUST-383,2024-04-16,62,Female,United States,,43.59,3,2.2,Bank Transfer,Pending
+TXN-11023,CUST-202,2022-03-10,46,Female,United Kingdom,Clothing,538.32,7,4.6,Cash,Cancelled
+TXN-11024,CUST-248,2024-04-07,19,Male,United Kingdom,Beauty,79.39,8,4.2,PayPal,Pending
+TXN-11025,CUST-167,2022-08-26,35,Other,Germany,Electronics,100.27,8,2.4,Cash,Pending
+TXN-11026,CUST-191,2024-07-12,75,,,Electronics,353.14,5,5.0,Bank Transfer,Returned
+TXN-11027,CUST-265,2022-07-05,27,Male,United States,Electronics,330.73,6,3.2,Credit Card,Returned
+TXN-11028,CUST-280,2024-02-06,29,Female,Germany,Beauty,49.14,1,2.9,Credit Card,
+TXN-11029,CUST-398,2023-05-18,26,Male,Germany,Books,40.63,5,4.2,Bank Transfer,Completed
+TXN-11030,CUST-313,2022-01-22,26,Female,Germany,Electronics,43.93,1,4.4,Credit Card,Pending
+TXN-11031,CUST-373,2022-07-01,66,Female,Germany,Clothing,244.45,8,3.3,PayPal,Pending
+TXN-11032,CUST-316,2022-07-12,46,Male,Germany,Clothing,556.78,4,3.6,Credit Card,Pending
+TXN-11033,CUST-367,2023-03-13,31,Male,Germany,Clothing,,9,,PayPal,Completed
+TXN-11034,CUST-295,2023-10-23,60,,Canada,Clothing,289.3,1,4.5,Bank Transfer,Completed
+TXN-11035,CUST-128,2023-06-24,57,Female,United Kingdom,Books,204.5,1,3.5,Credit Card,Completed
+TXN-11036,CUST-182,2024-04-07,28,Female,,Books,107.23,5,2.9,Bank Transfer,Pending
+TXN-11037,CUST-228,2023-01-22,29,Female,United Kingdom,Electronics,325.79,1,2.4,PayPal,Returned
+TXN-11038,CUST-131,,27,Male,Germany,Clothing,47.61,10,4.5,PayPal,Completed
+TXN-11039,CUST-251,2024-02-21,69,Male,France,Electronics,411.18,6,1.3,Credit Card,Completed
+TXN-11040,CUST-377,2024-02-28,41,Male,United Kingdom,,174.27,5,5.0,Cash,Completed
+TXN-11041,CUST-331,2024-08-19,25,Male,United States,Clothing,251.38,7,1.2,Credit Card,Pending
+TXN-11042,CUST-387,,19,Female,Germany,Electronics,54.85,2,4.2,Credit Card,Completed
+TXN-11043,CUST-387,2024-09-07,37,Male,United Kingdom,Books,84.59,8,4.7,Credit Card,Completed
+TXN-11044,CUST-361,2024-04-17,41,Male,France,Clothing,17.84,10,3.0,Credit Card,Pending
+TXN-11045,CUST-247,2022-03-29,34,Female,United Kingdom,Electronics,,5,1.5,Bank Transfer,Pending
+TXN-11046,CUST-124,2024-02-17,19,Male,United States,Beauty,274.87,6,1.3,PayPal,Completed
+TXN-11047,CUST-298,2024-04-15,39,Female,Germany,Clothing,545.46,6,2.0,Credit Card,Refunded
+TXN-11048,CUST-260,2023-06-05,46,Female,United Kingdom,Beauty,325.04,8,3.6,PayPal,Completed
+TXN-11049,CUST-127,2023-07-11,65,Other,United States,Electronics,93.36,10,5.0,Cash,
+TXN-11050,CUST-228,2022-05-07,44,Other,Canada,Home,351.67,3,2.0,Bank Transfer,Cancelled
+TXN-11051,CUST-326,2022-04-16,46,Male,Canada,Beauty,137.23,10,2.8,Credit Card,Returned
+TXN-11052,CUST-288,2023-06-08,56,Other,United States,Home,396.93,9,1.7,PayPal,Returned
+TXN-11053,CUST-379,2024-07-23,28,Other,,Beauty,231.16,1,4.5,Bank Transfer,Refunded
+TXN-11054,CUST-200,,18,Male,United States,Clothing,80.45,10,4.8,Cash,Refunded
+TXN-11055,CUST-199,2022-05-31,32,Other,France,Clothing,578.84,,3.7,Bank Transfer,Pending
+TXN-11056,CUST-190,2022-08-20,46,Male,United Kingdom,Electronics,66.45,7,4.4,Credit Card,Cancelled
+TXN-11057,CUST-138,2024-01-03,48,Female,United States,Clothing,125.01,6,4.9,Bank Transfer,Completed
+TXN-11058,CUST-188,2022-04-23,44,Male,France,Electronics,250.58,1,3.0,Bank Transfer,Pending
+TXN-11059,CUST-161,2024-09-05,52,Female,France,Electronics,530.02,7,2.9,Cash,Completed
+TXN-11060,CUST-319,2023-09-23,72,Female,United Kingdom,,130.13,10,3.7,PayPal,Refunded
+TXN-11061,CUST-235,2024-08-03,58,Male,United Kingdom,Clothing,29.54,7,3.0,Credit Card,Completed
+TXN-11062,,2023-12-09,46,Male,United Kingdom,Beauty,144.65,2,,Bank Transfer,
+TXN-11063,CUST-102,2023-06-28,75,Male,France,Books,489.64,9,3.2,Credit Card,Completed
+TXN-11064,CUST-179,2023-11-27,26,Female,United Kingdom,Electronics,102.38,10,1.6,Bank Transfer,Returned
+TXN-11065,CUST-265,2023-11-15,52,Female,Canada,Beauty,179.24,8,2.3,PayPal,Returned
+TXN-11066,CUST-254,2022-10-21,57,Male,,Clothing,520.15,8,,PayPal,Cancelled
+TXN-11067,CUST-393,2022-10-05,24,Female,United Kingdom,Books,523.55,6,3.9,Bank Transfer,Completed
+TXN-11068,CUST-137,2024-08-13,65,Other,United States,Beauty,484.26,4,1.1,Credit Card,Pending
+TXN-11069,,2023-12-30,54,Male,Canada,Books,596.09,7,4.0,Cash,
+TXN-11070,CUST-194,2024-01-06,32,,United States,Beauty,210.53,4,3.3,PayPal,Pending
+TXN-11071,,2022-05-31,69,Female,Canada,Books,546.2,10,3.5,PayPal,Completed
+TXN-11072,CUST-378,2023-04-03,32,Female,United States,Electronics,501.48,8,2.6,Bank Transfer,Completed
+TXN-11073,CUST-147,2022-04-26,65,Female,Germany,Clothing,191.84,1,,Bank Transfer,Cancelled
+TXN-11074,CUST-209,2024-01-15,46,Female,Canada,Home,370.09,5,2.4,PayPal,Refunded
+TXN-11075,CUST-269,2022-11-27,57,Female,Canada,Home,159.81,6,1.8,Bank Transfer,Cancelled
+TXN-11076,CUST-211,2023-01-30,32,Male,,Books,179.64,9,4.3,PayPal,Pending
+TXN-11077,CUST-371,2023-03-11,64,Female,United States,Electronics,102.99,3,2.4,Credit Card,Completed
+TXN-11078,CUST-387,2023-02-28,39,Female,United States,Electronics,348.77,1,,Credit Card,Completed
+TXN-11079,CUST-104,2022-08-12,47,Male,Germany,Books,499.12,3,4.0,Credit Card,Cancelled
+TXN-11080,CUST-277,2023-01-11,51,Male,Canada,Clothing,,3,1.5,Credit Card,Completed
+TXN-11081,CUST-224,2023-07-17,74,Female,United States,Books,87.16,4,3.9,Credit Card,Completed
+TXN-11082,CUST-264,2023-05-20,75,Female,,Home,,2,1.8,Bank Transfer,Returned
+TXN-11083,CUST-158,2022-08-24,45,Male,Germany,Beauty,82.12,10,2.9,Cash,Cancelled
+TXN-11084,CUST-376,2024-01-03,27,Other,United States,Electronics,199.56,5,4.0,Bank Transfer,Cancelled
+TXN-11085,CUST-112,2024-06-03,72,Female,,Home,203.61,1,1.1,Credit Card,Completed
+TXN-11086,CUST-291,2022-08-29,46,Female,Canada,Clothing,411.03,1,,Credit Card,Returned
+TXN-11087,CUST-360,,42,Female,United Kingdom,Clothing,90.12,7,3.1,Cash,Pending
+TXN-11088,CUST-122,2022-01-18,68,Female,United States,Home,229.18,5,,Cash,
+TXN-11089,CUST-198,2024-07-09,29,Female,Germany,Home,297.85,1,4.0,PayPal,Cancelled
+TXN-11090,CUST-142,2022-03-03,46,,United Kingdom,Clothing,142.69,6,3.9,,Cancelled
+TXN-11091,CUST-185,2024-05-19,71,Male,United States,Electronics,17.96,4,4.0,Credit Card,Cancelled
+TXN-11092,CUST-375,2022-05-28,28,Male,United Kingdom,Home,467.69,9,1.9,,
+TXN-11093,CUST-133,2024-07-23,18,Male,United States,Home,439.89,6,,,Cancelled
+UNKNOWN_TXN_30,CUST-209,2024-04-27,48,Male,United Kingdom,Electronics,48.4,10,4.2,PayPal,Returned
+TXN-11095,CUST-317,2022-05-22,30,Other,France,Electronics,184.19,3,3.3,Bank Transfer,Pending
+TXN-11096,CUST-205,2023-12-22,70,Female,United States,Books,395.76,4,3.1,Credit Card,Completed
+TXN-11097,CUST-322,2022-01-27,43,Male,United Kingdom,Home,115.7,1,2.1,Bank Transfer,Pending
+TXN-11098,CUST-136,2023-12-20,31,Female,United Kingdom,Clothing,179.16,,3.8,Credit Card,Refunded
+TXN-11099,CUST-178,2022-03-17,34,Male,Germany,,332.31,5,3.9,PayPal,Pending
+TXN-11100,CUST-269,2024-10-06,25,Other,Germany,Electronics,561.28,9,4.5,Bank Transfer,Cancelled
+TXN-11101,CUST-137,,59,,France,Home,439.3,9,1.7,Cash,Refunded
+UNKNOWN_TXN_31,CUST-228,2022-03-22,39,Female,United Kingdom,Clothing,,6,1.2,Bank Transfer,Refunded
+TXN-11103,CUST-394,2023-08-06,75,Male,United States,Clothing,583.62,2,2.1,,Completed
+TXN-11104,CUST-232,2022-07-06,39,Female,United Kingdom,Electronics,280.87,9,4.2,Credit Card,Completed
+TXN-11105,CUST-330,2024-02-06,49,Female,Canada,Electronics,227.28,5,2.8,,Cancelled
+TXN-11106,CUST-321,2022-11-03,47,Male,Germany,Clothing,178.33,6,2.6,Credit Card,Completed
+TXN-11107,CUST-299,2022-12-12,60,Male,Germany,Clothing,278.08,3,1.4,Bank Transfer,Cancelled
+TXN-11108,CUST-373,2023-12-13,66,Other,Germany,,328.37,1,1.6,Bank Transfer,Cancelled
+TXN-11109,CUST-132,2022-06-09,22,Female,United Kingdom,Clothing,60.7,8,5.0,Bank Transfer,Cancelled
+TXN-11110,CUST-399,2022-02-02,45,Male,United States,Electronics,409.98,5,2.9,,Refunded
+TXN-11111,CUST-137,2023-05-31,52,Female,Canada,Books,591.1,6,4.4,Credit Card,Cancelled
+TXN-11112,CUST-357,,32,Male,United Kingdom,Clothing,129.08,1,1.8,PayPal,Completed
+TXN-11113,CUST-254,2023-11-28,71,Male,United Kingdom,Electronics,440.03,7,1.5,Cash,Pending
+TXN-11114,CUST-244,2024-04-29,53,,,Home,37.49,8,1.7,Credit Card,
+TXN-11115,CUST-324,2023-05-29,26,Male,Canada,Books,423.38,1,2.6,Bank Transfer,Cancelled
+TXN-11117,CUST-373,2022-04-05,53,,United Kingdom,Books,243.12,10,4.4,Credit Card,Returned
+TXN-11118,,2024-08-31,23,Female,Canada,Clothing,11.99,3,4.8,Cash,Completed
+TXN-11119,CUST-379,2023-02-15,50,Female,France,Clothing,318.77,2,1.7,Bank Transfer,Completed
+TXN-11120,CUST-173,2023-06-02,70,Female,United States,Electronics,509.98,1,4.8,PayPal,Refunded
+TXN-11121,CUST-291,2024-09-26,50,Male,United States,Home,485.77,2,1.0,Credit Card,Cancelled
+TXN-11122,CUST-105,2022-03-21,71,Other,France,Beauty,7.58,6,4.0,PayPal,Pending
+TXN-11123,CUST-384,2023-10-31,67,Female,United States,Books,36.28,7,2.8,Cash,Completed
+TXN-11124,CUST-121,2022-06-18,46,Female,Germany,Clothing,95.17,10,2.0,Cash,Completed
+TXN-11125,CUST-301,2023-10-25,40,Female,United States,Home,505.4,3,3.9,PayPal,Returned
+TXN-11126,CUST-143,2022-04-22,67,Male,United Kingdom,Books,433.42,8,1.3,Bank Transfer,Returned
+TXN-11127,CUST-276,2023-09-10,73,Male,United Kingdom,Electronics,304.51,8,1.6,PayPal,Refunded
+TXN-11128,CUST-362,,21,Female,United States,Home,199.97,9,2.9,Credit Card,Cancelled
+TXN-11129,CUST-194,2023-07-09,41,Female,,Electronics,482.7,2,2.5,Cash,Completed
+TXN-11130,CUST-229,2023-09-04,62,Male,Germany,Books,126.73,3,3.8,Cash,Returned
+TXN-11131,CUST-192,2022-11-13,51,,France,Books,256.6,10,4.0,Cash,Pending
+TXN-11132,CUST-390,2023-10-16,28,Female,France,Clothing,347.87,7,4.9,Bank Transfer,Pending
+TXN-11133,CUST-381,2022-03-29,28,Other,United Kingdom,Beauty,,2,,Bank Transfer,Completed
+TXN-11134,CUST-381,2023-08-01,72,Other,Canada,Books,104.0,10,4.4,Credit Card,
+TXN-11135,CUST-134,,71,Male,Canada,Home,326.45,5,2.6,PayPal,Cancelled
+TXN-11136,CUST-201,2024-08-24,63,Female,United Kingdom,Clothing,435.65,1,2.6,Credit Card,Returned
+UNKNOWN_TXN_32,CUST-349,,57,Male,United Kingdom,Electronics,419.9,3,1.8,Cash,Cancelled
+TXN-11138,CUST-282,2022-10-17,30,Male,Canada,Home,511.83,9,1.9,PayPal,Completed
+TXN-11139,CUST-220,2022-11-19,43,Female,Canada,Books,155.65,,1.5,Credit Card,Cancelled
+TXN-11140,CUST-135,2024-09-24,75,Female,United States,Home,534.94,,2.4,PayPal,Refunded
+TXN-11141,CUST-262,2022-04-10,44,Female,United Kingdom,Home,361.64,1,4.1,Cash,Returned
+TXN-11142,CUST-268,2024-01-30,47,Male,United States,Home,,8,1.9,PayPal,Returned
+UNKNOWN_TXN_33,,2024-06-04,64,Female,United Kingdom,Clothing,550.75,2,4.1,PayPal,Completed
+TXN-11144,CUST-178,,18,Male,France,Home,360.44,1,1.9,PayPal,Refunded
+TXN-11145,CUST-286,2023-05-04,63,Male,,Beauty,174.75,3,1.7,Credit Card,Returned
+TXN-11146,CUST-319,2022-02-08,37,Female,Germany,Beauty,314.6,1,1.8,Cash,Completed
+TXN-11147,CUST-260,2023-11-30,64,Female,United States,Home,60.68,1,,Cash,Completed
+TXN-11148,CUST-213,2023-10-03,22,Female,France,Home,133.01,6,3.9,Cash,Cancelled
+TXN-10013,CUST-323,2022-08-26,44,Male,United Kingdom,Beauty,,5,3.9,Bank Transfer,
+TXN-11150,CUST-284,2023-01-11,48,Female,Germany,Beauty,534.55,3,1.2,Bank Transfer,Completed
+TXN-11151,CUST-269,2022-06-14,66,Male,Germany,Home,,10,3.3,PayPal,Cancelled
+TXN-11152,CUST-336,2024-01-17,33,Female,Germany,Books,172.58,2,1.8,PayPal,Returned
+TXN-11153,CUST-256,2024-08-10,28,Female,United States,Electronics,287.74,3,1.1,Credit Card,Cancelled
+UNKNOWN_TXN_34,CUST-155,2022-05-15,43,Female,United Kingdom,Clothing,320.7,3,1.0,Bank Transfer,Pending
+TXN-11155,CUST-141,2023-10-01,33,Female,Canada,Books,426.55,6,1.9,,Pending
+TXN-11156,CUST-171,,22,Male,United Kingdom,Beauty,176.78,1,3.7,PayPal,Cancelled
+TXN-11157,CUST-200,2023-12-01,35,,United States,Beauty,266.72,6,3.1,PayPal,Returned
+TXN-11158,CUST-139,2023-09-18,43,Male,United Kingdom,Electronics,385.16,10,1.8,,Cancelled
+TXN-11159,CUST-109,2022-06-06,65,Female,Canada,Electronics,26.25,5,2.6,Cash,Completed
+TXN-11160,CUST-115,2023-05-25,61,Male,United Kingdom,Clothing,43.39,1,1.3,Bank Transfer,Completed
+TXN-11161,CUST-396,2022-05-27,46,Female,,,143.25,7,2.9,PayPal,Pending
+UNKNOWN_TXN_35,CUST-208,2024-09-19,35,Male,United Kingdom,Electronics,87.08,3,4.7,PayPal,Completed
+TXN-11163,CUST-382,2023-04-11,18,Female,Germany,Beauty,207.26,9,1.9,Bank Transfer,Pending
+TXN-11164,CUST-376,2022-10-30,51,Female,France,Books,501.01,4,3.1,Cash,
+TXN-11165,CUST-176,2023-08-14,24,Female,United States,Beauty,320.81,10,3.5,PayPal,Pending
+TXN-11166,CUST-214,2022-03-14,56,Male,United States,Clothing,262.38,9,3.7,Cash,
+TXN-11167,CUST-248,2023-04-17,60,Female,Germany,Home,162.04,3,4.8,PayPal,Cancelled
+TXN-11168,CUST-356,2022-09-20,70,Female,United States,Books,305.88,9,2.5,Credit Card,
+TXN-11169,,2022-05-24,65,Male,Germany,Electronics,315.99,9,,PayPal,Completed
+TXN-11170,CUST-105,2023-05-15,27,Male,United Kingdom,Electronics,,1,3.5,PayPal,Cancelled
+TXN-11171,CUST-184,2022-10-21,66,Male,Canada,Electronics,312.21,2,4.4,PayPal,Completed
+TXN-11172,CUST-171,2023-09-27,39,Female,Germany,Clothing,172.69,6,2.2,Bank Transfer,Refunded
+TXN-11173,CUST-191,2023-06-09,20,Female,United Kingdom,Electronics,421.99,10,1.6,Credit Card,Cancelled
+TXN-11174,CUST-389,2023-01-18,75,Female,United States,Books,161.05,3,3.7,Credit Card,Completed
+TXN-11175,CUST-174,2023-06-03,58,Male,United Kingdom,Electronics,464.3,2,1.9,PayPal,Returned
+TXN-11176,CUST-347,2024-06-15,55,Male,United Kingdom,Books,,9,1.6,PayPal,Cancelled
+TXN-11177,CUST-120,2023-10-22,63,Female,United States,Home,475.23,2,2.3,Cash,Pending
+TXN-11178,CUST-349,2022-09-08,68,Female,Canada,Beauty,245.86,8,3.5,Bank Transfer,Pending
+TXN-11179,CUST-235,,36,Female,United Kingdom,Electronics,417.88,,3.6,Bank Transfer,Pending
+TXN-11180,CUST-121,2022-10-25,24,Male,France,Home,126.5,2,3.4,Bank Transfer,Refunded
+TXN-11181,CUST-365,2023-02-13,46,Male,Germany,,264.38,8,2.5,Credit Card,Completed
+TXN-11182,CUST-284,2024-06-14,72,Female,United Kingdom,Clothing,262.82,8,3.9,Bank Transfer,Cancelled
+TXN-11183,CUST-332,2022-12-24,71,,,Electronics,588.67,1,5.0,Credit Card,Refunded
+TXN-11184,CUST-120,2023-07-02,45,Male,United States,Clothing,256.33,6,4.2,Bank Transfer,Cancelled
+TXN-11185,CUST-265,2022-07-04,58,Female,Germany,Electronics,289.93,2,,PayPal,Cancelled
+TXN-11186,CUST-366,2024-08-02,67,Female,United Kingdom,Beauty,234.3,,3.5,Credit Card,Refunded
+TXN-11187,CUST-240,2022-07-24,64,Female,Canada,Electronics,442.83,3,4.7,Bank Transfer,Cancelled
+TXN-11188,CUST-234,2022-11-21,75,Female,Germany,,400.08,6,3.1,PayPal,Refunded
+TXN-11189,CUST-391,2023-05-13,50,Female,United States,Electronics,42.18,4,1.8,Credit Card,Pending
+TXN-11190,CUST-293,2023-05-03,60,Male,United States,Beauty,433.05,10,1.1,PayPal,Refunded
+TXN-11191,CUST-139,2022-02-09,40,Female,United States,Clothing,203.04,1,3.4,PayPal,Completed
+TXN-11192,CUST-292,2023-04-27,46,Male,Canada,Beauty,128.39,10,3.3,PayPal,Cancelled
+TXN-11193,CUST-214,2022-11-24,49,Other,United States,Books,184.7,4,4.9,Cash,Completed
+TXN-11194,,,49,Male,Canada,Electronics,354.9,10,4.1,Cash,Completed
+TXN-11195,CUST-276,2023-01-25,45,Male,United States,Home,266.64,3,3.9,Credit Card,Refunded
+TXN-11196,CUST-346,2023-01-06,24,Other,United States,Books,191.11,2,1.0,PayPal,Returned
+TXN-11197,CUST-103,2022-08-07,70,Female,France,Beauty,147.45,6,4.5,Credit Card,Cancelled
+TXN-11198,CUST-171,2022-01-24,53,Female,Canada,,331.51,2,3.1,Bank Transfer,
+TXN-11199,CUST-217,2023-10-13,54,Male,Germany,Electronics,307.96,2,4.1,Credit Card,Refunded
+TXN-11200,CUST-243,2022-03-12,51,Female,France,Electronics,200.07,8,2.8,Bank Transfer,Pending
+TXN-11201,CUST-195,2022-11-02,60,Male,Germany,Books,61.09,1,3.0,Credit Card,Pending
+TXN-11202,CUST-160,2023-06-22,56,Male,,,421.74,1,4.5,,Completed
+TXN-11203,CUST-312,2022-09-23,71,Male,Canada,Home,30.77,8,3.3,PayPal,Completed
+TXN-11204,CUST-158,2022-04-05,24,Other,United Kingdom,Books,325.96,8,2.0,Credit Card,
+TXN-11205,CUST-345,2024-02-11,25,Male,Canada,Beauty,218.41,2,2.4,PayPal,Completed
+TXN-11206,CUST-182,2022-12-24,33,Female,United Kingdom,Home,364.83,5,4.6,Credit Card,Cancelled
+TXN-11207,CUST-310,2023-03-07,61,Male,Germany,Beauty,409.25,5,,Cash,Refunded
+TXN-11208,CUST-122,2023-03-24,56,Female,United States,Clothing,8.84,8,1.7,PayPal,Refunded
+TXN-11210,CUST-362,2023-07-29,20,Female,France,Clothing,414.61,7,1.4,Credit Card,Completed
+TXN-11211,CUST-393,2024-01-11,68,Male,Canada,,379.44,10,4.0,PayPal,Refunded
+TXN-11212,CUST-185,2022-11-28,47,Female,Canada,Clothing,338.3,2,3.7,Bank Transfer,Cancelled
+TXN-11213,CUST-192,,51,Male,United Kingdom,Clothing,156.75,3,3.3,Credit Card,Cancelled
+TXN-11214,CUST-307,2024-08-14,46,Female,France,Electronics,80.49,10,1.9,Credit Card,
+TXN-11215,CUST-388,2022-11-21,69,Male,Germany,Home,41.43,8,3.5,Credit Card,Pending
+TXN-11216,CUST-245,2023-11-22,67,Other,United States,Beauty,525.5,4,2.2,Credit Card,Refunded
+TXN-11217,CUST-210,2024-01-10,19,Male,Germany,Electronics,183.4,7,3.3,PayPal,Completed
+TXN-11218,CUST-341,2024-08-23,29,Female,United Kingdom,Beauty,126.89,8,4.0,,Pending
+TXN-11219,CUST-187,2023-10-17,46,Male,,Beauty,282.93,5,2.7,Credit Card,Completed
+TXN-11220,CUST-310,2022-12-08,24,Female,France,Electronics,458.48,5,2.5,Credit Card,Cancelled
+TXN-11221,CUST-398,2023-07-14,44,Other,United Kingdom,Beauty,340.76,6,,Cash,Completed
+TXN-11222,,2022-08-10,64,Female,United States,Clothing,532.17,10,1.9,Credit Card,Completed
+TXN-11223,CUST-361,2022-07-15,75,Other,,Home,385.15,9,,PayPal,Refunded
+TXN-11224,CUST-275,2023-01-15,70,Female,United States,Clothing,138.14,10,1.4,Cash,
+TXN-11225,CUST-135,,40,Female,United States,Home,507.54,7,3.9,PayPal,Pending
+TXN-11226,CUST-297,2023-05-30,33,Male,Canada,Beauty,477.05,2,4.8,Credit Card,Completed
+TXN-11227,CUST-108,2023-10-27,68,Other,United Kingdom,Beauty,552.31,7,2.5,Bank Transfer,Pending
+TXN-11228,CUST-358,2022-12-27,46,Male,France,Electronics,73.99,5,4.9,Bank Transfer,Cancelled
+TXN-11229,CUST-176,2023-03-13,58,Other,Germany,Books,303.25,9,2.6,Credit Card,Cancelled
+TXN-11230,CUST-190,2022-12-10,68,Female,United States,Home,72.85,1,1.8,Bank Transfer,Refunded
+TXN-11231,CUST-119,2023-04-15,53,Female,,Home,393.22,10,1.7,Credit Card,Cancelled
+TXN-11233,CUST-160,2023-03-23,65,Male,Germany,,41.58,4,2.8,Credit Card,Refunded
+TXN-11234,CUST-166,2023-11-07,40,Female,Canada,Clothing,54.35,9,3.4,Credit Card,Returned
+TXN-11235,CUST-376,2023-12-20,29,Male,Germany,Books,167.18,5,,PayPal,Completed
+TXN-11236,,2024-07-16,72,Other,France,Books,170.8,8,1.0,Cash,Cancelled
+TXN-11237,CUST-289,2024-04-05,46,Male,Germany,Beauty,340.82,7,,PayPal,Cancelled
+TXN-11238,CUST-371,2022-01-17,65,Male,United States,Home,533.63,1,,Bank Transfer,Completed
+TXN-11239,CUST-346,2022-04-17,32,Female,United Kingdom,Home,212.54,10,,Credit Card,Cancelled
+TXN-11240,CUST-295,2023-10-01,37,Male,Germany,Clothing,510.02,10,2.7,Credit Card,
+TXN-11241,CUST-394,2023-03-31,64,Male,United States,Home,270.99,3,3.9,PayPal,Cancelled
+TXN-11242,CUST-168,2022-02-03,46,Female,Germany,Electronics,455.65,8,1.8,,Pending
+TXN-11243,CUST-219,2022-05-08,49,Female,,Home,471.3,5,1.6,PayPal,Refunded
+TXN-11244,CUST-142,2023-07-19,66,Male,Germany,Books,561.13,7,4.7,Cash,Completed
+TXN-11245,CUST-378,2024-05-26,34,Male,United Kingdom,Clothing,351.63,3,4.1,Bank Transfer,Completed
+TXN-11246,CUST-196,2022-12-26,49,Female,United States,Electronics,228.84,5,3.5,Cash,Cancelled
+TXN-11247,CUST-103,2024-04-20,69,Female,Germany,Clothing,263.53,1,2.9,PayPal,Cancelled
+TXN-11248,CUST-160,,41,Male,France,Home,244.57,10,2.5,Bank Transfer,Cancelled
+TXN-11249,CUST-292,2022-08-18,28,Male,United Kingdom,Beauty,181.12,10,1.4,PayPal,Completed
+TXN-11250,CUST-261,2024-06-19,25,Male,Canada,Beauty,435.44,5,4.2,PayPal,Completed
+TXN-11251,CUST-154,2024-07-13,37,Male,France,Clothing,513.54,1,3.5,Cash,Completed
+TXN-11252,CUST-399,2022-01-05,62,Female,United States,Home,391.7,6,,Bank Transfer,Cancelled
+TXN-11253,CUST-374,,36,Male,Germany,Beauty,,4,1.4,Credit Card,Pending
+TXN-11254,CUST-287,,52,Female,United Kingdom,Beauty,223.15,2,4.7,Bank Transfer,Pending
+TXN-11255,CUST-303,2024-05-10,57,Female,,Clothing,413.82,3,3.6,Bank Transfer,Returned
+TXN-11256,CUST-311,2023-09-07,30,Male,Canada,Beauty,77.82,7,4.8,Credit Card,Completed
+TXN-11257,CUST-385,2024-09-09,46,Male,United Kingdom,Electronics,410.88,2,2.1,Credit Card,Completed
+TXN-11258,CUST-289,2022-09-05,27,Male,United States,Clothing,469.3,6,4.3,Credit Card,Completed
+TXN-11259,CUST-347,2022-07-17,52,Female,United Kingdom,Clothing,574.53,1,2.7,Bank Transfer,Returned
+TXN-11260,CUST-257,2024-04-28,26,Male,United Kingdom,Home,420.52,2,4.3,PayPal,
+TXN-11261,CUST-303,2023-08-15,24,Female,United Kingdom,Electronics,457.34,3,3.0,Cash,Pending
+TXN-11262,CUST-160,2023-10-14,65,Female,Germany,Books,315.65,4,4.8,Credit Card,Pending
+TXN-11263,CUST-328,2022-06-27,74,,France,Beauty,,6,2.8,Credit Card,Refunded
+TXN-11264,CUST-182,2023-06-14,57,Female,France,Clothing,,5,1.2,Bank Transfer,Returned
+TXN-11265,CUST-360,2022-12-04,23,Other,Germany,Beauty,289.55,5,4.6,Credit Card,Cancelled
+TXN-11266,CUST-273,2023-10-09,32,Male,Germany,Electronics,34.53,10,1.5,PayPal,Cancelled
+TXN-11267,CUST-126,2024-05-13,20,Female,Canada,Electronics,251.49,4,1.1,PayPal,Completed
+TXN-11268,CUST-102,2022-06-12,27,Male,United Kingdom,Clothing,73.0,6,2.7,Credit Card,Completed
+TXN-11269,CUST-174,2022-04-06,35,Female,Germany,Clothing,200.61,7,1.4,Cash,Cancelled
+TXN-11270,CUST-322,2023-10-06,46,Female,Germany,Clothing,62.23,8,3.2,PayPal,Refunded
+TXN-11271,CUST-234,2023-09-25,62,Male,Germany,Clothing,144.68,2,4.0,Cash,
+TXN-11272,CUST-140,2022-03-22,33,Female,United States,Home,254.34,4,3.4,Credit Card,Completed
+TXN-11273,CUST-296,2024-01-31,46,Male,Germany,Clothing,,1,3.2,Cash,Cancelled
+TXN-11274,CUST-305,2023-10-12,31,Male,Germany,Books,,3,2.8,Cash,
+TXN-11275,CUST-366,2023-10-31,36,Female,France,Beauty,338.51,3,2.1,,Refunded
+TXN-11276,CUST-129,2023-03-07,19,Male,United Kingdom,Books,403.31,8,,PayPal,Pending
+TXN-11277,CUST-189,2024-04-06,48,Female,United Kingdom,Home,546.29,4,3.0,Credit Card,Completed
+TXN-11278,CUST-324,2023-11-07,44,Female,Canada,Clothing,518.79,1,3.0,Credit Card,Cancelled
+TXN-11279,CUST-365,2024-08-15,54,Male,France,Electronics,125.97,,4.0,PayPal,Returned
+TXN-11280,CUST-117,2023-10-16,29,Female,Canada,Beauty,307.02,10,,PayPal,Completed
+TXN-11281,CUST-361,2022-04-24,55,Male,France,Home,218.1,10,3.0,PayPal,Cancelled
+TXN-11282,CUST-218,2022-05-06,54,,France,Clothing,362.07,,3.4,PayPal,Completed
+TXN-11283,CUST-118,2022-09-26,42,Male,United Kingdom,Home,289.52,1,2.1,PayPal,Pending
+TXN-11284,CUST-100,2023-05-22,63,Male,,Home,59.32,8,4.8,Credit Card,Completed
+TXN-11285,CUST-144,2022-08-01,41,Male,Canada,Clothing,128.81,5,4.7,Bank Transfer,
+TXN-11286,CUST-304,2024-03-25,34,Other,Canada,Home,305.69,8,4.5,Credit Card,Cancelled
+TXN-11287,,2023-05-14,41,Male,United Kingdom,Electronics,381.97,4,3.1,Credit Card,Completed
+TXN-11288,CUST-202,2023-03-06,33,Female,France,Home,408.87,6,1.7,PayPal,Refunded
+TXN-11289,CUST-135,2023-10-11,40,Male,France,Beauty,86.33,1,4.3,,Refunded
+TXN-11290,CUST-381,2022-07-04,62,Male,United Kingdom,Home,59.51,5,2.6,Bank Transfer,Cancelled
+TXN-11291,CUST-386,,73,Other,United Kingdom,Home,299.44,4,3.0,Bank Transfer,Pending
+TXN-11292,CUST-278,2023-08-04,62,Female,United States,Electronics,332.13,10,,Credit Card,Returned
+TXN-11293,CUST-241,2022-05-01,52,Other,France,Home,92.02,3,1.2,PayPal,Cancelled
+TXN-11294,CUST-199,2023-05-11,24,Female,United States,Home,189.67,1,2.2,PayPal,Completed
+TXN-11295,CUST-306,2022-06-01,68,Other,United States,Beauty,162.0,8,2.5,Bank Transfer,Pending
+TXN-11296,CUST-233,2022-09-18,63,Female,United States,Beauty,541.48,5,,Credit Card,Pending
+TXN-11297,CUST-359,2022-01-31,38,Other,Germany,Books,301.35,4,4.2,Credit Card,Cancelled
+TXN-11298,CUST-137,,70,Male,France,Beauty,11.28,5,2.6,Bank Transfer,Completed
+TXN-11299,CUST-274,2022-06-06,64,Female,Germany,Clothing,415.08,10,2.8,PayPal,Refunded
+TXN-11300,CUST-362,2022-04-28,62,Female,Canada,Beauty,396.41,1,3.3,Credit Card,Completed
+TXN-11301,CUST-375,,53,Other,Canada,Electronics,,4,4.5,PayPal,Pending
+TXN-11302,CUST-394,2022-03-27,32,Other,United States,Electronics,34.53,10,1.7,,Completed
+TXN-11303,CUST-326,2023-09-05,54,Female,United States,Beauty,449.04,6,2.4,Cash,Cancelled
+TXN-11304,CUST-388,2022-12-23,47,Female,,Beauty,195.18,8,2.0,PayPal,Completed
+TXN-11305,CUST-224,2023-04-24,49,,,Beauty,337.89,4,3.7,Bank Transfer,Cancelled
+TXN-11306,CUST-334,2024-08-27,22,Female,France,Clothing,129.04,4,4.9,PayPal,Pending
+TXN-11307,CUST-400,2022-09-14,28,Female,Germany,Home,439.93,9,2.6,Bank Transfer,Completed
+TXN-11308,,2024-05-16,46,Female,United States,Beauty,392.76,1,4.7,Cash,Pending
+TXN-11309,CUST-134,2022-04-16,59,Female,United Kingdom,Electronics,528.07,1,,Credit Card,Refunded
+TXN-11310,CUST-212,2023-08-25,40,Male,United States,Clothing,122.9,4,,Credit Card,
+TXN-11311,CUST-217,2022-07-30,63,Female,Germany,Beauty,450.31,4,1.5,Credit Card,Completed
+TXN-11312,,2023-04-02,61,Female,United States,Electronics,546.2,4,1.9,Credit Card,Completed
+TXN-11313,CUST-364,2022-10-06,64,Male,Canada,Electronics,429.1,2,1.5,Credit Card,Returned
+TXN-11314,CUST-234,2023-09-14,34,Male,Germany,Clothing,124.46,2,3.9,Bank Transfer,Completed
+TXN-11315,CUST-147,2023-08-04,64,Male,France,Home,,3,1.0,Cash,Refunded
+TXN-11316,CUST-275,2023-10-10,46,Male,Germany,Clothing,38.83,8,3.1,PayPal,Returned
+TXN-11317,CUST-191,2024-06-29,45,Female,France,Home,,1,1.0,Credit Card,Completed
+TXN-11318,CUST-281,2022-09-17,26,Male,Canada,Home,165.94,9,1.7,Cash,Returned
+TXN-11319,,2023-09-11,31,Male,France,Electronics,44.25,8,4.4,Credit Card,Pending
+TXN-11320,CUST-197,2022-01-31,37,Female,United States,Home,72.81,4,3.1,Credit Card,Pending
+TXN-11321,CUST-202,2022-11-27,61,Female,United Kingdom,Electronics,,1,4.5,Cash,Completed
+TXN-11322,CUST-223,2023-02-01,32,Female,United Kingdom,Electronics,512.9,2,,Credit Card,Cancelled
+TXN-11323,CUST-205,2023-11-04,74,Other,France,Electronics,31.69,3,2.2,Bank Transfer,Refunded
+TXN-11324,CUST-227,2024-03-09,44,Female,United Kingdom,Beauty,589.53,3,2.9,Credit Card,Pending
+TXN-11325,CUST-282,2022-11-23,52,Female,Germany,Books,352.52,1,1.4,Credit Card,
+TXN-11326,,2022-08-07,55,Female,United States,Beauty,174.2,2,1.2,Credit Card,
+TXN-11327,CUST-140,2022-11-26,18,Female,France,Electronics,362.08,6,3.6,Cash,Cancelled
+TXN-11328,CUST-352,2023-01-30,21,Female,United States,Home,344.64,8,,Bank Transfer,Completed
+TXN-11329,CUST-377,2023-06-24,40,Male,Germany,Home,141.92,3,4.1,Bank Transfer,Returned
+TXN-11330,CUST-346,2022-10-12,67,Other,United Kingdom,Clothing,425.23,1,4.7,Bank Transfer,
+TXN-11331,CUST-261,2024-04-06,57,Female,United Kingdom,Clothing,253.21,3,3.9,PayPal,Completed
+TXN-11332,CUST-394,2023-10-24,44,,United States,Beauty,387.45,5,,Credit Card,Pending
+TXN-11333,CUST-351,2023-03-22,64,Male,,Home,322.6,7,1.5,Cash,Completed
+TXN-11334,CUST-361,2022-07-22,56,Female,Germany,Clothing,309.55,2,,Bank Transfer,Completed
+TXN-11335,CUST-213,,29,Male,United Kingdom,Clothing,88.5,3,3.3,Credit Card,Completed
+TXN-11336,CUST-165,2022-02-17,19,Female,United Kingdom,Beauty,321.24,6,1.3,Credit Card,Completed
+TXN-11337,CUST-316,2022-05-08,49,Female,United States,Home,212.53,3,3.6,PayPal,Pending
+TXN-11338,CUST-376,2022-12-01,39,Female,Canada,Beauty,457.81,9,,PayPal,Returned
+TXN-11339,CUST-277,2023-08-14,46,Male,Canada,Beauty,278.02,1,3.6,PayPal,Cancelled
+TXN-11340,CUST-189,2023-10-22,61,Female,Germany,Home,157.58,9,1.6,PayPal,Completed
+TXN-11341,CUST-161,2024-07-22,44,,France,,7.23,1,3.8,PayPal,Completed
+UNKNOWN_TXN_36,CUST-335,2024-05-11,48,Female,United States,Beauty,432.1,6,4.8,Credit Card,Completed
+TXN-11343,CUST-104,,39,Male,Germany,Clothing,167.36,6,4.6,,Cancelled
+TXN-11344,,2023-06-25,37,Female,United States,Beauty,26.62,4,4.4,Credit Card,Cancelled
+TXN-11345,CUST-151,2022-01-17,63,Female,United Kingdom,Clothing,331.35,5,1.1,PayPal,
+TXN-11346,CUST-232,2024-04-29,34,Male,France,Electronics,392.08,5,3.8,Credit Card,Completed
+TXN-11347,CUST-234,2022-10-09,29,Female,United States,Beauty,432.39,2,1.3,Cash,Pending
+UNKNOWN_TXN_37,CUST-341,2023-02-14,30,Female,United States,Clothing,558.27,8,1.9,Cash,Refunded
+TXN-11349,CUST-275,2022-11-17,59,Female,Canada,Home,373.15,8,1.3,Bank Transfer,Pending
+TXN-11350,CUST-355,2023-02-07,39,Female,Germany,Beauty,78.36,6,3.3,Credit Card,Completed
+TXN-11351,CUST-314,2023-04-11,24,Female,United Kingdom,Home,592.52,2,1.5,Cash,Cancelled
+TXN-11352,CUST-290,2024-09-17,19,Male,United States,Books,88.26,7,4.8,Credit Card,Pending
+TXN-11353,CUST-305,2024-08-18,21,Male,Germany,Electronics,143.5,4,2.1,Bank Transfer,Completed
+TXN-11354,CUST-192,2022-08-18,21,Female,United Kingdom,Clothing,441.4,9,4.8,Cash,Pending
+TXN-11355,CUST-394,2022-05-23,24,,Germany,Electronics,22.13,3,2.9,PayPal,Returned
+TXN-11356,CUST-151,2024-06-01,51,Female,United Kingdom,Home,246.29,7,4.7,Credit Card,Pending
+TXN-11357,CUST-220,2022-01-04,46,Female,France,Books,289.97,7,2.5,Cash,Cancelled
+TXN-11358,CUST-295,2024-04-11,37,Female,United Kingdom,Books,307.91,7,2.5,Bank Transfer,Completed
+TXN-11359,CUST-176,2023-07-05,46,Male,Germany,Electronics,522.49,2,2.0,Credit Card,Completed
+UNKNOWN_TXN_38,CUST-104,2024-06-07,54,Female,Germany,Beauty,270.08,9,,Bank Transfer,
+TXN-11361,CUST-355,2024-03-14,22,Male,United Kingdom,Electronics,133.96,7,1.3,Credit Card,Pending
+TXN-11362,CUST-364,2024-08-27,30,Female,United States,Home,262.3,3,4.8,Bank Transfer,Cancelled
+TXN-11363,CUST-261,2022-12-04,49,Female,United States,Electronics,400.56,,2.7,Cash,Cancelled
+TXN-11364,CUST-253,2023-01-24,31,Male,United Kingdom,Books,57.23,8,1.5,Bank Transfer,Completed
+TXN-11365,CUST-390,2024-05-08,24,,,Electronics,528.06,2,,,Cancelled
+TXN-11366,CUST-150,2022-03-05,27,Female,,Home,101.07,5,1.2,Credit Card,Returned
+TXN-11367,CUST-130,2022-06-01,54,,France,Beauty,107.28,6,5.0,Bank Transfer,Pending
+TXN-11368,CUST-230,2024-09-16,46,Male,United Kingdom,Beauty,218.31,7,1.3,PayPal,
+TXN-11369,CUST-149,2023-11-16,74,Other,United States,Beauty,311.26,6,3.7,Cash,Cancelled
+TXN-11370,CUST-271,2022-09-04,50,Female,United Kingdom,Electronics,11.66,7,1.5,Bank Transfer,Pending
+TXN-11371,CUST-284,2023-05-17,70,,Canada,Electronics,120.86,8,4.3,Credit Card,Returned
+TXN-11372,CUST-231,2024-01-19,57,Male,United States,Beauty,55.95,5,,Credit Card,Cancelled
+TXN-11373,CUST-310,2022-09-28,46,Female,United States,Books,491.13,4,,Credit Card,Completed
+TXN-11374,CUST-201,2022-12-28,68,Other,Canada,Home,279.65,7,1.5,Credit Card,Cancelled
+TXN-11375,CUST-375,2022-06-09,69,Female,Germany,Electronics,407.21,,3.6,Credit Card,
+TXN-11376,CUST-245,2022-03-18,36,Male,United States,,580.64,1,3.7,Cash,Cancelled
+UNKNOWN_TXN_39,CUST-361,2022-01-14,61,Female,Canada,Books,,10,4.7,Credit Card,Completed
+TXN-11378,CUST-328,2023-01-30,51,Female,Canada,Books,296.03,,1.7,Bank Transfer,Pending
+TXN-11379,CUST-295,2022-12-15,24,,Germany,Electronics,341.53,,4.5,Bank Transfer,
+TXN-11380,CUST-337,2024-02-19,56,Male,Germany,Clothing,168.49,7,3.0,PayPal,Pending
+TXN-11381,CUST-174,2022-11-17,57,Female,United States,Clothing,290.76,1,1.5,Credit Card,Returned
+TXN-11382,CUST-272,2023-03-11,47,Male,Germany,Books,168.13,10,1.6,PayPal,Cancelled
+TXN-11383,,2022-04-19,53,Female,United States,Electronics,300.12,9,2.1,Bank Transfer,Completed
+TXN-11384,CUST-136,2023-01-08,68,Female,United Kingdom,Clothing,279.03,9,3.4,Cash,Pending
+TXN-11385,CUST-275,2024-06-07,25,Other,France,Books,282.95,1,3.8,,Cancelled
+TXN-11386,CUST-262,2024-03-09,22,Male,United Kingdom,Home,321.66,1,5.0,Credit Card,Cancelled
+TXN-11387,CUST-236,2022-10-12,41,Male,United Kingdom,,554.95,7,4.4,Bank Transfer,Cancelled
+TXN-11388,CUST-302,2022-11-11,70,Male,United Kingdom,Electronics,565.01,7,3.8,Bank Transfer,Completed
+TXN-11389,CUST-327,2022-05-31,68,Male,United States,Clothing,388.87,9,3.3,Credit Card,Completed
+TXN-11390,CUST-285,2024-02-02,40,Male,,Home,474.14,7,3.2,Credit Card,Returned
+TXN-11391,CUST-366,2024-07-04,48,Other,Canada,Clothing,292.29,8,2.4,Credit Card,Pending
+TXN-11392,CUST-311,2022-01-30,60,Other,France,Books,345.14,6,1.4,PayPal,Completed
+TXN-11393,CUST-111,2023-04-09,71,Female,United States,Clothing,87.75,1,1.2,PayPal,Cancelled
+TXN-11394,CUST-220,2024-08-07,72,,United Kingdom,Home,518.47,6,2.7,Credit Card,Pending
+TXN-11395,CUST-140,2023-03-18,60,Female,United States,Clothing,213.8,10,2.6,Credit Card,Refunded
+TXN-11396,CUST-303,2023-05-30,51,Female,Germany,Clothing,271.11,,1.4,Cash,Cancelled
+TXN-11397,CUST-132,2022-02-24,62,Male,Canada,Beauty,65.93,1,3.2,Bank Transfer,Returned
+UNKNOWN_TXN_40,CUST-342,2022-04-11,43,Male,United Kingdom,Beauty,317.72,7,,Bank Transfer,Completed
+TXN-11399,CUST-113,2024-01-20,59,Female,France,Beauty,,7,4.2,Credit Card,
+TXN-11400,CUST-368,2022-07-13,38,Male,United States,Home,219.83,9,1.2,PayPal,Cancelled
+TXN-11401,CUST-142,2022-10-10,66,Female,Canada,Electronics,,7,1.3,Bank Transfer,Pending
+TXN-11402,CUST-179,2023-06-16,58,Female,Canada,Home,114.26,9,4.6,Bank Transfer,Cancelled
+TXN-11403,CUST-299,2022-02-21,45,Male,United Kingdom,Electronics,354.96,,4.2,Credit Card,Refunded
+TXN-11404,CUST-226,2022-08-13,49,,United Kingdom,Home,474.47,3,1.9,Bank Transfer,Completed
+TXN-11405,CUST-326,2022-02-06,46,Male,United States,Clothing,533.95,3,2.3,Cash,Cancelled
+TXN-11406,CUST-167,2022-03-09,53,Male,France,Books,280.52,9,4.5,PayPal,Completed
+TXN-11407,CUST-187,2022-08-20,42,Male,Canada,Books,,5,,Credit Card,Refunded
+TXN-11408,CUST-282,2023-02-19,68,Female,Canada,Beauty,18.16,4,3.4,PayPal,Pending
+TXN-11409,CUST-266,2022-08-14,67,Female,Germany,Electronics,106.13,6,4.0,Credit Card,Pending
+TXN-11410,CUST-339,2022-06-25,21,Female,United States,Books,368.23,1,4.6,Credit Card,Cancelled
+TXN-11411,CUST-376,2022-10-22,20,Male,Germany,Beauty,320.47,4,,Bank Transfer,Refunded
+TXN-11412,CUST-380,2022-01-04,23,Female,France,Beauty,106.36,1,3.8,Bank Transfer,Completed
+TXN-11413,CUST-376,2024-07-18,55,Female,Germany,Beauty,26.5,4,2.4,Bank Transfer,Completed
+TXN-11414,CUST-333,2022-09-11,54,Male,France,Electronics,290.09,,3.2,PayPal,Completed
+TXN-11415,CUST-388,2023-11-29,59,Female,United Kingdom,Clothing,243.89,8,3.6,PayPal,Refunded
+TXN-11416,CUST-373,2022-12-07,21,Female,United States,Beauty,210.05,9,2.4,Bank Transfer,Completed
+TXN-11417,CUST-277,2022-01-14,21,Male,Canada,Home,101.42,10,2.9,Bank Transfer,Pending
+TXN-11418,CUST-216,2022-01-22,42,Female,United Kingdom,Books,247.8,10,4.9,Credit Card,Completed
+TXN-11419,CUST-326,2024-06-21,52,,United States,Home,68.34,5,,PayPal,Cancelled
+TXN-11420,CUST-311,2024-02-18,70,Female,United States,Electronics,233.74,5,3.6,Bank Transfer,Pending
+TXN-11421,,2024-09-19,45,Male,United States,Electronics,13.12,4,2.4,Credit Card,Pending
+TXN-11422,CUST-367,2023-05-16,51,Female,United States,Home,385.17,2,5.0,Credit Card,Pending
+TXN-11423,CUST-169,2022-02-16,50,Female,France,Electronics,,8,2.7,Bank Transfer,Pending
+TXN-11424,CUST-340,2022-10-25,62,Female,,Beauty,138.22,1,1.8,Bank Transfer,Completed
+TXN-11425,,2022-06-21,46,Female,France,Electronics,198.6,7,3.1,Cash,
+TXN-11426,CUST-344,2022-04-13,47,Male,United States,Home,87.64,7,4.0,Bank Transfer,Pending
+TXN-11427,CUST-320,2022-12-10,75,Male,United States,Electronics,346.66,2,4.5,PayPal,Completed
+TXN-11428,CUST-218,2022-12-26,38,Male,United States,Home,284.4,6,1.8,Bank Transfer,Cancelled
+TXN-11429,CUST-380,2023-05-14,31,Male,Canada,Books,382.86,2,,Cash,Cancelled
+TXN-11430,CUST-310,2022-01-14,54,Male,United States,Clothing,419.89,1,3.1,Bank Transfer,Completed
+TXN-11431,CUST-323,2022-12-08,18,,United Kingdom,Beauty,531.06,7,1.5,Credit Card,Cancelled
+TXN-11432,CUST-183,2024-05-27,46,Male,Germany,Beauty,485.02,,3.7,Credit Card,Pending
+TXN-11433,CUST-299,2022-10-04,75,Other,United Kingdom,Books,186.52,6,3.1,Credit Card,Completed
+TXN-11434,CUST-212,2022-01-22,36,Male,United Kingdom,Home,576.81,4,1.1,Credit Card,Completed
+TXN-11435,CUST-316,2024-05-26,46,Female,United States,Home,247.76,4,4.8,Credit Card,Completed
+TXN-11437,CUST-239,2022-09-08,39,Female,Canada,Electronics,,8,2.6,Credit Card,Pending
+TXN-11438,CUST-372,2024-09-23,42,Male,United Kingdom,Home,542.41,3,2.6,Bank Transfer,Refunded
+TXN-11439,CUST-311,2024-02-02,41,Other,France,Electronics,220.32,,3.9,PayPal,Completed
+TXN-11440,CUST-135,2024-09-04,43,Female,United Kingdom,Home,564.15,,1.0,PayPal,Completed
+TXN-11441,CUST-248,2024-09-15,46,Female,,,171.85,6,3.4,Credit Card,Refunded
+TXN-11442,,2023-11-27,33,Female,United States,Books,82.36,4,4.2,PayPal,Refunded
+TXN-11443,CUST-239,2023-04-06,34,Male,Germany,Books,331.64,8,3.2,Bank Transfer,Cancelled
+TXN-11444,CUST-351,2024-07-21,45,Male,Germany,Home,494.52,8,5.0,Credit Card,Pending
+TXN-11445,CUST-109,2023-02-05,63,Female,United Kingdom,Electronics,525.03,1,2.9,Bank Transfer,Pending
+TXN-11446,CUST-373,2022-10-10,58,Female,Germany,Home,376.29,2,,Bank Transfer,Cancelled
+TXN-11447,CUST-152,2023-08-17,74,Male,United Kingdom,Electronics,107.17,9,2.5,Cash,Pending
+TXN-11448,CUST-164,2024-05-04,35,Male,United States,Home,373.29,10,4.0,Cash,Completed
+TXN-11449,CUST-104,2024-03-25,18,Other,United Kingdom,Electronics,470.49,7,2.2,PayPal,Completed
+TXN-11450,,2024-03-22,44,Female,Germany,Electronics,330.48,5,4.6,Credit Card,Refunded
+TXN-11451,CUST-211,2024-09-19,71,Male,Canada,Books,100.21,3,3.0,Bank Transfer,Completed
+TXN-11452,CUST-259,2023-03-12,70,Male,United States,Electronics,299.24,,1.3,PayPal,Pending
+TXN-11453,CUST-355,2022-06-03,34,Male,France,Home,238.02,5,2.3,Bank Transfer,Cancelled
+TXN-11454,CUST-337,2023-10-01,58,Female,France,Clothing,163.46,3,4.8,,
+TXN-11455,CUST-116,2022-11-07,20,Male,United States,Clothing,431.73,5,2.4,PayPal,Returned
+TXN-11456,CUST-174,2024-03-29,46,Male,United States,Books,286.29,1,4.3,Bank Transfer,Cancelled
+TXN-11457,CUST-300,,62,Male,United States,Books,7.72,6,,PayPal,Completed
+TXN-11458,CUST-340,,58,Male,Germany,Clothing,367.32,1,4.3,Credit Card,Pending
+TXN-11459,CUST-228,2023-08-31,28,Male,Germany,Home,388.84,1,2.2,Credit Card,Cancelled
+TXN-11460,CUST-106,2022-11-10,49,Female,Germany,Home,464.01,10,1.3,Credit Card,Pending
+TXN-11461,CUST-227,2023-11-08,52,Male,Canada,Electronics,134.97,4,2.4,Cash,Pending
+TXN-11462,CUST-326,,65,Female,United Kingdom,Beauty,154.83,8,2.4,Cash,Cancelled
+TXN-11463,CUST-117,2024-06-18,61,Female,United Kingdom,Beauty,487.94,8,3.5,Credit Card,Returned
+TXN-11464,CUST-148,2023-05-30,62,,Germany,Books,360.25,9,4.6,Cash,Returned
+TXN-11465,CUST-206,2022-03-30,52,Male,United Kingdom,Electronics,323.67,5,4.1,PayPal,Completed
+TXN-11467,CUST-181,2024-07-29,24,Male,United Kingdom,Books,194.88,4,4.7,,Pending
+TXN-11468,CUST-121,2022-02-02,43,Female,Germany,,198.96,5,,Credit Card,Returned
+TXN-11469,CUST-381,2022-09-12,74,Male,United States,Electronics,,4,4.3,PayPal,Returned
+TXN-11470,CUST-229,2024-09-17,23,Other,Germany,Home,141.88,1,3.7,PayPal,Pending
+TXN-11471,CUST-252,2024-07-31,49,Other,United States,Electronics,441.03,,1.5,Credit Card,Refunded
+TXN-11472,CUST-126,2022-06-27,51,Male,United States,Clothing,,5,1.5,Credit Card,Cancelled
+TXN-11473,CUST-211,2024-06-15,48,Male,,Home,171.82,3,4.5,,Pending
+TXN-11474,CUST-220,2022-05-23,25,Female,United Kingdom,Beauty,456.1,10,3.3,Credit Card,Completed
+TXN-11475,CUST-266,2023-03-03,71,Female,Germany,Books,342.45,1,4.6,PayPal,Pending
+TXN-11476,CUST-241,2022-11-09,23,Other,Germany,Beauty,270.87,5,1.4,Credit Card,Completed
+TXN-11477,CUST-302,2024-08-07,69,Female,Canada,Electronics,296.56,10,4.6,Credit Card,Cancelled
+TXN-11478,CUST-104,2023-01-20,45,Male,United States,Clothing,486.33,7,1.3,PayPal,Completed
+TXN-11479,CUST-397,2023-06-24,46,Male,Germany,Clothing,382.79,5,4.2,Bank Transfer,Refunded
+TXN-11480,CUST-343,2023-05-31,46,Male,France,Beauty,401.84,7,4.2,PayPal,Pending
+TXN-11481,CUST-179,2023-03-14,20,Male,Canada,Clothing,7.85,10,2.1,PayPal,Refunded
+TXN-11482,CUST-145,2023-02-25,50,Female,United States,Clothing,22.0,4,4.4,Credit Card,Returned
+TXN-11483,CUST-355,,30,Female,United Kingdom,Beauty,204.37,9,3.5,PayPal,Completed
+TXN-11484,CUST-273,2024-09-07,64,Other,Germany,Home,70.41,7,2.9,Bank Transfer,Returned
+TXN-11485,CUST-130,2022-05-24,54,Female,United Kingdom,Beauty,,6,1.6,Credit Card,Pending
+TXN-11486,CUST-178,2024-03-16,46,Female,,Home,351.63,6,1.2,Credit Card,Completed
+TXN-11487,CUST-154,2023-01-18,73,Female,Germany,Beauty,,1,4.7,Bank Transfer,Cancelled
+TXN-11488,CUST-219,2024-07-10,29,Female,France,Books,18.78,,3.1,PayPal,Pending
+TXN-11489,CUST-385,2022-02-24,30,Other,,,285.54,1,1.9,Cash,Cancelled
+TXN-11490,CUST-277,2023-11-18,21,Male,Germany,Home,209.33,5,3.3,Credit Card,Completed
+TXN-11491,CUST-324,2024-02-21,27,Female,United Kingdom,Clothing,87.87,,4.0,Credit Card,Completed
+TXN-11492,CUST-110,2022-02-25,50,Female,United Kingdom,Home,162.57,8,,Bank Transfer,Returned
+TXN-11493,CUST-283,2024-04-29,29,Male,United States,Electronics,405.04,2,4.8,Credit Card,Refunded
+TXN-11494,CUST-228,2022-04-10,39,Male,,Beauty,119.66,2,3.3,PayPal,Cancelled
+TXN-11495,CUST-348,2023-12-09,46,Male,United Kingdom,Home,515.79,9,2.2,PayPal,Completed
+TXN-11496,,2022-05-05,46,Female,United Kingdom,Clothing,116.91,1,2.4,PayPal,Pending
+TXN-11497,CUST-350,2024-01-28,71,Female,United States,Beauty,436.31,2,4.1,Credit Card,Refunded
+TXN-11498,CUST-195,2023-06-13,51,Female,United States,Electronics,79.7,3,2.7,Credit Card,Cancelled
+TXN-11499,CUST-265,2024-09-17,28,Male,United Kingdom,Electronics,347.78,9,2.3,Credit Card,Pending
+TXN-11500,CUST-240,2024-05-07,38,,Germany,Electronics,435.78,1,2.8,Cash,Cancelled
+TXN-11501,,2022-11-15,61,Female,France,Beauty,114.87,7,4.8,PayPal,Cancelled
+TXN-11502,CUST-371,2023-01-10,51,Male,United States,Beauty,162.19,1,1.5,Credit Card,Refunded
+TXN-11503,,2022-01-01,57,Male,France,Home,505.09,2,3.8,Credit Card,Completed
+TXN-11504,CUST-377,2022-05-04,64,Male,Canada,Books,113.99,4,4.8,Bank Transfer,Returned
+TXN-11505,CUST-100,2022-07-29,41,Female,France,Clothing,71.05,8,4.0,Cash,Completed
+TXN-11506,CUST-359,2024-05-02,46,Female,Germany,Books,79.06,5,4.3,Credit Card,Completed
+TXN-11507,CUST-194,2022-02-26,61,Other,United States,Beauty,104.3,8,2.2,Credit Card,
+TXN-11508,CUST-286,2023-11-05,42,Female,France,Electronics,213.31,1,1.5,Credit Card,Completed
+TXN-11509,CUST-222,2024-05-11,46,Male,Germany,Electronics,477.73,7,2.3,Credit Card,
+TXN-11510,CUST-132,2023-09-20,42,Male,France,Electronics,380.73,7,,Credit Card,
+TXN-11511,CUST-375,2023-09-24,25,Other,Germany,Home,479.92,1,3.1,Credit Card,Completed
+TXN-11512,CUST-197,2023-10-14,66,Male,United States,Home,377.36,7,1.7,PayPal,Cancelled
+TXN-11513,CUST-354,2024-04-18,54,Female,United States,Electronics,197.89,9,,Bank Transfer,Completed
+TXN-11514,CUST-178,2024-01-30,19,Female,,,136.46,5,,Credit Card,Cancelled
+TXN-11515,CUST-265,2023-05-07,48,,France,Electronics,209.69,3,2.3,PayPal,Refunded
+TXN-11517,CUST-367,2023-11-15,61,Female,France,Electronics,232.34,5,4.8,PayPal,Completed
+TXN-11519,CUST-166,2024-04-13,33,Female,Germany,Books,85.75,9,2.9,Bank Transfer,Completed
+TXN-11520,CUST-116,2022-10-18,57,Other,Germany,Books,424.15,4,2.5,Bank Transfer,Completed
+TXN-11521,CUST-348,2023-02-03,58,Male,Germany,Electronics,123.88,4,,Credit Card,
+TXN-11522,CUST-116,2022-02-04,75,Male,United States,Beauty,234.24,4,3.2,,Cancelled
+TXN-11523,CUST-298,2024-07-18,52,Male,United States,Beauty,88.54,5,2.3,Cash,Refunded
+TXN-11524,CUST-369,2023-04-25,32,Female,United Kingdom,Clothing,165.56,4,3.0,Cash,Pending
+UNKNOWN_TXN_41,CUST-231,2022-06-12,58,Female,United States,Home,578.18,2,,Bank Transfer,Completed
+TXN-11526,CUST-213,2024-05-31,42,Female,Canada,Beauty,458.69,1,,Cash,Pending
+TXN-11527,CUST-136,2024-07-13,74,Female,United Kingdom,Home,457.83,7,1.8,PayPal,Cancelled
+TXN-11528,CUST-206,2022-06-03,65,Other,United Kingdom,Beauty,59.74,10,4.3,Bank Transfer,Completed
+TXN-11529,CUST-140,2022-12-27,46,Male,,Books,22.1,5,2.6,Cash,Returned
+TXN-11530,CUST-131,2024-03-01,27,Other,United States,Beauty,68.08,10,1.8,Credit Card,Completed
+TXN-11531,CUST-312,2024-02-20,46,Female,United Kingdom,Clothing,394.73,10,4.0,Credit Card,Cancelled
+TXN-11532,CUST-129,2022-03-11,74,Male,United States,Clothing,13.4,7,1.5,PayPal,Completed
+TXN-11533,CUST-236,2023-04-29,32,Other,Canada,Electronics,40.23,1,1.1,Credit Card,Completed
+TXN-11534,CUST-136,2023-08-13,26,Female,France,Beauty,54.88,2,3.8,PayPal,Completed
+TXN-11535,CUST-139,2023-06-23,40,Female,United States,Books,148.1,10,2.0,Credit Card,Pending
+TXN-11536,CUST-365,2022-11-28,43,Female,Canada,Electronics,144.75,2,1.9,Credit Card,Pending
+TXN-11537,CUST-218,2022-12-23,44,Other,Canada,Books,204.94,10,1.5,Bank Transfer,Pending
+TXN-11538,CUST-197,2023-02-18,46,Female,United Kingdom,Clothing,151.5,10,1.3,Credit Card,Cancelled
+TXN-11539,CUST-227,,42,Female,France,Books,189.9,6,2.4,PayPal,Refunded
+TXN-11540,CUST-191,2022-12-06,39,Female,United Kingdom,Electronics,,7,4.5,Bank Transfer,Refunded
+TXN-11541,CUST-385,2022-04-19,43,Female,United Kingdom,Electronics,371.25,10,2.2,Credit Card,Pending
+TXN-11542,CUST-154,2023-05-03,51,Male,France,,89.99,5,2.2,,Completed
+TXN-11543,CUST-395,2024-01-03,31,Female,,Clothing,549.06,7,1.9,,Cancelled
+TXN-11544,CUST-334,2024-06-20,54,Other,Canada,Books,254.17,4,3.4,Bank Transfer,Refunded
+TXN-11545,CUST-318,2023-01-29,73,Other,United States,Home,403.88,1,4.2,PayPal,Pending
+TXN-11546,CUST-185,2022-03-05,68,Female,United Kingdom,Books,571.6,2,2.4,Bank Transfer,Completed
+TXN-11547,CUST-381,2022-02-08,75,Other,United States,Electronics,393.01,4,2.0,Credit Card,Refunded
+TXN-11548,CUST-272,2023-01-19,73,Female,,Clothing,320.95,9,3.3,Bank Transfer,Pending
+TXN-11549,CUST-373,2022-01-31,44,Female,United Kingdom,Books,574.58,9,3.5,Bank Transfer,
+TXN-11550,CUST-326,2023-12-17,37,Female,United Kingdom,Electronics,209.77,5,2.9,Credit Card,Completed
+TXN-11551,CUST-261,2023-10-15,27,Male,United Kingdom,Beauty,396.25,,,Cash,Completed
+TXN-11552,CUST-266,2022-07-20,52,Male,United States,Electronics,39.02,2,4.2,Credit Card,Completed
+TXN-11553,CUST-311,2023-11-27,37,Female,United States,Electronics,490.47,4,2.2,Cash,Cancelled
+TXN-11554,CUST-320,2024-01-30,67,Female,United Kingdom,,222.93,2,3.0,PayPal,Completed
+TXN-11555,CUST-265,2023-06-26,44,Other,France,Books,91.13,10,3.2,Cash,Pending
+TXN-11556,CUST-388,2022-01-25,31,Male,France,Electronics,363.95,5,3.2,Bank Transfer,Cancelled
+TXN-11557,CUST-292,2024-09-04,74,Female,Germany,Beauty,135.12,1,1.3,Bank Transfer,Cancelled
+TXN-11558,CUST-230,2023-01-04,42,Female,United Kingdom,Electronics,461.43,7,3.0,Cash,Refunded
+TXN-11559,CUST-331,2024-06-04,45,,United Kingdom,,282.6,,2.9,Credit Card,Pending
+TXN-11560,CUST-303,2023-11-30,46,Other,France,Home,43.03,1,4.8,Bank Transfer,Completed
+TXN-11561,CUST-117,2024-02-05,46,Female,United States,Beauty,179.22,7,4.2,Bank Transfer,Completed
+TXN-11562,CUST-108,2023-05-01,54,Male,Germany,Clothing,,5,2.5,Bank Transfer,Pending
+TXN-11564,CUST-213,2024-03-31,61,Other,Canada,Beauty,315.2,4,2.8,Credit Card,Pending
+TXN-11565,CUST-261,2023-10-03,27,Male,United Kingdom,Electronics,389.9,2,1.9,Bank Transfer,Completed
+TXN-11566,CUST-241,2023-08-06,54,Female,United Kingdom,Beauty,442.64,6,4.6,Credit Card,Cancelled
+TXN-11567,CUST-361,2023-06-14,30,Female,United Kingdom,Electronics,549.63,7,1.2,Bank Transfer,Cancelled
+TXN-11568,CUST-392,2023-05-26,38,Male,France,Clothing,28.69,8,1.9,Bank Transfer,Cancelled
+TXN-11569,CUST-119,2023-07-08,73,Female,Germany,Clothing,98.29,3,1.7,Bank Transfer,Cancelled
+TXN-11570,CUST-179,,66,Male,United Kingdom,,292.87,8,2.3,Bank Transfer,Refunded
+TXN-11571,CUST-287,2022-10-24,38,Male,Canada,Home,324.83,1,4.7,,Cancelled
+TXN-11572,CUST-227,2023-01-02,66,Female,United States,Beauty,247.76,5,2.2,PayPal,Cancelled
+TXN-11573,CUST-253,2022-06-11,65,Female,United States,Clothing,73.24,,1.5,Credit Card,Refunded
+TXN-11574,CUST-304,2023-08-13,20,Female,France,Books,283.28,8,4.8,PayPal,Completed
+TXN-11575,CUST-211,2024-08-12,68,Female,Germany,Books,452.59,10,4.6,Bank Transfer,Refunded
+TXN-11576,CUST-266,2023-02-13,19,Male,Canada,Beauty,486.29,10,2.6,Cash,Pending
+UNKNOWN_TXN_42,CUST-188,2023-12-16,46,Female,Canada,Beauty,132.11,9,2.8,Credit Card,Pending
+TXN-11578,CUST-395,2024-08-17,21,Female,United States,,64.66,10,3.0,,Cancelled
+TXN-11579,CUST-148,2022-02-03,23,Female,,Clothing,412.76,4,,PayPal,Cancelled
+TXN-11580,CUST-253,2022-07-25,75,,United States,Electronics,36.25,4,,Cash,Completed
+TXN-11581,CUST-395,2022-02-03,65,Female,United Kingdom,Electronics,141.01,10,2.6,Credit Card,Cancelled
+TXN-11582,,2024-04-16,31,Male,United Kingdom,Clothing,98.25,3,4.0,Bank Transfer,Pending
+TXN-11583,CUST-271,2023-11-11,22,Male,United States,Electronics,151.48,7,1.0,PayPal,Pending
+TXN-11584,CUST-322,2022-03-16,38,Male,France,Home,49.93,2,2.5,PayPal,Cancelled
+TXN-11585,CUST-161,2023-12-21,71,,United Kingdom,Home,134.61,,1.6,Bank Transfer,Refunded
+TXN-11586,CUST-216,2022-03-14,39,Male,United Kingdom,Clothing,467.92,4,4.4,Cash,Pending
+TXN-11587,CUST-105,2023-09-20,36,Female,United States,Electronics,23.18,8,4.9,PayPal,Completed
+TXN-11588,CUST-295,2023-06-05,69,Male,Germany,Books,261.78,2,3.6,Cash,Completed
+TXN-11589,CUST-368,2022-02-12,75,Female,United States,Books,5.58,9,3.3,PayPal,Cancelled
+TXN-11590,CUST-376,,28,Male,Canada,Clothing,211.02,,4.4,Credit Card,Cancelled
+TXN-11591,,2023-10-28,52,Male,United States,Electronics,373.16,7,4.5,,Completed
+TXN-11592,CUST-213,2022-07-11,44,Male,Canada,Beauty,227.03,1,2.9,Credit Card,Cancelled
+TXN-11593,CUST-301,,53,Male,Germany,Home,134.6,1,4.1,PayPal,Completed
+TXN-11594,CUST-394,2024-03-03,62,Female,United Kingdom,Beauty,11.16,10,2.0,PayPal,Completed
+TXN-11595,CUST-213,2024-05-30,62,Female,,Clothing,8.5,6,3.4,PayPal,Completed
+TXN-11596,CUST-301,2024-01-26,33,Male,France,Books,229.48,2,1.0,PayPal,Completed
+TXN-11597,CUST-272,2022-02-23,60,Female,United Kingdom,Books,150.2,4,4.1,PayPal,Completed
+TXN-11598,CUST-392,2023-12-14,46,Female,United States,Beauty,369.69,7,5.0,Bank Transfer,Refunded
+TXN-11599,CUST-380,2023-03-14,46,Female,Canada,Electronics,448.14,1,1.7,,Completed
+TXN-11600,CUST-143,2023-03-25,42,Other,Canada,Home,211.0,5,4.6,Cash,Returned
+TXN-11601,CUST-322,2024-07-14,48,Male,France,Books,122.94,9,4.9,PayPal,Pending
+TXN-11602,CUST-166,2022-12-18,19,Female,Germany,Home,274.29,10,,Credit Card,Cancelled
+TXN-11603,CUST-346,2022-01-09,70,Male,Canada,Clothing,146.46,9,2.4,Bank Transfer,Pending
+TXN-11604,CUST-349,2022-11-01,46,Female,France,Home,166.96,10,1.7,Bank Transfer,Refunded
+TXN-11605,CUST-392,2024-02-10,29,Female,France,Books,432.7,10,4.7,Credit Card,Pending
+TXN-11606,CUST-368,2024-04-01,19,Female,Germany,Electronics,209.96,5,2.4,Credit Card,Cancelled
+TXN-11607,CUST-136,2022-09-13,60,Female,United Kingdom,Electronics,409.25,8,2.1,PayPal,Refunded
+TXN-11608,CUST-320,2022-05-10,74,Female,United States,Beauty,43.72,,3.2,Cash,Completed
+TXN-11609,CUST-394,2022-02-14,23,Other,United States,Beauty,91.99,7,3.1,Bank Transfer,Cancelled
+TXN-11610,CUST-311,2023-02-11,22,Female,Germany,Beauty,327.31,1,4.4,Credit Card,Returned
+TXN-11611,CUST-278,2022-05-13,57,Other,Germany,Clothing,47.0,8,1.4,Credit Card,Refunded
+TXN-11612,CUST-276,2023-11-05,43,Male,United Kingdom,Clothing,279.24,1,1.7,Cash,Completed
+TXN-11613,CUST-112,2022-03-20,25,Female,Germany,Electronics,94.54,8,,Bank Transfer,Pending
+TXN-11614,CUST-186,2022-07-30,68,Male,United States,Beauty,,4,1.9,Bank Transfer,Completed
+TXN-11615,CUST-326,2024-04-12,30,Male,Canada,Clothing,64.58,6,1.4,PayPal,Completed
+TXN-11616,CUST-325,2024-05-29,38,Male,France,Clothing,193.9,5,1.1,Credit Card,Cancelled
+TXN-11617,CUST-219,2022-11-06,68,Female,United Kingdom,Home,162.15,4,3.9,Cash,Completed
+TXN-11618,CUST-291,2022-10-27,23,Female,United Kingdom,Books,58.28,1,2.5,Bank Transfer,Returned
+TXN-11619,CUST-143,2022-10-01,69,Female,Canada,,330.41,2,3.1,Bank Transfer,Refunded
+TXN-11620,CUST-127,2023-05-31,57,Female,United States,Home,145.45,2,,Credit Card,
+TXN-11621,CUST-175,2024-07-11,44,Male,Germany,,,10,3.3,Bank Transfer,Pending
+TXN-11622,CUST-247,2023-09-29,41,Female,France,Home,122.21,7,4.0,Bank Transfer,Completed
+TXN-11623,CUST-156,2022-07-28,30,Male,United States,Electronics,529.48,1,4.2,Bank Transfer,Completed
+TXN-11624,CUST-341,2023-06-18,51,Male,Canada,Clothing,316.17,1,3.3,Credit Card,Pending
+TXN-11625,CUST-207,2023-07-21,19,,Canada,Electronics,384.12,2,1.3,Bank Transfer,Pending
+UNKNOWN_TXN_43,CUST-208,2024-01-13,75,Female,Germany,Home,422.14,5,3.3,PayPal,Completed
+TXN-11627,CUST-367,,59,Male,Canada,Electronics,287.02,1,1.4,PayPal,Cancelled
+TXN-11628,CUST-380,2023-03-27,37,Female,Germany,Books,56.14,6,2.6,PayPal,Returned
+TXN-11629,CUST-172,2022-01-22,45,Female,France,Home,289.94,10,2.6,Cash,Cancelled
+TXN-11630,CUST-109,2022-10-04,35,Female,,Beauty,196.38,5,1.7,Bank Transfer,Completed
+TXN-11631,CUST-369,2022-11-04,66,Other,Canada,Beauty,,4,2.7,PayPal,Completed
+TXN-11632,CUST-187,2024-05-25,60,Male,Canada,Electronics,357.54,9,3.0,Credit Card,Completed
+TXN-11633,CUST-202,2022-01-20,46,Female,Germany,Clothing,294.22,10,2.4,Cash,Cancelled
+TXN-11634,CUST-238,2022-02-15,57,Male,France,Electronics,32.47,6,1.3,PayPal,Cancelled
+TXN-11635,CUST-104,2022-07-08,46,Female,United Kingdom,Books,,3,2.2,PayPal,Completed
+TXN-11636,CUST-238,2023-11-08,37,Male,France,Clothing,135.92,2,5.0,Cash,Cancelled
+TXN-11637,CUST-284,,75,Male,France,Clothing,469.42,1,,Bank Transfer,Completed
+TXN-11638,CUST-109,2024-08-17,42,Female,United States,Electronics,548.43,4,4.3,Credit Card,Cancelled
+TXN-11639,CUST-297,2024-02-12,46,Male,United Kingdom,Electronics,263.05,1,4.8,,Completed
+TXN-11640,CUST-294,2024-07-18,62,Female,Canada,Clothing,188.94,1,4.2,Cash,Cancelled
+TXN-11641,CUST-150,2023-08-29,41,Male,Germany,Clothing,477.7,10,4.1,Bank Transfer,Completed
+TXN-11642,CUST-348,2022-12-16,72,Male,France,Beauty,503.58,7,1.8,Credit Card,Cancelled
+TXN-11643,CUST-372,2023-03-14,45,Male,France,Beauty,112.28,6,1.1,Bank Transfer,Completed
+TXN-11644,CUST-201,2023-07-21,39,Female,Germany,Clothing,319.81,7,4.4,Bank Transfer,Returned
+TXN-11645,CUST-334,2024-08-12,40,Male,France,Home,63.96,10,4.5,Credit Card,Completed
+TXN-11646,CUST-111,2024-08-18,53,Male,United Kingdom,Beauty,453.32,8,,PayPal,Pending
+TXN-11647,CUST-371,2023-08-10,36,Male,United States,Home,480.14,8,,Cash,Cancelled
+TXN-11648,CUST-350,2022-09-24,46,Other,United Kingdom,Clothing,159.43,10,2.3,Cash,Returned
+TXN-11649,CUST-180,2023-04-24,23,Female,France,Electronics,365.28,7,1.0,PayPal,Returned
