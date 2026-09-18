@@ -1,0 +1,476 @@
+Service_ID,Customer_Details,Phone_Number,Vehicle_Description,License_Plate,Service_Type,Date_Of_Service,Total_Cost,Payment_Status,Internal_Notes
+SRV-1001,Sarah Smith | Tel: N/A | Mail: mike.w@hotmail.com,,Hyundai Tucson,NONE,AC Refill,15/01/2025,145,Done,Paid via cash
+SRV-1002,Mr. A. Brown,+1-555-987-6543,Ford Focus,7XYZ123 ,Battery Replacement,28.02.2025,398,Completed,
+SRV-1003,,N/A,2015 Mercedes E200 (Plate: K99-22X),,Engine Check,01-02-25,820,unpaid,Bring back next week
+SRV-1004,Mrs. Helen SMITH,5552345678,N/A BMW 3 Series (Plate: abc8901),,Diagnostics,2024-11-03,226,unpaid,VIP client - gave 10% off
+SRV-1005,Ms. Alex Miller,5552345678,Hyundai Elantra,ABC-8901,Diag,02/28/2025,,Completed,Need to re-check invoice
+SRV-1006,Christian Thomas | Tel: 555.987.6543 | Mail: sarah_j@yahoo.com,,Honda CRV,UNREGISTERED,Air Conditioning,28.02.2025,897,Pending,Bring back next week
+SRV-1007,Ms. JON smith,+15550192834,Kia Sportage,K99-22X,Tire Rotation,02/28/2025,1038,Paid,Replaced front left light as well for free
+SRV-1008,Mr. Dmitri Johnson,N/A,Ford F-150,7XYZ 123,Battery,03/11/2024,445,Paid,Paid via cash
+SRV-1009,Anna Martinez,555-234-5678,honda civic,7XYZ123 ,Oil Change,00/00/2024,119,done,
+SRV-1010,Dr. Mike smith,5552345678,TOYOTA CAMRY,7xyz123,AC Refill,2025.01.15,FREE / WARRANTY,paid,Duplicate record?
+SRV-1011,Prof. Alexander Brown,555-234-5678,audi a4,abc8901,AC Service,Feb 28 2025,FREE / WARRANTY,Completed,Paid via cash
+SRV-1012,Mrs. Robert Davis,+1 (555) 019-2834,toyota camry,7xyz123,Diag,15/01/2025,650,Pndg,Contact wife for payment
+SRV-1047,Prof. Robert Harris,5552345678,Honda CR-V,7xyz123,Diagnostics,28.02.2025,190,Pndg,Paid via cash
+SRV-1014,Mr. Mike Brown,555-234-5678,bmw x5,ABC 8901,OIL CHANGE,Feb 28 2025,280,Done,Duplicate record?
+SRV-1015,Mrs. Michael Jackson | Tel: call spouse 555-888-1122 | Mail: -,,BMW X5,7XYZ 123,Tire Rotation,03/11/2024,1011,in progress,
+SRV-1016,Prof. Dmitri Harris | Tel: 555 019 2834 | Mail: mike.w@hotmail.com,,toyota camry,NO PLATE,Battery,2024/11/03,-199,paid,Duplicate record?
+SRV-1017,Mr. Anna SMITH,(555) 234-5678,2020 audi a4 (Plate: K99-22X),,Air Conditioning,11/03/2024,161,unpaid,Paid via cash
+SRV-1018,Prof. David Miller,555-234-5678,2022 Honda CRV (Plate: K99-22X),,Major Service,"Nov 3, 2024",228,Done,Contact wife for payment
+SRV-1036,Mr. JON Thompson | Tel: 555-234-5678 | Mail: ,,Ford Mustang,ABC-8901,Brake Pad Change,Feb 28 2025,699,unpaid,Duplicate record?
+SRV-1020,Sarah Williams,N/A,Hyundai Tucson,7XYZ 123,Full Maintenance,2024-11-03,496,Pndg,Replaced front left light as well for free
+SRV-1021,Mr. JON Jackson | Tel: N/A | Mail: john.smith@gmail.com,,Hyundai Elantra,NONE,Brake Pad Change,Feb 28 2025,955,Paid,Customer complained about noise
+SRV-1022,S. Thompson,555-019-2834,2024 Honda Civic (Plate: 7XYZ 123),,Diagnostics,01/15/2025,510,Pndg,Bring back next week
+SRV-1023,Prof. Alexander Martinez,555 019 2834,2018 Kia Sportage (Plate: K99-22X),,Battery,2024/11/03,923,Pndg,Bring back next week
+SRV-1024,Mr. Alex smith | Tel: call spouse 555-888-1122 | Mail: mike.w@hotmail.com,,BMW 3 Series,ABC 8901,Rear Brakes,11/03/2024,$4240180,CANCELLED,
+SRV-1025,Dr. D. Martin,555-234-5678 ext 12,2023 Mercedes E200 (Plate: 7XYZ123),,Engine Diagnostics,15-Jan-2025,623,Done,Paid via cash
+SRV-1026,Dr. Alexander Martinez,+15550192834,Honda CR-V,7XYZ123,Oil Change,2023-05-12,1182,Pndg,Bring back next week
+SRV-1027,David Martinez,-,Hyundai Tucson,UNREGISTERED,Tire Fitting,2024/11/03,685,Paid,VIP client - gave 10% off
+SRV-1028,Ms. Dmitri Jones,none,2022 Toyota Camry (Plate: ABC 8901),,Air Conditioning,00/00/2024,1032,paid,Contact wife for payment
+SRV-1031,Michael SMITH,none,MERCEDES E-CLASS,7xyz123,Rear Brakes,"Nov 3, 2024",$487.00,COMPLETED,Customer complained about noise
+SRV-1030,Mr. Chris Jackson,555-234-5678,Honda CRV,NONE,Oil change & Filter,28.02.2025,"$1,140.00",paid,Customer complained about noise
+SRV-1031,Mr. Chris Williams,555.987.6543,Mercedes E200,abc8901,Wheel Alignment,00/00/2024,1113,CANCELLED,Duplicate record?
+SRV-1032,Ms. Chris Miller | Tel: 5552345678 | Mail: bob@test..com,,Hyundai Elantra,K9922X,Engine Diagnostics,Feb 28 2025,-123,Completed,Replaced front left light as well for free
+SRV-1033,Mr. S. Williams,5552345678,Audi Q7,7xyz123,Diag,12/05/2023,207,Completed,
+SRV-1034,John Garcia | Tel: 555-234-5678 ext 12 | Mail: -,,Ford Mustang,7XYZ123 ,Tire Fitting,12/05/2023,1198,unpaid,Bring back next week
+SRV-1035,Ms. John Thomas,-,BMW X5,K9922X,Full Maintenance,12/05/2023,$7610562,unpaid,Need to re-check invoice
+SRV-1036,Ms. S. White | Tel: (555) 234-5678 | Mail: john.smith@gmail.com,,ford f150,K9922X,Tire Rotation,03/11/2024,943,in progress,Paid via cash
+SRV-1037,Mr. D. Davis | Tel: 5550192834 | Mail: bob@test..com,,Toyota Camry,ABC-8901,Full Maintenance,2025.01.15,"$1,049.00",Pndg,Paid via cash
+SRV-1038,Elena Anderson,(555) 234-5678,Hyundai Tucson,7XYZ123 ,Engine Check,"Jan 15, 2025",718,unpaid,
+SRV-1039,,+15550192834,MERCEDES E-CLASS,7XYZ123 ,oil change,2025-02-28,838,done,Duplicate record?
+SRV-1040,Ms. Christian Johnson,+1-555-987-6543,18 Volkswagen Golf (Plate: NO PLATE),,Brake Pad Change,2023-05-12,633,unpaid,Duplicate record?
+SRV-1041,Robert Miller,-,2022 TOYOTA CAMRY (Plate: K9922X),,Wheel Alignment,2023-13-45,856,Pending,Customer complained about noise
+SRV-1042,Ms. Mike Anderson | Tel: N/A | Mail: info@company.org,,2022 MERCEDES E-CLASS (Plate: UNREGISTERED),,brakes front,15/01/2025,$912.00,paid,Duplicate record?
+SRV-1043,Dmitriy Harris | Tel: 555.987.6543 | Mail: john.smith@gmail.com,,2024 Honda CRV (Plate: NO PLATE),,Inspection + Oil,2023-13-45,1167,Pending,
+SRV-1044,Dr. Dmitriy White | Tel: N/A | Mail: alexander.t@domain.com,,2020 Toyota Corolla (Plate: abc8901),,AC Refill,15-Jan-2025,1071 USD,in progress,Need to re-check invoice
+SRV-1045,Dr. Sarah Brown,none,Ford F-150,NO PLATE,Engine Diagnostics,01/15/2025,678,,VIP client - gave 10% off
+SRV-1046,Mr. John Garcia,none,ford f150,7XYZ123,alignment,"Jan 15, 2025",900,paid,Paid via cash
+SRV-1047,Mrs. S. Garcia,none,Toyota Corolla,7XYZ123 ,Full Maintenance,00/00/2024,"$1,150.00",CANCELLED,Contact wife for payment
+SRV-1048,Prof. Alexander Wilson,555-019-2834,2020 Toyota Corolla (Plate: NONE),,Inspection + Oil,15/01/2025,435 USD,Paid,Paid via cash
+SRV-1049,Bob Harris | Tel: none | Mail: john.smith@gmail.com,,Audi Q7,NO PLATE,OIL CHANGE,11/03/2024,485,CANCELLED,Paid via cash
+SRV-1050,Dr. S. SMITH,555-019-2834,MERCEDES E-CLASS,ABC 8901,Wheel Alignment,"Nov 3, 2024",637,Paid,Duplicate record?
+SRV-1051,Mr. Alexander Taylor | Tel: N/A | Mail: john.smith@gmail.com,,audi a4,NEW CAR,Inspection + Oil,03/11/2024,438,paid,Duplicate record?
+SRV-1052,Mrs. Robert Jackson,call spouse 555-888-1122,bmw x5,abc8901,Brake Pad Change,2024/11/03,1094,in progress,
+SRV-1053,Ms. JON Taylor | Tel: N/A | Mail: info@company.org,,Hyundai Elantra,UNREGISTERED,Oil Change,12/05/2023,191,Completed,Duplicate record?
+SRV-1054,,555-234-5678,Ford F-150,NO PLATE,Oil Change,01-02-25,570,,VIP client - gave 10% off
+SRV-1055,Ms. JON Davis,+15550192834,Audi A4,K9922X,Engine Check,2023-05-12,930,paid,Contact wife for payment
+SRV-1056,Ms. Mike Martinez | Tel: 555 019 2834 | Mail: J.SMITH@GMAIL.COM,,Kia Sportage,abc8901,AC Service,03/11/2024,659,,Replaced front left light as well for free
+SRV-1057,Christian Williams,555.987.6543,ford f150,7XYZ123 ,Wheel Alignment,2024/11/03,569,unpaid,
+SRV-1058,Mr. David Harris,555-234-5678 ext 12,Kia Sportage,7XYZ 123,oil change,2025.01.15,759,done,Contact wife for payment
+SRV-1059,Mr. S. Jackson,555 019 2834,Ford Focus,NEW CAR,Major Service,15/01/2025,1172,CANCELLED,
+SRV-1060,Ms. A. smith,5550192834,2020 Ford F-150 (Plate: NO PLATE),,Oil change & Filter,01-02-25,285,paid,VIP client - gave 10% off
+SRV-1061,Mr. David smith,none,Honda Civic,UNREGISTERED,Inspection + Oil,15-Jan-2025,241 USD,unpaid,
+SRV-1062,Prof. S. Davis | Tel: 555.987.6543 | Mail: bob@test..com,,Ford Focus,7XYZ123,Wheel Alignment,"Nov 3, 2024",403,done,Contact wife for payment
+SRV-1043,Dr. Dmitry Jackson,N/A,2024 Honda CR-V (Plate: K9922X),,Tire Rotation,2023-13-45,685,,Replaced front left light as well for free
+SRV-1064,Mr. Robert smith,call spouse 555-888-1122,Honda CRV,7XYZ123 ,Major Service,2024-11-03,360,Pndg,Paid via cash
+SRV-1065,Dr. Chris smith | Tel:  | Mail: sarah_j@yahoo.com,,Ford F-150,NO PLATE,brakes front,2025.01.15,829,Paid,Duplicate record?
+SRV-1035,Dr. Christian Wilson,-,TOYOTA CAMRY,7XYZ123 ,Inspection + Oil,02/28/2025,829,done,
+SRV-1067,Dr. Dmitri Miller,555-234-5678 ext 12,Toyota Corolla,ABC-8901,Full Maintenance,12/05/2023,533,Pndg,Paid via cash
+SRV-1068,Helen Jackson | Tel: +15550192834 | Mail: sarah_j@yahoo.com,,2022 toyota camry (Plate: K9922X),,Rear Brakes,12/05/2023,FREE / WARRANTY,paid,
+SRV-1069,Prof. Alexander Garcia,555 019 2834,Volkswagen Golf,NEW CAR,Engine Diagnostics,01/15/2025,524,paid,Contact wife for payment
+SRV-1070,Mr. Dmitri Anderson,,2015 Honda CR-V (Plate: K9922X),,brakes front,01-02-25,123,Done,
+SRV-1071,Prof. Mike SMITH | Tel: 555-234-5678 | Mail: invalid-email@,,VW Golf,abc8901,Full Maintenance,2025-01-15,,COMPLETED,VIP client - gave 10% off
+SRV-1072,Mr. Dmitri Smith,555 019 2834,Kia Sportage,NEW CAR,Brake Pad Change,03/11/2024,-239,CANCELLED,Duplicate record?
+SRV-1073,Ms. D. Martin,+15550192834,MERCEDES E-CLASS,NO PLATE,Inspection + Oil,2023-05-12,143,Done,Contact wife for payment
+SRV-1074,Mr. Christian White,5550192834,Honda Civic,7XYZ 123,Major Service,2023-13-45,745,CANCELLED,Need to re-check invoice
+SRV-1075,Prof. Alexander Johnson,+15550192834,Hyundai Elantra,NO PLATE,Tire Fitting,Feb 28 2025,927,Pending,Contact wife for payment
+SRV-1036,Dr. Alexander Taylor,N/A,18 audi a4 (Plate: 7xyz123),,OIL CHANGE,15/01/2025,843,COMPLETED,Duplicate record?
+SRV-1077,Sarah Jackson,,bmw x5,ABC 8901,Diagnostics,"Jan 15, 2025",515,COMPLETED,Contact wife for payment
+SRV-1078,Prof. D. Johnson | Tel: N/A | Mail: invalid-email@,,bmw x5,7XYZ123 ,Full Maintenance,01-02-25,627,Done,VIP client - gave 10% off
+SRV-1079,Dr. D. Smith,(555) 234-5678,BMW X5,7XYZ 123,Oil Change,15/01/2025,520,CANCELLED,
+SRV-1080,Dr. David Garcia | Tel: 5550192834 | Mail: john.smith@gmail.com,,Hyundai Elantra,7XYZ123,Engine Diagnostics,Feb 28 2025,1074,unpaid,Contact wife for payment
+SRV-1081,Prof. Sarah Anderson | Tel: +1-555-987-6543 | Mail: J.SMITH@GMAIL.COM,,audi a4,K9922X,Engine Check,01/15/2025,$192.00,Done,Bring back next week
+SRV-1082,,,2024 Hyundai Tucson (Plate: 7XYZ 123),,AC Refill,11/03/2024,805,done,
+SRV-1083,Mr. Chris SMITH,-,BMW X5,K99-22X,Tire Rotation,2025-01-15,431,unpaid,Contact wife for payment
+SRV-1084,Mr. Alexander Johnson,5552345678,Mercedes-Benz E-Class,K99-22X,Battery,2024/11/03,$424.00,done,Duplicate record?
+SRV-1085,Mrs. D. Anderson | Tel: 555 019 2834 | Mail: mike.w@hotmail.com,,Ford Focus,7XYZ 123,Major Service,15/01/2025,1091 USD,paid,Need to re-check invoice
+SRV-1086,Prof. Dmitry Martinez,-,BMW 3 Series,K9922X,Engine Check,03/11/2024,800,Paid,Paid via cash
+SRV-1087,Mr. D. Wilson,5550192834,VW Golf,NEW CAR,Tire Rotation,Feb 28 2025,164,paid,Need to re-check invoice
+SRV-1088,Ms. Anna Williams | Tel: 555-019-2834 | Mail: -,,2023 Volkswagen Golf (Plate: NO PLATE),,Major Service,15-Jan-2025,$8344365,paid,Duplicate record?
+SRV-1089,Dr. Helen Thomas,+1-555-987-6543,toyota camry,NONE,Diag,"Jan 15, 2025",871,in progress,Replaced front left light as well for free
+SRV-1090,Prof. S. Taylor,5550192834,Ford Mustang,NONE,Tire Rotation,2025.01.15,253,in progress,Duplicate record?
+SRV-1091,Mrs. Dmitri Martin,5550192834,Mercedes-Benz E-Class,7XYZ123,Brake Pad Change,2024-11-03,1075,Completed,Bring back next week
+SRV-1024,Dr. Sarah Martin,555-019-2834,Hyundai Elantra,7XYZ 123,Brake Pads Replacement,15-Jan-2025,419 USD,,Contact wife for payment
+SRV-1093,Mrs. Chris Martinez | Tel: none | Mail: -,,Honda CRV,7XYZ123 ,brakes front,2025-02-28,982,paid,Replaced front left light as well for free
+SRV-1094,Ms. Michael Brown | Tel: 555 019 2834 | Mail: alexander.t@domain.com,,BMW 328i,UNREGISTERED,Battery Replacement,2023-05-12,663,done,VIP client - gave 10% off
+SRV-1007,Mrs. Alexander SMITH,5552345678,Toyota Camry,7XYZ123,Diagnostics,11/03/2024,247,Pending,Bring back next week
+SRV-1096,David Williams | Tel: 555 019 2834 | Mail: john.smith@gmail.com,,Volkswagen Golf,NO PLATE,Battery Replacement,20250228,90,done,Customer complained about noise
+SRV-1097,Prof. Bob Martin,+1-555-987-6543,2022 Honda CRV (Plate: 7xyz123),,Tire Fitting,01-02-25,1016,done,Paid via cash
+SRV-1034,Prof. John Martin | Tel: 5552345678 | Mail: sarah_j@yahoo.com,, Toyota Camry (Plate: abc8901),,Tire Fitting,15-Jan-2025,255,Paid,
+SRV-1099,Prof. A. Smith | Tel: 555-234-5678 ext 12 | Mail: -,,BMW X5,ABC 8901,Diagnostics,15/01/2025,292,unpaid,
+SRV-1100,Dr. Dmitry Jones,555.987.6543,Kia Sportage,7xyz123,Wheel Alignment,01/15/2025,,Done,Bring back next week
+SRV-1101,Dr. Anna Thomas | Tel: call spouse 555-888-1122 | Mail: alexander.t@domain.com,,Audi A4,ABC 8901,oil change,01-02-25,334,Pending,
+SRV-1102,Ms. David Jones,call spouse 555-888-1122,Kia Sportage,ABC 8901,Battery,28.02.2025,-204,COMPLETED,Duplicate record?
+SRV-1103,Dr. Dmitri Wilson,none,bmw x5,NO PLATE,Wheel Alignment,01/15/2025,802,unpaid,
+SRV-1104,Mr. JON Thomas,,2018 audi a4 (Plate: 7XYZ123),,Full Maintenance,Feb 28 2025,$2127988,Completed,
+SRV-1012,Mr. Bob Williams,555.987.6543,2015 Hyundai Elantra (Plate: NEW CAR),,Diagnostics,02/28/2025,650,Completed,Paid via cash
+SRV-1106,Ms. A. Johnson,N/A,Honda CR-V,ABC 8901,alignment,2024-11-03,FREE / WARRANTY,done,Contact wife for payment
+SRV-1107,Mr. Dmitri Taylor,,Ford F-150,7XYZ 123,Battery Replacement,01-02-25,820 USD,Paid,Bring back next week
+SRV-1108,Mrs. Mike Harris,+1 (555) 019-2834,Ford Mustang,7XYZ123 ,Brake Pads Replacement,00/00/2024,214,in progress,
+SRV-1109,Prof. Alexander Jackson,5550192834,Audi A4,K9922X,AC Service,2025-02-28,FREE / WARRANTY,Paid,Need to re-check invoice
+SRV-1110,Ms. Anna smith | Tel: +15550192834 | Mail: ,,honda civic,abc8901,Rear Brakes,2025-02-28,1142,in progress,Paid via cash
+SRV-1111,,none,Mercedes-Benz E-Class,7XYZ 123,Air Conditioning,2025.01.15,771 USD,unpaid,Customer complained about noise
+SRV-1112,Mr. Dmitry Garcia | Tel: N/A | Mail: bob@test..com,,Merc C-Class,NEW CAR,alignment,01-02-25,698,paid,Bring back next week
+SRV-1113,Dr. Chris SMITH,555-019-2834,BMW 328i,ABC-8901,Brake Pads Replacement,2024/11/03,733,,
+SRV-1114,Dr. Anna Thompson | Tel: +15550192834 | Mail: info@company.org,,2022 Toyota Corolla (Plate: K9922X),,Oil change & Filter,01/15/2025,,CANCELLED,Need to re-check invoice
+SRV-1115,Mrs. David Garcia,-,BMW 328i,K9922X,Engine Check,20250228,$7597509,Paid,Contact wife for payment
+SRV-1116,Dr. john smith,none,Volkswagen Golf,NONE,AC Refill,2025-01-15,962,COMPLETED,Replaced front left light as well for free
+SRV-1117,Dr. john Thomas,555-019-2834,2021 Ford Mustang (Plate: ABC 8901),,AC Service,Feb 28 2025,652,unpaid,Need to re-check invoice
+SRV-1118,Ms. D. Taylor | Tel:  | Mail: sarah_j@yahoo.com,,2024 Mercedes-Benz E-Class (Plate: UNREGISTERED),,oil change,2025.01.15,1050,Paid,Contact wife for payment
+SRV-1119,Mrs. David Martinez,-,MERCEDES E-CLASS,NEW CAR,AC Service,12/05/2023,693,paid,Customer complained about noise
+SRV-1120,Ms. Robert Wilson,+1 (555) 019-2834, Audi A4 (Plate: NEW CAR),,oil change,2023-13-45,1153,Pndg,Need to re-check invoice
+SRV-1121,Mike smith | Tel: +15550192834 | Mail: mike.w@hotmail.com,,ford f150,7XYZ 123,brakes front,28.02.2025,1045,,Customer complained about noise
+SRV-1122,Prof. David Harris,555-234-5678 ext 12,BMW 3 Series,abc8901,Inspection + Oil,01-02-25,621,unpaid,Contact wife for payment
+SRV-1123,Prof. Helen Davis,none,Audi Q7,abc8901,AC Refill,03/11/2024,,unpaid,Duplicate record?
+SRV-1124,Dr. S. Wilson,555-019-2834,TOYOTA CAMRY,K9922X,Battery,20250228,"$1,183.00",in progress,Duplicate record?
+SRV-1036,Prof. Robert Davis,5552345678,2020 Mercedes-Benz E-Class (Plate: NONE),,Oil change & Filter,28.02.2025,1047,done,VIP client - gave 10% off
+SRV-1126,Mrs. Alexander Harris | Tel: call spouse 555-888-1122 | Mail: bob@test..com,,Ford F-150,ABC 8901,OIL CHANGE,01-02-25,1175,,Customer complained about noise
+SRV-1127,Mrs. john Thomas,call spouse 555-888-1122,2022 VW Golf (Plate: 7XYZ123),,Air Conditioning,00/00/2024,FREE / WARRANTY,Pending,Replaced front left light as well for free
+SRV-1128,Prof. Christian Williams | Tel: 555.987.6543 | Mail: alexander.t@domain.com,,Toyota Corolla,7XYZ 123,Major Service,03/11/2024,108,,
+SRV-1129,Mrs. Michael Martinez,555-234-5678 ext 12,2024 TOYOTA CAMRY (Plate: NONE),,Brake Pads Replacement,20250228,588,Done,Replaced front left light as well for free
+SRV-1130,Dr. David Wilson,+1 (555) 019-2834,Audi Q7,7XYZ123,Wheel Alignment,"Nov 3, 2024",1109 USD,,Replaced front left light as well for free
+SRV-1131,Dr. D. Martinez,5552345678,BMW 328i,K9922X,Full Maintenance,2025-02-28,1044,Paid,Bring back next week
+SRV-1132,Prof. JON Martin,555.987.6543, TOYOTA CAMRY (Plate: 7xyz123),,AC Refill,2023-05-12,"$1,179.00",COMPLETED,VIP client - gave 10% off
+SRV-1133,Mr. Dmitri Brown,call spouse 555-888-1122,2012 BMW 3 Series (Plate: K9922X),,Tire Fitting,Feb 28 2025,1026,Pndg,Replaced front left light as well for free
+SRV-1134,Mr. Mike Garcia,5550192834,Audi Q7,UNREGISTERED,OIL CHANGE,20250228,$7859648,COMPLETED,VIP client - gave 10% off
+SRV-1135,Alexander Anderson,555-234-5678 ext 12,BMW X5,7xyz123,Inspection + Oil,12/05/2023,FREE / WARRANTY,Pending,Paid via cash
+SRV-1136,Prof. S. Davis,+1 (555) 019-2834,BMW 3 Series,NO PLATE,AC Refill,02/28/2025,586,paid,
+SRV-1137,Sarah smith,+1-555-987-6543,2020 Toyota Camry (Plate: ABC-8901),,Full Maintenance,01/15/2025,179,Completed,Customer complained about noise
+SRV-1138,Mrs. john Williams,none,Hyundai Tucson,abc8901,Inspection + Oil,2024/11/03,$373.00,Pndg,Duplicate record?
+SRV-1139,Mr. A. Garcia,(555) 234-5678,Mercedes E200,7XYZ123,Major Service,02/28/2025,732,,
+SRV-1140,Mrs. A. Harris,5552345678,Audi Q7,7XYZ123 ,oil change,12/05/2023,933,Paid,Duplicate record?
+SRV-1141,Mrs. David SMITH | Tel: 555.987.6543 | Mail: info@company.org,,Hyundai Tucson,7XYZ123,Inspection + Oil,00/00/2024,229,Completed,Need to re-check invoice
+SRV-1142,Ms. Mike Taylor | Tel: none | Mail: john.smith@gmail.com,,Honda CR-V,NO PLATE,alignment,11/03/2024,498,CANCELLED,Bring back next week
+SRV-1143,,,18 Mercedes-Benz E-Class (Plate: K9922X),,Battery,20250228,735,Completed,
+SRV-1144,Mrs. S. Smith,N/A,2024 Merc C-Class (Plate: ABC 8901),,Diag,11/03/2024,583,paid,Duplicate record?
+SRV-1145,Dr. Christian Harris,555.987.6543,Ford Mustang,7XYZ 123,alignment,15-Jan-2025,1190,Pndg,Customer complained about noise
+SRV-1146,Mr. Dmitri smith | Tel: +1 (555) 019-2834 | Mail: none,,Audi A4,7xyz123,Oil Change,2024-11-03,844,Done,Need to re-check invoice
+SRV-1147,Ms. Dmitri Harris,+1 (555) 019-2834,bmw x5,7XYZ123,Engine Diagnostics,12/05/2023,115,Paid,
+SRV-1148,Mr. Sarah Martin | Tel: 555 019 2834 | Mail: mike.w@hotmail.com,,Mercedes-Benz E-Class,abc8901,Tire Rotation,15/01/2025,911,paid,Need to re-check invoice
+SRV-1149,Dr. Dmitri SMITH,555-019-2834,2021 BMW X5 (Plate: K9922X),,Oil Change,15-Jan-2025,-266,CANCELLED,
+SRV-1014,Mr. Anna smith,5552345678,Audi Q7,K9922X,OIL CHANGE,03/11/2024,147,COMPLETED,
+SRV-1151,Alex SMITH,none,Merc C-Class,NONE,Diag,02/28/2025,366,,Paid via cash
+SRV-1152,Mr. Sarah Jackson,5552345678,Hyundai Elantra,NEW CAR,Diag,2025-01-15,1002,paid,Bring back next week
+SRV-1153,Ms. Michael Garcia,555-234-5678 ext 12,2020 Ford F-150 (Plate: NO PLATE),,Engine Diagnostics,2025.01.15,395,,
+SRV-1154,Mr. Helen White | Tel:  | Mail: alexander.t@domain.com,,TOYOTA CAMRY,K99-22X,AC Refill,2023-05-12,133,done,
+SRV-1155,Dr. Alex Smith,none,TOYOTA CAMRY,ABC-8901,Brake Pad Change,02/28/2025,630 USD,in progress,Replaced front left light as well for free
+SRV-1156,Ms. Elena Jackson,none,Ford Mustang,ABC-8901,alignment,00/00/2024,1017,done,VIP client - gave 10% off
+SRV-1157,Dr. Bob Thomas,-,N/A Volkswagen Golf (Plate: NEW CAR),,Diag,00/00/2024,491,paid,
+SRV-1047,Dr. Helen Harris,5552345678,2024 Volkswagen Golf (Plate: abc8901),,Air Conditioning,2024-11-03,1197,COMPLETED,Duplicate record?
+SRV-1159,Mike White,none,Kia Sportage,NONE,Major Service,"Nov 3, 2024",$395.00,,
+SRV-1160,Prof. Christian Garcia,555-234-5678 ext 12,2024 VW Golf (Plate: UNREGISTERED),,Diagnostics,12/05/2023,254,done,Bring back next week
+SRV-1161,Bob smith,555-234-5678 ext 12,2015 bmw x5 (Plate: 7XYZ123),,Rear Brakes,2023-05-12,532,paid,
+SRV-1162,Prof. Dmitriy Martin,555 019 2834,BMW 328i,ABC 8901,OIL CHANGE,"Jan 15, 2025",370,Pending,Replaced front left light as well for free
+SRV-1163,Prof. Christian Anderson,call spouse 555-888-1122,18 Audi Q7 (Plate: abc8901),,oil change,"Jan 15, 2025",$6755892,Pndg,Paid via cash
+SRV-1164,Mike Martin | Tel: (555) 234-5678 | Mail: ,,2024 Mercedes E200 (Plate: K9922X),,Tire Rotation,01-02-25,965 USD,CANCELLED,Customer complained about noise
+SRV-1165,Ms. Robert Jackson,555-234-5678 ext 12,Honda CR-V,7XYZ123 ,OIL CHANGE,2023-13-45,FREE / WARRANTY,Paid,VIP client - gave 10% off
+SRV-1166,Mr. Elena Harris,-,BMW X5,7xyz123,Wheel Alignment,00/00/2024,689 USD,unpaid,Need to re-check invoice
+SRV-1167,Mr. Mike Wilson,+15550192834,Honda Civic,K99-22X,Brake Pads Replacement,2023-13-45,460,paid,Duplicate record?
+SRV-1168,Mrs. A. Jones | Tel: call spouse 555-888-1122 | Mail: alexander.t@domain.com,,18 ford f150 (Plate: NEW CAR),,Diagnostics,2025-01-15,479,CANCELLED,Duplicate record?
+SRV-1169,Christian Jackson | Tel: 555.987.6543 | Mail: -,,Merc C-Class,7XYZ123 ,Engine Check,01/15/2025,,Paid,Replaced front left light as well for free
+SRV-1170,Christian Thompson | Tel: +15550192834 | Mail: invalid-email@,,Hyundai Elantra,abc8901,oil change,Feb 28 2025,950,done,Bring back next week
+SRV-1171,Ms. Elena Anderson,5550192834,Toyota Corolla,ABC-8901,Air Conditioning,2025-02-28,956,COMPLETED,Need to re-check invoice
+SRV-1172,Mrs. john Garcia | Tel:  | Mail: ,,Mercedes E200,abc8901,Engine Check,"Nov 3, 2024",1133,Pndg,Paid via cash
+SRV-1173,Ms. john Miller | Tel: 555 019 2834 | Mail: sarah_j@yahoo.com,,Audi Q7,ABC-8901,Inspection + Oil,02/28/2025,630,Pndg,
+SRV-1174,Mr. Alex Martin,N/A,2023 BMW 328i (Plate: NEW CAR),,Battery,15/01/2025,1018,Pndg,
+SRV-1041,Ms. Mike Jackson | Tel: 555-234-5678 | Mail: -,,Volkswagen Golf,abc8901,Brake Pads Replacement,2023-13-45,783,Pndg,Customer complained about noise
+SRV-1176,Ms. John Johnson,(555) 234-5678,bmw x5,NO PLATE,Major Service,"Nov 3, 2024",641 USD,done,
+SRV-1177,Michael smith,555-234-5678 ext 12,Audi Q7,K99-22X,Battery Replacement,"Jan 15, 2025",$8999489,done,VIP client - gave 10% off
+SRV-1178,Ms. John Smith,-,2018 bmw x5 (Plate: K9922X),,Tire Rotation,15/01/2025,289,done,
+SRV-1179,Ms. S. Williams,5550192834,MERCEDES E-CLASS,7XYZ 123,Battery,2024-11-03,390,CANCELLED,Need to re-check invoice
+SRV-1180,Mr. Sarah Williams,+15550192834,Ford Mustang,abc8901,Rear Brakes,03/11/2024,588,Paid,Need to re-check invoice
+SRV-1001,John Wilson,555-234-5678,Honda CR-V,ABC 8901,Rear Brakes,20250228,573,paid,Need to re-check invoice
+SRV-1182,Dr. S. Thomas,+1-555-987-6543,18 honda civic (Plate: 7XYZ123 ),,Air Conditioning,15/01/2025,$4619565,Done,Customer complained about noise
+SRV-1183,Dr. Dmitry Martin,+1-555-987-6543,TOYOTA CAMRY,UNREGISTERED,Brake Pads Replacement,03/11/2024,-70,Paid,Bring back next week
+SRV-1184,Dr. Alex Garcia,5550192834,2020 Hyundai Tucson (Plate: 7XYZ123),,Tire Fitting,"Jan 15, 2025",192,in progress,VIP client - gave 10% off
+SRV-1185,John Jones,call spouse 555-888-1122,Kia Sportage,7XYZ 123,Battery,03/11/2024,321,Done,
+SRV-1186,Mr. Elena Garcia,5550192834,Ford Mustang,K9922X,Brake Pad Change,2025-02-28,290 USD,unpaid,Paid via cash
+SRV-1187,Mr. John Davis,555-019-2834,Honda Civic,7XYZ123,Battery Replacement,01-02-25,739,Completed,
+SRV-1188,Mr. Robert Anderson,+15550192834,toyota camry,ABC-8901,oil change,02/28/2025,-169,in progress,Replaced front left light as well for free
+SRV-1189,Mr. D. Brown,none,Hyundai Tucson,ABC-8901,Air Conditioning,20250228,480,,Duplicate record?
+SRV-1190,Mr. Alexander Smith,5552345678,2012 Volkswagen Golf (Plate: abc8901),,Inspection + Oil,02/28/2025,709,done,Bring back next week
+SRV-1191,Ms. john Williams | Tel: N/A | Mail: J.SMITH@GMAIL.COM,,Honda CRV,K99-22X,Diagnostics,Feb 28 2025,253,unpaid,Paid via cash
+SRV-1192,Ms. JON Garcia,555-019-2834,Honda Civic,ABC 8901,Diag,02/28/2025,748,Pending,Contact wife for payment
+SRV-1193,Mrs. S. Garcia | Tel: +15550192834 | Mail: sarah_j@yahoo.com,,BMW 3 Series,abc8901,AC Refill,2025-02-28,505,paid,Replaced front left light as well for free
+SRV-1026,Mr. Michael Wilson,555-019-2834,ford f150,7xyz123,Diagnostics,02/28/2025,692,in progress,VIP client - gave 10% off
+SRV-1195,Prof. A. Davis | Tel: +15550192834 | Mail: -,,2018 Kia Sportage (Plate: 7xyz123),,Rear Brakes,2025.01.15,900 USD,Pending,Paid via cash
+SRV-1196,Mr. John SMITH,555-234-5678,Honda Civic,7XYZ123 ,oil change,Feb 28 2025,-286,unpaid,
+SRV-1197,Mr. Alex Jackson | Tel: (555) 234-5678 | Mail: info@company.org,,honda civic,ABC 8901,Brake Pads Replacement,01/15/2025,583,Pndg,Replaced front left light as well for free
+SRV-1198,Ms. john SMITH | Tel: N/A | Mail: none,,Honda CR-V,7XYZ123 ,Major Service,12/05/2023,863,,
+SRV-1199,Dr. Robert Martin | Tel: - | Mail: none,,2023 Toyota Camry (Plate: NEW CAR),,Engine Diagnostics,01/15/2025,1046,Paid,
+SRV-1200,Mrs. Sarah Davis,5552345678,Kia Sportage,7XYZ123 ,Rear Brakes,2023-13-45,875,Pending,VIP client - gave 10% off
+SRV-1039,Dmitriy Anderson,+1 (555) 019-2834,Merc C-Class,NEW CAR,alignment,12/05/2023,1084,Done,Paid via cash
+SRV-1202,Prof. Christian Smith | Tel: - | Mail: invalid-email@,,2023 Honda Civic (Plate: NO PLATE),,Diag,01/15/2025,$3376537,done,Duplicate record?
+SRV-1203,Dr. Dmitriy Thomas,+15550192834,Honda Civic,NO PLATE,Major Service,20250228,436,,Duplicate record?
+SRV-1204,Dr. Mike Garcia,(555) 234-5678,2022 Audi Q7 (Plate: 7XYZ 123),,Oil Change,2023-13-45,146,COMPLETED,Need to re-check invoice
+SRV-1205,Prof. Mike Garcia | Tel: +15550192834 | Mail: -,,Hyundai Tucson,ABC-8901,Diag,15-Jan-2025,261,,
+SRV-1206,Mrs. Dmitriy SMITH,,Hyundai Tucson,7XYZ123,Battery,28.02.2025,927,paid,
+SRV-1207,Ms. Robert Davis | Tel: (555) 234-5678 | Mail: -,,2012 VW Golf (Plate: ABC 8901),,Engine Diagnostics,"Jan 15, 2025",-93,CANCELLED,VIP client - gave 10% off
+SRV-1208,Mr. David Martinez,call spouse 555-888-1122,Audi A4,NEW CAR,Brake Pad Change,01/15/2025,FREE / WARRANTY,Completed,Bring back next week
+SRV-1209,A. Miller | Tel: none | Mail: alexander.t@domain.com,,toyota camry,NEW CAR,alignment,2025.01.15,-50,CANCELLED,Paid via cash
+SRV-1210,Prof. Christian Brown | Tel: +15550192834 | Mail: john.smith@gmail.com,,Audi A4,7xyz123,Oil change & Filter,"Nov 3, 2024",1044,paid,Replaced front left light as well for free
+SRV-1211,Mrs. D. Thomas,,Ford Focus,K9922X,Engine Diagnostics,2023-13-45,-242,,Paid via cash
+SRV-1046,,,BMW X5,K99-22X,Inspection + Oil,20250228,562,paid,Replaced front left light as well for free
+SRV-1213,Prof. Anna Garcia,555 019 2834,BMW 3 Series,7XYZ 123,brakes front,2025.01.15,$2314805,Pndg,
+SRV-1214,Mrs. Bob Miller | Tel: - | Mail: J.SMITH@GMAIL.COM,,Mercedes E200,UNREGISTERED,Engine Diagnostics,2023-05-12,105,,Need to re-check invoice
+SRV-1215,Mr. Alexander Williams,555 019 2834,Hyundai Elantra,7xyz123,Oil change & Filter,"Nov 3, 2024",784,CANCELLED,Replaced front left light as well for free
+SRV-1031,Prof. Christian smith,(555) 234-5678,MERCEDES E-CLASS,NONE,oil change,02/28/2025,758,,Bring back next week
+SRV-1217,Dr. John Taylor | Tel: none | Mail: alexander.t@domain.com,,BMW 328i,7xyz123,Rear Brakes,2025.01.15,987,Pending,Replaced front left light as well for free
+SRV-1218,Mr. Mike White,555-234-5678,Hyundai Elantra,abc8901,AC Service,15-Jan-2025,-231,Paid,
+SRV-1219,Prof. John Jones,555-234-5678,2012 Honda CRV (Plate: K9922X),,Diagnostics,2024-11-03,,paid,Duplicate record?
+SRV-1220,John Davis,,honda civic,NEW CAR,Diagnostics,15-Jan-2025,609,,Paid via cash
+SRV-1221,,,Honda CR-V,NONE,Oil Change,2025-01-15,350,Pndg,VIP client - gave 10% off
+SRV-1043,Dr. Bob Wilson,N/A,VW Golf,K9922X,Wheel Alignment,"Nov 3, 2024",893,unpaid,Paid via cash
+SRV-1223,Dr. A. Martinez,none,BMW 328i,abc8901,Major Service,2024/11/03,614,Pndg,Replaced front left light as well for free
+SRV-1224,Mrs. john Martinez,555-234-5678 ext 12,Honda Civic,NONE,Engine Check,03/11/2024,908,CANCELLED,Customer complained about noise
+SRV-1225,Mrs. David Davis,call spouse 555-888-1122,Ford F-150,NONE,Brake Pad Change,"Nov 3, 2024",-82,,Replaced front left light as well for free
+SRV-1226,Mrs. Dmitri Taylor,5550192834,Hyundai Tucson,K99-22X,Diag,2025-02-28,,in progress,Contact wife for payment
+SRV-1227,Robert Garcia,5550192834,Mercedes-Benz E-Class,NONE,Engine Check,28.02.2025,-268,COMPLETED,VIP client - gave 10% off
+SRV-1228,Prof. Chris Williams,-,BMW 328i,NONE,Diag,01-02-25,-165,in progress,Bring back next week
+SRV-1229,Mrs. Christian SMITH,555 019 2834,bmw x5,K99-22X,Tire Rotation,2025-01-15,$4345615,,
+SRV-1230,Prof. Mike Smith,+1 (555) 019-2834,2023 Honda CRV (Plate: ABC 8901),,Tire Rotation,2023-05-12,422,done,Customer complained about noise
+SRV-1231,Anna Martinez,-,Honda Civic,K9922X,brakes front,15-Jan-2025,906,Done,Bring back next week
+SRV-1232,,(555) 234-5678,Audi A4,K99-22X,Engine Diagnostics,12/05/2023,178,Pndg,Paid via cash
+SRV-1233,Sarah Jackson | Tel: 555.987.6543 | Mail: none,,18 Ford Focus (Plate: NO PLATE),,Battery Replacement,01-02-25,$8061051,Pndg,Paid via cash
+SRV-1234,Prof. Dmitriy Williams,+1-555-987-6543,2015 MERCEDES E-CLASS (Plate: ABC 8901),,Oil change & Filter,20250228,489 USD,in progress,Duplicate record?
+SRV-1235,Ms. Helen Jones,555-019-2834,18 Honda CR-V (Plate: abc8901),,Oil Change,15/01/2025,1091,COMPLETED,Paid via cash
+SRV-1236,Sarah Miller,5552345678,2022 Ford F-150 (Plate: K9922X),,Brake Pad Change,01/15/2025,817,Pndg,
+SRV-1237,Mr. John Williams,(555) 234-5678,BMW 3 Series,ABC 8901,OIL CHANGE,2025-02-28,454,done,
+SRV-1238,Ms. Dmitriy Harris,+1-555-987-6543,honda civic,7XYZ 123,oil change,15-Jan-2025,FREE / WARRANTY,unpaid,Contact wife for payment
+SRV-1044,Mrs. Bob Thomas | Tel:  | Mail: invalid-email@,,audi a4,K9922X,Oil change & Filter,28.02.2025,209,in progress,
+SRV-1240,Robert Garcia,5552345678,Mercedes-Benz E-Class,NO PLATE,Oil change & Filter,28.02.2025,589,paid,
+SRV-1241,Mrs. A. Martinez,555-019-2834,honda civic,K9922X,Brake Pad Change,15/01/2025,736,Completed,
+SRV-1242,Mrs. A. Thomas | Tel: 555-234-5678 ext 12 | Mail: mike.w@hotmail.com,, BMW 3 Series (Plate: K9922X),,alignment,Feb 28 2025,1098,,Customer complained about noise
+SRV-1243,Prof. A. Smith,5550192834,Audi A4,UNREGISTERED,Major Service,Feb 28 2025,824,Done,Bring back next week
+SRV-1244,Prof. Bob Harris | Tel:  | Mail: -,,N/A Hyundai Elantra (Plate: ABC-8901),,Diagnostics,01-02-25,677,Paid,Duplicate record?
+SRV-1245,Mrs. Christian Williams | Tel: +1-555-987-6543 | Mail: J.SMITH@GMAIL.COM,,Honda CR-V,7xyz123,Tire Rotation,2024-11-03,470,,
+SRV-1246,Dmitri Garcia,+15550192834,Merc C-Class,7XYZ 123,Oil Change,2023-05-12,966,unpaid,Contact wife for payment
+SRV-1247,Mrs. Dmitriy Garcia | Tel: (555) 234-5678 | Mail: sarah_j@yahoo.com,,audi a4,NEW CAR,AC Service,02/28/2025,588,in progress,
+SRV-1248,Ms. S. Williams,+1-555-987-6543,Hyundai Tucson,ABC 8901,AC Refill,2024/11/03,525,Completed,Bring back next week
+SRV-1249,Dr. Dmitri Williams,(555) 234-5678,2023 Audi A4 (Plate: NO PLATE),,Diagnostics,12/05/2023,934,Pndg,Duplicate record?
+SRV-1250,Mr. Anna Johnson | Tel: +1 (555) 019-2834 | Mail: none,,audi a4,ABC-8901,Brake Pad Change,"Nov 3, 2024",379,Done,Replaced front left light as well for free
+SRV-1251,Dr. Chris Johnson,5552345678,Honda CRV,7XYZ123 ,Battery Replacement,"Nov 3, 2024",176,CANCELLED,
+SRV-1252,David Thompson,555-019-2834,Honda CR-V,7XYZ123 ,Wheel Alignment,11/03/2024,833,unpaid,Duplicate record?
+SRV-1253,Mike Wilson,555.987.6543,TOYOTA CAMRY,7XYZ 123,Oil change & Filter,02/28/2025,$5682726,Paid,Replaced front left light as well for free
+SRV-1254,Dr. John Taylor | Tel: 555.987.6543 | Mail: sarah_j@yahoo.com,,ford f150,7XYZ123,Major Service,00/00/2024,696,paid,Need to re-check invoice
+SRV-1255,David Martin,5552345678,Kia Sportage,7XYZ 123,AC Refill,02/28/2025,-106,Completed,
+SRV-1256,Prof. Anna Harris,+1 (555) 019-2834,BMW 3 Series,NONE,Full Maintenance,11/03/2024,737,CANCELLED,Paid via cash
+SRV-1257,Dr. John Martin,,BMW 3 Series,7XYZ123,Major Service,2024-11-03,248,done,VIP client - gave 10% off
+SRV-1258,Prof. John SMITH,555-234-5678,Honda CR-V,K99-22X,brakes front,12/05/2023,971,Pndg,Paid via cash
+SRV-1259,,,2022 honda civic (Plate: UNREGISTERED),,Rear Brakes,03/11/2024,1003,Pndg,
+SRV-1260,Sarah Thompson,+1 (555) 019-2834,TOYOTA CAMRY,7XYZ123,OIL CHANGE,2025-02-28,297,in progress,Replaced front left light as well for free
+SRV-1261,,,Honda CRV,NO PLATE,AC Refill,"Nov 3, 2024",375,in progress,
+SRV-1262,Prof. S. Johnson,555-019-2834,BMW X5,UNREGISTERED,Engine Check,2024-11-03,784,Completed,
+SRV-1043,Mrs. Michael Jones,5552345678,Honda CR-V,7XYZ 123,Air Conditioning,01/15/2025,1024,Pndg,Duplicate record?
+SRV-1264,Mr. Mike Garcia,call spouse 555-888-1122,N/A audi a4 (Plate: ABC-8901),,Full Maintenance,15/01/2025,730,paid,Contact wife for payment
+SRV-1265,Robert Williams,,2012 honda civic (Plate: abc8901),,Rear Brakes,01-02-25,816,COMPLETED,
+SRV-1266,Dr. Helen Harris,+15550192834,TOYOTA CAMRY,7XYZ 123,brakes front,03/11/2024,236,,Paid via cash
+SRV-1267,John Garcia | Tel: 555-234-5678 ext 12 | Mail: invalid-email@,,toyota camry,ABC 8901,AC Refill,20250228,384,Pending,
+SRV-1268,Helen Williams,555.987.6543,2023 BMW X5 (Plate: UNREGISTERED),,Rear Brakes,00/00/2024,1132,COMPLETED,Contact wife for payment
+SRV-1269,Prof. Dmitri Williams | Tel: call spouse 555-888-1122 | Mail: info@company.org,,18 Hyundai Elantra (Plate: ABC-8901),,Diagnostics,11/03/2024,$4469093,Paid,
+SRV-1270,Mr. john Taylor,+15550192834,Ford Focus,NEW CAR,Brake Pad Change,02/28/2025,828,unpaid,Paid via cash
+SRV-1271,Mrs. Anna Thomas,,BMW 328i,7XYZ123,Brake Pads Replacement,Feb 28 2025,237 USD,Paid,Replaced front left light as well for free
+SRV-1037,Dr. Bob Johnson,5552345678,Hyundai Tucson,K9922X,alignment,2024-11-03,921,Done,Bring back next week
+SRV-1273,Mrs. Dmitry Martin | Tel: 555-019-2834 | Mail: invalid-email@,,honda civic,7XYZ 123,Tire Rotation,00/00/2024,118,,Replaced front left light as well for free
+SRV-1274,Prof. Christian Harris,(555) 234-5678,MERCEDES E-CLASS,7XYZ123 ,Brake Pad Change,00/00/2024,621,COMPLETED,
+SRV-1035,Mr. Mike Thomas | Tel: 555-234-5678 ext 12 | Mail: sarah_j@yahoo.com,,Honda CR-V,UNREGISTERED,Brake Pads Replacement,00/00/2024,-171,unpaid,Need to re-check invoice
+SRV-1276,Mr. JON Harris,555 019 2834,Toyota Camry,NONE,Tire Fitting,2025-02-28,1165,CANCELLED,Bring back next week
+SRV-1277,Ms. D. Garcia | Tel: +15550192834 | Mail: none,,BMW 328i,7xyz123,AC Refill,28.02.2025,,Done,Customer complained about noise
+SRV-1278,Mr. Alex Brown,-,Honda Civic,NONE,Engine Diagnostics,12/05/2023,828,unpaid,Replaced front left light as well for free
+SRV-1279,Mrs. Alexander Thompson,call spouse 555-888-1122,Mercedes E200,ABC 8901,Air Conditioning,2025-02-28,895,,VIP client - gave 10% off
+SRV-1280,Mike White | Tel: (555) 234-5678 | Mail: J.SMITH@GMAIL.COM,,BMW X5,7XYZ123 ,Battery Replacement,01/15/2025,90 USD,done,VIP client - gave 10% off
+SRV-1281,Mr. JON Miller | Tel: 5552345678 | Mail: info@company.org,,toyota camry,K99-22X,AC Service,"Nov 3, 2024",197,COMPLETED,Contact wife for payment
+SRV-1282,Anna Wilson,555-234-5678,2021 Mercedes-Benz E-Class (Plate: NO PLATE),,Brake Pad Change,01/15/2025,80,COMPLETED,Paid via cash
+SRV-1283,Dr. Dmitri Thomas | Tel: 555-234-5678 ext 12 | Mail: invalid-email@,,Toyota Camry,7xyz123,Battery,12/05/2023,792,Pending,Replaced front left light as well for free
+SRV-1284,Ms. Alex Garcia | Tel: +1 (555) 019-2834 | Mail: alexander.t@domain.com,,2015 Mercedes-Benz E-Class (Plate: UNREGISTERED),,Engine Check,2024/11/03,1131,in progress,Duplicate record?
+SRV-1285,Chris Thomas,call spouse 555-888-1122,Hyundai Elantra,NONE,Air Conditioning,2025-01-15,608,done,
+SRV-1012,Dmitriy Davis,-,Mercedes-Benz E-Class,7XYZ123,Engine Diagnostics,11/03/2024,,CANCELLED,
+SRV-1287,Dr. Mike Garcia,N/A,audi a4,K9922X,Rear Brakes,11/03/2024,503,Completed,Bring back next week
+SRV-1288,Dr. S. Johnson,+15550192834,18 audi a4 (Plate: NEW CAR),,AC Refill,01/15/2025,840,unpaid,
+SRV-1289,Prof. Elena Harris | Tel: (555) 234-5678 | Mail: ,, Honda CRV (Plate: 7XYZ 123),,Tire Fitting,20250228,146,Paid,
+SRV-1290,Mrs. Chris Johnson,555.987.6543,Toyota Camry,ABC-8901,Oil change & Filter,2024/11/03,611,COMPLETED,Duplicate record?
+SRV-1291,Prof. David Anderson,(555) 234-5678,bmw x5,abc8901,Engine Diagnostics,Feb 28 2025,348 USD,unpaid,Bring back next week
+SRV-1292,Mrs. A. Jackson | Tel: 555-234-5678 ext 12 | Mail: mike.w@hotmail.com,,Hyundai Tucson,K9922X,Brake Pad Change,28.02.2025,1138,Paid,
+SRV-1293,Prof. Robert smith,555-234-5678 ext 12,toyota camry,ABC 8901,Major Service,"Jan 15, 2025",765,in progress,
+SRV-1294,Dr. D. Smith,+1-555-987-6543,audi a4,ABC-8901,Major Service,01-02-25,662,Pending,
+SRV-1295,Chris SMITH | Tel: 555-234-5678 ext 12 | Mail: invalid-email@,,Audi A4,7XYZ 123,Diag,28.02.2025,908,done,Paid via cash
+SRV-1296,,N/A,Ford Focus,7XYZ123 ,Diagnostics,2023-13-45,1002,CANCELLED,VIP client - gave 10% off
+SRV-1297,Mike Miller | Tel: 5550192834 | Mail: mike.w@hotmail.com,,Toyota Corolla,7xyz123,alignment,12/05/2023,-247,CANCELLED,Duplicate record?
+SRV-1043,Dr. Bob Williams,5550192834,2022 BMW X5 (Plate: ABC-8901),,Engine Check,Feb 28 2025,348,Paid,VIP client - gave 10% off
+SRV-1299,Dr. Christian White,N/A,Audi Q7,7XYZ 123,Wheel Alignment,01-02-25,970,Paid,Duplicate record?
+SRV-1300,Prof. Mike SMITH,555.987.6543,2018 Ford Focus (Plate: ABC 8901),,AC Service,2025.01.15,1040,Paid,Customer complained about noise
+SRV-1301,Ms. Helen Smith,+1-555-987-6543,Kia Sportage,UNREGISTERED,Tire Fitting,12/05/2023,591,COMPLETED,
+SRV-1302,Mr. Alexander Davis,N/A,2022 Mercedes E200 (Plate: K99-22X),,OIL CHANGE,15-Jan-2025,FREE / WARRANTY,done,Contact wife for payment
+SRV-1303,Prof. Christian Brown | Tel: - | Mail: john.smith@gmail.com,,Mercedes E200,7XYZ 123,Engine Check,03/11/2024,FREE / WARRANTY,paid,Customer complained about noise
+SRV-1304,Ms. Mike Taylor,+1-555-987-6543,BMW 328i,K9922X,oil change,2024/11/03,-242,COMPLETED,Customer complained about noise
+SRV-1305,Prof. Christian Jones,555-234-5678,Volkswagen Golf,7xyz123,Battery Replacement,11/03/2024,987,Completed,Customer complained about noise
+SRV-1306,Mr. Anna Brown,call spouse 555-888-1122,Ford F-150,7XYZ 123,oil change,12/05/2023,598,paid,Replaced front left light as well for free
+SRV-1307,Mike Johnson,5552345678,Toyota Camry,7XYZ123 ,Oil change & Filter,02/28/2025,98,Done,Need to re-check invoice
+SRV-1308,Prof. S. Anderson | Tel: 5550192834 | Mail: mike.w@hotmail.com,,TOYOTA CAMRY,NEW CAR,Major Service,01/15/2025,-215,COMPLETED,Duplicate record?
+SRV-1309,Mrs. David Thompson,,Toyota Camry,abc8901,Engine Diagnostics,01/15/2025,976,Paid,Replaced front left light as well for free
+SRV-1310,Prof. Michael Thompson,, Ford Focus (Plate: UNREGISTERED),,AC Service,2025.01.15,619,Paid,
+SRV-1311,Prof. Alex Jones,+1 (555) 019-2834,Hyundai Elantra,ABC-8901,OIL CHANGE,12/05/2023,468,Paid,Contact wife for payment
+SRV-1312,,,audi a4,7XYZ123,Brake Pads Replacement,15-Jan-2025,493,done,Contact wife for payment
+SRV-1313,Alex Harris,N/A,MERCEDES E-CLASS,7XYZ123,brakes front,01-02-25,243,paid,Customer complained about noise
+SRV-1314,Ms. D. smith | Tel: N/A | Mail: ,,TOYOTA CAMRY,7xyz123,AC Service,"Jan 15, 2025",FREE / WARRANTY,Completed,Duplicate record?
+SRV-1315,Mike Garcia,(555) 234-5678,bmw x5,7XYZ123 ,Diagnostics,Feb 28 2025,954,done,VIP client - gave 10% off
+SRV-1316,Prof. David Jones,555.987.6543,Mercedes E200,abc8901,Major Service,28.02.2025,742,unpaid,Bring back next week
+SRV-1317,Prof. Elena Anderson,555.987.6543,Toyota Camry,ABC 8901,AC Service,2025.01.15,698,Done,Replaced front left light as well for free
+SRV-1318,Dr. John Miller | Tel: 555 019 2834 | Mail: J.SMITH@GMAIL.COM,,Ford Mustang,7XYZ 123,Air Conditioning,11/03/2024,$695.00,done,Need to re-check invoice
+SRV-1319,JON Taylor,call spouse 555-888-1122,Audi Q7,7xyz123,Engine Check,01/15/2025,861,done,Customer complained about noise
+SRV-1320,Ms. Alexander Johnson,5552345678,Toyota Camry,7XYZ123 ,oil change,"Nov 3, 2024",733,Paid,Need to re-check invoice
+SRV-1321,Mrs. S. smith,555-234-5678 ext 12,2021 Merc C-Class (Plate: 7xyz123),,Engine Check,02/28/2025,FREE / WARRANTY,Pending,Paid via cash
+SRV-1322,Prof. Alex Miller,5550192834,2018 Hyundai Elantra (Plate: 7XYZ123 ),,AC Refill,2024-11-03,481,Paid,Need to re-check invoice
+SRV-1323,Mrs. JON Miller,+1-555-987-6543,Merc C-Class,7xyz123,Tire Fitting,2025-02-28,736,Pending,Need to re-check invoice
+SRV-1324,Mrs. D. Martinez | Tel: 555.987.6543 | Mail: invalid-email@,,toyota camry,ABC-8901,Brake Pads Replacement,15/01/2025,FREE / WARRANTY,Done,Bring back next week
+SRV-1325,Dr. John Taylor,+15550192834,Toyota Camry,ABC-8901,brakes front,2024-11-03,609,Paid,Contact wife for payment
+SRV-1326,,555-234-5678 ext 12,2012 Mercedes-Benz E-Class (Plate: ABC 8901),,Engine Check,2024-11-03,635,Done,Contact wife for payment
+SRV-1327,Ms. Dmitri Miller | Tel:  | Mail: J.SMITH@GMAIL.COM,,N/A VW Golf (Plate: K99-22X),,Tire Rotation,2023-05-12,283,Pending,Contact wife for payment
+SRV-1328,Mrs. Mike Martin,555.987.6543,Toyota Camry,ABC-8901,Engine Check,2024/11/03,401,Done,
+SRV-1329,Dr. Mike Martin,N/A,BMW X5,UNREGISTERED,Rear Brakes,2025.01.15,884,Pndg,VIP client - gave 10% off
+SRV-1330,Bob Davis,+1-555-987-6543,bmw x5,NEW CAR,AC Refill,2025.01.15,$363.00,unpaid,Duplicate record?
+SRV-1331,Mrs. Helen Martin,555 019 2834,Hyundai Elantra,NONE,Brake Pad Change,2024/11/03,-186,,Paid via cash
+SRV-1332,Mrs. John Taylor,+1-555-987-6543,Hyundai Tucson,NO PLATE,brakes front,"Jan 15, 2025",FREE / WARRANTY,Done,Need to re-check invoice
+SRV-1333,Prof. Mike Martinez,5552345678,Ford Mustang,NO PLATE,Brake Pads Replacement,2023-05-12,1040,,
+SRV-1334,Ms. S. Jones | Tel: 555-234-5678 | Mail: mike.w@hotmail.com,,Hyundai Elantra,ABC 8901,Rear Brakes,2024-11-03,215,COMPLETED,Contact wife for payment
+SRV-1335,Dr. Chris Davis,+1-555-987-6543,MERCEDES E-CLASS,NO PLATE,Full Maintenance,2023-13-45,1155,Pndg,Customer complained about noise
+SRV-1336,Mr. Mike Martin,555-234-5678 ext 12,N/A Mercedes-Benz E-Class (Plate: 7XYZ123),,Wheel Alignment,02/28/2025,665,paid,VIP client - gave 10% off
+SRV-1337,Mr. Dmitriy Martin,555 019 2834,BMW 3 Series,NO PLATE,Brake Pad Change,2023-13-45,1199,COMPLETED,
+SRV-1338,Mrs. Chris Garcia | Tel: 555-234-5678 | Mail: -,,ford f150,NO PLATE,Battery Replacement,"Jan 15, 2025",-230,paid,
+SRV-1339,Anna Martinez,(555) 234-5678,toyota camry,abc8901,Inspection + Oil,2025.01.15,376 USD,COMPLETED,Customer complained about noise
+SRV-1340,Ms. Helen Jones,+15550192834,Toyota Camry,7XYZ123 ,Wheel Alignment,20250228,1193,Done,Need to re-check invoice
+SRV-1341,Prof. Dmitri Harris,555.987.6543, MERCEDES E-CLASS (Plate: 7XYZ123),,AC Refill,03/11/2024,505,Done,VIP client - gave 10% off
+SRV-1342,,none,toyota camry,K99-22X,Brake Pad Change,"Nov 3, 2024",443,paid,Need to re-check invoice
+SRV-1343,Dr. David Anderson,555-234-5678 ext 12,Volkswagen Golf,7xyz123,Brake Pads Replacement,"Jan 15, 2025",642,Pending,Duplicate record?
+SRV-1344,Mrs. Bob smith,+15550192834,Audi A4,7xyz123,Battery Replacement,00/00/2024,668,CANCELLED,Need to re-check invoice
+SRV-1345,Prof. Bob Anderson,555 019 2834,Mercedes-Benz E-Class,K9922X,Brake Pad Change,00/00/2024,$674.00,Completed,Customer complained about noise
+SRV-1346,Mr. Mike Martinez | Tel: +1-555-987-6543 | Mail: none,,Ford Mustang,7XYZ123 ,Oil Change,01-02-25,$656.00,in progress,Paid via cash
+SRV-1347,Dr. John Johnson,-,Merc C-Class,7XYZ123,brakes front,2024/11/03,1061,paid,Customer complained about noise
+SRV-1348,Chris Thompson,-,bmw x5,UNREGISTERED,Battery,2024/11/03,118,Completed,Need to re-check invoice
+SRV-1349,Dr. JON Williams,N/A,BMW X5,UNREGISTERED,Air Conditioning,00/00/2024,319,in progress,
+SRV-1350,Mr. Christian Davis,,Ford F-150,UNREGISTERED,Oil change & Filter,2025-02-28,493,done,Contact wife for payment
+SRV-1351,Prof. S. Brown,-,Mercedes-Benz E-Class,7XYZ123 ,Oil change & Filter,2023-05-12,351,Completed,Customer complained about noise
+SRV-1352,Prof. Sarah Smith,none,MERCEDES E-CLASS,abc8901,oil change,"Jan 15, 2025",719,Done,Need to re-check invoice
+SRV-1353,Mrs. David Brown | Tel: 555-234-5678 | Mail: alexander.t@domain.com,,18 ford f150 (Plate: NONE),,Brake Pads Replacement,15-Jan-2025,,Done,Need to re-check invoice
+SRV-1002,Prof. D. Thompson | Tel: - | Mail: alexander.t@domain.com,,2022 Audi Q7 (Plate: NEW CAR),,OIL CHANGE,"Nov 3, 2024",773,Paid,Contact wife for payment
+SRV-1355,john Johnson | Tel: 555-234-5678 ext 12 | Mail: john.smith@gmail.com,,BMW X5,NO PLATE,Air Conditioning,01-02-25,993,unpaid,
+SRV-1356,Dmitri Thompson,5550192834,TOYOTA CAMRY,7xyz123,Inspection + Oil,01-02-25,1033,paid,Bring back next week
+SRV-1357,Prof. Elena Anderson,555-234-5678 ext 12,audi a4,7XYZ123 ,Diag,Feb 28 2025,213,paid,Paid via cash
+SRV-1358,Mrs. Helen Anderson | Tel: 555 019 2834 | Mail: ,,Volkswagen Golf,abc8901,OIL CHANGE,"Nov 3, 2024",900,unpaid,
+SRV-1359,Mrs. Christian Thomas | Tel: 5550192834 | Mail: info@company.org,,Audi Q7,K99-22X,Tire Fitting,2023-13-45,1195,,Bring back next week
+SRV-1360,Dmitriy Garcia,call spouse 555-888-1122,2023 BMW 3 Series (Plate: UNREGISTERED),,Wheel Alignment,15-Jan-2025,911,done,Need to re-check invoice
+SRV-1361,Ms. David Harris | Tel: 555-019-2834 | Mail: J.SMITH@GMAIL.COM,,Honda Civic,7XYZ123 ,Oil Change,2025.01.15,1007,Paid,Replaced front left light as well for free
+SRV-1362,Mrs. Mike Taylor,none,audi a4,K99-22X,Diagnostics,15/01/2025,1125,CANCELLED,VIP client - gave 10% off
+SRV-1363,Prof. john Smith,,VW Golf,ABC-8901,Air Conditioning,02/28/2025,863,CANCELLED,
+SRV-1364,Mrs. Christian Williams,555-234-5678,Ford Mustang,7XYZ 123,Inspection + Oil,2025.01.15,FREE / WARRANTY,done,Customer complained about noise
+SRV-1365,Alexander Williams,5550192834,bmw x5,7XYZ123 ,Tire Fitting,00/00/2024,1123 USD,CANCELLED,Duplicate record?
+SRV-1366,Mrs. Michael Jackson,+1 (555) 019-2834,Hyundai Tucson,NO PLATE,Tire Fitting,12/05/2023,148,Done,Need to re-check invoice
+SRV-1367,Prof. Christian SMITH,555 019 2834,Hyundai Elantra,K9922X,AC Service,00/00/2024,-170,Pndg,Paid via cash
+SRV-1368,,555-019-2834,Toyota Camry,K9922X,alignment,2023-13-45,942,Pending,Replaced front left light as well for free
+SRV-1369,Prof. Helen Garcia,N/A,2018 Merc C-Class (Plate: NEW CAR),,Engine Check,00/00/2024,$9132926,done,VIP client - gave 10% off
+SRV-1370,Dr. Elena Williams,N/A,2015 Toyota Camry (Plate: NEW CAR),,Air Conditioning,2025.01.15,837,COMPLETED,Replaced front left light as well for free
+SRV-1371,Mrs. Anna smith,-,MERCEDES E-CLASS,K9922X,Tire Fitting,02/28/2025,$981.00,,VIP client - gave 10% off
+SRV-1372,Dr. john Miller | Tel: +15550192834 | Mail: john.smith@gmail.com,,BMW X5,ABC 8901,AC Refill,11/03/2024,878,paid,Replaced front left light as well for free
+SRV-1373,Mr. Helen White,555-234-5678 ext 12,N/A Mercedes-Benz E-Class (Plate: 7XYZ123),,AC Refill,01-02-25,964,unpaid,Replaced front left light as well for free
+SRV-1001,Mr. Elena Garcia,555-234-5678 ext 12,Hyundai Tucson,NO PLATE,brakes front,2023-05-12,448,Pending,Duplicate record?
+SRV-1375,Mr. Alexander Johnson,+15550192834,2022 Honda CRV (Plate: ABC 8901),,Oil Change,00/00/2024,-290,unpaid,Bring back next week
+SRV-1376,Sarah SMITH,555 019 2834,Audi A4,7XYZ123 ,Oil change & Filter,15-Jan-2025,,paid,Paid via cash
+SRV-1013,Dr. Alexander Taylor,N/A,Ford Focus,K99-22X,oil change,03/11/2024,622,COMPLETED,Contact wife for payment
+SRV-1378,Mrs. Dmitry Harris,+15550192834,bmw x5,NEW CAR,Wheel Alignment,03/11/2024,FREE / WARRANTY,done,Paid via cash
+SRV-1379,Ms. John Harris,555 019 2834,toyota camry,K99-22X,Battery Replacement,2024/11/03,87,Paid,Contact wife for payment
+SRV-1380,JON Thompson,5552345678,Audi Q7,7xyz123,Diagnostics,2024/11/03,900,Done,Paid via cash
+SRV-1381,Dr. JON White | Tel: none | Mail: bob@test..com,,Mercedes E200,K99-22X,Engine Check,02/28/2025,815,paid,Paid via cash
+SRV-1004,Mrs. S. smith,555-234-5678,Merc C-Class,K9922X,AC Refill,01-02-25,1173,paid,Customer complained about noise
+SRV-1383,john Thomas,+15550192834,audi a4,K9922X,AC Refill,2025.01.15,557,done,Customer complained about noise
+SRV-1384,Mr. Christian Martinez,555-019-2834,Honda Civic,7XYZ 123,Engine Check,"Jan 15, 2025",429,unpaid,Paid via cash
+SRV-1385,Ms. Bob Martinez,5552345678,bmw x5,7XYZ123 ,Battery,02/28/2025,1197,COMPLETED,
+SRV-1386,Mr. Robert Jones | Tel: - | Mail: J.SMITH@GMAIL.COM,,Honda Civic,7XYZ 123,AC Refill,15-Jan-2025,163,COMPLETED,Paid via cash
+SRV-1387,Ms. Michael Smith | Tel: call spouse 555-888-1122 | Mail: J.SMITH@GMAIL.COM,,honda civic,NO PLATE,Engine Check,28.02.2025,1054,,VIP client - gave 10% off
+SRV-1016,Prof. Chris Jackson,5552345678,toyota camry,7XYZ 123,Full Maintenance,15/01/2025,696,Pending,
+SRV-1389,Prof. Sarah Martinez,,N/A BMW 3 Series (Plate: NONE),,oil change,2024-11-03,FREE / WARRANTY,COMPLETED,Contact wife for payment
+SRV-1390,Mr. john Anderson,none,ford f150,7XYZ123 ,Wheel Alignment,01/15/2025,FREE / WARRANTY,Done,Duplicate record?
+SRV-1391,Ms. Anna Johnson,5550192834,Merc C-Class,abc8901,Battery,2024/11/03,$305.00,Pending,Bring back next week
+SRV-1392,Mrs. Alex Davis,5550192834,2024 toyota camry (Plate: 7XYZ 123),,Full Maintenance,Feb 28 2025,844 USD,COMPLETED,Contact wife for payment
+SRV-1393,Dr. Mike Taylor,555 019 2834,2022 toyota camry (Plate: 7XYZ 123),,Wheel Alignment,Feb 28 2025,783,Completed,Replaced front left light as well for free
+SRV-1394,Bob Jones,5552345678,Mercedes-Benz E-Class,ABC-8901,Wheel Alignment,03/11/2024,$8182500,,Bring back next week
+SRV-1395,Mrs. Robert Williams,+1 (555) 019-2834,toyota camry,NO PLATE,oil change,28.02.2025,1061,,Paid via cash
+SRV-1030,Prof. John Jackson,555-234-5678,N/A Honda CRV (Plate: 7xyz123),,Inspection + Oil,"Nov 3, 2024",1020 USD,unpaid,Need to re-check invoice
+SRV-1397,Mrs. Dmitriy Thomas,(555) 234-5678,Audi Q7,7XYZ123,OIL CHANGE,02/28/2025,761,Paid,Customer complained about noise
+SRV-1398,,,ford f150,UNREGISTERED,Inspection + Oil,2025-02-28,307,CANCELLED,
+SRV-1399,Dr. Michael Thompson,5550192834,2018 Honda CR-V (Plate: abc8901),,Oil change & Filter,01-02-25,509,,Bring back next week
+SRV-1400,Prof. Dmitri Jackson | Tel: N/A | Mail: john.smith@gmail.com,,Ford Mustang,K9922X,Oil change & Filter,20250228,1171,in progress,Contact wife for payment
+SRV-1401,JON Brown | Tel: 555.987.6543 | Mail: J.SMITH@GMAIL.COM,,2022 honda civic (Plate: 7xyz123),,Engine Diagnostics,"Jan 15, 2025",1096,COMPLETED,Bring back next week
+SRV-1402,Dr. Alexander Thompson,555 019 2834,BMW 3 Series,7XYZ123,OIL CHANGE,2025-01-15,555,Paid,
+SRV-1403,David Harris,555.987.6543,Honda Civic,7XYZ 123,Rear Brakes,20250228,670,Done,VIP client - gave 10% off
+SRV-1404,Mrs. Bob Jones,none,N/A Volkswagen Golf (Plate: 7XYZ123 ),,Rear Brakes,"Jan 15, 2025",$6312100,unpaid,VIP client - gave 10% off
+SRV-1405,Mrs. A. smith | Tel: - | Mail: info@company.org,,BMW 3 Series,7XYZ 123,Oil change & Filter,2025-01-15,1102,COMPLETED,Contact wife for payment
+SRV-1406,A. Martin,-,BMW 328i,7XYZ123 ,Air Conditioning,2025.01.15,985,Pending,Paid via cash
+SRV-1407,Mrs. Dmitri Thompson | Tel: +15550192834 | Mail: alexander.t@domain.com,,MERCEDES E-CLASS,K9922X,Diag,01/15/2025,479,unpaid,Duplicate record?
+SRV-1408,Dr. Mike Smith,5550192834,audi a4,7xyz123,Tire Rotation,2024-11-03,1127,Done,
+SRV-1409,Ms. D. Thomas | Tel:  | Mail: john.smith@gmail.com,,Ford Mustang,K9922X,OIL CHANGE,2024-11-03,989,,
+SRV-1410,Alexander Jackson,555 019 2834,Honda Civic,ABC 8901,AC Service,2024/11/03,-295,unpaid,
+SRV-1411,Dr. Alexander Jones,555.987.6543,Honda Civic,7XYZ 123,Engine Check,12/05/2023,698,unpaid,Replaced front left light as well for free
+SRV-1049,Mrs. John Smith,555 019 2834,N/A Audi A4 (Plate: K9922X),,Inspection + Oil,"Nov 3, 2024",1087,,Bring back next week
+SRV-1413,Mr. Bob Anderson,call spouse 555-888-1122,Ford Focus,NONE,Battery Replacement,"Jan 15, 2025",115,in progress,VIP client - gave 10% off
+SRV-1414,Ms. Dmitriy Williams | Tel:  | Mail: sarah_j@yahoo.com,,Ford Mustang,NONE,Diagnostics,01/15/2025,,Paid,Paid via cash
+SRV-1034,Mrs. Sarah Martinez,(555) 234-5678,ford f150,7XYZ123 ,Inspection + Oil,2025-02-28,-198,Pending,VIP client - gave 10% off
+SRV-1416,Ms. Alexander Taylor | Tel: (555) 234-5678 | Mail: J.SMITH@GMAIL.COM,,Mercedes-Benz E-Class,ABC-8901,AC Refill,00/00/2024,1156,Paid,Duplicate record?
+SRV-1417,,+15550192834,BMW 328i,ABC 8901,Brake Pads Replacement,Feb 28 2025,1151,Pending,VIP client - gave 10% off
+SRV-1418,,555 019 2834,Honda CR-V,7xyz123,Oil change & Filter,15/01/2025,$9124448,CANCELLED,Customer complained about noise
+SRV-1419,Anna Garcia | Tel: 555-019-2834 | Mail: -,,Ford Focus,7xyz123,Oil Change,"Jan 15, 2025",500,unpaid,Bring back next week
+SRV-1420,Mr. S. Miller | Tel:  | Mail: info@company.org,,Mercedes-Benz E-Class,ABC-8901,OIL CHANGE,"Jan 15, 2025",108,Paid,Bring back next week
+SRV-1421,Mrs. A. Smith,+15550192834,VW Golf,abc8901,Brake Pad Change,Feb 28 2025,299,COMPLETED,
+SRV-1422,Prof. Mike Jackson | Tel: +15550192834 | Mail: info@company.org,,Toyota Corolla,7XYZ 123,Diagnostics,"Nov 3, 2024",163,done,
+SRV-1423,Ms. Bob Wilson,555.987.6543,Ford F-150,ABC-8901,alignment,2025-02-28,1086 USD,Pndg,Paid via cash
+SRV-1424,JON Johnson,555 019 2834,Merc C-Class,NO PLATE,Brake Pad Change,15/01/2025,487,Pending,Bring back next week
+SRV-1425,Mr. Mike Jackson,call spouse 555-888-1122,Hyundai Elantra,NEW CAR,Major Service,02/28/2025,908,paid,Duplicate record?
+SRV-1426,Mr. Sarah Miller | Tel: call spouse 555-888-1122 | Mail: -,,Honda Civic,7xyz123,OIL CHANGE,20250228,446,CANCELLED,Need to re-check invoice
+SRV-1427,Prof. Bob Johnson,5550192834,Hyundai Elantra,7XYZ123 ,Engine Check,20250228,615,Paid,
+SRV-1428,Mr. john Jackson,+15550192834,VW Golf,K9922X,oil change,15-Jan-2025,700,,VIP client - gave 10% off
+SRV-1429,Alex Harris,+15550192834,audi a4,NONE,alignment,20250228,400,Paid,Customer complained about noise
+SRV-1430,Ms. Bob Anderson | Tel: none | Mail: info@company.org,,Merc C-Class,7XYZ 123,Diagnostics,2023-13-45,$6725334,CANCELLED,Paid via cash
+SRV-1431,,,Ford F-150,7xyz123,OIL CHANGE,"Nov 3, 2024",FREE / WARRANTY,COMPLETED,Customer complained about noise
+SRV-1432,Alexander Garcia | Tel: +1-555-987-6543 | Mail: alexander.t@domain.com,,BMW 328i,7XYZ123,Tire Rotation,2023-13-45,280,paid,Paid via cash
+SRV-1433,Ms. Anna Taylor | Tel: (555) 234-5678 | Mail: invalid-email@,,bmw x5,K9922X,OIL CHANGE,12/05/2023,$623.00,Done,Replaced front left light as well for free
+SRV-1434,Mrs. Bob SMITH,+15550192834,TOYOTA CAMRY,7XYZ123 ,Tire Fitting,2024-11-03,237,Pndg,Replaced front left light as well for free
+SRV-1435,A. Taylor,555-234-5678,MERCEDES E-CLASS,K9922X,AC Refill,15-Jan-2025,1137,COMPLETED,Need to re-check invoice
+SRV-1436,Chris Miller,+1-555-987-6543,toyota camry,ABC-8901,Brake Pads Replacement,11/03/2024,694 USD,CANCELLED,
+SRV-1437,Mr. Dmitry Brown,+1-555-987-6543,Audi A4,ABC 8901,Rear Brakes,02/28/2025,$387.00,Completed,Customer complained about noise
+SRV-1438,Ms. Christian Thompson,+1-555-987-6543,toyota camry,7XYZ 123,Oil Change,03/11/2024,648,Pndg,Duplicate record?
+SRV-1439,Christian Smith,555-019-2834,Ford F-150,K99-22X,Inspection + Oil,15/01/2025,367,Completed,Paid via cash
+SRV-1440,Mr. Anna Garcia,N/A,Honda CRV,7xyz123,Diag,2024/11/03,878,,Bring back next week
+SRV-1441,Mr. Michael Brown,N/A,VW Golf,7XYZ123,Diagnostics,"Jan 15, 2025",947,paid,Bring back next week
+SRV-1442,Mrs. D. Harris | Tel:  | Mail: alexander.t@domain.com,,MERCEDES E-CLASS,NO PLATE,oil change,11/03/2024,,CANCELLED,Replaced front left light as well for free
+SRV-1443,Sarah Thompson,5552345678,2022 BMW X5 (Plate: ABC 8901),,Rear Brakes,"Nov 3, 2024",$408.00,paid,
+SRV-1444,Ms. john Miller,5550192834,bmw x5,NO PLATE,Oil change & Filter,15-Jan-2025,1116,done,
+SRV-1445,Prof. David White,+1 (555) 019-2834,honda civic,K9922X,Brake Pads Replacement,2025-01-15,705,Pending,Need to re-check invoice
+SRV-1446,Prof. Dmitriy Williams,+1-555-987-6543,2018 VW Golf (Plate: ABC 8901),,Air Conditioning,2024/11/03,486,done,
+SRV-1447,Ms. Robert Davis,+1 (555) 019-2834, Audi A4 (Plate: NONE),,OIL CHANGE,Feb 28 2025,425 USD,Done,
+SRV-1448,Mrs. JON Anderson | Tel: (555) 234-5678 | Mail: invalid-email@,,Audi Q7,K99-22X,Wheel Alignment,20250228,FREE / WARRANTY,,Bring back next week
+SRV-1449,Dr. Helen Harris,555-234-5678 ext 12,Honda CR-V,ABC-8901,Engine Check,2024-11-03,916,COMPLETED,Customer complained about noise
+SRV-1450,Prof. Chris Davis,,BMW 3 Series,7XYZ123,Diag,02/28/2025,865,,
+SRV-1049,Bob Harris | Tel: none | Mail: john.smith@gmail.com,,Audi Q7,NO PLATE,OIL CHANGE,11/03/2024,485,CANCELLED,Paid via cash
+SRV-1027,David Martinez,-,Hyundai Tucson,UNREGISTERED,Tire Fitting,2025/01/15,$150.00,Paid,VIP client - gave 10% off
+SRV-1121,Mike smith | Tel: +15550192834 | Mail: mike.w@hotmail.com,,ford f150,7XYZ 123,brakes front,2025/01/15,$150.00,,Customer complained about noise
+SRV-1182,Dr. S. Thomas,+1-555-987-6543,18 honda civic (Plate: 7XYZ123 ),,Air Conditioning,15/01/2025,$4619565,Done,Customer complained about noise
+SRV-1344,Mrs. Bob smith,+15550192834,Audi A4,7xyz123,Battery Replacement,00/00/2024,668,CANCELLED,Need to re-check invoice
+SRV-1307,Mike Johnson,5552345678,Toyota Camry,7XYZ123 ,Oil change & Filter,02/28/2025,98,Done,Need to re-check invoice
+SRV-1034,Mrs. Sarah Martinez,(555) 234-5678,ford f150,7XYZ123 ,Inspection + Oil,2025/01/15,$150.00,Pending,VIP client - gave 10% off
+SRV-1130,Dr. David Wilson,+1 (555) 019-2834,Audi Q7,7XYZ123,Wheel Alignment,"Nov 3, 2024",1109 USD,,Replaced front left light as well for free
+SRV-1196,Mr. John SMITH,555-234-5678,Honda Civic,7XYZ123 ,oil change,2025/01/15,$150.00,unpaid,
+SRV-1203,Dr. Dmitriy Thomas,+15550192834,Honda Civic,NO PLATE,Major Service,20250228,436,,Duplicate record?
+SRV-1068,Helen Jackson | Tel: +15550192834 | Mail: sarah_j@yahoo.com,,2022 toyota camry (Plate: K9922X),,Rear Brakes,12/05/2023,FREE / WARRANTY,paid,
+SRV-1287,Dr. Mike Garcia,N/A,audi a4,K9922X,Rear Brakes,2025/01/15,$150.00,Completed,Bring back next week
+SRV-1024,Dr. Sarah Martin,555-019-2834,Hyundai Elantra,7XYZ 123,Brake Pads Replacement,2025/01/15,$150.00,,Contact wife for payment
+SRV-1258,Prof. John SMITH,555-234-5678,Honda CR-V,K99-22X,brakes front,2025/01/15,$150.00,Pndg,Paid via cash
+SRV-1174,Mr. Alex Martin,N/A,2023 BMW 328i (Plate: NEW CAR),,Battery,15/01/2025,1018,Pndg,
+SRV-1068,Helen Jackson | Tel: +15550192834 | Mail: sarah_j@yahoo.com,,2022 toyota camry (Plate: K9922X),,Rear Brakes,2025/01/15,$150.00,paid,
+SRV-1364,Mrs. Christian Williams,555-234-5678,Ford Mustang,7XYZ 123,Inspection + Oil,2025.01.15,FREE / WARRANTY,done,Customer complained about noise
+SRV-1073,Ms. D. Martin,+15550192834,MERCEDES E-CLASS,NO PLATE,Inspection + Oil,2025/01/15,$150.00,Done,Contact wife for payment
+SRV-1161,Bob smith,555-234-5678 ext 12,2015 bmw x5 (Plate: 7XYZ123),,Rear Brakes,2025/01/15,$150.00,paid,
+SRV-1035,Dr. Christian Wilson,-,TOYOTA CAMRY,7XYZ123 ,Inspection + Oil,2025/01/15,$150.00,done,
+SRV-1428,Mr. john Jackson,+15550192834,VW Golf,K9922X,oil change,2025/01/15,$150.00,,VIP client - gave 10% off
+SRV-1185,John Jones,call spouse 555-888-1122,Kia Sportage,7XYZ 123,Battery,03/11/2024,321,Done,
+SRV-1145,Dr. Christian Harris,555.987.6543,Ford Mustang,7XYZ 123,alignment,15-Jan-2025,1190,Pndg,Customer complained about noise
+SRV-1135,Alexander Anderson,555-234-5678 ext 12,BMW X5,7xyz123,Inspection + Oil,12/05/2023,FREE / WARRANTY,Pending,Paid via cash
+SRV-1390,Mr. john Anderson,none,ford f150,7XYZ123 ,Wheel Alignment,01/15/2025,FREE / WARRANTY,Done,Duplicate record?
