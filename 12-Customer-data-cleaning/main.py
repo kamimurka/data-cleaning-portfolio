@@ -37,6 +37,8 @@ IQR = Q3 - Q1
 upper = Q3 + 1.5 * IQR
 lower = Q1 - 1.5 * IQR
 
+df['Age'] = df['Age'].fillna(df['Age'].median())
+
 df = df[df['Age'].between(lower, upper)]
 df['Age'] = df['Age'].round()
 df['Age'] = pd.to_numeric(df['Age'], errors='coerce')
@@ -63,11 +65,3 @@ print(len(df))
 
 # Exporting
 df.to_csv('12-Customer-data-cleaning/customer_data_cleaned.csv', index=False)
-
-# print(df['Signup_Date'].head(200))
-# print(df['Country'].value_counts())
-# print(df['Age'].head(200))
-# print(df['Annual_Income'].head(200))
-# print(df['Purchase_Status'].value_counts())python $ZED_FILE
-print('Hello')
-print('чтобы ты сдох гемини , ты мне ничем не помог, а тебя  удаляю, гори в аду мразь')
