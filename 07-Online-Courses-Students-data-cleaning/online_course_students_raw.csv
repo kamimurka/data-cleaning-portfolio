@@ -1,0 +1,376 @@
+Student ID,Full Name,Email Address,Enrolled Course,Registration Date,Final Score,Amount Paid,Payment Status
+STU-1168,David Brown,david.brown94@outlook.com,Digital Marketing,2025/05/12 00:00,,299,Completed
+STU-1034,Robert Anderson,robert.anderson95@edu.com,Digital Marketing,04/11/2025,,299,unpaid
+STU-1016,Matthew Davis,matthew.davis13@edu.com,UX/UI Design Fundamentals,07/01/2025,96,$150,paid
+STU-1317,Mr. Olivia Brown,olivia.brown74@outlook.com,Python for beginners,09/13/2025,-15,150,YES
+STU-1058,David Smith,davidsmith@gmail.com; david123@gmail.com,Python for Beginners,2025-10-11,90,499,YES
+STU-1292,Dr. David Hernandez,david.hernandezgmail.com,Data Science - Intro,"June 16, 2025",95,299,Completed
+STU-1077,Olivia Garcia,olivia.garcia49@hotmail.com,Digital Marketing,"September 07, 2025",,$299,Pending
+STU-1120,  Michael  Brown ,michael.brown25@yahoo.com,python for beginners,2025-03-21,56,150,unpaid
+STU-1281,Dr. Sarah Miller,sarah.miller75@gmail.com,Web Development,24-Feb-2025,999,299,no
+STU-1127,Amanda Smith,,Data Science 101,18-Mar-2025,83,299,Pending
+STU-1235,  Jessica  Miller ,jessicamiller@hotmail.com; jessica123@gmail.com,Digital Marketing,2025-02-13,96,150,Unpaid
+STU-1040,Dr. Andrew Wilson,andrewwilson@outlook.com; andrew123@gmail.com,Digital Marketing,"September 29, 2025",98,499,Failed
+STU-1275,sarah smith,sarah.smith11@outlook.com,Web Dev Bootcamp,03/01/2025,81,299,PAID
+STU-1056,James Lopez,james.lopez59@hotmail.com,Data Science - Intro,2025-05-09,70,$200,Completed
+STU-1290,Andrew Williams,andrew.williams2@yahoo.com,Data Science - Intro,2025/06/06 00:00,67,499,NO
+STU-1298,olivia wilson,olivia.wilson44@outlook.com,Digital Marketing Essentials,2025-08-23,61,499,unpaid
+STU-1001,Mr. Daniel Johnson,daniel.johnson29@yahoo.com,Marketing 101,22-Feb-2025,55,150,Paid
+STU-1233,  Jessica  Anderson ,jessica.anderson97@yahoo.com,Digital Marketing,2025-03-15,89,499,NO
+STU-1338,John Davis,,Python for beginners,2025-01-28,54,200,pending
+STU-1102,Matthew Jones,matthew.jones72@company.org,Digital Marketing Essentials,2025-10-13,94,200,pending
+STU-1010,Dr. Daniel Lopez,daniel.lopez97@hotmail.com,Web Development Bootcamp,2025-06-24,79,,pending
+STU-1182,Mr. Robert Davis,robert.davis83@edu.com,UX/UI Design Fundamentals,09/26/2025,59,200,Refunded
+STU-1073,  Olivia  Smith ,olivia.smith76@company.org,Digital Marketing,"September 08, 2025",80,499,Failed
+STU-1239,James Lopez,james.lopez69@company.org,python for beginners,2025-05-23,,200,unpaid
+STU-1262,David Rodriguez,david.rodriguez8@yahoo.com,Digital Marketing Essentials,07/18/2025,61,299 USD,NO
+STU-1138,Olivia Martinez,olivia.martinez17@gmail.com,Data Science 101,07/07/2025,52,499,NO
+STU-1324,James Garcia,james.garcia18@yahoo.com,UX/UI Design Fundamentals,2025-09-20,70,200,Completed
+STU-1173,Robert Davis,robert.davis73@gmail.com,Python for Beginners,"October 08, 2025",84,$299,Failed
+STU-1153,Robert Smith,robert.smith34@edu.com,DS 101,07/26/2025,86,299,Unpaid
+STU-1046,Amanda Martinez,amanda.martinezgmail.com,UX/UI Design Fundamentals,"March 11, 2025",66,200,Failed
+STU-1026,Emma Hernandez,emma.hernandez63@hotmail.com,Web Development,2025-01-27,67,,unpaid
+STU-1109,David Johnson,david.johnson22@company.org,UX/UI Design,2025-07-05,65,499,PAID
+STU-1043,James Garcia,james.garcia27@outlook.com,UX/UI Design Fundamentals,"October 27, 2025",,499,Refunded
+STU-1169,Michael Martinez,michael.martinez55@company.org,DS 101,02/14/2025,999,499,unpaid
+STU-1158,amanda davis,amanda.davis80@outlook.com,python for beginners,2025-05-05,57,499 USD,unpaid
+STU-1115,Andrew Gonzalez,andrew.gonzalez78@outlook.com,UI/UX Basics,"March 19, 2025",71,150,yes
+STU-1064,sarah rodriguez,sarahrodriguez@hotmail.com; sarah123@gmail.com,Web Dev Bootcamp,2025-03-14,85%,299,Failed
+STU-1023,Emma Jones,emma.jones39@outlook.com,DS 101,2025-02-07,86,150,Completed
+STU-1154,Sarah Miller,sarah.miller36@company.org,Digital Marketing,2025-03-02,999,299,NO
+STU-1178,Matthew Smith,matthew.smith93@company.org,UX/UI Design Fundamentals,09/30/2025,79,299,Completed
+STU-1251,Ashley Johnson,ashley.johnson82@outlook.com,Python for beginners,2025-10-18,58,9999,pending
+STU-1267,Daniel Martinez,daniel.martinez94@edu.com,Data Science - Intro,2025-03-07,,499,paid
+STU-1031,Emma Brown,emma.brown40@yahoo.com,Data Science 101,13-Jan-2025,67,299,NO
+STU-1221,robert jones,robert.jones96@outlook.com,UI/UX Basics,2025-09-19,-15,299,paid
+STU-1110,  James  Wilson ,james.wilson43@yahoo.com,Python for beginners,19-Sep-2025,62,299,NO
+STU-1125,Olivia Davis,olivia.davis54@gmail.com,UX/UI Design Fundamentals,09/15/2025,55,150,unpaid
+STU-1091,Daniel Garcia,daniel.garcia46@gmail.com,UX/UI Design Fundamentals,2025-05-22,-15,499,PAID
+STU-1057,Emma Lopez,emma.lopez98@company.org,Digital Marketing Essentials,"May 25, 2025",68,0,yes
+STU-1006,robert lopez,robert.lopez35@edu.com,Marketing 101,2025-10-13,99,200,paid
+STU-1046,Amanda Martinez,amanda.martinezgmail.com,UX/UI Design Fundamentals,"March 11, 2025",66,200,Failed
+STU-1240,James Martinez,james.martinez88@edu.com,Python for beginners,08-Jun-2025,65,$150,no
+STU-1146,  Robert  Anderson ,robert.andersongmail.com,Data Science 101,2025-10-10,89,200,Yes
+STU-1288,Emily Martinez,emily.martinez61@company.org,UI/UX Basics,06/29/2025,66,150,Unpaid
+STU-1220,Daniel Davis,daniel.davis63@yahoo.com,Python for beginners,2025-10-17,68,,Pending
+STU-1209,Sarah Davis,sarah.davis52@company.org,UI/UX Basics,03-Aug-2025,73,150,YES
+STU-1346,  Michael  Smith ,michael.smith92@edu.com,Digital Marketing,2025-08-12,93,499,Failed
+STU-1094,Sarah Hernandez,sarahhernandez@hotmail.com; sarah123@gmail.com,Web Development Bootcamp,02-May-2025,,200,no
+STU-1004,Robert Johnson,robert.johnson71@hotmail.com,Web Dev Bootcamp,05-Jul-2025,52,299,PAID
+STU-1193,Mr. Robert Jones,robert.jones87@outlook.com,Web Development Bootcamp,2025-04-02,999,$200,pending
+STU-1078,Ashley Johnson,ashley.johnsongmail.com,Digital Marketing,02/21/2025,51,,paid
+STU-1133,john gonzalez,,Web Development,08-Jun-2025,84,150,Completed
+STU-1295,Robert Jones,robert.jones72@yahoo.com,Data Science - Intro,02/19/2025,96,200,unpaid
+STU-1079,David Garcia,davidgarcia@company.org; david123@gmail.com,UX/UI Design Fundamentals,17-Oct-2025,61,$499,Pending
+STU-1047,Jessica Garcia,jessica.garcia97@outlook.com,Data Science - Intro,02/11/2025,53,299,Pending
+STU-1337,Daniel Hernandez,daniel.hernandez55@gmail.com,Data Science 101,2025/10/03 00:00,97,150,Yes
+STU-1074,Andrew Garcia,andrew.garcia31@company.org,UX/UI Design Fundamentals,"April 30, 2025",70,499,No
+STU-1248,Amanda Davis,amanda.davis94@company.org,Web Development Bootcamp,2025-05-06,51,9999,NO
+STU-1156,Jessica Anderson,jessica.anderson79@edu.com,Web Dev Bootcamp,03-Jun-2025,82,299,Refunded
+STU-1210,Matthew Brown,matthew.brown83@company.org,Python for Beginners,"October 16, 2025",75,299,no
+STU-1083,Olivia Anderson,olivia.anderson30@company.org,Web Development Bootcamp,2025-06-30,66,200,YES
+STU-1095,Robert Johnson,robert.johnson47@company.org,Digital Marketing Essentials,02/25/2025,89,,Unpaid
+STU-1197,  Andrew  Wilson ,andrew.wilson76@yahoo.com,Web Development Bootcamp,"July 23, 2025",86,9999,No
+STU-1158,amanda davis,amanda.davis80@outlook.com,python for beginners,2025-05-05,57,499 USD,unpaid
+STU-1313,Michael Martinez,michael.martinez4@edu.com,Web Development,03/08/2025,76,150,pending
+STU-1350,Mr. Jessica Rodriguez,jessica.rodriguez79@edu.com,python for beginners,2025-09-21,N/A,200,Refunded
+STU-1194,  Olivia  Garcia ,olivia.garcia48@outlook.com,UX/UI Design,2025-10-17,69,150,paid
+STU-1076,Robert Anderson,robert.anderson53@edu.com,python for beginners,02/08/2025,71,499,PAID
+STU-1085,Emma Williams,emma.williams47@company.org,UI/UX Basics,2025/05/20 00:00,80,299,unpaid
+STU-1127,Amanda Smith,,Data Science 101,18-Mar-2025,83,299,Pending
+STU-1017,  James  Lopez ,james.lopez32@yahoo.com,Data Science 101,10/02/2025,67,150,Failed
+STU-1067,Michael Martinez,michael.martinez12@outlook.com,DS 101,07/29/2025,60,499,Unpaid
+STU-1285,emma davis,emma.davis95@outlook.com,Web Development Bootcamp,"September 22, 2025",82,150,Unpaid
+STU-1008,david williams,david.williams34@edu.com,Digital Marketing Essentials,"August 08, 2025",64,200,Refunded
+STU-1114,Mr. Olivia Jones,olivia.jones12@company.org,Digital Marketing Essentials,09/17/2025,100,150,Failed
+STU-1117,Matthew Hernandez,matthew.hernandezgmail.com,Python for beginners,13-Oct-2025,96,200,unpaid
+STU-1332,ashley anderson,ashley.anderson42@company.org,Python for Beginners,06/04/2025,72,$299,Pending
+STU-1326,Amanda Martinez,amanda.martinez87@edu.com,Web Development,2025-10-01,50,150,No
+STU-1276,Daniel Rodriguez,daniel.rodriguez49@hotmail.com,python for beginners,2025-08-17,66,0,pending
+STU-1203,James Miller,james.miller72@yahoo.com,Digital Marketing Essentials,2025-09-24,58,299,Refunded
+STU-1111,Ashley Wilson,ashleywilson@gmail.com; ashley123@gmail.com,python for beginners,2025-05-12,98,150,yes
+STU-1278,Olivia Rodriguez,olivia.rodriguez61@company.org,Web Development,05/01/2025,,150,Yes
+STU-1061,Amanda Martinez,amanda.martinez67@outlook.com,UX/UI Design,2025-08-15,77,150,YES
+STU-1159,James Williams,james.williams65@company.org,Web Development,"August 30, 2025",53,200,unpaid
+STU-1266,  Jessica  Jones ,jessica.jones94@outlook.com,Web Development Bootcamp,07-Sep-2025,85%,299,Pending
+STU-1224,Olivia Brown,olivia.brown69@hotmail.com,Digital Marketing Essentials,2025-10-03,68,299,YES
+STU-1243,  Matthew  Miller ,matthew.millergmail.com,Marketing 101,23-Oct-2025,82,499,yes
+STU-1142,Ashley Lopez,ashley.lopez47@company.org,Data Science 101,"March 04, 2025",65,150,NO
+STU-1018,Matthew Wilson,matthew.wilsongmail.com,Digital Marketing,2025/10/04 00:00,98,200,no
+STU-1195,Sarah Miller,sarah.miller8@edu.com,Python for Beginners,2025-03-29,91,150,paid
+STU-1025,Dr. Andrew Hernandez,andrew.hernandez34@gmail.com,Web Development,2025/02/24 00:00,N/A,200,unpaid
+STU-1204,michael johnson,michael.johnson39@outlook.com,Web Development Bootcamp,02/09/2025,96,200,Failed
+STU-1328,Jessica Wilson,jessica.wilson87@edu.com,UI/UX Basics,2025/04/25 00:00,65,299,paid
+STU-1298,olivia wilson,olivia.wilson44@outlook.com,Digital Marketing Essentials,2025-08-23,61,499,unpaid
+STU-1219,Dr. Emily Jones,emily.jones58@company.org,Python for Beginners,"July 03, 2025",62,499,no
+STU-1141,Sarah Williams,sarah.williams92@outlook.com,Python for beginners,13-Jun-2025,85,299,yes
+STU-1308,Andrew Brown,andrew.brown31@gmail.com,Python for Beginners,"February 15, 2025",92,150,PAID
+STU-1348,Ashley Anderson,ashley.anderson3@company.org,Digital Marketing,2025/01/16 00:00,99,150,pending
+STU-1234,Ashley Brown,ashley.brown53@company.org,Digital Marketing,"August 15, 2025",999,$150,No
+STU-1306,Daniel Johnson,daniel.johnson78@edu.com,python for beginners,2025/08/03 00:00,999,150,Unpaid
+STU-1245,John Davis,john.davis23@gmail.com,UI/UX Basics,2025-08-03,96,150,NO
+STU-1273,james hernandez,james.hernandez21@gmail.com,Python for beginners,2025-06-19,94,299,Unpaid
+STU-1174,sarah hernandez,sarah.hernandez12@company.org,UX/UI Design,01/29/2025,79,499,Unpaid
+STU-1342,Robert Wilson,robertwilson@gmail.com; robert123@gmail.com,Digital Marketing Essentials,21-Jul-2025,69,0,NO
+STU-1020,Ashley Lopez,ashley.lopez92@outlook.com,python for beginners,2025-04-08,87,150,unpaid
+STU-1325,Emma Martinez,emma.martinez87@yahoo.com,Marketing 101,02-Apr-2025,70,299,Refunded
+STU-1080,Emily Anderson,emily.anderson82@hotmail.com,UX/UI Design,11-May-2025,79,200,PAID
+STU-1169,Michael Martinez,michael.martinez55@company.org,DS 101,02/14/2025,999,499,unpaid
+STU-1019,emily davis,emily.davis8@yahoo.com,UX/UI Design Fundamentals,"January 02, 2025",100,299,no
+STU-1334,David Brown,david.brown61@company.org,Web Dev Bootcamp,2025-01-05,65,200,paid
+STU-1105,Michael Gonzalez,michael.gonzalez35@outlook.com,Digital Marketing,08/06/2025,67,0,YES
+STU-1287,John Anderson,john.anderson48@outlook.com,UI/UX Basics,23-Jul-2025,-15,,NO
+STU-1119,Olivia Williams,olivia.williams95@edu.com,Web Development,2025-09-27,82,299,Unpaid
+STU-1164,Daniel Anderson,daniel.anderson7@gmail.com,UX/UI Design Fundamentals,2025/06/19 00:00,999,150,yes
+STU-1032,Daniel Rodriguez,daniel.rodriguez69@hotmail.com,Python for Beginners,"March 01, 2025",87,299,paid
+STU-1037,Emily Davis,emily.davis95@yahoo.com,Digital Marketing,2025-02-13,89,200,Unpaid
+STU-1166,andrew anderson,andrew.anderson23@gmail.com,Web Dev Bootcamp,2025/07/23 00:00,97,299,paid
+STU-1225,Michael Gonzalez,michael.gonzalez36@edu.com,python for beginners,2025-03-09,65,499,Refunded
+STU-1228,james wilson,james.wilson37@hotmail.com,UI/UX Basics,2025-10-23,100,150,paid
+STU-1272,  Sarah  Johnson ,sarah.johnson21@edu.com,Python for beginners,"October 08, 2025",71,499,Paid
+STU-1140,Emily Rodriguez,emily.rodriguez34@hotmail.com,Marketing 101,2025-08-17,94,499,Completed
+STU-1176,Mr. Andrew Davis,andrew.davis99@yahoo.com,Web Development Bootcamp,08/04/2025,78,499,No
+STU-1177,Sarah Hernandez,sarah.hernandez18@edu.com,Web Dev Bootcamp,2025-06-28,75,200,Paid
+STU-1060,Sarah Martinez,sarah.martinezgmail.com,python for beginners,"October 16, 2025",999,9999,no
+STU-1112,Matthew Hernandez,matthew.hernandez98@company.org,UX/UI Design,17-Oct-2025,70,299,Yes
+STU-1279,Sarah Gonzalez,sarah.gonzalez22@yahoo.com,Web Development Bootcamp,2025-04-09,93,200,pending
+STU-1007,Matthew Garcia,matthew.garciagmail.com,Web Development,"October 18, 2025",91,499,Yes
+STU-1269,Jessica Williams,jessica.williams91@edu.com,Digital Marketing,06/21/2025,65,299,pending
+STU-1259,Daniel Jones,daniel.jones62@gmail.com,Python for beginners,05/24/2025,91,200,Paid
+STU-1011,robert gonzalez,robert.gonzalez81@hotmail.com,Web Dev Bootcamp,17-Sep-2025,N/A,150,unpaid
+STU-1196,Emma Brown,emma.brown73@outlook.com,Data Science - Intro,"January 24, 2025",67,150,yes
+STU-1104,ashley rodriguez,ashley.rodriguez44@yahoo.com,DS 101,2025/06/09 00:00,86,150,Yes
+STU-1082,James Martinez,james.martinez90@hotmail.com,Python for Beginners,2025-07-22,93,150,Refunded
+STU-1184,  David  Brown ,david.browngmail.com,UX/UI Design,2025-07-09,62,$499,paid
+STU-1303,matthew brown,matthew.brown52@gmail.com,Data Science 101,2025/04/25 00:00,N/A,200,YES
+STU-1232,Ashley Garcia,ashley.garcia55@edu.com,python for beginners,2025-09-02,96,150,unpaid
+STU-1311,Andrew Davis,andrew.davis94@gmail.com,DS 101,2025-06-25,79,499,Refunded
+STU-1149,ashley smith,ashley.smith60@yahoo.com,DS 101,03/15/2025,96,299,No
+STU-1256,John Smith,john.smith17@yahoo.com,Web Dev Bootcamp,07/25/2025,91,$299,PAID
+STU-1238,Mr. Matthew Johnson,matthew.johnsongmail.com,Data Science - Intro,2025-04-21,,299,no
+STU-1148,Mr. Amanda Hernandez,amanda.hernandez70@hotmail.com,Digital Marketing,06/04/2025,93,499,PAID
+STU-1319,Olivia Smith,olivia.smith43@company.org,Web Development Bootcamp,2025/08/31 00:00,78,$200,Paid
+STU-1093,Amanda Brown,amanda.brown19@company.org,Python for Beginners,"May 22, 2025",N/A,$299,yes
+STU-1070,Andrew Lopez,,Digital Marketing,2025/05/03 00:00,50,150,Pending
+STU-1254,Michael Gonzalez,michael.gonzalez90@company.org,Python for Beginners,2025/04/21 00:00,55,299,No
+STU-1097,  Andrew  Johnson ,andrewjohnson@yahoo.com; andrew123@gmail.com,Data Science - Intro,27-Oct-2025,88,499,no
+STU-1144,Mr. Olivia Martinez,olivia.martinez83@gmail.com,UX/UI Design,27-Aug-2025,99,200,Yes
+STU-1283,  Andrew  Anderson ,andrew.anderson96@outlook.com,Web Development,"May 18, 2025",,299,Unpaid
+STU-1098,Sarah Gonzalez,sarah.gonzalez84@company.org,Marketing 101,04/21/2025,76,499,No
+STU-1305,Dr. John Lopez,john.lopez16@company.org,Data Science - Intro,2025/08/31 00:00,93,299,no
+STU-1069,james smith,james.smith97@outlook.com,Digital Marketing,2025/08/15 00:00,85,$299,Failed
+STU-1024,Dr. Robert Jones,robert.jones9@yahoo.com,DS 101,2025-05-26,95,150,Unpaid
+STU-1038,emma gonzalez,,Data Science 101,01-Sep-2025,79,200,No
+STU-1145,James Rodriguez,james.rodriguezgmail.com,Python for beginners,2025-09-23,85%,200,NO
+STU-1123,Matthew Jones,matthew.jones54@yahoo.com,Web Dev Bootcamp,2025/04/13 00:00,N/A,499,NO
+STU-1068,Daniel Miller,daniel.miller59@gmail.com,DS 101,05/10/2025,75,150,Failed
+STU-1330,Andrew Hernandez,andrew.hernandez97@company.org,UI/UX Basics,2025/04/11 00:00,68,150,yes
+STU-1235,  Jessica  Miller ,jessicamiller@hotmail.com; jessica123@gmail.com,Digital Marketing,2025-02-13,96,150,Unpaid
+STU-1300,Michael Martinez,michael.martinez55@outlook.com,UX/UI Design Fundamentals,2025-01-03,73,299,Completed
+STU-1340,Jessica Anderson,jessica.anderson88@hotmail.com,Digital Marketing Essentials,2025-02-14,74,150,Refunded
+STU-1126,Andrew Johnson,andrew.johnson19@yahoo.com,Python for Beginners,"May 27, 2025",58,499,Failed
+STU-1147,Michael Hernandez,michael.hernandez44@company.org,Python for Beginners,2025-01-15,99,200,no
+STU-1212,Dr. John Davis,john.davis11@gmail.com,Web Dev Bootcamp,03/14/2025,100,0,Refunded
+STU-1087,Mr. Matthew Miller,matthew.miller59@hotmail.com,Digital Marketing,15-May-2025,73,$200,Refunded
+STU-1315,daniel lopez,daniel.lopez87@edu.com,UX/UI Design Fundamentals,2025/03/18 00:00,89,$200,Refunded
+STU-1183,emma wilson,emma.wilson19@outlook.com,Web Development,30-Jan-2025,85,499,Pending
+STU-1327,Michael Smith,michael.smith97@yahoo.com,Data Science - Intro,2025-05-09,,200,paid
+STU-1293,Michael Rodriguez,michael.rodriguez77@outlook.com,Digital Marketing,13-Jun-2025,91,299,pending
+STU-1282,David Miller,david.miller61@gmail.com,python for beginners,05/22/2025,93,150,No
+STU-1181,Emma Jones,emma.jones67@yahoo.com,UX/UI Design Fundamentals,2025-06-03,87,200,no
+STU-1321,Sarah Jones,sarah.jones51@yahoo.com,UX/UI Design,2025/04/08 00:00,999,150,Failed
+STU-1119,Olivia Williams,olivia.williams95@edu.com,Web Development,2025-09-27,82,299,Unpaid
+STU-1263,Mr. Andrew Martinez,andrew.martinez73@company.org,python for beginners,"October 16, 2025",81,200,Refunded
+STU-1130,Robert Rodriguez,robert.rodriguez71@gmail.com,UX/UI Design Fundamentals,2025-08-29,73,150,NO
+STU-1039,emily miller,emily.miller1@gmail.com,Web Development Bootcamp,2025-08-06,94,150,Pending
+STU-1012,Dr. Emily Smith,emily.smith40@yahoo.com,Python for Beginners,"May 04, 2025",55,150,Yes
+STU-1247,Jessica Johnson,,Data Science 101,30-May-2025,89,9999,NO
+STU-1186,Andrew Brown,andrewbrown@outlook.com; andrew123@gmail.com,Web Development,05-May-2025,75,299,Unpaid
+STU-1199,Jessica Martinez,jessica.martinez51@hotmail.com,Python for Beginners,2025/05/20 00:00,64,499,no
+STU-1113,Emily Johnson,emily.johnson36@company.org,Python for Beginners,30-Jun-2025,78,,NO
+STU-1180,Mr. Emma Lopez,emma.lopez70@yahoo.com,Web Development Bootcamp,2025-01-29,64,299,unpaid
+STU-1246,Sarah Rodriguez,sarah.rodriguezgmail.com,Data Science 101,"September 22, 2025",54,299,Unpaid
+STU-1234,Ashley Brown,ashley.brown53@company.org,Digital Marketing,"August 15, 2025",999,$150,No
+STU-1118,Sarah Martinez,sarah.martinez40@edu.com,Marketing 101,2025-07-20,55,499,unpaid
+STU-1347,Emily Garcia,emily.garcia14@yahoo.com,Digital Marketing,2025/02/11 00:00,58,200,pending
+STU-1076,Robert Anderson,robert.anderson53@edu.com,python for beginners,02/08/2025,71,499,PAID
+STU-1174,sarah hernandez,sarah.hernandez12@company.org,UX/UI Design,01/29/2025,79,499,Unpaid
+STU-1339,James Miller,james.miller41@gmail.com,UX/UI Design Fundamentals,02-Mar-2025,89,$150,PAID
+STU-1165,James Hernandez,james.hernandez62@edu.com,Data Science 101,05/28/2025,99,$200,paid
+STU-1226,Michael Martinez,michael.martinez49@outlook.com,Python for beginners,02/17/2025,94,299,Failed
+STU-1137,  Amanda  Miller ,amanda.miller8@gmail.com,Digital Marketing,07/27/2025,93,150 USD,Yes
+STU-1155,matthew williams,matthew.williams65@gmail.com,Python for Beginners,2025-01-20,80,200,Yes
+STU-1200,Michael Hernandez,michael.hernandez99@company.org,Data Science - Intro,2025/05/07 00:00,999,200 USD,No
+STU-1198,Daniel Anderson,daniel.anderson95@yahoo.com,Web Development Bootcamp,10-Feb-2025,53,$200,PAID
+STU-1078,Ashley Johnson,ashley.johnsongmail.com,Digital Marketing,02/21/2025,51,,paid
+STU-1003,  Ashley  Miller ,ashley.miller98@hotmail.com,Python for beginners,02/17/2025,72,150,Failed
+STU-1273,james hernandez,james.hernandez21@gmail.com,Python for beginners,2025-06-19,94,299,Unpaid
+STU-1116,John Brown,john.brown68@company.org,Digital Marketing Essentials,03/23/2025,74,299,paid
+STU-1211,Mr. Sarah Smith,sarah.smith96@company.org,UI/UX Basics,25-Oct-2025,73,200,NO
+STU-1299,  Daniel  Williams ,daniel.williamsgmail.com,UX/UI Design,2025-05-21,86,499,PAID
+STU-1027,Matthew Williams,matthew.williams95@outlook.com,UI/UX Basics,07-Aug-2025,-15,200,paid
+STU-1121,Andrew Gonzalez,andrew.gonzalez20@yahoo.com,python for beginners,2025/03/26 00:00,,200,Failed
+STU-1286,Ashley Rodriguez,ashley.rodriguez68@company.org,Python for Beginners,2025-03-30,53,9999,Failed
+STU-1156,Jessica Anderson,jessica.anderson79@edu.com,Web Dev Bootcamp,03-Jun-2025,82,299,Refunded
+STU-1322,Emily Hernandez,emily.hernandez64@gmail.com,UI/UX Basics,25-Jan-2025,87,200,yes
+STU-1128,Mr. David Johnson,david.johnson80@outlook.com,Python for beginners,2025/02/26 00:00,84,,Pending
+STU-1075,Daniel Gonzalez,daniel.gonzalez64@gmail.com,python for beginners,"September 15, 2025",56,499,YES
+STU-1301,Mr. John Hernandez,john.hernandez29@edu.com,Web Development,06/26/2025,999,299,yes
+STU-1030,John Williams,john.williams53@edu.com,Web Dev Bootcamp,2025-05-08,56,150,Refunded
+STU-1084,Andrew Hernandez,andrew.hernandez57@gmail.com,Digital Marketing Essentials,2025/07/06 00:00,999,499,yes
+STU-1228,james wilson,james.wilson37@hotmail.com,UI/UX Basics,2025-10-23,100,150,paid
+STU-1108,Sarah Miller,,Python for Beginners,"August 24, 2025",86,499,no
+STU-1223,Olivia Johnson,olivia.johnson95@company.org,Marketing 101,"June 29, 2025",77,200 USD,Completed
+STU-1230,Michael Wilson,michael.wilson84@hotmail.com,Data Science - Intro,02/12/2025,60,$299,Pending
+STU-1134,David Garcia,,Digital Marketing,2025-06-19,77,499,No
+STU-1185,olivia johnson,olivia.johnson93@edu.com,UI/UX Basics,04/22/2025,71,150,Completed
+STU-1305,Dr. John Lopez,john.lopez16@company.org,Data Science - Intro,2025/08/31 00:00,93,299,no
+STU-1045,Emily Smith,emily.smith52@edu.com,python for beginners,"August 28, 2025",84,,No
+STU-1275,sarah smith,sarah.smith11@outlook.com,Web Dev Bootcamp,03/01/2025,81,299,PAID
+STU-1066,Sarah Brown,sarah.brown74@company.org,Python for Beginners,18-May-2025,61,499,pending
+STU-1316,Olivia Davis,olivia.davisgmail.com,UX/UI Design,2025-06-14,53,499,No
+STU-1086,Matthew Johnson,matthew.johnsongmail.com,Web Development Bootcamp,"April 26, 2025",75,299,PAID
+STU-1187,James Davis,james.davis34@hotmail.com,UI/UX Basics,09/12/2025,96,299,Completed
+STU-1071,Dr. Olivia Anderson,olivia.anderson83@yahoo.com,UX/UI Design,30-May-2025,80,200,Failed
+STU-1160,Daniel Davis,daniel.davis23@outlook.com,Web Development,09/30/2025,99,299,Refunded
+STU-1013,Michael Hernandez,michael.hernandez34@company.org,Web Dev Bootcamp,"August 05, 2025",98,200,Unpaid
+STU-1036,Daniel Lopez,daniel.lopez39@outlook.com,UI/UX Basics,01/01/2025,100,299,Failed
+STU-1029,Daniel Johnson,daniel.johnson53@company.org,Marketing 101,"March 21, 2025",60,200,no
+STU-1171,Daniel Johnson,daniel.johnson88@company.org,Web Development,09-Jun-2025,68,200,Pending
+STU-1143,Robert Martinez,robert.martinez71@yahoo.com,Digital Marketing Essentials,2025-02-14,95,499,no
+STU-1297,Olivia Hernandez,olivia.hernandez10@outlook.com,Web Development,10-Apr-2025,74,499,paid
+STU-1249,Daniel Wilson,,DS 101,2025/01/01 00:00,97,150,Completed
+STU-1151,Emma Wilson,emma.wilson74@edu.com,DS 101,2025/04/08 00:00,82,299,Refunded
+STU-1229,Sarah Hernandez,sarah.hernandez16@yahoo.com,UX/UI Design,2025-08-22,62,200,Unpaid
+STU-1222,Matthew Lopez,matthew.lopez55@gmail.com,Marketing 101,2025-05-07,78,150,Failed
+STU-1132,Olivia Gonzalez,olivia.gonzalez62@edu.com,python for beginners,2025-03-11,79,,Completed
+STU-1250,Robert Brown,robert.brown19@edu.com,Data Science - Intro,2025-02-17,83,299,Failed
+STU-1052,Ashley Williams,ashley.williams84@hotmail.com,Digital Marketing Essentials,2025/10/03 00:00,96,299,Pending
+STU-1241,Sarah Davis,sarah.davisgmail.com,Digital Marketing,2025-03-31,94,,Refunded
+STU-1279,Sarah Gonzalez,sarah.gonzalez22@yahoo.com,Web Development Bootcamp,2025-04-09,93,200,pending
+STU-1096,Emily Hernandez,emily.hernandezgmail.com,UX/UI Design,07/25/2025,999,499,PAID
+STU-1284,David Wilson,david.wilson13@yahoo.com,python for beginners,"June 03, 2025",70,499,PAID
+STU-1179,Andrew Anderson,andrewanderson@edu.com; andrew123@gmail.com,UX/UI Design Fundamentals,2025-01-09,,499,paid
+STU-1205,  Sarah  Williams ,sarah.williams43@company.org,UX/UI Design Fundamentals,06/18/2025,91,200,Unpaid
+STU-1124,Dr. Robert Anderson,robert.anderson16@hotmail.com,Python for beginners,2025-03-24,59,150,Pending
+STU-1042,  Sarah  Lopez ,sarah.lopez41@company.org,Python for beginners,2025-03-12,59,150,no
+STU-1090,Andrew Miller,andrew.miller79@outlook.com,Data Science - Intro,17-Jan-2025,78,299,YES
+STU-1289,Mr. John Miller,john.miller28@yahoo.com,Digital Marketing,26-Apr-2025,76,150,Refunded
+STU-1207,James Jones,james.jones15@company.org,Data Science 101,2025-10-07,51,499,Completed
+STU-1255,Robert Smith,robert.smith23@gmail.com,UX/UI Design Fundamentals,20-Aug-2025,56,200,YES
+STU-1312,Matthew Miller,matthew.miller15@yahoo.com,Marketing 101,"January 31, 2025",56,499,Failed
+STU-1005,Olivia Brown,olivia.brown59@edu.com,Web Dev Bootcamp,2025-07-06,92,150,yes
+STU-1257,john johnson,john.johnson17@gmail.com,Web Development,2025-06-19,53,499 USD,No
+STU-1335,  Daniel  Anderson ,daniel.anderson15@outlook.com,Data Science - Intro,2025/10/04 00:00,,299,Failed
+STU-1101,  David  Martinez ,davidmartinez@company.org; david123@gmail.com,Data Science 101,21-Mar-2025,56,299,YES
+STU-1227,Emily Garcia,emily.garcia94@gmail.com,Marketing 101,23-Aug-2025,54,499,Completed
+STU-1336,  Emily  Smith ,emily.smith42@company.org,Python for beginners,2025-02-19,84,150,Completed
+STU-1214,andrew lopez,andrew.lopez21@hotmail.com,UI/UX Basics,"August 07, 2025",75,200,no
+STU-1172,michael davis,michael.davis78@hotmail.com,UX/UI Design Fundamentals,"October 09, 2025",92,200,PAID
+STU-1099,Mr. James Lopez,james.lopez86@hotmail.com,DS 101,20-Mar-2025,55,150,no
+STU-1216,Matthew Wilson,matthew.wilson26@outlook.com,Python for beginners,15-May-2025,90,499,No
+STU-1062,Matthew Brown,matthew.brown11@yahoo.com,Data Science 101,30-Mar-2025,N/A,499,Unpaid
+STU-1048,Daniel Johnson,daniel.johnson97@gmail.com,Data Science 101,2025/04/13 00:00,65,$150,Completed
+STU-1033,Sarah Martinez,sarah.martinez41@outlook.com,Digital Marketing Essentials,2025-09-19,62,499,Paid
+STU-1268,  Michael  Martinez ,michael.martinez79@yahoo.com,Digital Marketing,2025-10-17,71,200,NO
+STU-1201,Dr. Jessica Garcia,,Data Science - Intro,08/16/2025,58,$499,Failed
+STU-1333,Mr. Michael Rodriguez,michael.rodriguez54@company.org,UI/UX Basics,2025-07-26,63,299,NO
+STU-1028,Olivia Garcia,oliviagarcia@yahoo.com; olivia123@gmail.com,Python for Beginners,06/07/2025,52,200,Pending
+STU-1291,emily jones,emily.jones67@company.org,UX/UI Design Fundamentals,2025-10-27,92,299,Unpaid
+STU-1231,Mr. James Hernandez,james.hernandezgmail.com,Data Science 101,2025-09-02,83,150,Paid
+STU-1261,John Anderson,john.anderson61@company.org,DS 101,"October 27, 2025",56,9999,Pending
+STU-1163,ashley davis,ashley.davis35@company.org,Marketing 101,2025-05-20,87,9999,paid
+STU-1318,Mr. James Miller,james.miller12@company.org,Digital Marketing Essentials,"June 05, 2025",91,299,NO
+STU-1139,Jessica Davis,jessica.davis68@hotmail.com,UX/UI Design Fundamentals,10-Jun-2025,57,,yes
+STU-1063,  John  Brown ,john.brown59@gmail.com,Digital Marketing,"April 30, 2025",90,200,no
+STU-1136,Mr. Jessica Johnson,jessica.johnson40@outlook.com,Digital Marketing Essentials,2025-08-07,78,,NO
+STU-1129,  Ashley  Williams ,,DS 101,04-May-2025,92,$299,PAID
+STU-1009,Mr. Sarah Gonzalez,sarahgonzalez@edu.com; sarah123@gmail.com,python for beginners,05-Aug-2025,88,299,Paid
+STU-1065,Sarah Davis,sarah.davis35@company.org,UI/UX Basics,09/10/2025,77,299,Paid
+STU-1015,Sarah Lopez,sarah.lopez5@hotmail.com,Python for beginners,2025-09-21,63,499,Pending
+STU-1157,Olivia Smith,olivia.smith54@company.org,Data Science - Intro,14-Jan-2025,91,200,paid
+STU-1041,Andrew Williams,andrew.williams34@yahoo.com,Web Dev Bootcamp,2025/05/22 00:00,90,9999,Failed
+STU-1343,Emma Miller,emma.miller19@yahoo.com,python for beginners,24-Apr-2025,57,150 USD,Failed
+STU-1302,Mr. Sarah Wilson,sarah.wilson59@edu.com,UI/UX Basics,09/26/2025,58,499,NO
+STU-1217,  Amanda  Johnson ,amanda.johnson80@yahoo.com,Web Dev Bootcamp,"June 02, 2025",93,$150,Pending
+STU-1280,Jessica Anderson,jessica.anderson12@outlook.com,UI/UX Basics,23-Jul-2025,83,150,no
+STU-1323,Dr. Ashley Wilson,ashley.wilson77@company.org,Web Development,14-Jun-2025,88,200,pending
+STU-1237,Emily Hernandez,emily.hernandez2@hotmail.com,Web Development,2025-06-12,86,200,Refunded
+STU-1208,  Emily  Gonzalez ,emily.gonzalez53@edu.com,UX/UI Design,13-Mar-2025,92,499 USD,No
+STU-1213,Mr. Jessica Davis,jessica.davis58@hotmail.com,Python for beginners,2025-06-03,51,150,yes
+STU-1296,daniel johnson,daniel.johnson40@outlook.com,Web Development Bootcamp,06/19/2025,79,499,paid
+STU-1341,michael rodriguez,michael.rodriguez70@hotmail.com,Digital Marketing,2025-03-15,100,299,Paid
+STU-1252,Olivia Garcia,olivia.garcia95@hotmail.com,DS 101,2025-08-20,,0,YES
+STU-1040,Dr. Andrew Wilson,andrewwilson@outlook.com; andrew123@gmail.com,Digital Marketing,"September 29, 2025",98,499,Failed
+STU-1342,Robert Wilson,robertwilson@gmail.com; robert123@gmail.com,Digital Marketing Essentials,21-Jul-2025,69,0,NO
+STU-1304,Jessica Lopez,,Web Development,2025/05/11 00:00,88,150,Paid
+STU-1270,Matthew Johnson,,UX/UI Design,"August 03, 2025",81,299,No
+STU-1202,Robert Rodriguez,robertrodriguez@gmail.com; robert123@gmail.com,DS 101,2025-10-11,70,150,Unpaid
+STU-1162,Sarah Martinez,sarah.martinez51@hotmail.com,Web Development Bootcamp,2025-03-16,95,$499,pending
+STU-1044,  John  Garcia ,john.garcia54@company.org,Marketing 101,2025/10/07 00:00,81,0,no
+STU-1218,david johnson,david.johnson66@outlook.com,UX/UI Design Fundamentals,12-Mar-2025,81,200,yes
+STU-1191,Mr. Olivia Hernandez,,python for beginners,2025-04-29,N/A,0,Failed
+STU-1310,Jessica Gonzalez,jessica.gonzalez15@gmail.com,Web Dev Bootcamp,2025-01-24,N/A,299,NO
+STU-1260,James Gonzalez,james.gonzalez63@hotmail.com,Web Development,17-Oct-2025,61,,Pending
+STU-1106,Dr. Jessica Miller,jessica.miller76@outlook.com,UI/UX Basics,2025-06-07,88,$200,Unpaid
+STU-1054,  Matthew  Jones ,matthew.jones90@hotmail.com,UI/UX Basics,06-Jan-2025,65,499,Pending
+STU-1002,sarah brown,sarah.brown72@yahoo.com,Marketing 101,10/07/2025,67,150,yes
+STU-1050,Amanda Hernandez,amanda.hernandez92@yahoo.com,Python for beginners,2025-05-05,93,150,paid
+STU-1081,Emily Garcia,emily.garcia55@edu.com,Data Science - Intro,2025/08/22 00:00,74,150,Pending
+STU-1206,Jessica Martinez,jessica.martinez41@yahoo.com,UX/UI Design Fundamentals,2025-06-13,81,200,unpaid
+STU-1035,Dr. Daniel Wilson,daniel.wilson65@hotmail.com,Digital Marketing,07/29/2025,85,$499,No
+STU-1264,Mr. John Johnson,john.johnson3@company.org,UX/UI Design,01/01/2025,58,200,unpaid
+STU-1092,Daniel Brown,daniel.brown3@gmail.com,Web Development Bootcamp,2025-06-20,-15,150,Completed
+STU-1053,Mr. Olivia Anderson,olivia.anderson32@outlook.com,Digital Marketing Essentials,07/14/2025,70,200 USD,NO
+STU-1265,Dr. John Smith,john.smith19@gmail.com,Web Dev Bootcamp,"September 27, 2025",73,499,YES
+STU-1242,Jessica Rodriguez,jessica.rodriguez34@yahoo.com,DS 101,2025/03/06 00:00,96,150,unpaid
+STU-1014,James Hernandez,james.hernandez67@outlook.com,Python for beginners,2025-05-07,87,200,Paid
+STU-1316,Olivia Davis,olivia.davisgmail.com,UX/UI Design,2025-06-14,53,499,No
+STU-1089,Michael Smith,michael.smith64@gmail.com,Python for beginners,"May 01, 2025",N/A,499,Yes
+STU-1274,Mr. David Brown,david.brown71@outlook.com,python for beginners,01/28/2025,68,499,Completed
+STU-1167,John Jones,johnjones@hotmail.com; john123@gmail.com,Data Science - Intro,"August 21, 2025",81,200,Failed
+STU-1329,Andrew Miller,andrew.miller88@hotmail.com,UI/UX Basics,2025-01-28,89,499,Pending
+STU-1057,Emma Lopez,emma.lopez98@company.org,Digital Marketing Essentials,"May 25, 2025",68,0,yes
+STU-1135,Jessica Williams,jessica.williams67@hotmail.com,Web Development Bootcamp,2025/02/12 00:00,,200,Unpaid
+STU-1307,Dr. Sarah Gonzalez,sarah.gonzalez26@hotmail.com,Web Dev Bootcamp,"September 25, 2025",76,150,Refunded
+STU-1125,Olivia Davis,olivia.davis54@gmail.com,UX/UI Design Fundamentals,09/15/2025,55,150,unpaid
+STU-1320,Jessica Garcia,jessica.garcia38@company.org,UI/UX Basics,2025/07/11 00:00,,200 USD,no
+STU-1244,  Jessica  Williams ,jessicawilliams@company.org; jessica123@gmail.com,Digital Marketing,2025-03-01,52,150,Pending
+STU-1055,Ashley Davis,ashley.davis3@gmail.com,Data Science - Intro,04/24/2025,92,499,NO
+STU-1051,Jessica Rodriguez,jessica.rodriguez65@edu.com,DS 101,2025/01/07 00:00,56,299,Failed
+STU-1175,Ashley Smith,ashley.smith96@yahoo.com,Digital Marketing Essentials,2025-02-07,54,150,PAID
+STU-1190,Michael Lopez,michael.lopez93@company.org,UX/UI Design,"April 05, 2025",91,150,PAID
+STU-1183,emma wilson,emma.wilson19@outlook.com,Web Development,30-Jan-2025,85,499,Pending
+STU-1188,Jessica Garcia,jessica.garcia29@edu.com,python for beginners,2025-01-09,87,299,Yes
+STU-1170,Mr. Andrew Brown,andrew.brown58@hotmail.com,DS 101,04-Jun-2025,66,200,paid
+STU-1059,Olivia Smith,olivia.smith57@hotmail.com,python for beginners,2025-01-27,57,499,Refunded
+STU-1049,  Emily  Lopez ,emily.lopez78@company.org,Marketing 101,2025/02/28 00:00,85%,150,Unpaid
+STU-1345,Mr. David Martinez,david.martinez63@outlook.com,DS 101,06-Jun-2025,N/A,299,no
+STU-1236,Emma Rodriguez,emma.rodriguez51@hotmail.com,Digital Marketing,2025/01/28 00:00,65,150,Pending
+STU-1253,michael johnson,michael.johnson53@gmail.com,UI/UX Basics,"July 03, 2025",69,150,PAID
+STU-1022,Sarah Anderson,sarah.anderson6@company.org,Python for beginners,03-Aug-2025,70,200,unpaid
+STU-1314,Mr. Daniel Garcia,daniel.garcia68@edu.com,Digital Marketing Essentials,2025-10-17,71,150,no
+STU-1161,  Emma  Brown ,emma.brown39@hotmail.com,Marketing 101,17-Apr-2025,80,299,Unpaid
+STU-1277,amanda smith,amanda.smith13@gmail.com,Digital Marketing,2025/06/26 00:00,98,150,No
+STU-1192,Jessica Smith,jessica.smith79@outlook.com,Digital Marketing,2025-09-07,76,,pending
+STU-1294,Andrew Miller,andrew.miller75@edu.com,Digital Marketing Essentials,04/08/2025,93,499,NO
+STU-1344,Mr. Daniel Rodriguez,daniel.rodriguez33@gmail.com,Data Science 101,10/25/2025,58,200,YES
+STU-1258,Emily Smith,emily.smith46@yahoo.com,Web Development,2025-04-06,59,,Pending
+STU-1309,Dr. Ashley Lopez,ashley.lopez30@outlook.com,Data Science - Intro,05/16/2025,999,150 USD,Unpaid
+STU-1150,Michael Gonzalez,michael.gonzalez41@yahoo.com,UX/UI Design,2025-03-04,56,$499,no
+STU-1131,  Matthew  Johnson ,matthew.johnson81@gmail.com,Web Development Bootcamp,2025/10/25 00:00,52,299,yes
+STU-1152,John Johnson,john.johnson31@yahoo.com,Digital Marketing Essentials,2025-06-30,88,499,Unpaid
+STU-1186,Andrew Brown,andrewbrown@outlook.com; andrew123@gmail.com,Web Development,05-May-2025,75,299,Unpaid
+STU-1100,Sarah Lopez,sarah.lopez72@gmail.com,Digital Marketing Essentials,15-Oct-2025,76,499,paid
+STU-1088,John Martinez,john.martinez79@yahoo.com,Digital Marketing,02-Feb-2025,94,499,YES
+STU-1331,Michael Lopez,michael.lopez55@hotmail.com,UI/UX Basics,2025-05-16,66,,Failed
+STU-1215,James Smith,james.smith58@company.org,UX/UI Design Fundamentals,2025-07-19,67,150,YES
+STU-1122,Amanda Jones,amanda.jones30@company.org,Data Science 101,"June 08, 2025",62,499,Failed
+STU-1083,Olivia Anderson,olivia.anderson30@company.org,Web Development Bootcamp,2025-06-30,66,200,YES
+STU-1021,John Smith,john.smith68@yahoo.com,Python for Beginners,2025-09-18,88,$200,No
+STU-1189,emma garcia,emma.garcia32@outlook.com,UI/UX Basics,2025-06-22,96,499,Failed
+STU-1072,Robert Williams,robert.williams66@edu.com,Web Development,"March 11, 2025",100,299,pending
+STU-1107,Dr. Emma Gonzalez,emma.gonzalez42@gmail.com,Python for Beginners,2025/09/12 00:00,85%,200,NO
+STU-1271,Sarah Wilson,sarah.wilson84@edu.com,Data Science 101,03/25/2025,52,299,pending
+STU-1349,Robert Anderson,robert.anderson20@hotmail.com,UX/UI Design Fundamentals,"April 25, 2025",68,$150,No
+STU-1103,  Ashley  Gonzalez ,ashley.gonzalez1@yahoo.com,Web Dev Bootcamp,15-Mar-2025,59,150,PAID
