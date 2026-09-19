@@ -2,13 +2,9 @@ import pandas as pd
 import phonenumbers
 import re
 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-
 df = pd.read_csv('13-Customer-Support-Tickets-data-cleaning/customer_support_tickets_messy.csv', engine='python')
 
 # Cleaning created_at column
-
 df['created_at'] = pd.to_datetime(df['created_at'], format='mixed')
 
 # Cleaning customer_name column
@@ -22,7 +18,7 @@ df['email'] = (df['email']
 # Cleaning phone column
 df['phone'] = df['phone'].str.replace(r'[^\d+]', '', regex=True)
 
-raw = df['phone'].copy()                # до clean_phone
+raw = df['phone'].copy()
 
 def clean_phone(raw, region="US"):
     if pd.isna(raw):
@@ -34,16 +30,9 @@ def clean_phone(raw, region="US"):
         num = phonenumbers.parse(s, region)
     except phonenumbers.NumberParseException:
         return pd.NA
-    if phonenumbers.is_valid_number(num):
+    if phonenumbers.is_possible_number(num):
         return phonenumbers.format_number(num, phonenumbers.PhoneNumberFormat.E164)
     return pd.NA
-
-df['phone'] = df['phone'].apply(clean_phone)
-pat = raw.str.replace(r'\d', '9', regex=True)
-lost = raw.notna() & df['phone'].isna()
-print(pat[lost].value_counts())         # что потеряно
-print(pat[raw.notna()].value_counts())  # сколько всего было
-print('---')
 
 df['phone'] = df['phone'].apply(clean_phone)
 
@@ -131,14 +120,8 @@ df['tags'] = (df['tags']
     .str.replace({';': ' | ', ',': ' | '}))
 
 # Finalization
-# проверка: все копии по ticket_id полностью идентичны?
-dups = df[df.duplicated('ticket_id', keep=False)]
-print(len(dups.drop_duplicates()) == dups['ticket_id'].nunique())   # True
-
 df['ticket_id'] = df['ticket_id'].str.strip().str.upper()
-before = len(df)
 df = df.drop_duplicates(subset='ticket_id')
-print(before, '->', len(df))                                        # 2809 -> 2800
 
 # Exporting
 df.to_csv('13-Customer-Support-Tickets-data-cleaning/customer_support_tickets_cleaned.csv', index=False)
