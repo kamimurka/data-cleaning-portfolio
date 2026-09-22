@@ -125,5 +125,3 @@ df = df.drop_duplicates(subset='ticket_id')
 
 # Exporting
 df.to_csv('13-Customer-Support-Tickets-data-cleaning/customer_support_tickets_cleaned.csv', index=False)
-
-print(df['created_at'].dtype)
