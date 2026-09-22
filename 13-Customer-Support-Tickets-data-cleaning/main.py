@@ -5,7 +5,8 @@ import re
 df = pd.read_csv('13-Customer-Support-Tickets-data-cleaning/customer_support_tickets_messy.csv', engine='python')
 
 # Cleaning created_at column
-df['created_at'] = pd.to_datetime(df['created_at'], format='mixed')
+df['created_at'] = pd.to_datetime(df['created_at'],
+     format='mixed').dt.strftime('%Y-%m-%d')
 
 # Cleaning customer_name column
 df['customer_name'] = df['customer_name'].str.strip()
@@ -112,7 +113,6 @@ df['resolution_time_hours'] = df['resolution_time_hours'].astype('Int64')
 # Cleaning refund_amount column
 df['refund_amount'] = df['refund_amount'].str.replace(r'[^\d\.]', '', regex=True)
 
-
 # Cleaning tags column
 df['tags'] = (df['tags']
     .str.strip()
@@ -125,3 +125,5 @@ df = df.drop_duplicates(subset='ticket_id')
 
 # Exporting
 df.to_csv('13-Customer-Support-Tickets-data-cleaning/customer_support_tickets_cleaned.csv', index=False)
+
+print(df['created_at'].dtype)
