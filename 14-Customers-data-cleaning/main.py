@@ -50,8 +50,6 @@ def clean_phone(raw, region):
         phone = phonenumbers.parse(raw, region)
         if phonenumbers.is_valid_number(phone):
             return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
-        else:
-            print(phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164))
     except phonenumbers.NumberParseException:
         return None
 
