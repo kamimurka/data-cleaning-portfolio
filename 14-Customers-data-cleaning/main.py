@@ -2,9 +2,6 @@ import pandas as pd
 import phonenumbers
 import re
 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-
 df = pd.read_csv('14-Customers-data-cleaning/customers_dirty.csv', engine='python')
 
 # Cleaning full_name column
