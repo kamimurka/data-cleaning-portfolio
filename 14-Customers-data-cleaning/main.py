@@ -69,17 +69,9 @@ df['signup_date'] = pd.to_datetime(df['signup_date'],
 
 df.loc[df["signup_date"] > pd.Timestamp.now(), "signup_date"] = pd.NaT
 
-
-# print(df['country'].value_counts())
-# print('-'*100)
-
 # Finalization
-print(len(df))
 df = df.drop_duplicates()
-print(len(df))
 df = df.drop_duplicates(subset=['phone'])
-print(len(df))
-print(len(df))
 
 # Exporting
-# pd.to_csv('customers_cleaned.csv', index=False)
+df.to_csv('14-Customers-data-cleaning/customers_cleaned.csv', index=False)
