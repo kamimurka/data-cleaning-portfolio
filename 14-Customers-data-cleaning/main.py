@@ -74,7 +74,12 @@ df.loc[df["signup_date"] > pd.Timestamp.now(), "signup_date"] = pd.NaT
 # print('-'*100)
 
 # Finalization
-df2 = pd.read_csv('14-Customers-data-cleaning/customers_dirty.csv', engine='python')
-print(df2.loc[df['phone'].isna(), 'phone'].tolist())
+print(len(df))
+df = df.drop_duplicates()
+print(len(df))
+df = df.drop_duplicates(subset=['phone'])
+print(len(df))
+print(len(df))
+
 # Exporting
 # pd.to_csv('customers_cleaned.csv', index=False)
