@@ -68,5 +68,3 @@ df = df.drop_duplicates(subset=['phone'])
 
 # Exporting
 df.to_csv('14-Customers-data-cleaning/customers_cleaned.csv', index=False)
-
-print('test')
