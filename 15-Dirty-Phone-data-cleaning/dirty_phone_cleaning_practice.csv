@@ -1,0 +1,241 @@
+customer_name,phone,email,city,signup_date
+James Carter,2121000000,james.carter@gmail.com,New York,2019-01-01
+ Olivia Hayes,(312) 100-7919, olivia.hayes@outlook.com, Seattle,02/02/2020
+Liam  Russell,512-101-5838,liam.russell@yahoo.com ,Atlanta ,03-03-2021
+EMMA Bennett,206.102.3757,EMMA.BENNETT@proton.me,MIAMI,4/4/22
+Noah brooks,+1 617 103 1676,noah_brooks@example.org,austin,2023/05/05
+"Price, Ava",+1 (303) 103-9595,ava.price @gmail.com,Denver,2024-06-06
+William Morgan ,1-404-104-7514,william.morgan@outlook.com,Phoenix,07/07/2025
+Sophia	Murphy,503 105 5433, sophia.murphy@yahoo.com, Chicago,08-08-2019
+Benjamin Kelly,+1-602-106-3352,benjamin.kelly@proton.me ,Boston ,9/9/20
+ Mia Foster, 305-107-1271 ,MIA.FOSTER@example.org,PORTLAND,2021/10/10
+Lucas  Turner,(212)107-9190,lucas_turner@gmail.com,new york,2022-11-11
+CHARLOTTE Sullivan,+13121087109,charlotte.sullivan @outlook.com,Seattle,12/12/2023
+Henry reed,5121095028,henry.reed@yahoo.com,Atlanta,13-01-2024
+"Cooper, Amelia",(206) 110-2947, amelia.cooper@proton.me, Miami,2/14/25
+Alexander Gray ,617-111-0866,alexander.gray@example.org ,Austin ,2019/03/15
+Harper	Parker,303.111.8785,HARPER.PARKER@gmail.com,DENVER,2020-04-16
+Daniel Bailey,+1 404 112 6704,daniel_bailey@outlook.com,phoenix,05/17/2021
+ Evelyn Morris,+1 (503) 113-4623,evelyn.morris @yahoo.com,Chicago,18-06-2022
+Michael  Collins,1-602-114-2542,michael.collins@proton.me,Boston,7/19/23
+ELLA Ward,305 115 0461, ella.ward@example.org, Portland,2024/08/20
+James carter,+1-212-115-8380,james.carter@gmail.com ,New York ,2025-09-21
+"Hayes, Olivia", 312-116-6299 ,OLIVIA.HAYES@outlook.com,SEATTLE,10/22/2019
+Liam Russell ,(512)117-4218,liam_russell@yahoo.com,atlanta,23-11-2020
+Emma	Bennett,+12061182137,emma.bennett @proton.me,Miami,12/24/21
+Noah Brooks,6171190056,noah.brooks@example.org,Austin,2022/01/25
+ Ava Price,(303) 119-7975, ava.price@gmail.com, Denver,2023-02-26
+William  Morgan,404-120-5894,william.morgan@outlook.com ,Phoenix ,03/27/2024
+SOPHIA Murphy,503.121.3813,SOPHIA.MURPHY@yahoo.com,CHICAGO,01-04-2025
+Benjamin kelly,+1 602 122 1732,benjamin_kelly@proton.me,boston,5/2/19
+"Foster, Mia",+1 (305) 122-9651,mia.foster @example.org,Portland,2020/06/03
+Lucas Turner ,1-212-123-7570,lucas.turner@gmail.com,New York,2021-07-04
+Charlotte	Sullivan,312 124 5489, charlotte.sullivan@outlook.com, Seattle,08/05/2022
+Henry Reed,+1-512-125-3408,henry.reed@yahoo.com ,Atlanta ,06-09-2023
+ Amelia Cooper, 206-126-1327 ,AMELIA.COOPER@proton.me,MIAMI,10/7/24
+Alexander  Gray,(617)126-9246,alexander_gray@example.org,austin,2025/11/08
+HARPER Parker,+13031277165,harper.parker @gmail.com,Denver,2019-12-09
+Daniel bailey,4041285084,daniel.bailey@outlook.com,Phoenix,01/10/2020
+"Morris, Evelyn",(503) 129-3003, evelyn.morris@yahoo.com, Chicago,11-02-2021
+Michael Collins ,602-130-0922,michael.collins@proton.me ,Boston ,3/12/22
+Ella	Ward,305.130.8841,ELLA.WARD@example.org,PORTLAND,2023/04/13
+James Carter,+1 212 131 6760,james_carter@gmail.com,new york,2024-05-14
+ Olivia Hayes,+1 (312) 132-4679,olivia.hayes @outlook.com,Seattle,06/15/2025
+Liam  Russell,1-512-133-2598,liam.russell@yahoo.com,Atlanta,16-07-2019
+EMMA Bennett,206 134 0517, emma.bennett@proton.me, Miami,8/17/20
+Noah brooks,+1-617-134-8436,noah.brooks@example.org ,Austin ,2021/09/18
+"Price, Ava", 303-135-6355 ,AVA.PRICE@gmail.com,DENVER,2022-10-19
+William Morgan ,(404)136-4274,william_morgan@outlook.com,phoenix,11/20/2023
+James Carter,+1 212 131 6760,james_carter@gmail.com,new york,2024-05-14
+Benjamin Kelly,6021380112,benjamin.kelly@proton.me,Boston,1/22/25
+ Mia Foster,(305) 138-8031, mia.foster@example.org, Portland,2019/02/23
+Lucas  Turner,212-139-5950,lucas.turner@gmail.com ,New York ,2020-03-24
+CHARLOTTE Sullivan,312.140.3869,CHARLOTTE.SULLIVAN@outlook.com,SEATTLE,04/25/2021
+Henry reed,+1 512 141 1788,henry_reed@yahoo.com,atlanta,26-05-2022
+"Cooper, Amelia",+1 (206) 141-9707,amelia.cooper @proton.me,Miami,6/27/23
+Alexander Gray ,1-617-142-7626,alexander.gray@example.org,Austin,2024/07/01
+Harper	Parker,303 143 5545, harper.parker@gmail.com, Denver,2025-08-02
+Daniel Bailey,+1-404-144-3464,daniel.bailey@outlook.com ,Phoenix ,09/03/2019
+ Evelyn Morris, 503-145-1383 ,EVELYN.MORRIS@yahoo.com,CHICAGO,04-10-2020
+Michael  Collins,(602)145-9302,michael_collins@proton.me,boston,11/5/21
+ELLA Ward,+13051467221,ella.ward @example.org,Portland,2022/12/06
+James carter,2121475140,james.carter@gmail.com,New York,2023-01-07
+"Hayes, Olivia",(312) 148-3059, olivia.hayes@outlook.com, Seattle,02/08/2024
+Liam Russell ,512-149-0978,liam.russell@yahoo.com ,Atlanta ,09-03-2025
+Emma	Bennett,206.149.8897,EMMA.BENNETT@proton.me,MIAMI,4/10/19
+Noah Brooks,+1 617 150 6816,noah_brooks@example.org,austin,2020/05/11
+ Ava Price,+1 (303) 151-4735,ava.price @gmail.com,Denver,2021-06-12
+William  Morgan,1-404-152-2654,william.morgan@outlook.com,Phoenix,07/13/2022
+SOPHIA Murphy,503 153 0573, sophia.murphy@yahoo.com, Chicago,14-08-2023
+Benjamin kelly,+1-602-153-8492,benjamin.kelly@proton.me ,Boston ,9/15/24
+"Foster, Mia", 305-154-6411 ,MIA.FOSTER@example.org,PORTLAND,2025/10/16
+Lucas Turner ,(212)155-4330,lucas_turner@gmail.com,new york,2019-11-17
+Charlotte	Sullivan,+13121562249,charlotte.sullivan @outlook.com,Seattle,12/18/2020
+Henry Reed,5121570168,henry.reed@yahoo.com,Atlanta,19-01-2021
+ Amelia Cooper,(206) 157-8087, amelia.cooper@proton.me, Miami,2/20/22
+Alexander  Gray,617-158-6006,alexander.gray@example.org ,Austin ,2023/03/21
+HARPER Parker,303.159.3925,HARPER.PARKER@gmail.com,DENVER,2024-04-22
+Daniel bailey,+1 404 160 1844,daniel_bailey@outlook.com,phoenix,05/23/2025
+"Morris, Evelyn",+1 (503) 160-9763,evelyn.morris @yahoo.com,Chicago,24-06-2019
+Michael Collins ,1-602-161-7682,michael.collins@proton.me,Boston,7/25/20
+Ella	Ward,305 162 5601, ella.ward@example.org, Portland,2021/08/26
+James Carter,+1-212-163-3520,james.carter@gmail.com ,New York ,2022-09-27
+ Olivia Hayes, 312-164-1439 ,OLIVIA.HAYES@outlook.com,SEATTLE,10/01/2023
+Liam  Russell,(512)164-9358,liam_russell@yahoo.com,atlanta,02-11-2024
+EMMA Bennett,+12061657277,emma.bennett @proton.me,Miami,12/3/25
+Noah brooks,6171665196,noah.brooks@example.org,Austin,2019/01/04
+"Price, Ava",(303) 167-3115, ava.price@gmail.com, Denver,2020-02-05
+William Morgan ,404-168-1034,william.morgan@outlook.com ,Phoenix ,03/06/2021
+Sophia	Murphy,503.168.8953,SOPHIA.MURPHY@yahoo.com,CHICAGO,07-04-2022
+"Morris, Evelyn",503 160 9763,evelyn.morris @yahoo.com,Chicago,24-06-2019
+ Mia Foster,+1 (305) 170-4791,mia.foster @example.org,Portland,2024/06/09
+Lucas  Turner,1-212-171-2710,lucas.turner@gmail.com,New York,2025-07-10
+CHARLOTTE Sullivan,312 172 0629, charlotte.sullivan@outlook.com, Seattle,08/11/2019
+Henry reed,+1-512-172-8548,henry.reed@yahoo.com ,Atlanta ,12-09-2020
+"Cooper, Amelia", 206-173-6467 ,AMELIA.COOPER@proton.me,MIAMI,10/13/21
+Alexander Gray ,(617)174-4386,alexander_gray@example.org,austin,2022/11/14
+Harper	Parker,+13031752305,harper.parker @gmail.com,Denver,2023-12-15
+Daniel Bailey,4041760224,daniel.bailey@outlook.com,Phoenix,01/16/2024
+ Evelyn Morris,(503) 176-8143, evelyn.morris@yahoo.com, Chicago,17-02-2025
+Michael  Collins,602-177-6062,michael.collins@proton.me ,Boston ,3/18/19
+ELLA Ward,305.178.3981,ELLA.WARD@example.org,PORTLAND,2020/04/19
+James carter,+1 212 179 1900,james_carter@gmail.com,new york,2021-05-20
+"Hayes, Olivia",+1 (312) 179-9819,olivia.hayes @outlook.com,Seattle,06/21/2022
+Liam Russell ,1-512-180-7738,liam.russell@yahoo.com,Atlanta,22-07-2023
+Emma	Bennett,206 181 5657, emma.bennett@proton.me, Miami,8/23/24
+Noah Brooks,+1-617-182-3576,noah.brooks@example.org ,Austin ,2025/09/24
+ Ava Price, 303-183-1495 ,AVA.PRICE@gmail.com,DENVER,2019-10-25
+William  Morgan,(404)183-9414,william_morgan@outlook.com,phoenix,11/26/2020
+SOPHIA Murphy,+15031847333,sophia.murphy @yahoo.com,Chicago,27-12-2021
+Benjamin kelly,6021855252,benjamin.kelly@proton.me,Boston,1/1/22
+"Foster, Mia",(305) 186-3171, mia.foster@example.org, Portland,2023/02/02
+Lucas Turner ,212-187-1090,lucas.turner@gmail.com ,New York ,2024-03-03
+Charlotte	Sullivan,312.187.9009,CHARLOTTE.SULLIVAN@outlook.com,SEATTLE,04/04/2025
+Henry Reed,+1 512 188 6928,henry_reed@yahoo.com,atlanta,05-05-2019
+ Amelia Cooper,+1 (206) 189-4847,amelia.cooper @proton.me,Miami,6/6/20
+Alexander  Gray,1-617-190-2766,alexander.gray@example.org,Austin,2021/07/07
+HARPER Parker,303 191 0685, harper.parker@gmail.com, Denver,2022-08-08
+Daniel bailey,+1-404-191-8604,daniel.bailey@outlook.com ,Phoenix ,09/09/2023
+"Morris, Evelyn", 503-192-6523 ,EVELYN.MORRIS@yahoo.com,CHICAGO,10-10-2024
+Michael Collins ,(602)193-4442,michael_collins@proton.me,boston,11/11/25
+Henry Reed,+1 512 188 6928,henry_reed@yahoo.com,atlanta,05-05-2019
+James Carter,2121950280,james.carter@gmail.com,New York,2020-01-13
+ Olivia Hayes,(312) 195-8199, olivia.hayes@outlook.com, Seattle,02/14/2021
+Liam  Russell,512-196-6118,liam.russell@yahoo.com ,Atlanta ,15-03-2022
+EMMA Bennett,206.197.4037,EMMA.BENNETT@proton.me,MIAMI,4/16/23
+Noah brooks,+1 617 198 1956,noah_brooks@example.org,austin,2024/05/17
+"Price, Ava",+1 (303) 198-9875,ava.price @gmail.com,Denver,2025-06-18
+William Morgan ,1-404-199-7794,william.morgan@outlook.com,Phoenix,07/19/2019
+Sophia	Murphy,503 200 5713, sophia.murphy@yahoo.com, Chicago,20-08-2020
+Benjamin Kelly,+1-602-201-3632,benjamin.kelly@proton.me ,Boston ,9/21/21
+ Mia Foster, 305-202-1551 ,MIA.FOSTER@example.org,PORTLAND,2022/10/22
+Lucas  Turner,(212)202-9470,lucas_turner@gmail.com,new york,2023-11-23
+CHARLOTTE Sullivan,+13122037389,charlotte.sullivan @outlook.com,Seattle,12/24/2024
+Henry reed,5122045308,henry.reed@yahoo.com,Atlanta,25-01-2025
+"Cooper, Amelia",(206) 205-3227, amelia.cooper@proton.me, Miami,2/26/19
+Alexander Gray ,617-206-1146,alexander.gray@example.org ,Austin ,2020/03/27
+Harper	Parker,303.206.9065,HARPER.PARKER@gmail.com,DENVER,2021-04-01
+Daniel Bailey,+1 404 207 6984,daniel_bailey@outlook.com,phoenix,05/02/2022
+ Evelyn Morris,+1 (503) 208-4903,evelyn.morris @yahoo.com,Chicago,03-06-2023
+Michael  Collins,1-602-209-2822,michael.collins@proton.me,Boston,7/4/24
+ELLA Ward,305 210 0741, ella.ward@example.org, Portland,2025/08/05
+James carter,+1-212-210-8660,james.carter@gmail.com ,New York ,2019-09-06
+"Hayes, Olivia", 312-211-6579 ,OLIVIA.HAYES@outlook.com,SEATTLE,10/07/2020
+Liam Russell ,(512)212-4498,liam_russell@yahoo.com,atlanta,08-11-2021
+Emma	Bennett,+12062132417,emma.bennett @proton.me,Miami,12/9/22
+Noah Brooks,6172140336,noah.brooks@example.org,Austin,2023/01/10
+ Ava Price,(303) 214-8255, ava.price@gmail.com, Denver,2024-02-11
+William  Morgan,404-215-6174,william.morgan@outlook.com ,Phoenix ,03/12/2025
+SOPHIA Murphy,503.216.4093,SOPHIA.MURPHY@yahoo.com,CHICAGO,13-04-2019
+Benjamin kelly,+1 602 217 2012,benjamin_kelly@proton.me,boston,5/14/20
+"Foster, Mia",+1 (305) 217-9931,mia.foster @example.org,Portland,2021/06/15
+Lucas Turner ,1-212-218-7850,lucas.turner@gmail.com,New York,2022-07-16
+Charlotte	Sullivan,312 219 5769, charlotte.sullivan@outlook.com, Seattle,08/17/2023
+Henry Reed,+1-512-220-3688,henry.reed@yahoo.com ,Atlanta ,18-09-2024
+ Amelia Cooper, 206-221-1607 ,AMELIA.COOPER@proton.me,MIAMI,10/19/25
+Alexander  Gray,(617)221-9526,alexander_gray@example.org,austin,2019/11/20
+HARPER Parker,+13032227445,harper.parker @gmail.com,Denver,2020-12-21
+Daniel bailey,4042235364,daniel.bailey@outlook.com,Phoenix,01/22/2021
+"Morris, Evelyn",(503) 224-3283, evelyn.morris@yahoo.com, Chicago,23-02-2022
+Michael Collins ,602-225-1202,michael.collins@proton.me ,Boston ,3/24/23
+Ella	Ward,305.225.9121,ELLA.WARD@example.org,PORTLAND,2024/04/25
+James Carter,+1 212 226 7040,james_carter@gmail.com,new york,2025-05-26
+ Olivia Hayes,+1 (312) 227-4959,olivia.hayes @outlook.com,Seattle,06/27/2019
+Liam  Russell,1-512-228-2878,liam.russell@yahoo.com,Atlanta,01-07-2020
+EMMA Bennett,206 229 0797, emma.bennett@proton.me, Miami,8/2/21
+Noah brooks,+1-617-229-8716,noah.brooks@example.org ,Austin ,2022/09/03
+"Price, Ava", 303-230-6635 ,AVA.PRICE@gmail.com,DENVER,2023-10-04
+William Morgan ,(404)231-4554,william_morgan@outlook.com,phoenix,11/05/2024
+Sophia	Murphy,+15032322473,sophia.murphy @yahoo.com,Chicago,06-12-2025
+Benjamin Kelly,6022330392,benjamin.kelly@proton.me,Boston,1/7/19
+ Mia Foster,(305) 233-8311, mia.foster@example.org, Portland,2020/02/08
+Lucas  Turner,212-234-6230,lucas.turner@gmail.com ,New York ,2021-03-09
+CHARLOTTE Sullivan,312.235.4149,CHARLOTTE.SULLIVAN@outlook.com,SEATTLE,04/10/2022
+Henry reed,+1 512 236 2068,henry_reed@yahoo.com,atlanta,11-05-2023
+Liam  Russell,+1-512-228-2878,liam.russell@yahoo.com,Atlanta,01-07-2020
+Alexander Gray ,1-617-237-7906,alexander.gray@example.org,Austin,2025/07/13
+Harper	Parker,303 238 5825, harper.parker@gmail.com, Denver,2019-08-14
+Daniel Bailey,+1-404-239-3744,daniel.bailey@outlook.com ,Phoenix ,09/15/2020
+ Evelyn Morris, 503-240-1663 ,EVELYN.MORRIS@yahoo.com,CHICAGO,16-10-2021
+Michael  Collins,(602)240-9582,michael_collins@proton.me,boston,11/17/22
+ELLA Ward,+13052417501,ella.ward @example.org,Portland,2023/12/18
+James carter,2122425420,james.carter@gmail.com,New York,2024-01-19
+"Hayes, Olivia",(312) 243-3339, olivia.hayes@outlook.com, Seattle,02/20/2025
+Liam Russell ,512-244-1258,liam.russell@yahoo.com ,Atlanta ,21-03-2019
+Emma	Bennett,206.244.9177,EMMA.BENNETT@proton.me,MIAMI,4/22/20
+Noah Brooks,+1 617 245 7096,noah_brooks@example.org,austin,2021/05/23
+ Ava Price,+1 (303) 246-5015,ava.price @gmail.com,Denver,2022-06-24
+William  Morgan,1-404-247-2934,william.morgan@outlook.com,Phoenix,07/25/2023
+SOPHIA Murphy,503 248 0853, sophia.murphy@yahoo.com, Chicago,26-08-2024
+Benjamin kelly,+1-602-248-8772,benjamin.kelly@proton.me ,Boston ,9/27/25
+"Foster, Mia", 305-249-6691 ,MIA.FOSTER@example.org,PORTLAND,2019/10/01
+Lucas Turner ,(212)250-4610,lucas_turner@gmail.com,new york,2020-11-02
+Charlotte	Sullivan,+13122512529,charlotte.sullivan @outlook.com,Seattle,12/03/2021
+Henry Reed,5122520448,henry.reed@yahoo.com,Atlanta,04-01-2022
+ Amelia Cooper,(206) 252-8367, amelia.cooper@proton.me, Miami,2/5/23
+Alexander  Gray,617-253-6286,alexander.gray@example.org ,Austin ,2024/03/06
+HARPER Parker,303.254.4205,HARPER.PARKER@gmail.com,DENVER,2025-04-07
+Daniel bailey,+1 404 255 2124,daniel_bailey@outlook.com,phoenix,05/08/2019
+"Morris, Evelyn",+1 (503) 256-0043,evelyn.morris @yahoo.com,Chicago,09-06-2020
+Charlotte	Sullivan,+13122512529,charlotte.sullivan @outlook.com,Seattle,12/03/2021
+Ella	Ward,305 257 5881, ella.ward@example.org, Portland,2022/08/11
+James Carter,+1-212-258-3800,james.carter@gmail.com ,New York ,2023-09-12
+ Olivia Hayes, 312-259-1719 ,OLIVIA.HAYES@outlook.com,SEATTLE,10/13/2024
+Liam  Russell,(512)259-9638,liam_russell@yahoo.com,atlanta,14-11-2025
+EMMA Bennett,+12062607557,emma.bennett @proton.me,Miami,12/15/19
+Noah brooks,6172615476,noah.brooks@example.org,Austin,2020/01/16
+"Price, Ava",(303) 262-3395, ava.price@gmail.com, Denver,2021-02-17
+William Morgan ,404-263-1314,william.morgan@outlook.com ,Phoenix ,03/18/2022
+Sophia	Murphy,503.263.9233,SOPHIA.MURPHY@yahoo.com,CHICAGO,19-04-2023
+Benjamin Kelly,+1 602 264 7152,benjamin_kelly@proton.me,boston,5/20/24
+ Mia Foster,+1 (305) 265-5071,mia.foster @example.org,Portland,2025/06/21
+Lucas  Turner,1-212-266-2990,lucas.turner@gmail.com,New York,2019-07-22
+CHARLOTTE Sullivan,312 267 0909, charlotte.sullivan@outlook.com, Seattle,08/23/2020
+Henry reed,+1-512-267-8828,henry.reed@yahoo.com ,Atlanta ,24-09-2021
+"Cooper, Amelia", 206-268-6747 ,AMELIA.COOPER@proton.me,MIAMI,10/25/22
+Alexander Gray ,(617)269-4666,alexander_gray@example.org,austin,2023/11/26
+Harper	Parker,+13032702585,harper.parker @gmail.com,Denver,2024-12-27
+Daniel Bailey,4042710504,daniel.bailey@outlook.com,Phoenix,01/01/2025
+ Evelyn Morris,(503) 271-8423, evelyn.morris@yahoo.com, Chicago,02-02-2019
+Michael  Collins,602-272-6342,michael.collins@proton.me ,Boston ,3/3/20
+ELLA Ward,305.273.4261,ELLA.WARD@example.org,PORTLAND,2021/04/04
+James carter,+1 212 274 2180,james_carter@gmail.com,new york,2022-05-05
+"Hayes, Olivia",+1 (312) 275-0099,olivia.hayes @outlook.com,Seattle,06/06/2023
+Liam Russell ,1-512-275-8018,liam.russell@yahoo.com,Atlanta,07-07-2024
+Emma	Bennett,206 276 5937, emma.bennett@proton.me, Miami,8/8/25
+Noah Brooks,+1-617-277-3856,noah.brooks@example.org ,Austin ,2019/09/09
+ Ava Price, 303-278-1775 ,AVA.PRICE@gmail.com,DENVER,2020-10-10
+William  Morgan,(404)278-9694,william_morgan@outlook.com,phoenix,11/11/2021
+SOPHIA Murphy,+15032797613,sophia.murphy @yahoo.com,Chicago,12-12-2022
+Benjamin kelly,6022805532,benjamin.kelly@proton.me,Boston,1/13/23
+"Foster, Mia",(305) 281-3451, mia.foster@example.org, Portland,2024/02/14
+Lucas Turner ,212-282-1370,lucas.turner@gmail.com ,New York ,2025-03-15
+Charlotte	Sullivan,312.282.9289,CHARLOTTE.SULLIVAN@outlook.com,SEATTLE,04/16/2019
+Henry Reed,+1 512 283 7208,henry_reed@yahoo.com,atlanta,17-05-2020
+ Amelia Cooper,+1 (206) 284-5127,amelia.cooper @proton.me,Miami,6/18/21
+Alexander  Gray,1-617-285-3046,alexander.gray@example.org,Austin,2022/07/19
+HARPER Parker,303 286 0965, harper.parker@gmail.com, Denver,2023-08-20
+Daniel bailey,+1-404-286-8884,daniel.bailey@outlook.com ,Phoenix ,09/21/2024
+"Morris, Evelyn", 503-287-6803 ,EVELYN.MORRIS@yahoo.com,CHICAGO,22-10-2025
+Michael Collins ,(602)288-4722,michael_collins@proton.me,boston,11/23/19
+Ella	Ward,+13052892641,ella.ward @example.org,Portland,2020/12/24
