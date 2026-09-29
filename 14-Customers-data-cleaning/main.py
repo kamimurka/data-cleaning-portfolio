@@ -50,12 +50,12 @@ def clean_phone(raw, region):
         phone = phonenumbers.parse(raw, region)
         if phonenumbers.is_valid_number(phone):
             return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+        else:
+            print(phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164))
     except phonenumbers.NumberParseException:
         return None
 
 df['phone'] = df.apply(lambda row: clean_phone(row['phone'], row['country']), axis=1)
-
-print(f'NA are: {df['phone'].isna().sum()}')
 
 # Cleaning signup_date column
 df['signup_date'] = pd.to_datetime(df['signup_date'],
