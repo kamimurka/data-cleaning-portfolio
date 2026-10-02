@@ -1,12 +1,21 @@
 import pandas as pd
 import phonenumbers
 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-
-df = pd.read_csv('15-Dirty-Phone-data-cleaning/dirty_phone_cleaning_practice.csv', engine='python')
+df = pd.read_csv('15-Dirty-Phone-data-cleaning/dirty_phone_cleaning_practice.csv')
 
 # Cleaning customer_name column
+df['customer_name'] = df['customer_name'].str.strip()
+def split_first_last_names(cell):
+    if pd.isna(cell):
+        return pd.NA
+    if not ', ' in cell:
+        return cell
+    else:
+        last_n, first_n = cell.split(', ')
+        return f'{first_n} {last_n}'
+
+df['customer_name'] = df['customer_name'].apply(split_first_last_names)
+
 df['customer_name'] = (df['customer_name']
     .str.strip()
     .str.title()
@@ -17,42 +26,33 @@ df['customer_name'] = (df['customer_name']
     }, regex=True))
 
 # Cleaning phone column
-def clean_phone(phone_raw):
-
-    print(f'BEFORE: {phone_raw}')
-
+df['phone_status'] = pd.NA
+def clean_phone(row):
+    phone_raw = row['phone']
     if pd.isna(phone_raw):
-        print('AFTER:  ❌ empty')
-        print('-' * 40)
-        return pd.NA
+        row['phone'] = pd.NA
+        row['phone_status'] = 'missing'
+        return row
 
     try:
         phone = phonenumbers.parse(phone_raw, 'US')
 
-        print(f'PARSED: {phone}')
-        print(f'VALID:  {phonenumbers.is_valid_number(phone)}')
-
-        if not phonenumbers.is_valid_number(phone):
-            print('AFTER:  ❌ invalid')
-            print('-' * 40)
-            return pd.NA
-
-        cleaned = phonenumbers.format_number(
-            phone,
-            phonenumbers.PhoneNumberFormat.E164
-        )
-
-        print(f'AFTER:  {cleaned}')
-        print('-' * 40)
-
-        return cleaned
-
     except phonenumbers.NumberParseException as e:
-        print(f'AFTER:  ❌ parse error: {e}')
-        print('-' * 40)
-        return pd.NA
+        row['phone'] = pd.NA
+        row['phone_status'] = 'unparseable'
+        return row
+    
+    pretty = phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+    if phonenumbers.is_possible_number(phone):
+        row['phone'] = pretty
+        row['phone_status'] = 'invalid_prefix'
 
-df['phone'] = df['phone'].apply(clean_phone)
+    if phonenumbers.is_valid_number(phone):
+        row['phone'] = pretty
+        row['phone_status'] = 'valid'
+    return row
+
+df = df.apply(clean_phone, axis=1)
 
 
 # Cleaning email column
@@ -65,12 +65,21 @@ df['email'] = (df['email']
 df['city'] = df['city'].str.strip().str.title()
 
 # Cleaning signup_date column
-df['signup_date'] = pd.to_datetime(
-    df['signup_date'],
-    errors='coerce',
-    format='mixed').dt.strftime('%Y-%m-%d')
+
+def parse_date(s):
+    if pd.isna(s):
+        return pd.NaT
+    s = s.strip()
+    if '-' in s and len(s.split('-')[0]) <= 2:
+        return pd.to_datetime(s, format='%d-%m-%Y', errors='coerce')
+    if '/' in s and len(s.split('/')[0]) <= 2:
+        return pd.to_datetime(s, format='mixed', dayfirst=False, errors='coerce')
+    return pd.to_datetime(s, errors='coerce')
+
+df['signup_date'] = df['signup_date'].apply(parse_date).dt.strftime('%Y-%m-%d')
+
+# Finalizing
+df = df.drop_duplicates()
 
 # Exporting
 df.to_csv('15-Dirty-Phone-data-cleaning/dirty_phone_cleaned.csv', index=False)
-
-#########
