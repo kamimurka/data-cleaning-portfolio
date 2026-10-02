@@ -46,6 +46,11 @@ def clean_phone(row):
     if phonenumbers.is_possible_number(phone):
         row['phone'] = pretty
         row['phone_status'] = 'invalid_prefix'
+        
+    if not phonenumbers.is_possible_number(phone):
+       row['phone'] = pd.NA
+       row['phone_status'] = 'unparseable'
+       return row
 
     if phonenumbers.is_valid_number(phone):
         row['phone'] = pretty
