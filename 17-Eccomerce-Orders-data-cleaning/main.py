@@ -83,7 +83,7 @@ df['Customer Name'] = df['Customer Name'].apply(reorder_name)
 # ...
 
 # Cleaning Country column
-df['Country'] = df['Country'].str.lower()
+df['Country'] = df['Country'].str.lower().str.strip()
 country_mapping = {
     # United States
     'united states': 'United States',
@@ -118,16 +118,163 @@ country_mapping = {
     'australia': 'Australia',
     'au': 'Australia',
     'aus': 'Australia',
-
-    # pd.NA
-
 }
 
 df['Country'] = df['Country'].map(country_mapping)
 
+# Cleaning State/Prov column
+df['State/Prov'] = df['State/Prov'].str.lower().str.strip()
+region_mapping = {
+    # US states
+    'co': 'Colorado', 'colorado': 'Colorado',
+    'wa': 'Washington', 'washington': 'Washington',
+    'az': 'Arizona', 'arizona': 'Arizona',
+    'il': 'Illinois', 'illinois': 'Illinois',
+    'ma': 'Massachusetts', 'massachusetts': 'Massachusetts',
+    'ct': 'Connecticut', 'connecticut': 'Connecticut',
+    'pa': 'Pennsylvania', 'pennsylvania': 'Pennsylvania',
+    'oh': 'Ohio', 'ohio': 'Ohio',
+    'nc': 'North Carolina', 'north carolina': 'North Carolina',
+    'ga': 'Georgia', 'georgia': 'Georgia',
+    'ny': 'New York', 'new york': 'New York',
+    'fl': 'Florida', 'florida': 'Florida',
+    'ca': 'California', 'california': 'California',
+    'tx': 'Texas', 'texas': 'Texas',
+    'nj': 'New Jersey', 'new jersey': 'New Jersey',
 
-print(df['Country'].value_counts())
+    # Canadian provinces
+    'on': 'Ontario', 'ontario': 'Ontario',
+    'ab': 'Alberta', 'alberta': 'Alberta',
+    'bc': 'British Columbia', 'british columbia': 'British Columbia',
+    'qc': 'Quebec', 'quebec': 'Quebec',
+    'nsw': 'New South Wales',
+    'qld': 'Queensland',
+    'vic': 'Victoria',
 
-print(df['Country'].isna().sum())
-unmapped = df[df['Country'].isna()]['Country'].unique()
-print(unmapped)
+    # UK constituent countries
+    'england': 'England',
+    'wales': 'Wales',
+    'scotland': 'Scotland',
+
+    # German federal states
+    'hesse': 'Hesse',
+    'saxony': 'Saxony',
+    'bavaria': 'Bavaria',
+    'hamburg': 'Hamburg',
+    'berlin': 'Berlin',
+}
+
+df['State/Prov'] = df['State/Prov'].map(region_mapping)
+
+# Cleaning Zip/Postal
+df['Zip/Postal'] = (df['Zip/Postal']
+    .str.upper()
+    .str.strip()
+    .str.replace(r'\s{1,}', '', regex=True)
+    .str.replace('.0', '')
+)
+
+def fix_us_codes(row):
+    zip_code = str(row['Zip/Postal']).strip()
+    country = row['Country']
+
+    if country == 'United States' and zip_code.isdigit() and len(zip_code) < 5:
+        return zip_code.zfill(5)
+    return zip_code
+
+df['Zip/Postal'] = df.apply(fix_us_codes, axis=1)
+
+# Cleaning SKU column
+df['SKU'] = df['SKU'].str.strip().str.upper()
+
+def splitting_sku(cell):
+    if pd.isna(cell):
+        return cell
+    if bool(re.match(r'\w\w\d{4}', cell)):
+        cell = re.sub(r'(\w\w)(\d{4})', r'\1-\2', cell)
+        return cell
+    if not bool(re.match(r'\w\w\-\d{4}', cell)):
+        cell = pd.NA
+    return cell
+
+df['SKU'] = df['SKU'].apply(splitting_sku)
+
+# Cleaning Product Name column
+df['Product Name'] = (df['Product Name'].str.strip().str.replace(
+    {
+        r'\s{2,}': ' ',
+        r'^[?!-]': '',
+    }, regex=True)
+    .replace('', pd.NA))
+
+# Cleaning Category column
+df['Category'] = df['Category'].str.strip()
+category_map = {
+    'Toys & Games': 'Toys & Games',
+    'Toys and Games': 'Toys & Games',
+    'Toys & games': 'Toys & Games',
+    'toys & games': 'Toys & Games',
+    'Toys': 'Toys & Games',
+
+    'Sports & Outdoors': 'Sports & Outdoors',
+    'sports & outdoors': 'Sports & Outdoors',
+    'Sports & Outdoor': 'Sports & Outdoors',
+    'Sports and Outdoors': 'Sports & Outdoors',
+    'Sports': 'Sports & Outdoors',
+
+    'Electronics': 'Electronics',
+    'electronics': 'Electronics',
+    'ELECTRONICS': 'Electronics',
+    'Electronic': 'Electronics',
+
+    'Office Supplies': 'Office Supplies',
+    'Office supplies': 'Office Supplies',
+    'office supplies': 'Office Supplies',
+    'OFFICE SUPPLIES': 'Office Supplies',
+    'Office Supply': 'Office Supplies',
+
+    'Beauty': 'Beauty',
+    'BEAUTY': 'Beauty',
+    'beauty': 'Beauty',
+    'Beauty & Personal Care': 'Beauty',
+
+    'Home & Kitchen': 'Home & Kitchen',
+    'home & kitchen': 'Home & Kitchen',
+    'Home&Kitchen': 'Home & Kitchen',
+    'Home and Kitchen': 'Home & Kitchen',
+}
+
+df['Category'] = df['Category'].map(category_map)
+
+# Cleaning Qty column
+df['Qty'] = df['Qty'].str.replace({r'[^\d]': '', '.0': ''}, regex=True).replace(
+{'': pd.NA,
+ '999': pd.NA,
+ '0': pd.NA})
+
+# Cleaning Unit Price column (...)
+df['Unit Price'] = (df['Unit Price']
+.str.strip()
+.str.replace(r'[^\d\.]', '', regex=True)
+.replace('', '0.00')
+.fillna('0.00'))
+
+
+# Cleaning Discount column
+df['Discount'] = (df['Discount']
+    .str.strip()
+    .str.replace(
+        {
+            '%': '',
+            r'\s{1,}': '',
+            r'\.\d{1,}': '',
+            r'[^\d\.]': ''
+        },
+        regex=True)
+        .replace({r'\s{1,}': '0', '': '0'}, regex=True)
+        .fillna('0')
+        .str.strip())
+
+# Cleaning Total column
+
+print(df['Unit Price'].head(300))
