@@ -276,5 +276,104 @@ df['Discount'] = (df['Discount']
         .str.strip())
 
 # Cleaning Total column
+df['Total'] = (df['Total']
+.str.strip()
+.str.replace(r'[^\d\.]', '', regex=True)
+.replace('', '0.00')
+.fillna('0.00'))
 
-print(df['Unit Price'].head(300))
+# Cleaning Currency column
+df['Currency'] = df['Currency'].str.strip()
+currency_mapping = {
+    "USD": "USD",
+    "US$": "USD",
+    "usd": "USD",
+    "$": "USD",
+    "CAD": "CAD",
+    "cad": "CAD",
+    "C$": "CAD",
+    "CA$": "CAD",
+    "GBP": "GBP",
+    "£": "GBP",
+    "gbp": "GBP",
+    "EUR": "EUR",
+    "€": "EUR",
+    "eur": "EUR",
+    "AUD": "AUD",
+    "A$": "AUD",
+    "AU$": "AUD",
+    "aud": "AUD"
+}
+
+df['Currency'] = df['Currency'].map(currency_mapping)
+
+# Cleaning Payment Method
+df['Payment Method'] = df['Payment Method'].str.strip().str.lower()
+
+payment_mapping = {
+    "credit card": "Credit Card",
+    "credit-card": "Credit Card",
+    "credit_card": "Credit Card",
+    "cc": "Credit Card",
+    "mastercard": "Credit Card",
+    "visa": "Credit Card",
+
+    "paypal": "PayPal",
+    "pay pal": "PayPal",
+
+    "debit card": "Debit Card",
+    "debit": "Debit Card",
+
+    "apple pay": "Apple Pay",
+    "applepay": "Apple Pay",
+
+    "bank transfer": "Bank Transfer",
+    "wire transfer": "Bank Transfer",
+    "wire": "Bank Transfer",
+    "ach": "Bank Transfer",
+
+    "gift card": "Gift Card",
+    "giftcard": "Gift Card",
+}
+
+df['Payment Method'] = df['Payment Method'].map(payment_mapping)
+
+# Cleaning Status column
+df['Status'] = df['Status'].str.strip().str.lower()
+
+status_mapping = {
+    "shipped": "Shipped",
+    "refunded": "Refunded",
+    "deliverd": "Delivered",
+    "processing": "Processing",
+    "return": "Returned",
+    "canceled": "Canceled",
+    "in transit": "In Transit",
+    "refund issued": "Refunded",
+    "pending": "Pending",
+    "in progress": "Processing",
+}
+
+df['Status'] = df['Status'].map(status_mapping)
+
+# Cleaning Gift coolumn
+gift_mapping = {
+    "N": "No",
+    "No": "No",
+    "no": "No",
+    "FALSE": "No",
+    "0": "No",
+    "false": "No",
+    "Yes": "Yes",
+    "Y": "Yes",
+    "yes": "Yes",
+    "TRUE": "Yes",
+    "1": "Yes",
+    "true": "Yes",
+}
+
+df['Gift'] = df['Gift'].map(gift_mapping)
+
+# Cleaning Sales Rep
+
+print(df['Sales Rep'].value_counts())
