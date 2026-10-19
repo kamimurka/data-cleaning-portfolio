@@ -1,6 +1,7 @@
 import pandas as pd
 import re
 import ftfy
+import email_validator
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -80,7 +81,35 @@ def reorder_name(name):
 
 df['Customer Name'] = df['Customer Name'].apply(reorder_name)
 
-# ...
+# Cleaning E-mail column
+df['E-mail'] = df['E-mail'].str.strip().str.lower()
+df['E-mail'] = df['E-mail'].str.replace(r'\sat\s', '@', regex=True)
+df[["E-mail", "email_extra"]] = df["E-mail"].str.split(r"\s*[;,]\s*", n=1, expand=True)
+# print(df['E-mail'].head(500))
+
+parts = df["E-mail"].str.split("@", expand=True)
+local, dom = parts[0], parts[1].str.split(".").str[0]
+
+bad = (
+    (local == dom)                                   # a@a.com, test@test.com
+    | (local.str.len() < 3)                          # a@, ab@
+    | local.str.contains(r"no.?email|none|^no$|test|fake|dummy|asdf|null|n/?a$", regex=True)
+    | dom.str.contains(r"^(none|test|fake|dummy|example|null)$", regex=True)
+)
+
+# print(df.loc[bad, "E-mail"])
+# print(bad.sum())   # сколько всего попало под фильтр
+df.loc[bad, "E-mail"] = None
+# print(df["E-mail"].dropna().str.len().sort_values().head(15))
+# print(df.loc[df["E-mail"].notna(), "E-mail"].value_counts().head(10))
+
+df.loc[~df["E-mail"].str.contains("@", na=False), "E-mail"] = None
+
+short = df["E-mail"].dropna()
+print(short[short.str.len() <= 13].unique())
+
+short = df["E-mail"].dropna()
+print(short[short.str.len() <= 13].unique())
 
 # Cleaning Country column
 df['Country'] = df['Country'].str.lower().str.strip()
@@ -375,5 +404,52 @@ gift_mapping = {
 df['Gift'] = df['Gift'].map(gift_mapping)
 
 # Cleaning Sales Rep
+df['Sales Rep'] = df['Sales Rep'].str.strip().str.title().replace({'Sales Rep': pd.NA})
 
-print(df['Sales Rep'].value_counts())
+sales_rep_mapping = {
+    "Web": "Web",
+    "Web Store": "Web Store",
+    "Online": "Online",
+    "Website": "Website",
+    "J. Smith": "John Smith",
+    "S. Martin": "Sophie Martin",
+    "M. Lopez": "Maria Lopez",
+    "K. O'Neil": "Kyle O'Neil",
+    "R. Mehta": "Raj Mehta",
+    "E. Carter": "Emily Carter",
+    "A. Hassan": "Ahmed Hassan",
+    "O. Petrova": "Olga Petrova",
+    "T. Becker": "Tom Becker",
+    "Raj Mehta": "Raj Mehta",
+    "Tom Becker": "Tom Becker",
+    "Kyle O'Neil": "Kyle O'Neil",
+    "Maria Lopez": "Maria Lopez",
+    "John Smith": "John Smith",
+    "Emily Carter": "Emily Carter",
+    "Sophie Martin": "Sophie Martin",
+    "Ahmed Hassan": "Ahmed Hassan",
+    "Olga Petrova": "Olga Petrova",
+    "Mehta, Raj": "Raj Mehta",
+    "Becker, Tom": "Tom Becker",
+    "Hassan, Ahmed": "Ahmed Hassan",
+    "Petrova, Olga": "Olga Petrova",
+    "O'Neil, Kyle": "Kyle O'Neil",
+    "Rmehta": "Raj Mehta",
+    "Lopez, Maria": "Maria Lopez",
+    "Smith, John": "John Smith",
+    "Martin, Sophie": "Sophie Martin",
+    "Carter, Emily": "Emily Carter",
+    "Ecarter": "Emily Carter",
+    "Jsmith": "John Smith",
+    "Mlopez": "Maria Lopez",
+    "Tbecker": "Tom Becker",
+    "Ko'Neil": "Kyle O'Neil",
+    "Opetrova": "Olga Petrova",
+    "Smartin": "Sophie Martin",
+    "Ahassan": "Ahmed Hassan",
+}
+
+df['Sales Rep'] = df['Sales Rep'].map(sales_rep_mapping)
+
+# Cleaning Notes column
+df['Notes'] = df['Notes'].str.strip()
