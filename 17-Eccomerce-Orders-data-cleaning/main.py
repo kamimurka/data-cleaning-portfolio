@@ -10,6 +10,9 @@ df = pd.read_csv('17-Eccomerce-Orders-data-cleaning/ecommerce_orders_raw.csv',
     engine='python',
     on_bad_lines='skip')
 
+orig = df[["Order Date ", "ship_date"]].copy()
+
+
 # Cleaning Order ID column
 df['Order ID'] = (df['Order ID']
     .str.strip()
@@ -32,16 +35,51 @@ def normalizing_ids(cell):
 df['Order ID'] = df['Order ID'].apply(normalizing_ids)
 
 # Cleaning Order Date column
-raw = df["Order Date "].astype(str)
-spor = raw[raw.str.match(r"^\d{2}/\d{2}/\d{4}$")]
+x = df["Order Date "].astype(str).str.strip()
+p = x[x.str.match(r"^\d{2}-\d{2}-\d{2}$")].str.split("-", expand=True).astype(int)
 
-first = spor.str.split("/").str[0].astype(int)
-second = spor.str.split("/").str[1].astype(int)
+def prep(col):
+    s = col.astype(str).str.strip()
+    s = s.str.replace(r"\s+\d{1,2}:\d{2}(?::\d{2})?(?:\s*[AaPp][Mm])?$", "", regex=True)
+    return s.str.replace(r"^(\d{1,2})[.\-](\d{1,2})[.\-](\d{4})$", r"\1/\2/\3", regex=True)
 
-print("первое число > 12:", (first > 12).sum())
-print("второе число > 12:", (second > 12).sum())
+def row_format(s):
+    parts = s.str.extract(r"^(\d{1,2})/(\d{1,2})/\d{4}$").astype(float)
+    fmt = pd.Series("", index=s.index)
+    fmt[parts[0] > 12] = "dmy"
+    fmt[parts[1] > 12] = "mdy"
+    return fmt
 
-# ...
+def parse_dates(s, fmt):
+    result = pd.to_datetime(s, format="%Y-%m-%d", errors="coerce")
+    for f in ("%Y/%m/%d", "%b %d, %Y", "%d-%b-%y", "%d %b %Y", "%m-%d-%y"):
+        result = result.fillna(pd.to_datetime(s, format=f, errors="coerce"))
+    num = pd.to_numeric(s, errors="coerce")
+    result = result.fillna(pd.to_datetime(num.where(num.between(40000, 50000)), unit="D", origin="1899-12-30"))
+    dmy = pd.to_datetime(s, format="%d/%m/%Y", errors="coerce")
+    mdy = pd.to_datetime(s, format="%m/%d/%Y", errors="coerce")
+    result = result.fillna(dmy.where(fmt == "dmy", mdy)).fillna(mdy.where(fmt == "dmy", dmy))
+    return result.where(result >= "2000-01-01")
+
+a = prep(df["Order Date "])
+b = prep(df["ship_date"])
+
+fmt = pd.Series("", index=df.index)
+
+df["Order Date "] = parse_dates(a, fmt)
+df["ship_date"] = parse_dates(b, fmt)
+
+both = df["Order Date "].notna() & df["ship_date"].notna()
+bad = both & (df["ship_date"] < df["Order Date "])
+print("готово")
+print("обе даты есть:", both.sum())
+print("отправка раньше заказа:", bad.sum())
+
+df = df.rename(columns={"ship_date": "Ship Date", 'Order Date ': 'Order Date'})
+print(df.columns)
+
+
+######################
 
 # Cleaning Customer ID column
 df['Customer ID'] = (df['Customer ID']
