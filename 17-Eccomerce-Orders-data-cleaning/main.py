@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 import ftfy
-import email_validator
+import phonenumbers
 
 pd.set_option('display.max_rows', None)
 pd.set_option('display.max_columns', None)
@@ -31,7 +31,15 @@ def normalizing_ids(cell):
 
 df['Order ID'] = df['Order ID'].apply(normalizing_ids)
 
-# ...
+# Cleaning Order Date column
+raw = df["Order Date "].astype(str)
+spor = raw[raw.str.match(r"^\d{2}/\d{2}/\d{4}$")]
+
+first = spor.str.split("/").str[0].astype(int)
+second = spor.str.split("/").str[1].astype(int)
+
+print("первое число > 12:", (first > 12).sum())
+print("второе число > 12:", (second > 12).sum())
 
 # ...
 
@@ -85,31 +93,50 @@ df['Customer Name'] = df['Customer Name'].apply(reorder_name)
 df['E-mail'] = df['E-mail'].str.strip().str.lower()
 df['E-mail'] = df['E-mail'].str.replace(r'\sat\s', '@', regex=True)
 df[["E-mail", "email_extra"]] = df["E-mail"].str.split(r"\s*[;,]\s*", n=1, expand=True)
-# print(df['E-mail'].head(500))
 
 parts = df["E-mail"].str.split("@", expand=True)
 local, dom = parts[0], parts[1].str.split(".").str[0]
 
 bad = (
-    (local == dom)                                   # a@a.com, test@test.com
-    | (local.str.len() < 3)                          # a@, ab@
+    (local == dom)
+    | (local.str.len() < 3)            
     | local.str.contains(r"no.?email|none|^no$|test|fake|dummy|asdf|null|n/?a$", regex=True)
     | dom.str.contains(r"^(none|test|fake|dummy|example|null)$", regex=True)
 )
 
-# print(df.loc[bad, "E-mail"])
-# print(bad.sum())   # сколько всего попало под фильтр
 df.loc[bad, "E-mail"] = None
-# print(df["E-mail"].dropna().str.len().sort_values().head(15))
-# print(df.loc[df["E-mail"].notna(), "E-mail"].value_counts().head(10))
 
 df.loc[~df["E-mail"].str.contains("@", na=False), "E-mail"] = None
 
 short = df["E-mail"].dropna()
-print(short[short.str.len() <= 13].unique())
 
-short = df["E-mail"].dropna()
-print(short[short.str.len() <= 13].unique())
+# Cleaning Phone Number column
+phone_mapping = {'United States': 'US', 'United Kingdom': 'GB', 'Canada': 'CA', 'Germany': 'DE', 'Australia': 'AU'}
+
+df['country_code'] = df['Country'].map(phone_mapping)
+
+def clean_phones(row):
+    if pd.isna(row['Phone Number']):
+        return pd.NA
+
+    number = str(row['Phone Number'])
+    code = str(row['country_code'])
+
+    try:
+        if code == "nan":
+            phone = phonenumbers.parse(number, code)
+            if phonenumbers.is_possible_number(phone):
+                return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+        else:
+            phone = phonenumbers.parse(number, code)
+            if phonenumbers.is_possible_number(phone):
+                return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+        return pd.NA
+    except phonenumbers.NumberParseException:
+        return pd.NA
+
+df['Phone Number'] = df.apply(clean_phones, axis=1)
+df = df.drop(columns=['country_code'])
 
 # Cleaning Country column
 df['Country'] = df['Country'].str.lower().str.strip()
