@@ -67,7 +67,6 @@ df['Quantity'] = df['Quantity'].astype(str).str.strip().replace({'one': '1', '-2
 
 print(df['Quantity'].value_counts())
 
-
 # Cleaning Country column
 df['Country'] = df['Country'].str.strip().str.lower()
 country_mapping = {
