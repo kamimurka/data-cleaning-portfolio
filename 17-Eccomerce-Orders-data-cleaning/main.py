@@ -34,7 +34,7 @@ def normalizing_ids(cell):
 
 df['Order ID'] = df['Order ID'].apply(normalizing_ids)
 
-# Cleaning Order Date column
+# Cleaning Order Date (& Ship Date) columns
 x = df["Order Date "].astype(str).str.strip()
 p = x[x.str.match(r"^\d{2}-\d{2}-\d{2}$")].str.split("-", expand=True).astype(int)
 
@@ -71,13 +71,9 @@ df["ship_date"] = parse_dates(b, fmt)
 
 both = df["Order Date "].notna() & df["ship_date"].notna()
 bad = both & (df["ship_date"] < df["Order Date "])
-print("готово")
-print("обе даты есть:", both.sum())
-print("отправка раньше заказа:", bad.sum())
 
 df = df.rename(columns={"ship_date": "Ship Date", 'Order Date ': 'Order Date'})
 print(df.columns)
-
 
 ######################
 
@@ -518,3 +514,8 @@ df['Sales Rep'] = df['Sales Rep'].map(sales_rep_mapping)
 
 # Cleaning Notes column
 df['Notes'] = df['Notes'].str.strip()
+
+# Cleaning Last Updated column
+
+# Exporting
+df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
