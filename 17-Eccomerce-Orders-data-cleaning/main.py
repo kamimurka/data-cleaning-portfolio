@@ -73,7 +73,6 @@ both = df["Order Date "].notna() & df["ship_date"].notna()
 bad = both & (df["ship_date"] < df["Order Date "])
 
 df = df.rename(columns={"ship_date": "Ship Date", 'Order Date ': 'Order Date'})
-print(df.columns)
 
 ######################
 
@@ -432,16 +431,19 @@ df['Payment Method'] = df['Payment Method'].map(payment_mapping)
 df['Status'] = df['Status'].str.strip().str.lower()
 
 status_mapping = {
+    "delivered": "Delivered",
+    "deliverd": "Delivered",
+    "returned": "Returned",
+    "return": "Returned",
+    "cancelled": "Cancelled",
+    "canceled": "Cancelled",
     "shipped": "Shipped",
     "refunded": "Refunded",
-    "deliverd": "Delivered",
-    "processing": "Processing",
-    "return": "Returned",
-    "canceled": "Canceled",
-    "in transit": "In Transit",
     "refund issued": "Refunded",
-    "pending": "Pending",
+    "processing": "Processing",
     "in progress": "Processing",
+    "in transit": "In Transit",
+    "pending": "Pending",
 }
 
 df['Status'] = df['Status'].map(status_mapping)
@@ -516,6 +518,21 @@ df['Sales Rep'] = df['Sales Rep'].map(sales_rep_mapping)
 df['Notes'] = df['Notes'].str.strip()
 
 # Cleaning Last Updated column
+mask = df['Last Updated'].str.match(r'\d{2}/\d{2}/\d{4}\s\d{2}:\d{2}\s\w{2}')
+
+parts = df.loc[mask, 'Last Updated'].str.split('/')
+
+first = pd.to_numeric(parts.str[0], errors='coerce')
+second = pd.to_numeric(parts.str[1], errors='coerce')
+
+def parse_last_updated(col):
+    s = col.astype(str).str.strip()
+    iso_text = s.str.replace(r"(\d)T(\d)", r"\1 \2", regex=True).str.replace(r"Z$", "", regex=True)
+    iso = pd.to_datetime(iso_text, format="%Y-%m-%d %H:%M:%S", errors="coerce")
+    us = pd.to_datetime(s, format="%m/%d/%Y %I:%M %p", errors="coerce")
+    return iso.fillna(us)
+
+df["Last Updated"] = parse_last_updated(df["Last Updated"])
 
 # Exporting
 df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
