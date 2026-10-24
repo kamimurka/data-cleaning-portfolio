@@ -122,6 +122,25 @@ def reorder_name(name):
 
 df['Customer Name'] = df['Customer Name'].apply(reorder_name)
 
+junk_names = [
+    'test', 'testing', 'dummy', 'unknown', 'Test Test'
+    'n/a', 'na', 'none', 'null', 'nil',
+    'undefined', 'not available', 'not applicable',
+    'no name', 'no customer', 'guest', 'anonymous',
+    'asdf', 'qwerty', 'xxx', 'xxxx', '123', '12345',
+    '-', '?', '.', 'sample', 'example', 'placeholder'
+]
+
+mask = (
+    df['Customer Name']
+    .astype('string')
+    .str.strip()
+    .str.lower()
+    .isin(junk_names)
+)
+
+df.loc[mask, 'Customer Name'] = None
+
 # Cleaning E-mail column
 df['E-mail'] = df['E-mail'].str.strip().str.lower()
 df['E-mail'] = df['E-mail'].str.replace(r'\sat\s', '@', regex=True)
@@ -272,6 +291,14 @@ def fix_us_codes(row):
     return zip_code
 
 df['Zip/Postal'] = df.apply(fix_us_codes, axis=1)
+df['Zip/Postal'] = df['Zip/Postal'].replace(
+    {
+        '?': None,
+        'nan': None,
+        '-': None,
+        '': None
+    },
+)
 
 # Cleaning SKU column
 df['SKU'] = df['SKU'].str.strip().str.upper()
@@ -534,5 +561,35 @@ def parse_last_updated(col):
 
 df["Last Updated"] = parse_last_updated(df["Last Updated"])
 
+# Finalizing
+print(df.nunique())
+print('----\n', len(df))
+df = df.drop_duplicates()
+print(len(df))
+df = df.sort_values('Last Updated', na_position='first')
+df = df.drop_duplicates(subset=['Order ID', 'SKU'])
+print(len(df))
+
+# print(df.dtypes)
+
+d = df[df["Order ID"].duplicated(keep=False)].sort_values("Order ID")
+# print(len(d))
+# print(d[["Order ID", "SKU", "Product Name", "Qty", "Total"]])
+
+print(df[df["Order ID"].duplicated(keep=False)].sort_values("Order ID")[["Order ID", "SKU", "Product Name"]])
+
+df = df.drop(1)
+removed = before.loc[~before.index.isin(df.index)]
+ 
+df = df[df['Product Name'] != 'Product Name']
+
+has_twin = df['Order ID'].notna() & df['Order ID'].duplicated(keep=False)
+df = df[~(has_twin & df["SKU"].isna())]
+
+
+print(len(df))
+print(df["Order ID"].dropna().duplicated().sum())
+print((df["Product Name"] == "Product Name").sum())
+
 # Exporting
-df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
+# df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
