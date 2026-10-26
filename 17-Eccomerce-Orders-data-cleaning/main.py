@@ -578,18 +578,17 @@ d = df[df["Order ID"].duplicated(keep=False)].sort_values("Order ID")
 
 print(df[df["Order ID"].duplicated(keep=False)].sort_values("Order ID")[["Order ID", "SKU", "Product Name"]])
 
+before = df.copy()
+
 df = df.drop(1)
-removed = before.loc[~before.index.isin(df.index)]
  
 df = df[df['Product Name'] != 'Product Name']
 
 has_twin = df['Order ID'].notna() & df['Order ID'].duplicated(keep=False)
 df = df[~(has_twin & df["SKU"].isna())]
+removed = before.loc[~before.index.isin(df.index)]
 
-
-print(len(df))
-print(df["Order ID"].dropna().duplicated().sum())
-print((df["Product Name"] == "Product Name").sum())
+print(removed[["Order ID", "SKU", "Product Name"]])
 
 # Exporting
 # df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
