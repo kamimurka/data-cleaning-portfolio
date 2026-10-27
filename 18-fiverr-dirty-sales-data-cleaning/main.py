@@ -1,9 +1,36 @@
 import pandas as pd
+import re
+from datetime import datetime
 
 df = pd.read_excel('18-fiverr-dirty-sales-data-cleaning/fiverr_dirty_sales_data.xlsx')
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
+
+# Cleaning Order_Date column
+def clean_date(cell):
+    if pd.isna(cell):
+        return None
+
+    cell = str(cell).strip()
+
+    if re.fullmatch(r'\d{2}/\d{2}/\d{4}', cell):
+        fmt = '%m/%d/%Y'
+    elif re.fullmatch(r'\d{4}-\d{2}-\d{2}', cell):
+        fmt = '%Y-%m-%d'
+    elif re.fullmatch(r'\d{2}-[A-Za-z]{3}-\d{4}', cell):
+        fmt = '%d-%b-%Y'
+    elif re.fullmatch(r'\d{4}\.\d{2}\.\d{2}', cell):
+        fmt = '%Y.%m.%d'
+    else:
+        return None
+
+    try:
+        return datetime.strptime(cell, fmt).strftime('%Y-%m-%d')
+    except ValueError:
+        return None
+
+df['Order_Date'] = df['Order_Date'].apply(clean_date)
 
 # Cleaning Customer_Name column
 df['Customer_Name'] = (df['Customer_Name']
@@ -65,8 +92,6 @@ df['Unit_Price'] = df['Unit_Price'].clip(upper=upper_bound)
 # Cleaning Quantity column
 df['Quantity'] = df['Quantity'].astype(str).str.strip().replace({'one': '1', '-2': '2'}).astype('Int64')
 
-print(df['Quantity'].value_counts())
-
 # Cleaning Country column
 df['Country'] = df['Country'].str.strip().str.lower()
 country_mapping = {
@@ -101,6 +126,13 @@ status_mapping = {
 df['Order_Status'] = df['Order_Status'].map(status_mapping)
 
 # Finalizing
+df = df.drop_duplicates()
+print(len(df))
+
+df = df.sort_values('Order_Date').drop_duplicates(['Order_ID', 'Item_Description'], keep='last')
+print(len(df))
+
+df = df.dropna(subset=['Item_Description'])
 
 # Exporting
-# df.to_excel('18-fiverr-dirty-sales-data-cleaning/fiverr_dirty_sales_data_cleaned.xlsx', index=False)
+df.to_excel('18-fiverr-dirty-sales-data-cleaning/fiverr_dirty_sales_data_cleaned.xlsx', index=False)
