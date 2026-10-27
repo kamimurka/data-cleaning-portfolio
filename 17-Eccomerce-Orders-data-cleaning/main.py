@@ -562,33 +562,26 @@ def parse_last_updated(col):
 df["Last Updated"] = parse_last_updated(df["Last Updated"])
 
 # Finalizing
-print(df.nunique())
-print('----\n', len(df))
 df = df.drop_duplicates()
-print(len(df))
 df = df.sort_values('Last Updated', na_position='first')
 df = df.drop_duplicates(subset=['Order ID', 'SKU'])
-print(len(df))
-
-# print(df.dtypes)
 
 d = df[df["Order ID"].duplicated(keep=False)].sort_values("Order ID")
-# print(len(d))
-# print(d[["Order ID", "SKU", "Product Name", "Qty", "Total"]])
 
-print(df[df["Order ID"].duplicated(keep=False)].sort_values("Order ID")[["Order ID", "SKU", "Product Name"]])
-
-before = df.copy()
-
-df = df.drop(1)
+df = df.drop(0)
  
 df = df[df['Product Name'] != 'Product Name']
 
 has_twin = df['Order ID'].notna() & df['Order ID'].duplicated(keep=False)
 df = df[~(has_twin & df["SKU"].isna())]
-removed = before.loc[~before.index.isin(df.index)]
 
-print(removed[["Order ID", "SKU", "Product Name"]])
+for col in ['Qty', 'Unit Price', 'Discount', 'Total']:
+    df[col] = pd.to_numeric(
+        df[col],
+        errors='coerce'
+    )
+
+print(df.dtypes)
 
 # Exporting
-# df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
+df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
