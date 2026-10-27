@@ -127,10 +127,8 @@ df['Order_Status'] = df['Order_Status'].map(status_mapping)
 
 # Finalizing
 df = df.drop_duplicates()
-print(len(df))
 
 df = df.sort_values('Order_Date').drop_duplicates(['Order_ID', 'Item_Description'], keep='last')
-print(len(df))
 
 df = df.dropna(subset=['Item_Description'])
 
