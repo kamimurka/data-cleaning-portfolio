@@ -64,17 +64,15 @@ def parse_dates(s, fmt):
 a = prep(df["Order Date "])
 b = prep(df["ship_date"])
 
-fmt = pd.Series("", index=df.index)
+fmt = row_format(a)
+fmt = fmt.where(fmt != "", row_format(b))
 
 df["Order Date "] = parse_dates(a, fmt)
 df["ship_date"] = parse_dates(b, fmt)
 
-both = df["Order Date "].notna() & df["ship_date"].notna()
-bad = both & (df["ship_date"] < df["Order Date "])
-
 df = df.rename(columns={"ship_date": "Ship Date", 'Order Date ': 'Order Date'})
 
-######################
+print((df['Ship Date'] < df['Order Date']).sum())
 
 # Cleaning Customer ID column
 df['Customer ID'] = (df['Customer ID']
@@ -123,8 +121,8 @@ def reorder_name(name):
 df['Customer Name'] = df['Customer Name'].apply(reorder_name)
 
 junk_names = [
-    'test', 'testing', 'dummy', 'unknown', 'Test Test'
-    'n/a', 'na', 'none', 'null', 'nil',
+    'test', 'testing', 'dummy', 'unknown', 'Test Test',
+    'n/a', 'na', 'none', 'null', 'nil', 'test test'
     'undefined', 'not available', 'not applicable',
     'no name', 'no customer', 'guest', 'anonymous',
     'asdf', 'qwerty', 'xxx', 'xxxx', '123', '12345',
@@ -274,6 +272,14 @@ region_mapping = {
 
 df['State/Prov'] = df['State/Prov'].map(region_mapping)
 
+print(df['Country'].isna().sum())
+
+known = df.dropna(subset=['Country', 'State/Prov'])
+state_to_country = known.groupby('State/Prov')['Country'].agg(lambda s: s.mode()[0])
+df['Country'] = df['Country'].fillna(df['State/Prov'].map(state_to_country))
+
+print(df['Country'].isna().sum())
+
 # Cleaning Zip/Postal
 df['Zip/Postal'] = (df['Zip/Postal']
     .str.upper()
@@ -369,34 +375,25 @@ df['Qty'] = df['Qty'].str.replace({r'[^\d]': '', '.0': ''}, regex=True).replace(
  '0': pd.NA})
 
 # Cleaning Unit Price column (...)
-df['Unit Price'] = (df['Unit Price']
-.str.strip()
-.str.replace(r'[^\d\.]', '', regex=True)
-.replace('', '0.00')
-.fillna('0.00'))
+df['Unit Price'] = (df['Unit Price'].str.strip()
+    .str.replace(r'(?<=\d),(?=\d{3}(?:\D|$))', '', regex=True)
+    .str.replace(',', '.')
+    .str.replace(r'[^\d.]', '', regex=True)
+    .replace('', pd.NA))
 
 
 # Cleaning Discount column
-df['Discount'] = (df['Discount']
-    .str.strip()
-    .str.replace(
-        {
-            '%': '',
-            r'\s{1,}': '',
-            r'\.\d{1,}': '',
-            r'[^\d\.]': ''
-        },
-        regex=True)
-        .replace({r'\s{1,}': '0', '': '0'}, regex=True)
-        .fillna('0')
-        .str.strip())
+d = pd.to_numeric(
+    df['Discount'].str.replace(r'[%\s]', '', regex=True),
+    errors='coerce')
+df['Discount'] = d.where(~((d > 0) & (d < 1)), d * 100)
 
 # Cleaning Total column
-df['Total'] = (df['Total']
-.str.strip()
-.str.replace(r'[^\d\.]', '', regex=True)
-.replace('', '0.00')
-.fillna('0.00'))
+df['Total'] = (df['Total'].str.strip()
+    .str.replace(r'(?<=\d),(?=\d{3}(?:\D|$))', '', regex=True)
+    .str.replace(',', '.', regex=False)
+    .str.replace(r'[^\d.]', '', regex=True)
+    .replace('', pd.NA))
 
 # Cleaning Currency column
 df['Currency'] = df['Currency'].str.strip()
@@ -572,7 +569,7 @@ df = df.drop(0)
  
 df = df[df['Product Name'] != 'Product Name']
 
-has_twin = df['Order ID'].notna() & df['Order ID'].duplicated(keep=False)
+has_twin = df['Order ID'].notna() & df, ['Order ID'].duplicated(keep=False)
 df = df[~(has_twin & df["SKU"].isna())]
 
 for col in ['Qty', 'Unit Price', 'Discount', 'Total']:
@@ -581,7 +578,6 @@ for col in ['Qty', 'Unit Price', 'Discount', 'Total']:
         errors='coerce'
     )
 
-print(df.dtypes)
 
 # Exporting
 df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
