@@ -274,8 +274,6 @@ def clean_phones(row):
 df['Phone Number'] = df.apply(clean_phones, axis=1)
 df = df.drop(columns=['country_code'])
 
-print(df['Phone Number'].notna().sum())
-
 # Cleaning Zip/Postal
 df['Zip/Postal'] = (df['Zip/Postal']
     .str.upper()
