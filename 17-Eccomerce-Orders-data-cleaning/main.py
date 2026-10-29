@@ -72,8 +72,6 @@ df["ship_date"] = parse_dates(b, fmt)
 
 df = df.rename(columns={"ship_date": "Ship Date", 'Order Date ': 'Order Date'})
 
-print((df['Ship Date'] < df['Order Date']).sum())
-
 # Cleaning Customer ID column
 df['Customer ID'] = (df['Customer ID']
     .str.strip()
@@ -160,34 +158,6 @@ df.loc[~df["E-mail"].str.contains("@", na=False), "E-mail"] = None
 
 short = df["E-mail"].dropna()
 
-# Cleaning Phone Number column
-phone_mapping = {'United States': 'US', 'United Kingdom': 'GB', 'Canada': 'CA', 'Germany': 'DE', 'Australia': 'AU'}
-
-df['country_code'] = df['Country'].map(phone_mapping)
-
-def clean_phones(row):
-    if pd.isna(row['Phone Number']):
-        return pd.NA
-
-    number = str(row['Phone Number'])
-    code = str(row['country_code'])
-
-    try:
-        if code == "nan":
-            phone = phonenumbers.parse(number, code)
-            if phonenumbers.is_possible_number(phone):
-                return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
-        else:
-            phone = phonenumbers.parse(number, code)
-            if phonenumbers.is_possible_number(phone):
-                return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
-        return pd.NA
-    except phonenumbers.NumberParseException:
-        return pd.NA
-
-df['Phone Number'] = df.apply(clean_phones, axis=1)
-df = df.drop(columns=['country_code'])
-
 # Cleaning Country column
 df['Country'] = df['Country'].str.lower().str.strip()
 country_mapping = {
@@ -272,13 +242,39 @@ region_mapping = {
 
 df['State/Prov'] = df['State/Prov'].map(region_mapping)
 
-print(df['Country'].isna().sum())
-
 known = df.dropna(subset=['Country', 'State/Prov'])
 state_to_country = known.groupby('State/Prov')['Country'].agg(lambda s: s.mode()[0])
 df['Country'] = df['Country'].fillna(df['State/Prov'].map(state_to_country))
 
-print(df['Country'].isna().sum())
+# Cleaning Phone Number column
+phone_mapping = {'United States': 'US', 'United Kingdom': 'GB', 'Canada': 'CA', 'Germany': 'DE', 'Australia': 'AU'}
+
+df['country_code'] = df['Country'].map(phone_mapping)
+
+def clean_phones(row):
+    if pd.isna(row['Phone Number']):
+        return pd.NA
+
+    number = str(row['Phone Number'])
+    code = str(row['country_code'])
+
+    try:
+        if code == "nan":
+            phone = phonenumbers.parse(number, code)
+            if phonenumbers.is_possible_number(phone):
+                return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+        else:
+            phone = phonenumbers.parse(number, code)
+            if phonenumbers.is_possible_number(phone):
+                return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+        return pd.NA
+    except phonenumbers.NumberParseException:
+        return pd.NA
+
+df['Phone Number'] = df.apply(clean_phones, axis=1)
+df = df.drop(columns=['country_code'])
+
+print(df['Phone Number'].notna().sum())
 
 # Cleaning Zip/Postal
 df['Zip/Postal'] = (df['Zip/Postal']
@@ -569,7 +565,7 @@ df = df.drop(0)
  
 df = df[df['Product Name'] != 'Product Name']
 
-has_twin = df['Order ID'].notna() & df, ['Order ID'].duplicated(keep=False)
+has_twin = df['Order ID'].notna() & df['Order ID'].duplicated(keep=False)
 df = df[~(has_twin & df["SKU"].isna())]
 
 for col in ['Qty', 'Unit Price', 'Discount', 'Total']:
@@ -578,6 +574,7 @@ for col in ['Qty', 'Unit Price', 'Discount', 'Total']:
         errors='coerce'
     )
 
-
 # Exporting
 df.to_csv('17-Eccomerce-Orders-data-cleaning/eccomerce_orders_cleaned.csv', index=False)
+
+print("Data cleaning completed successfully. Cleaned data saved to 'eccomerce_orders_cleaned.csv'.")
