@@ -1,0 +1,282 @@
+import pandas as pd
+import re
+import ftfy
+
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+
+df = pd.read_csv('19-crm-contacts-data-cleaning/crm_contacts_raw.csv', engine='pyarrow')
+
+# Cleaning Lead ID column
+df['Lead ID'] = df['Lead ID'].str.strip()
+
+def clean_lead_id(cell):
+    if cell is None:
+        return None
+    s = str(cell).strip().upper()
+
+    if re.fullmatch(r"[A-Z]-\d{5}", s):
+        return s
+
+    m = re.fullmatch(r"([A-Z])(\d{5})", s)
+    if m:
+        return f"{m[1]}-{m[2]}"
+
+    if re.fullmatch(r"\d{4}", s):
+        return f"L-0{s}"
+
+    m = re.fullmatch(r"[A-Z]{4}(\d{4})", s)
+    if m:
+        return f"L-0{m[1]}"
+
+    return None
+
+df["Lead ID"] = df["Lead ID"].apply(clean_lead_id).replace('NAN', pd.NA)
+
+# Cleaning Full Name column
+df['Full Name'] = (df['Full Name']
+    .str.strip()
+    .str.replace(
+        {
+            r'\s{2,}': ' ',
+            r'\b(?:Mr|Mrs|Ms|Miss|Dr|Prof)\b\.?\s*': '',
+            r'[\s,]+\b(?:Jr|Sr|II|III|IV|PhD|MD|Esq)\b\.?\s*$': ''
+        }
+    , regex=True))
+
+def safe_fix(x):
+    if isinstance(x, str):
+        return ftfy.fix_text(x)
+    return x
+
+df['Full Name'] = df['Full Name'].apply(safe_fix)
+
+def main_clean_name(cell):
+    if pd.isna(cell):
+        return pd.NA
+    cell = cell.strip()
+    if cell == '':
+        return pd.NA
+    
+    # Swap
+    if ',' in cell:
+        parts = cell.split(',')
+        last_name, first_name = parts[0].strip(), parts[1].strip()
+        cell = f"{first_name} {last_name}"
+    return cell.title()    
+
+df['Full Name'] = df['Full Name'].apply(main_clean_name)
+
+junk_names = {"test", "asdf", "abcd", "qwerty",
+               "n/a", "none", "unknown", "xxx",
+               'test test', 'john doe', 'full name'
+}
+
+mask = df["Full Name"].str.lower().str.strip().isin(junk_names)
+df.loc[mask, "Full Name"] = pd.NA
+
+particles = ["van", "von", "der", "den", "de", "la", "le", "di", "da", "del", "du"]
+pattern = r"(?<=\s)(" + "|".join(p.title() for p in particles) + r")(?=\s)"
+
+df["Full Name"] = df["Full Name"].str.strip().str.title()
+df["Full Name"] = df["Full Name"].str.replace(r"\bMc([a-z])", lambda m: "Mc" + m.group(1).upper(), regex=True)
+df["Full Name"] = df["Full Name"].str.replace(pattern, lambda m: m.group(1).lower(), regex=True)
+
+# Cleaning Email column
+df['Email'] = (df['Email']
+    .str.strip()
+    .str.lower() 
+    # .str.replace(r'\;\s?\w+', '', regex=True)
+)
+
+# Cleaning Company column
+df['Company'] = (df['Company']
+    .str.strip()
+)
+
+mask = df['Company'].astype('string').str.strip().isin(['-', 'Company', ''])
+
+df = df.loc[~mask].copy()
+
+# !!!
+
+# Cleaning Job Title column
+df['Job Title'] = (df['Job Title']
+    .str.strip()
+    .str.lower()
+)
+
+job_title_mapping = {
+    'data analyst': 'Data Analyst',
+    'analyst, data': 'Data Analyst',
+
+    'hr manager': 'HR Manager',
+    'human resources manager': 'HR Manager',
+    'h.r. manager': 'HR Manager',
+
+    'ceo': 'CEO',
+    'c.e.o.': 'CEO',
+    'chief executive officer': 'CEO',
+    'founder & ceo': 'Founder & CEO',
+
+    'marketing manager': 'Marketing Manager',
+    'marketing mgr.': 'Marketing Manager',
+    'marketing mgr': 'Marketing Manager',
+    'mktg manager': 'Marketing Manager',
+
+    'account executive': 'Account Executive',
+    'acct executive': 'Account Executive',
+    'account exec': 'Account Executive',
+    'ae': 'Account Executive',
+
+    'software engineer': 'Software Engineer',
+    'sw engineer': 'Software Engineer',
+    'software eng.': 'Software Engineer',
+
+    'operations director': 'Director of Operations',
+    'director, operations': 'Director of Operations',
+    'director of operations': 'Director of Operations',
+    'ops director': 'Director of Operations',
+
+    'vp of sales': 'VP of Sales',
+    'vp, sales': 'VP of Sales',
+    'vice president of sales': 'VP of Sales',
+    'v.p. sales': 'VP of Sales',
+    'vp sales': 'VP of Sales',
+}
+
+df['Job Title'] = df['Job Title'].map(job_title_mapping)
+
+# Cleaning Country column
+df['Country'] = (df['Country']
+    .str.strip()
+    .str.lower()
+)
+
+country_map = {
+    "united states": "United States",
+    "untied states": "United States",
+    "usa": "United States",
+    "us": "United States",
+    "u.s.": "United States",
+    "united states of america": "United States",
+
+    "united kingdom": "United Kingdom",
+    "uk": "United Kingdom",
+    "u.k.": "United Kingdom",
+    "great britain": "United Kingdom",
+    "gb": "United Kingdom",
+    "england": "United Kingdom",
+
+    "australia": "Australia",
+    "au": "Australia",
+    "aus": "Australia",
+
+    "germany": "Germany",
+    "germny": "Germany",
+    "deutschland": "Germany",
+    "de": "Germany",
+
+    "canada": "Canada",
+    "canda": "Canada",
+    "can": "Canada",
+    "ca": "Canada",
+}
+
+df['Country'] = df['Country'].map(country_map)
+
+# Cleaning Signup Date column
+col = df['Signup Date'].astype('string').str.strip()
+
+masked = col.str.replace(r'\d', '0', regex=True)
+masked = masked.str.replace(r'[A-Za-z]', 'X', regex=True)
+
+result = (
+    pd.DataFrame({
+        'Original': col,
+        'Format': masked
+    })
+    .groupby('Format', dropna=False)
+    .agg(
+        Count=('Original', 'size'),
+        Examples=('Original', lambda x: list(x.dropna().unique()[:10]))
+    )
+    .sort_values('Count', ascending=False)
+)
+
+df['Signup Date'] = df['Signup Date'].astype('string').str.strip()
+df = df[~df['Signup Date'].isin(['see CRM', '?', '-', 'yesterday', '0000-00-00', ''])].dropna(subset=['Signup Date']).copy()
+print(df['Signup Date'].value_counts(dropna=False).tail(20))
+
+# xxx XXX: see CRM
+df['Signup Date'] = df['Signup Date'].str.strip().str.replace({r'\d': '0', r'[A-Za-z]': 'X'}, regex=True)
+df['Signup Date'] = df['Signup Date'].replace({'-': pd.NA, '': pd.NA, '?': pd.NA})
+
+
+# ...
+
+# ...
+
+# Cleaning Lead Source column
+lead_source_mapping = {
+    'Linked In': 'LinkedIn',
+    'Linkedin': 'LinkedIn',
+    'linkedin': 'LinkedIn',
+    'LINKEDIN': 'LinkedIn',
+
+    'cold email': 'Cold Email',
+    'Cold email': 'Cold Email',
+
+    'partner referral': 'Partner Referral',
+
+    'Trade-show': 'Trade Show',
+    'trade show': 'Trade Show',
+    'Tradeshow': 'Trade Show',
+    'tradeshow': 'Trade Show',
+
+    'Outbound': 'Outbound',
+    'outbound email': 'Outbound Email',
+}
+
+df['Lead Source'] = df['Lead Source'].map(lead_source_mapping)
+
+# ...
+
+# Cleaning Status column
+status_mapping = {
+    'Contacted': 'Contacted',
+    'contacted': 'Contacted',
+
+    'Qualified': 'Qualified',
+    'qualified': 'Qualified',
+    'QUALIFIED': 'Qualified',
+    'Qualifed': 'Qualified',
+
+    'New': 'New',
+    'NEW': 'New',
+    'new': 'New',
+    'New Lead': 'New',
+
+    'Lost': 'Lost',
+    'LOST': 'Lost',
+    'lost': 'Lost',
+    'Closed Lost': 'Lost',
+
+    'Customer': 'Customer',
+    'CUSTOMER': 'Customer',
+    'customer': 'Customer',
+
+    'Unsubscribed': 'Unsubscribed',
+    'unsubscribed': 'Unsubscribed',
+    'Unsub': 'Unsubscribed',
+    'opted out': 'Unsubscribed',
+
+    'In Contact': 'Contacted',
+
+    'SQL': 'SQL',
+
+    'Won': 'Won',
+    'Closed Won': 'Won',
+}
+
+df['Status'] = df['Status'].map(status_mapping)
