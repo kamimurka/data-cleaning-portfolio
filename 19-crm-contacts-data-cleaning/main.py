@@ -207,24 +207,33 @@ country_map = {
 df['Country'] = df['Country'].map(country_map)
 
 country_to_code = {
-    "United States": "us",
-    "United Kingdom": "gb",
-    "Australia": "au",
-    "Germany": "de",
-    "Canada": "ca",
+    "United States": "US",
+    "United Kingdom": "GB",
+    "Australia": "AU",
+    "Germany": "DE",
+    "Canada": "CA",
 }
 
 df['country_code'] = df['Country'].map(country_to_code)
+
+print(df.loc[df['country_code'].isna(), 'Country'].value_counts(dropna=False))
 
 # Cleaning Phone column
 df['Phone'] = (df['Phone']
     .str.strip()
     .replace({
-        r'[?-]': pd.NA,
         r'^\s+$': pd.NA,
         '': pd.NA
     }, regex=True)
 )
+
+df.loc[df['Phone'].isin(['', '-', '?']), 'Phone'] = pd.NA
+
+# print(df.loc[df['country_code'].isna(), 'Country'].value_counts(dropna=False))
+
+# p = phonenumbers.parse("(500) 863-0171", "US")
+# print(phonenumbers.is_possible_number(p))
+# print(phonenumbers.is_valid_number(p))
 
 def clean_phone(row):
     if pd.isna(row['Phone']) or pd.isna(row['country_code']):
@@ -233,14 +242,14 @@ def clean_phone(row):
     country_code = row['country_code']
     try:
         phone = phonenumbers.parse(number, country_code)
-        if phonenumbers.is_possible_number(phone):
+        if phonenumbers.is_valid_number(phone):
             return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
     except phonenumbers.NumberParseException:
         return pd.NA
 
 df['Phone'] = df.apply(clean_phone, axis=1)
-print(df['Phone'].head(300))
-print(df['Phone'].isna().sum())
+# print(df['Phone'].head(300))
+# print(df['Phone'].isna().sum())
 
 
 # Cleaning Signup Date column
@@ -287,13 +296,20 @@ def parse_date(v):
     return None, False
 
 res = df["Signup Date"].apply(parse_date)
+
+m = df['country_code'].isna() & df['Phone'].notna()
+print(m.sum())
+print(df.loc[m, 'Phone'].head(10).tolist())
+
+
+
 df["Signup Date"] = res.str[0]
 df["ambiguous"] = res.str[1]
 
 junk = ["-", "?", "0000-00-00", "2022-00-10", "31/04/2022", ""]
 df.loc[df["Signup Date"].astype(str).str.strip().isin(junk), "Signup Date"] = pd.NA
 
-
+df.loc[df["Signup Date"].str[:4] < "2000", "Signup Date"] = pd.NA
 
 # ...
 
