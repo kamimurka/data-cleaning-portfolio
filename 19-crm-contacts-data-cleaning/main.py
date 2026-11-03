@@ -1,6 +1,8 @@
 import pandas as pd
 import re
 import ftfy
+from datetime import datetime, timedelta
+import phonenumbers
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -86,8 +88,27 @@ df["Full Name"] = df["Full Name"].str.replace(pattern, lambda m: m.group(1).lowe
 df['Email'] = (df['Email']
     .str.strip()
     .str.lower() 
-    # .str.replace(r'\;\s?\w+', '', regex=True)
+    .str.replace({
+        r';.*$': '',
+        r'[^a-zA-Z0-9._%+-@]': '',
+        r'\sat\s': '@',
+        r'[<>]': '',
+        'con': 'com',
+    }, regex=True
+    ).str.strip().replace({'': pd.NA, r'^\s+$': pd.NA})
 )
+
+parts = df["Email"].str.split("@", expand=True)
+local, dom = parts[0], parts[1].str.split(".").str[0]
+
+bad = (
+    (local == dom)
+    | (local.str.len() < 3)            
+    | local.str.contains(r"no.?email|none|^no$|test|fake|dummy|asdf|null|n/?a$", regex=True)
+    | dom.str.contains(r"^(none|test|fake|dummy|example|null)$", regex=True)
+)
+
+df.loc[bad, "Email"] = None
 
 # Cleaning Company column
 df['Company'] = (df['Company']
@@ -185,32 +206,93 @@ country_map = {
 
 df['Country'] = df['Country'].map(country_map)
 
-# Cleaning Signup Date column
-col = df['Signup Date'].astype('string').str.strip()
+country_to_code = {
+    "United States": "us",
+    "United Kingdom": "gb",
+    "Australia": "au",
+    "Germany": "de",
+    "Canada": "ca",
+}
 
-masked = col.str.replace(r'\d', '0', regex=True)
-masked = masked.str.replace(r'[A-Za-z]', 'X', regex=True)
+df['country_code'] = df['Country'].map(country_to_code)
 
-result = (
-    pd.DataFrame({
-        'Original': col,
-        'Format': masked
-    })
-    .groupby('Format', dropna=False)
-    .agg(
-        Count=('Original', 'size'),
-        Examples=('Original', lambda x: list(x.dropna().unique()[:10]))
-    )
-    .sort_values('Count', ascending=False)
+# Cleaning Phone column
+df['Phone'] = (df['Phone']
+    .str.strip()
+    .replace({
+        r'[?-]': pd.NA,
+        r'^\s+$': pd.NA,
+        '': pd.NA
+    }, regex=True)
 )
 
-df['Signup Date'] = df['Signup Date'].astype('string').str.strip()
-df = df[~df['Signup Date'].isin(['see CRM', '?', '-', 'yesterday', '0000-00-00', ''])].dropna(subset=['Signup Date']).copy()
-print(df['Signup Date'].value_counts(dropna=False).tail(20))
+def clean_phone(row):
+    if pd.isna(row['Phone']) or pd.isna(row['country_code']):
+        return pd.NA
+    number = str(row['Phone']).strip()
+    country_code = row['country_code']
+    try:
+        phone = phonenumbers.parse(number, country_code)
+        if phonenumbers.is_possible_number(phone):
+            return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+    except phonenumbers.NumberParseException:
+        return pd.NA
 
-# xxx XXX: see CRM
-df['Signup Date'] = df['Signup Date'].str.strip().str.replace({r'\d': '0', r'[A-Za-z]': 'X'}, regex=True)
-df['Signup Date'] = df['Signup Date'].replace({'-': pd.NA, '': pd.NA, '?': pd.NA})
+df['Phone'] = df.apply(clean_phone, axis=1)
+print(df['Phone'].head(300))
+print(df['Phone'].isna().sum())
+
+
+# Cleaning Signup Date column
+df['Signup Date'] = df['Signup Date'].str.strip()
+is_garbage = df['Signup Date'].astype(str).str.fullmatch(r"[A-Za-z ]+") & df['Signup Date'].notna()
+df.loc[is_garbage, 'Signup Date'] = pd.NA
+
+rules = [
+    (r"\d{4}-\d{2}-\d{2}", "%Y-%m-%d"),
+    (r"\d{4}/\d{2}/\d{2}", "%Y/%m/%d"),
+    (r"[A-Za-z]{3} \d{1,2}, \d{4}", "%b %d, %Y"),
+    (r"\d{1,2} [A-Za-z]{3} \d{4}", "%d %b %Y"),
+    (r"\d{2}-[A-Za-z]{3}-\d{2}", "%d-%b-%y"),
+    (r"\d{2}-\d{2}-\d{2}", "%m-%d-%y"),
+    (r"\d{2}\.\d{2}\.\d{4}", "%d.%m.%Y"),
+    (r"\d{2}-\d{2}-\d{4}", "%d-%m-%Y"),
+]
+
+def parse_date(v):
+    if pd.isna(v):
+        return None, False
+    s = str(v).strip()
+    s = re.sub(r"\s+\d{2}:\d{2}(:\d{2})?(\s*[APap][Mm])?$", "", s)
+
+    if re.fullmatch(r"\d{5}", s):
+        d = datetime(1899, 12, 30) + timedelta(days=int(s))
+        return d.strftime("%Y-%m-%d"), False
+
+    if re.fullmatch(r"\d{2}/\d{2}/\d{4}", s):
+        a, b = int(s[:2]), int(s[3:5])
+        fmt = "%d/%m/%Y" if a > 12 else "%m/%d/%Y"
+        try:
+            return datetime.strptime(s, fmt).strftime("%Y-%m-%d"), (a <= 12 and b <= 12)
+        except ValueError:
+            return None, False
+
+    for pattern, fmt in rules:
+        if re.fullmatch(pattern, s):
+            try:
+                return datetime.strptime(s, fmt).strftime("%Y-%m-%d"), False
+            except ValueError:
+                return None, False
+
+    return None, False
+
+res = df["Signup Date"].apply(parse_date)
+df["Signup Date"] = res.str[0]
+df["ambiguous"] = res.str[1]
+
+junk = ["-", "?", "0000-00-00", "2022-00-10", "31/04/2022", ""]
+df.loc[df["Signup Date"].astype(str).str.strip().isin(junk), "Signup Date"] = pd.NA
+
 
 
 # ...
