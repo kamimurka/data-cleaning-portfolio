@@ -3,6 +3,7 @@ import re
 import ftfy
 from datetime import datetime, timedelta
 import phonenumbers
+import rapidfuzz
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
@@ -113,13 +114,24 @@ df.loc[bad, "Email"] = None
 # Cleaning Company column
 df['Company'] = (df['Company']
     .str.strip()
+    # .str.replace(r'[^a-zA-Z0-9]', '', regex=True)
 )
+df.loc[df["Company"].isin(["", "-", "?", 'company']), "Company"] = pd.NA
 
-mask = df['Company'].astype('string').str.strip().isin(['-', 'Company', ''])
+key = (df["Company"].str.lower()
+       .str.replace(r"[.,()]", " ", regex=True)
+       .str.replace(r"^\s*the\b", "", regex=True)
+       .str.replace(r"\b(llc|gmbh|corp|corporation|inc|incorporated|company|co|ltd|pty|plc)\b", "", regex=True)
+       .str.replace(r"\s+", " ", regex=True)
+       .str.strip()
+       .str.replace(r"\s+formerly\b.*$", "", regex=True)
+)
+# print(key.head(), key.nunique(), df["Company"].nunique())
+# print(key.value_counts().tail(43))
+# print(key.nunique())
 
-df = df.loc[~mask].copy()
+print(df.groupby(key)["Company"].agg(lambda s: s.value_counts().index[0]).head(10))
 
-# !!!
 
 # Cleaning Job Title column
 df['Job Title'] = (df['Job Title']
@@ -216,8 +228,6 @@ country_to_code = {
 
 df['country_code'] = df['Country'].map(country_to_code)
 
-print(df.loc[df['country_code'].isna(), 'Country'].value_counts(dropna=False))
-
 # Cleaning Phone column
 df['Phone'] = (df['Phone']
     .str.strip()
@@ -228,12 +238,6 @@ df['Phone'] = (df['Phone']
 )
 
 df.loc[df['Phone'].isin(['', '-', '?']), 'Phone'] = pd.NA
-
-# print(df.loc[df['country_code'].isna(), 'Country'].value_counts(dropna=False))
-
-# p = phonenumbers.parse("(500) 863-0171", "US")
-# print(phonenumbers.is_possible_number(p))
-# print(phonenumbers.is_valid_number(p))
 
 def clean_phone(row):
     if pd.isna(row['Phone']) or pd.isna(row['country_code']):
@@ -248,9 +252,6 @@ def clean_phone(row):
         return pd.NA
 
 df['Phone'] = df.apply(clean_phone, axis=1)
-# print(df['Phone'].head(300))
-# print(df['Phone'].isna().sum())
-
 
 # Cleaning Signup Date column
 df['Signup Date'] = df['Signup Date'].str.strip()
@@ -296,12 +297,6 @@ def parse_date(v):
     return None, False
 
 res = df["Signup Date"].apply(parse_date)
-
-m = df['country_code'].isna() & df['Phone'].notna()
-print(m.sum())
-print(df.loc[m, 'Phone'].head(10).tolist())
-
-
 
 df["Signup Date"] = res.str[0]
 df["ambiguous"] = res.str[1]
