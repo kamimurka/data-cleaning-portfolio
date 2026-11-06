@@ -313,22 +313,9 @@ df['Last Contact'] = df['Last Contact'].replace({
 
 df.loc[is_garbage, "Last Contact"] = pd.NA
 
-print(df["Last Contact"].dropna().loc[lambda x: x.str.fullmatch(r"\d{2}-\d{2}-\d{2}")].str.split("-", expand=True).astype(int).max())
-print(df["Last Contact"].dropna().loc[lambda x: x.str.fullmatch(r"\d{2}\.\d{2}\.\d{4}")].str.split(".", expand=True).astype(int).max())
-print(df["Last Contact"].dropna().loc[lambda x: x.str.fullmatch(r"\d{2}-\d{2}-\d{4}")].str.split("-", expand=True).astype(int).max())
+df["Last Contact"] = df["Last Contact"].apply(lambda v: parse_date(v)[0])
 
-print(df["Last Contact"].apply(lambda v: parse_date(v)[1]).sum())
-
-df['Last Contact'] = df['Last Contact'].str.strip().str.replace({
-    r'[A-Za-z]': 'X',
-    r'[0-9]': '0'
-}, regex=True)
-
-
-
-
-print(df['Last Contact'].value_counts())
-
+print(df["Last Contact"].min(), df["Last Contact"].max())
 
 
 # ...
