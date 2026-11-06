@@ -112,26 +112,22 @@ bad = (
 df.loc[bad, "Email"] = None
 
 # Cleaning Company column
-df['Company'] = (df['Company']
-    .str.strip()
-    # .str.replace(r'[^a-zA-Z0-9]', '', regex=True)
-)
+df['Company'] = (df['Company'].str.strip())
 df.loc[df["Company"].isin(["", "-", "?", 'company']), "Company"] = pd.NA
 
-key = (df["Company"].str.lower()
-       .str.replace(r"[.,()]", " ", regex=True)
-       .str.replace(r"^\s*the\b", "", regex=True)
-       .str.replace(r"\b(llc|gmbh|corp|corporation|inc|incorporated|company|co|ltd|pty|plc)\b", "", regex=True)
-       .str.replace(r"\s+", " ", regex=True)
-       .str.strip()
-       .str.replace(r"\s+formerly\b.*$", "", regex=True)
+key = (
+    df["Company"]
+    .str.lower()
+    .str.replace({
+        r"[.,()]": " ",
+        r"^\s*the\b": "",
+        r"\s+formerly\b.*$": "",
+        r"\b(llc|gmbh|corp|corporation|inc|incorporated|company|co|ltd|plc|pty)\b": "",  # суффиксы -> убрать
+        r"\s+": " ",
+    }, regex=True)
+    .str.strip()
 )
-# print(key.head(), key.nunique(), df["Company"].nunique())
-# print(key.value_counts().tail(43))
-# print(key.nunique())
-
-print(df.groupby(key)["Company"].agg(lambda s: s.value_counts().index[0]).head(10))
-
+df["Company"] = key.str.title().replace("", pd.NA)
 
 # Cleaning Job Title column
 df['Job Title'] = (df['Job Title']
@@ -306,7 +302,34 @@ df.loc[df["Signup Date"].astype(str).str.strip().isin(junk), "Signup Date"] = pd
 
 df.loc[df["Signup Date"].str[:4] < "2000", "Signup Date"] = pd.NA
 
-# ...
+# Cleaning Last Contact column
+df["Last Contact"] = df["Last Contact"].str.strip()
+is_garbage = df["Last Contact"].astype(str).str.fullmatch(r"[A-Za-z ]+") & df["Last Contact"].notna()
+df['Last Contact'] = df['Last Contact'].replace({
+    '': pd.NA,
+    '?': pd.NA,
+    '-': pd.NA
+})
+
+df.loc[is_garbage, "Last Contact"] = pd.NA
+
+print(df["Last Contact"].dropna().loc[lambda x: x.str.fullmatch(r"\d{2}-\d{2}-\d{2}")].str.split("-", expand=True).astype(int).max())
+print(df["Last Contact"].dropna().loc[lambda x: x.str.fullmatch(r"\d{2}\.\d{2}\.\d{4}")].str.split(".", expand=True).astype(int).max())
+print(df["Last Contact"].dropna().loc[lambda x: x.str.fullmatch(r"\d{2}-\d{2}-\d{4}")].str.split("-", expand=True).astype(int).max())
+
+print(df["Last Contact"].apply(lambda v: parse_date(v)[1]).sum())
+
+df['Last Contact'] = df['Last Contact'].str.strip().str.replace({
+    r'[A-Za-z]': 'X',
+    r'[0-9]': '0'
+}, regex=True)
+
+
+
+
+print(df['Last Contact'].value_counts())
+
+
 
 # ...
 
@@ -373,3 +396,8 @@ status_mapping = {
 }
 
 df['Status'] = df['Status'].map(status_mapping)
+
+
+
+# Finalizing
+df = df.drop(['country_code'], axis=1)
