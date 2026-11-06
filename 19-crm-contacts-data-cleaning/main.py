@@ -10,6 +10,8 @@ pd.set_option('display.max_rows', None)
 
 df = pd.read_csv('19-crm-contacts-data-cleaning/crm_contacts_raw.csv', engine='pyarrow')
 
+print(len(df))
+
 # Cleaning Lead ID column
 df['Lead ID'] = df['Lead ID'].str.strip()
 
@@ -315,10 +317,33 @@ df.loc[is_garbage, "Last Contact"] = pd.NA
 
 df["Last Contact"] = df["Last Contact"].apply(lambda v: parse_date(v)[0])
 
-print(df["Last Contact"].min(), df["Last Contact"].max())
+
+print(df['Date of Birth'].isna().sum())
+
+# Cleaning Date of Birth column
+df["Date of Birth"] = df["Date of Birth"].str.strip()
+df.loc[df["Date of Birth"].isin(["", "-", "?"]) | (df["Date of Birth"].astype(str).str.fullmatch(r"[A-Za-z ]+") & df["Date of Birth"].notna()), "Date of Birth"] = pd.NA
+
+df["Date of Birth"] = df["Date of Birth"].apply(lambda v: parse_date(v)[0])
+df.loc[(df["Date of Birth"] < "1920") | (df["Date of Birth"] > "2026-05-03"), "Date of Birth"] = pd.NA
+
+print(df["Date of Birth"].agg(["min", "max"]), df["Date of Birth"].isna().sum())
+
+df["Date of Birth"] = df["Date of Birth"].str.strip().str.replace({
+    r'[A-Za-z]': 'X',
+    r'[0-9]': '0'
+}, regex=True)
+
+print(df['Date of Birth'].isna().sum())
 
 
-# ...
+
+
+
+
+
+
+
 
 # Cleaning Lead Source column
 lead_source_mapping = {
@@ -383,6 +408,40 @@ status_mapping = {
 }
 
 df['Status'] = df['Status'].map(status_mapping)
+
+# Cleaning Last Updated column
+df = df.rename(columns={'Last Updated ': 'Last Updated'})
+df['Last Updated'] = df['Last Updated'].str.strip().replace('Last Updated', pd.NA)
+
+def to_iso(value):
+    if pd.isna(value):
+        return value
+
+    value = str(value).strip()
+
+    for fmt in (
+        '%Y-%m-%dT%H:%M:%S',
+        '%Y-%m-%d %H:%M:%S',
+        '%d/%m/%Y %H:%M:%S'
+    ):
+        try:
+            return pd.to_datetime(value, format=fmt).strftime('%Y-%m-%dT%H:%M:%S')
+        except (ValueError, TypeError):
+            continue
+
+    return value
+
+df['Last Updated'] = df['Last Updated'].apply(to_iso)
+
+print(df['Last Updated'].str.match(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$').value_counts())
+
+
+
+
+
+df['Last Updated'] = df['Last Updated'].str.replace(r'[A-Za-z]', 'X', regex=True).str.replace(r'[0-9]', '0', regex=True)
+print(df['Last Updated'].value_counts())
+
 
 
 
