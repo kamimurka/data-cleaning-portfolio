@@ -10,7 +10,6 @@ pd.set_option('display.max_rows', None)
 
 df = pd.read_csv('19-crm-contacts-data-cleaning/crm_contacts_raw.csv', engine='pyarrow')
 
-print(len(df))
 
 # Cleaning Lead ID column
 df['Lead ID'] = df['Lead ID'].str.strip()
@@ -318,7 +317,6 @@ df.loc[is_garbage, "Last Contact"] = pd.NA
 df["Last Contact"] = df["Last Contact"].apply(lambda v: parse_date(v)[0])
 
 
-print(df['Date of Birth'].isna().sum())
 
 # Cleaning Date of Birth column
 df["Date of Birth"] = df["Date of Birth"].str.strip()
@@ -327,14 +325,11 @@ df.loc[df["Date of Birth"].isin(["", "-", "?"]) | (df["Date of Birth"].astype(st
 df["Date of Birth"] = df["Date of Birth"].apply(lambda v: parse_date(v)[0])
 df.loc[(df["Date of Birth"] < "1920") | (df["Date of Birth"] > "2026-05-03"), "Date of Birth"] = pd.NA
 
-print(df["Date of Birth"].agg(["min", "max"]), df["Date of Birth"].isna().sum())
 
 df["Date of Birth"] = df["Date of Birth"].str.strip().str.replace({
     r'[A-Za-z]': 'X',
     r'[0-9]': '0'
 }, regex=True)
-
-print(df['Date of Birth'].isna().sum())
 
 
 
@@ -417,32 +412,27 @@ def to_iso(value):
     if pd.isna(value):
         return value
 
-    value = str(value).strip()
+    s = str(value).strip()
+    formats = (
+        '%Y-%m-%d %H:%M:%S',     # 2022-03-18 12:23:00
+        '%Y-%m-%dT%H:%M:%S',     # 2022-03-18T12:23:00
+        '%Y-%m-%dT%H:%M:%SZ',    # 2022-03-18T12:23:00Z (UTC)
+        '%m/%d/%Y %I:%M %p',     # 03/18/2022 12:23 PM (MDY, 12-часовой)
+        '%m/%d/%Y %I:%M:%S %p',  # 03/18/2022 12:23:00 PM
+    )
 
-    for fmt in (
-        '%Y-%m-%dT%H:%M:%S',
-        '%Y-%m-%d %H:%M:%S',
-        '%d/%m/%Y %H:%M:%S'
-    ):
+    for fmt in formats:
         try:
-            return pd.to_datetime(value, format=fmt).strftime('%Y-%m-%dT%H:%M:%S')
-        except (ValueError, TypeError):
+            return pd.to_datetime(s, format=fmt).strftime('%Y-%m-%dT%H:%M:%S')
+        except ValueError:
             continue
 
-    return value
-
 df['Last Updated'] = df['Last Updated'].apply(to_iso)
+df['Last Updated'] = pd.to_datetime(df['Last Updated'], errors='coerce')
 
-print(df['Last Updated'].str.match(r'^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}$').value_counts())
+print(df['Last Updated'].head(300))
 
-
-
-
-
-df['Last Updated'] = df['Last Updated'].str.replace(r'[A-Za-z]', 'X', regex=True).str.replace(r'[0-9]', '0', regex=True)
-print(df['Last Updated'].value_counts())
-
-
+print(df['Last Updated'].dtype)
 
 
 # Finalizing
