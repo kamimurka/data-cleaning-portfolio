@@ -3,13 +3,11 @@ import re
 import ftfy
 from datetime import datetime, timedelta
 import phonenumbers
-import rapidfuzz
 
 pd.set_option('display.max_columns', None)
 pd.set_option('display.max_rows', None)
 
 df = pd.read_csv('19-crm-contacts-data-cleaning/crm_contacts_raw.csv', engine='pyarrow')
-
 
 # Cleaning Lead ID column
 df['Lead ID'] = df['Lead ID'].str.strip()
@@ -65,8 +63,7 @@ def main_clean_name(cell):
     # Swap
     if ',' in cell:
         parts = cell.split(',')
-        last_name, first_name = parts[0].strip(), parts[1].strip()
-        cell = f"{first_name} {last_name}"
+        cell = f"{parts[1].strip()} {parts[0].strip()}"
     return cell.title()    
 
 df['Full Name'] = df['Full Name'].apply(main_clean_name)
@@ -95,7 +92,9 @@ df['Email'] = (df['Email']
         r'[^a-zA-Z0-9._%+-@]': '',
         r'\sat\s': '@',
         r'[<>]': '',
-        'con': 'com',
+        r'\.con$': '.com',
+        '@outlok.com': '@outlook.com',
+        '@yaho.com': '@yahoo.com'
     }, regex=True
     ).str.strip().replace({'': pd.NA, r'^\s+$': pd.NA})
 )
@@ -106,11 +105,31 @@ local, dom = parts[0], parts[1].str.split(".").str[0]
 bad = (
     (local == dom)
     | (local.str.len() < 3)            
-    | local.str.contains(r"no.?email|none|^no$|test|fake|dummy|asdf|null|n/?a$", regex=True)
+    | local.str.contains(r"no.?email|none|^no$|test|fake|dummy|asdf|email|null|n/?a$", regex=True)
     | dom.str.contains(r"^(none|test|fake|dummy|example|null)$", regex=True)
 )
 
 df.loc[bad, "Email"] = None
+
+domains = (df['Email'].dropna().str.lower()
+             .str.extract(r'@([\w.-]+)$')[0]
+             .value_counts())
+domains = [d for d, n in domains.items() if n >= 3]
+domains.sort(key=len, reverse=True)
+df['Email'] = df['Email'].str.replace('jennifer.kimhooli.com', 'jennifer.kim@hooli.com', regex=False)
+
+def fix_email(e):
+    if pd.isna(e):
+        return e
+    e = str(e).strip().lower()
+    if '@' in e:
+        return e
+    for d in domains:
+        if e.endswith(d):
+            return e[:-len(d)].removesuffix('at') + '@' + d
+    return e
+
+df['Email'] = df['Email'].apply(fix_email)
 
 # Cleaning Company column
 df['Company'] = (df['Company'].str.strip())
@@ -325,21 +344,6 @@ df.loc[df["Date of Birth"].isin(["", "-", "?"]) | (df["Date of Birth"].astype(st
 df["Date of Birth"] = df["Date of Birth"].apply(lambda v: parse_date(v)[0])
 df.loc[(df["Date of Birth"] < "1920") | (df["Date of Birth"] > "2026-05-03"), "Date of Birth"] = pd.NA
 
-
-df["Date of Birth"] = df["Date of Birth"].str.strip().str.replace({
-    r'[A-Za-z]': 'X',
-    r'[0-9]': '0'
-}, regex=True)
-
-
-
-
-
-
-
-
-
-
 # Cleaning Lead Source column
 lead_source_mapping = {
     'Linked In': 'LinkedIn',
@@ -430,10 +434,17 @@ def to_iso(value):
 df['Last Updated'] = df['Last Updated'].apply(to_iso)
 df['Last Updated'] = pd.to_datetime(df['Last Updated'], errors='coerce')
 
-print(df['Last Updated'].head(300))
-
-print(df['Last Updated'].dtype)
-
-
 # Finalizing
 df = df.drop(['country_code'], axis=1)
+
+df = df.drop_duplicates()
+
+df['good_email'] = df['Email'].notna()
+df['has_phone'] = df['Phone'].notna()
+
+df = (df.sort_values(['good_email', 'has_phone', 'Last Updated'])
+        .drop_duplicates('Lead ID', keep='last')
+        .drop(columns=['good_email', 'has_phone']))
+
+# Exporting
+df.to_csv('19-crm-contacts-data-cleaning/crm_contacts_cleaned.csv', index=False)
