@@ -345,68 +345,60 @@ df["Date of Birth"] = df["Date of Birth"].apply(lambda v: parse_date(v)[0])
 df.loc[(df["Date of Birth"] < "1920") | (df["Date of Birth"] > "2026-05-03"), "Date of Birth"] = pd.NA
 
 # Cleaning Lead Source column
+df['Lead Source'] = df['Lead Source'].str.strip().str.lower()
+
 lead_source_mapping = {
-    'Linked In': 'LinkedIn',
-    'Linkedin': 'LinkedIn',
-    'linkedin': 'LinkedIn',
-    'LINKEDIN': 'LinkedIn',
-
-    'cold email': 'Cold Email',
-    'Cold email': 'Cold Email',
-
-    'partner referral': 'Partner Referral',
-
-    'Trade-show': 'Trade Show',
-    'trade show': 'Trade Show',
-    'Tradeshow': 'Trade Show',
-    'tradeshow': 'Trade Show',
-
-    'Outbound': 'Outbound',
-    'outbound email': 'Outbound Email',
+    "website": "Website",
+    "webinar": "Webinar",
+    "linkedin": "LinkedIn",
+    "referral": "Referral",
+    "trade show": "Trade Show",
+    "cold email": "Cold Email",
+    "company website": "Website",
+    "web site": "Website",
+    "web inar": "Webinar",
+    "web": "Website",
+    "referal": "Referral",
+    "ref.": "Referral",
+    "tradeshow": "Trade Show",
+    "linked in": "LinkedIn",
+    "partner referral": "Partner Referral",
+    "trade-show": "Trade Show",
+    "outbound": "Outbound",
+    "?": "Unknown",
+    "": "Unknown",
+    "lead source": "Unknown",
+    "outbound email": "Outbound",
 }
 
 df['Lead Source'] = df['Lead Source'].map(lead_source_mapping)
 
-# ...
-
 # Cleaning Status column
+df['Status'] = df['Status'].str.strip().str.lower()
+
+print(df['Status'].value_counts())
 status_mapping = {
-    'Contacted': 'Contacted',
-    'contacted': 'Contacted',
-
-    'Qualified': 'Qualified',
-    'qualified': 'Qualified',
-    'QUALIFIED': 'Qualified',
-    'Qualifed': 'Qualified',
-
-    'New': 'New',
-    'NEW': 'New',
-    'new': 'New',
-    'New Lead': 'New',
-
-    'Lost': 'Lost',
-    'LOST': 'Lost',
-    'lost': 'Lost',
-    'Closed Lost': 'Lost',
-
-    'Customer': 'Customer',
-    'CUSTOMER': 'Customer',
-    'customer': 'Customer',
-
-    'Unsubscribed': 'Unsubscribed',
-    'unsubscribed': 'Unsubscribed',
-    'Unsub': 'Unsubscribed',
-    'opted out': 'Unsubscribed',
-
-    'In Contact': 'Contacted',
-
-    'SQL': 'SQL',
-
-    'Won': 'Won',
-    'Closed Won': 'Won',
+    "contacted": "Contacted",
+    "qualified": "Qualified",
+    "new": "New",
+    "lost": "Lost",
+    "customer": "Customer / Won",
+    "unsubscribed": "Unsubscribed",
+    "closed lost": "Lost",
+    "sql": "SQL",
+    "new lead": "New",
+    "in contact": "Contacted",
+    "qualifed": "Qualified",
+    "opted out": "Unsubscribed",
+    "unsub": "Unsubscribed",
+    "won": "Customer / Won",
+    "closed won": "Customer / Won",
 }
 
 df['Status'] = df['Status'].map(status_mapping)
+print(df['Status'].value_counts())
+
+print(df['Status'].isna().sum())
 
 # Cleaning Last Updated column
 df = df.rename(columns={'Last Updated ': 'Last Updated'})
@@ -445,6 +437,10 @@ df['has_phone'] = df['Phone'].notna()
 df = (df.sort_values(['good_email', 'has_phone', 'Last Updated'])
         .drop_duplicates('Lead ID', keep='last')
         .drop(columns=['good_email', 'has_phone']))
+
+df = df.drop([394, 446, 127])
+
+df = df.drop(columns=['ambiguous'])
 
 # Exporting
 df.to_csv('19-crm-contacts-data-cleaning/crm_contacts_cleaned.csv', index=False)
