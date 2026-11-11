@@ -89,8 +89,8 @@ df['Email'] = (df['Email']
     .str.lower() 
     .str.replace({
         r';.*$': '',
-        r'[^a-zA-Z0-9._%+-@]': '',
         r'\sat\s': '@',
+        r'[^a-zA-Z0-9._%+\-\@]': '',
         r'[<>]': '',
         r'\.con$': '.com',
         '@outlok.com': '@outlook.com',
@@ -105,7 +105,7 @@ local, dom = parts[0], parts[1].str.split(".").str[0]
 bad = (
     (local == dom)
     | (local.str.len() < 3)            
-    | local.str.contains(r"no.?email|none|^no$|test|fake|dummy|asdf|email|null|n/?a$", regex=True)
+    | local.str.contains(r"no.?email|none|^no$|test|fake|dummy|asdf|email|null|^n/?a$", regex=True)
     | dom.str.contains(r"^(none|test|fake|dummy|example|null)$", regex=True)
 )
 
@@ -267,24 +267,14 @@ def clean_phone(row):
         return phonenumbers.format_number(p, phonenumbers.PhoneNumberFormat.E164)
     return pd.NA
 
-
-print("телефонов до clean_phone:", df['Phone'].notna().sum())
-
-def diag(row):
-    if pd.isna(row['Phone']): return 'phone_empty'
-    cc = None if pd.isna(row['country_code']) else row['country_code']
-    try:
-        p = phonenumbers.parse(str(row['Phone']).strip(), cc)
-    except phonenumbers.NumberParseException:
-        return 'parse_error' if cc else 'no_country_and_no_plus'
-    if phonenumbers.is_valid_number(p): return 'valid'
-    if phonenumbers.is_possible_number(p): return 'possible_not_valid'
-    return 'impossible'
-
-print(df.apply(diag, axis=1).value_counts())
-
-
 df['Phone'] = df.apply(clean_phone, axis=1)
+
+stub = df['Phone'].astype('string').str.contains(
+    r'5551234|0{7,}|^\+1(?:555|\d{3}555)', na=False
+)
+print(df.loc[stub, 'Phone'].value_counts())
+df.loc[stub, 'Phone'] = pd.NA
+
 
 # Cleaning Signup Date column
 df['Signup Date'] = df['Signup Date'].str.strip()
@@ -383,9 +373,9 @@ lead_source_mapping = {
     "partner referral": "Partner Referral",
     "trade-show": "Trade Show",
     "outbound": "Outbound",
-    "?": "Unknown",
-    "": "Unknown",
-    "lead source": "Unknown",
+    "?": pd.NA,
+    "": pd.NA,
+    "lead source": pd.NA,
     "outbound email": "Outbound",
 }
 
@@ -454,7 +444,24 @@ df = (df.sort_values(['good_email', 'has_phone', 'Last Updated'])
 
 df = df.drop([394, 446, 127])
 
-df = df.drop(columns=['ambiguous'])
+sd = pd.to_datetime(df['Signup Date'], errors='coerce')
+lc = pd.to_datetime(df['Last Contact'], errors='coerce')
+bad = lc < sd
+df.loc[bad, 'Last Contact'] = pd.NaT
+
+dob = pd.to_datetime(df['Date of Birth'], errors='coerce')
+sd = pd.to_datetime(df['Signup Date'], errors='coerce')
+
+age = (sd - dob).dt.days / 365.25
+young = age < 18
+
+df.loc[young, 'Date of Birth'] = pd.NA
+
+h = df['Full Name'].astype('string').str.contains('-', na=False)
+df.loc[h, 'Full Name'] = df.loc[h, 'Full Name'].str.replace('-', ' ', n=1, regex=False)
+
+print(((pd.to_datetime(df['Signup Date'], errors='coerce') - pd.to_datetime(df['Date of Birth'], errors='coerce')).dt.days / 365.25 < 18).sum())
+
 
 # Exporting
 df.to_csv('19-crm-contacts-data-cleaning/crm_contacts_cleaned.csv', index=False)
