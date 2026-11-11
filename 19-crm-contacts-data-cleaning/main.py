@@ -256,16 +256,33 @@ df['Phone'] = (df['Phone']
 df.loc[df['Phone'].isin(['', '-', '?']), 'Phone'] = pd.NA
 
 def clean_phone(row):
-    if pd.isna(row['Phone']) or pd.isna(row['country_code']):
+    if pd.isna(row['Phone']):
         return pd.NA
-    number = str(row['Phone']).strip()
-    country_code = row['country_code']
+    region = None if pd.isna(row['country_code']) else row['country_code']
     try:
-        phone = phonenumbers.parse(number, country_code)
-        if phonenumbers.is_valid_number(phone):
-            return phonenumbers.format_number(phone, phonenumbers.PhoneNumberFormat.E164)
+        p = phonenumbers.parse(str(row['Phone']).strip(), region)
     except phonenumbers.NumberParseException:
         return pd.NA
+    if phonenumbers.is_possible_number(p):
+        return phonenumbers.format_number(p, phonenumbers.PhoneNumberFormat.E164)
+    return pd.NA
+
+
+print("телефонов до clean_phone:", df['Phone'].notna().sum())
+
+def diag(row):
+    if pd.isna(row['Phone']): return 'phone_empty'
+    cc = None if pd.isna(row['country_code']) else row['country_code']
+    try:
+        p = phonenumbers.parse(str(row['Phone']).strip(), cc)
+    except phonenumbers.NumberParseException:
+        return 'parse_error' if cc else 'no_country_and_no_plus'
+    if phonenumbers.is_valid_number(p): return 'valid'
+    if phonenumbers.is_possible_number(p): return 'possible_not_valid'
+    return 'impossible'
+
+print(df.apply(diag, axis=1).value_counts())
+
 
 df['Phone'] = df.apply(clean_phone, axis=1)
 
@@ -306,7 +323,10 @@ def parse_date(v):
     for pattern, fmt in rules:
         if re.fullmatch(pattern, s):
             try:
-                return datetime.strptime(s, fmt).strftime("%Y-%m-%d"), False
+                d = datetime.strptime(s, fmt)
+                if "%y" in fmt and d.year > 2026:
+                    d = d.replace(year=d.year - 100)
+                return d.strftime("%Y-%m-%d"), False
             except ValueError:
                 return None, False
 
@@ -334,8 +354,6 @@ df['Last Contact'] = df['Last Contact'].replace({
 df.loc[is_garbage, "Last Contact"] = pd.NA
 
 df["Last Contact"] = df["Last Contact"].apply(lambda v: parse_date(v)[0])
-
-
 
 # Cleaning Date of Birth column
 df["Date of Birth"] = df["Date of Birth"].str.strip()
@@ -376,7 +394,6 @@ df['Lead Source'] = df['Lead Source'].map(lead_source_mapping)
 # Cleaning Status column
 df['Status'] = df['Status'].str.strip().str.lower()
 
-print(df['Status'].value_counts())
 status_mapping = {
     "contacted": "Contacted",
     "qualified": "Qualified",
@@ -396,9 +413,6 @@ status_mapping = {
 }
 
 df['Status'] = df['Status'].map(status_mapping)
-print(df['Status'].value_counts())
-
-print(df['Status'].isna().sum())
 
 # Cleaning Last Updated column
 df = df.rename(columns={'Last Updated ': 'Last Updated'})
