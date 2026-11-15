@@ -4,9 +4,6 @@ import ftfy
 from datetime import datetime, timedelta
 import phonenumbers
 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.max_rows', None)
-
 df = pd.read_csv('19-crm-contacts-data-cleaning/crm_contacts_raw.csv', engine='pyarrow')
 
 # Cleaning Lead ID column
@@ -76,12 +73,19 @@ junk_names = {"test", "asdf", "abcd", "qwerty",
 mask = df["Full Name"].str.lower().str.strip().isin(junk_names)
 df.loc[mask, "Full Name"] = pd.NA
 
+h = df['Full Name'].astype('string').str.contains('-', na=False)
+df.loc[h, 'Full Name'] = df.loc[h, 'Full Name'].str.replace('-', ' ', n=1, regex=False)
+
 particles = ["van", "von", "der", "den", "de", "la", "le", "di", "da", "del", "du"]
 pattern = r"(?<=\s)(" + "|".join(p.title() for p in particles) + r")(?=\s)"
 
 df["Full Name"] = df["Full Name"].str.strip().str.title()
 df["Full Name"] = df["Full Name"].str.replace(r"\bMc([a-z])", lambda m: "Mc" + m.group(1).upper(), regex=True)
 df["Full Name"] = df["Full Name"].str.replace(pattern, lambda m: m.group(1).lower(), regex=True)
+
+print(df.loc[df['Full Name'].str.contains('Cruz', na=False), 'Full Name'].tolist())
+
+
 
 # Cleaning Email column
 df['Email'] = (df['Email']
@@ -94,6 +98,8 @@ df['Email'] = (df['Email']
         r'[<>]': '',
         r'\.con$': '.com',
         '@outlok.com': '@outlook.com',
+        'gmial.com': 'gmail.com',
+        'hotmal.com': 'hotmail.com',
         '@yaho.com': '@yahoo.com'
     }, regex=True
     ).str.strip().replace({'': pd.NA, r'^\s+$': pd.NA})
@@ -272,7 +278,7 @@ df['Phone'] = df.apply(clean_phone, axis=1)
 stub = df['Phone'].astype('string').str.contains(
     r'5551234|0{7,}|^\+1(?:555|\d{3}555)', na=False
 )
-print(df.loc[stub, 'Phone'].value_counts())
+
 df.loc[stub, 'Phone'] = pd.NA
 
 
@@ -325,7 +331,6 @@ def parse_date(v):
 res = df["Signup Date"].apply(parse_date)
 
 df["Signup Date"] = res.str[0]
-df["ambiguous"] = res.str[1]
 
 junk = ["-", "?", "0000-00-00", "2022-00-10", "31/04/2022", ""]
 df.loc[df["Signup Date"].astype(str).str.strip().isin(junk), "Signup Date"] = pd.NA
@@ -431,6 +436,18 @@ df['Last Updated'] = df['Last Updated'].apply(to_iso)
 df['Last Updated'] = pd.to_datetime(df['Last Updated'], errors='coerce')
 
 # Finalizing
+
+
+
+
+
+
+
+
+
+
+
+
 df = df.drop(['country_code'], axis=1)
 
 df = df.drop_duplicates()
@@ -438,11 +455,26 @@ df = df.drop_duplicates()
 df['good_email'] = df['Email'].notna()
 df['has_phone'] = df['Phone'].notna()
 
-df = (df.sort_values(['good_email', 'has_phone', 'Last Updated'])
-        .drop_duplicates('Lead ID', keep='last')
-        .drop(columns=['good_email', 'has_phone']))
+noid = df[df['Lead ID'].isna()]
+withid = df[df['Lead ID'].notna()]
 
-df = df.drop([394, 446, 127])
+longest = (withid.assign(n=withid['Full Name'].fillna('').str.len())
+                 .sort_values('n')
+                 .groupby('Lead ID')['Full Name'].last())
+
+withid = (withid.sort_values(['good_email', 'has_phone', 'Last Updated'])
+                .drop_duplicates('Lead ID', keep='last'))
+
+withid['Full Name'] = withid['Lead ID'].map(longest).fillna(withid['Full Name'])
+
+noid = noid.dropna(subset=['Full Name', 'Email'], how='all')
+noid = noid[~noid['Email'].isin(withid['Email'])]
+
+df = pd.concat([withid, noid]).drop(columns=['good_email', 'has_phone'])
+df = df.drop([446, 127])
+df = df.sort_index()
+
+print(df.loc[df['Lead ID'].isin(['L-02506','L-02002','L-02267','L-02099']), ['Lead ID','Full Name']])
 
 sd = pd.to_datetime(df['Signup Date'], errors='coerce')
 lc = pd.to_datetime(df['Last Contact'], errors='coerce')
@@ -457,11 +489,17 @@ young = age < 18
 
 df.loc[young, 'Date of Birth'] = pd.NA
 
-h = df['Full Name'].astype('string').str.contains('-', na=False)
-df.loc[h, 'Full Name'] = df.loc[h, 'Full Name'].str.replace('-', ' ', n=1, regex=False)
+dom = df['Email'].astype('string').str.split('@').str[-1].str.lower()
 
-print(((pd.to_datetime(df['Signup Date'], errors='coerce') - pd.to_datetime(df['Date of Birth'], errors='coerce')).dt.days / 365.25 < 18).sum())
+lu = pd.to_datetime(df['Last Updated'], errors='coerce')
+lc = pd.to_datetime(df['Last Contact'], errors='coerce')
 
+b1 = lu < lc
+b2 = lu < sd
+
+df.loc[b1, ['Last Contact', 'Last Updated']] = pd.NaT
+
+df.loc[b2, 'Last Updated'] = pd.NaT
 
 # Exporting
 df.to_csv('19-crm-contacts-data-cleaning/crm_contacts_cleaned.csv', index=False)
