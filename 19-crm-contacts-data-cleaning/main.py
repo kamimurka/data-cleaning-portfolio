@@ -83,10 +83,6 @@ df["Full Name"] = df["Full Name"].str.strip().str.title()
 df["Full Name"] = df["Full Name"].str.replace(r"\bMc([a-z])", lambda m: "Mc" + m.group(1).upper(), regex=True)
 df["Full Name"] = df["Full Name"].str.replace(pattern, lambda m: m.group(1).lower(), regex=True)
 
-print(df.loc[df['Full Name'].str.contains('Cruz', na=False), 'Full Name'].tolist())
-
-
-
 # Cleaning Email column
 df['Email'] = (df['Email']
     .str.strip()
@@ -148,7 +144,7 @@ key = (
         r"[.,()]": " ",
         r"^\s*the\b": "",
         r"\s+formerly\b.*$": "",
-        r"\b(llc|gmbh|corp|corporation|inc|incorporated|company|co|ltd|plc|pty)\b": "",  # суффиксы -> убрать
+        r"\b(llc|gmbh|corp|corporation|inc|incorporated|company|co|ltd|plc|pty)\b": "",
         r"\s+": " ",
     }, regex=True)
     .str.strip()
@@ -436,18 +432,6 @@ df['Last Updated'] = df['Last Updated'].apply(to_iso)
 df['Last Updated'] = pd.to_datetime(df['Last Updated'], errors='coerce')
 
 # Finalizing
-
-
-
-
-
-
-
-
-
-
-
-
 df = df.drop(['country_code'], axis=1)
 
 df = df.drop_duplicates()
@@ -474,8 +458,6 @@ df = pd.concat([withid, noid]).drop(columns=['good_email', 'has_phone'])
 df = df.drop([446, 127])
 df = df.sort_index()
 
-print(df.loc[df['Lead ID'].isin(['L-02506','L-02002','L-02267','L-02099']), ['Lead ID','Full Name']])
-
 sd = pd.to_datetime(df['Signup Date'], errors='coerce')
 lc = pd.to_datetime(df['Last Contact'], errors='coerce')
 bad = lc < sd
@@ -488,8 +470,6 @@ age = (sd - dob).dt.days / 365.25
 young = age < 18
 
 df.loc[young, 'Date of Birth'] = pd.NA
-
-dom = df['Email'].astype('string').str.split('@').str[-1].str.lower()
 
 lu = pd.to_datetime(df['Last Updated'], errors='coerce')
 lc = pd.to_datetime(df['Last Contact'], errors='coerce')
