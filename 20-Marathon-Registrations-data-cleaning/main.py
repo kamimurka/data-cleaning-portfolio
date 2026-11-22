@@ -6,7 +6,7 @@ import numpy as np
 from rapidfuzz import process
 from rapidfuzz.distance import DamerauLevenshtein
 import phonenumbers
-
+from datetime import datetime, timedelta
 
 csv_path = Path(__file__).resolve().parent / "marathon_registrations_raw.csv"
 df = pd.read_csv(csv_path)
@@ -91,7 +91,6 @@ df["Full Name"] = df["Full Name"].apply(clean_full_name)
 
 
 # ── Cleaning Email column ──
-# --- Константы ---
 PLACEHOLDERS = {"not provided", "-", "?", "n/a", "na", "none", "null", "nan", "unknown", "no email", "no"}
 FORBIDDEN = re.compile(r"[^a-z0-9._%+\-@]")
 STRICT = re.compile(r"^[a-z0-9._%+\-]+@[a-z0-9\-]+(\.[a-z0-9\-]+)+$")
@@ -112,9 +111,7 @@ MANUAL = {
 }
 
 
-# --- Чистка одного адреса ---
 def clean_email_part(part):
-    """Возвращает (очищенное значение, флаги)."""
     flags = []
     s = part.lower().strip()
     s = re.sub(r"^mailto:\s*", "", s)
@@ -125,7 +122,6 @@ def clean_email_part(part):
     if s in PLACEHOLDERS:
         return s, ["placeholder"]
 
-    # "name at gmail.com" -> "name@gmail.com"
     if "@" not in s and AT_WORD.search(s):
         s = AT_WORD.sub("@", s)
 
@@ -150,9 +146,7 @@ def clean_email_part(part):
     return s, flags
 
 
-# --- Чистка колонки ---
 def clean_email_column(df, col="Email"):
-    """Чистит col на месте, вторые адреса из ячейки (через ;) уходят в Email_extra."""
     df = df.copy()
     cleaned, extras = [], []
 
@@ -170,7 +164,6 @@ def clean_email_column(df, col="Email"):
         first_val, first_flags = good[0]
         extra_vals = [v for v, _ in good[1:]]
 
-        # заглушки и фейковые адреса -> пусто
         if "placeholder" in first_flags or "fake_like" in first_flags:
             first_val = np.nan
 
@@ -182,20 +175,16 @@ def clean_email_column(df, col="Email"):
     return df
 
 
-# --- Применение ---
 df = clean_email_column(df)
 
-# мусорные домены -> пусто
 dom = df["Email"].str.split("@").str[1]
 df.loc[dom.isin(["none.com", "email.com"]), "Email"] = np.nan
 
-# исправление опечаток в доменах
 dom = df["Email"].str.split("@").str[1]
 for bad, good in DOMAIN_FIX.items():
     m = dom == bad
     df.loc[m, "Email"] = df.loc[m, "Email"].str.replace("@" + bad, "@" + good, regex=False)
 
-# склеенные адреса: ставим @ перед известным доменом
 valid = df["Email"].dropna()
 valid = valid[valid.str.match(STRICT)]
 known = list(valid.str.split("@").str[1].value_counts().index)
@@ -207,7 +196,6 @@ for i, raw in df["Email"].dropna().items():
     if len(cands) == 1:
         df.loc[i, "Email"] = raw[:-len(cands[0])] + "@" + cands[0]
 
-# ручной разрез оставшихся
 m = df["Email"].isin(MANUAL.keys())
 df.loc[m, "Email"] = df.loc[m, "Email"].map(MANUAL)
 
@@ -457,9 +445,119 @@ df['T-Shirt Size'] = df['T-Shirt Size'].map(SIZE_MAPPING)
 
 # ── Cleaning Registration Date column ──
 df = df.rename(columns={'Registration Date ': 'Registration Date'})
-df['Registration Date'] = df['Registration Date'].str.strip().str.replace(r'[0-9]', '8', regex=True).str.replace(r'[A-Za-z]', 'X', regex=True)
 
-print(df['Registration Date'].value_counts())
+
+print(df.loc[[673, 854, 1154, 1314], "Registration Date"].to_string())
+print('---------')
+
+# однозначные шаблоны: один шаблон = один формат
+RULES = [
+    (r"\d{4}-\d{2}-\d{2}", "%Y-%m-%d"),
+    (r"\d{4}/\d{2}/\d{2}", "%Y/%m/%d"),
+    (r"\d{4}\.\d{2}\.\d{2}", "%Y.%m.%d"),
+    (r"[A-Za-z]{3} \d{1,2}, \d{4}", "%b %d, %Y"),
+    (r"\d{1,2} [A-Za-z]{3} \d{4}", "%d %b %Y"),
+    (r"\d{2}-[A-Za-z]{3}-\d{2}", "%d-%b-%y"),
+    (r"\d{4}年\d{1,2}月\d{1,2}日", "%Y年%m月%d日"),
+]
+# неоднозначные: порядок день/месяц решаем по данным
+AMB = {
+    "/": (r"\d{2}/\d{2}/\d{4}", "{}/{}/%Y"),
+    ".": (r"\d{2}\.\d{2}\.\d{4}", "{}.{}.%Y"),
+    "-": (r"\d{2}-\d{2}-\d{4}", "{}-{}-%Y"),
+    "yy": (r"\d{2}-\d{2}-\d{2}", "{}-{}-%y"),
+}
+TIME_RE = r"[T\s]\d{1,2}:\d{2}(:\d{2})?\s*([APap][Mm])?\s*(Z|[+-]\d{2}:\d{2})?$"
+
+
+def _try(v, fmt):
+    try:
+        d = datetime.strptime(v, fmt)
+    except ValueError:
+        return None
+    if "%y" in fmt and d.year > 2026:      # 99 -> 1999, а не 2099
+        d = d.replace(year=d.year - 100)
+    return d
+
+
+def parse_dates(col):
+    s = col.astype("string").str.strip()
+    s = s.str.replace(TIME_RE, "", regex=True).str.strip()   # время и пояс убираем
+
+    # порядок день/месяц по однозначным значениям, отдельно для каждого шаблона
+    order = {}
+    for k, (pat, _) in AMB.items():
+        x = s[s.str.fullmatch(pat).fillna(False)]
+        a, b = x.str[:2].astype(int), x.str[3:5].astype(int)
+        d, m = int((a > 12).sum()), int((b > 12).sum())
+        order[k] = "dmy" if d >= m else "mdy"
+        print(f"{k:3s} всего {len(x):4d} | день первым: {d} | месяц первым: {m} -> {order[k]}")
+
+    out, amb = [], []
+    for v in s:
+        r, flag = None, False
+        if pd.isna(v):
+            pass
+        elif re.fullmatch(r"\d{5}", v):                      # дата из Excel
+            r = datetime(1899, 12, 30) + timedelta(days=int(v))
+        else:
+            for pat, fmt in RULES:
+                if re.fullmatch(pat, v):
+                    r = _try(v, fmt)
+                    break
+            else:
+                for k, (pat, base) in AMB.items():
+                    if re.fullmatch(pat, v):
+                        first, second = ("%d", "%m") if order[k] == "dmy" else ("%m", "%d")
+                        r = _try(v, base.format(first, second))
+                        if r is None:                         # не подошло: пробуем наоборот
+                            r = _try(v, base.format(second, first))
+                        a, b = int(v[:2]), int(v[3:5])
+                        flag = a <= 12 and b <= 12            # оба <=12: порядок угадан
+                        break
+        out.append(r)
+        amb.append(flag)
+    return pd.to_datetime(pd.Series(out, index=col.index)), pd.Series(amb, index=col.index)
+
+
+parsed, amb = parse_dates(df["Registration Date"])
+bad = parsed.isna() & df["Registration Date"].notna()
+print("Разобрано:", parsed.notna().sum(), "| неоднозначных:", amb.sum(), "| не разобрано:", bad.sum())
+print(df.loc[bad, "Registration Date"].value_counts().to_string())
+print("Диапазон:", parsed.min(), "...", parsed.max())
+
+
+
+print(df.loc[[673, 854, 1154, 1314], "Registration Date"].to_string())
+
+
+print((parsed > "2025-03-01").sum())
+
+
+late = parsed > "2025-03-01"
+cand = late & amb                                   # поздние и неоднозначные: у них оба числа <= 12, перевернуть можно
+flip = parsed[cand].map(lambda d: pd.Timestamp(d.year, d.day, d.month))   # меняем день и месяц местами
+fixable = flip.between("2024-09-01", "2025-03-01") & (flip != parsed[cand])
+
+print("Поздних всего:", late.sum())
+print("  из них неоднозначных (можно перевернуть):", cand.sum())
+print("  из них после переворота попадают в 2024-09-01...2025-03-01:", fixable.sum())
+print("  поздние, которые перевернуть нельзя (день > 12 или формат с годом первым):", (late & ~amb).sum())
+
+show = pd.DataFrame({"исходник": df.loc[cand, "Registration Date"], "сейчас": parsed[cand], "если перевернуть": flip})
+print(show[fixable].to_string())
+
+print("Общий:", parsed.min().date(), "...", parsed.max().date())
+
+real = parsed[~parsed.isin(pd.to_datetime(["1900-01-01", "1970-01-01"]))]
+print("Без заглушек:", real.min().date(), "...", real.max().date())
+
+
+s = df["Registration Date"].dropna().astype(str).str.strip()
+print(s[s.str.fullmatch(r"\d{2}-\d{2}-\d{2}")].to_string())
+
+print(s.str.fullmatch(r"\d{2}-\d{2}-\d{2}").sum())
+
 
 
 
@@ -473,7 +571,6 @@ df['Fee Paid (EUR)'] = (df['Fee Paid (EUR)']
 
 df['Fee Paid (EUR)'] = pd.to_numeric(df['Fee Paid (EUR)'], errors='coerce')
 df['Fee Paid (EUR)'] = df['Fee Paid (EUR)'].where(df['Fee Paid (EUR)'] > 0.0)
-print((df['Fee Paid (EUR)'] == 0).any())
 
 
 # ── Cleaning Payment Status column ──
