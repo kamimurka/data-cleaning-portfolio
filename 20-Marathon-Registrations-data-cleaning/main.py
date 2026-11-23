@@ -3,16 +3,13 @@ from pathlib import Path
 import ftfy
 import pandas as pd
 import numpy as np
-from rapidfuzz import process
-from rapidfuzz.distance import DamerauLevenshtein
 import phonenumbers
 from datetime import datetime, timedelta
+import unicodedata
 
 csv_path = Path(__file__).resolve().parent / "marathon_registrations_raw.csv"
 df = pd.read_csv(csv_path)
 
-pd.set_option("display.max_columns", None)
-pd.set_option("display.max_rows", None)
 
 # ── Cleaning Registration ID column ──
 def normalize_registration_id(value):
@@ -337,9 +334,6 @@ def clean_phone(raw, region):
 
 df["Phone"] = [clean_phone(p, r) for p, r in zip(df["Phone"], df["Country_code"])]
 
-df = df.drop(columns=['Country_code'])
-
-
 # ── Cleaning City column ──
 df["City"] = df["City"].apply(lambda v: ftfy.fix_text(v) if isinstance(v, str) else v)
 df["City"] = df["City"].str.strip().str.lower()
@@ -402,6 +396,8 @@ df['Race'] = df['Race'].map(RACE_MAP)
 
 
 # ── Cleaning T-Shirt Size column ──
+
+df['T-Shirt Size'] = df['T-Shirt Size'].str.strip().str.lower()
 SIZE_MAPPING = {
     # Extra Small
     "xs": "XS",
@@ -444,13 +440,8 @@ df['T-Shirt Size'] = df['T-Shirt Size'].map(SIZE_MAPPING)
 
 
 # ── Cleaning Registration Date column ──
-df = df.rename(columns={'Registration Date ': 'Registration Date'})
+df = df.rename(columns={"Registration Date ": "Registration Date"})
 
-
-print(df.loc[[673, 854, 1154, 1314], "Registration Date"].to_string())
-print('---------')
-
-# однозначные шаблоны: один шаблон = один формат
 RULES = [
     (r"\d{4}-\d{2}-\d{2}", "%Y-%m-%d"),
     (r"\d{4}/\d{2}/\d{2}", "%Y/%m/%d"),
@@ -460,13 +451,14 @@ RULES = [
     (r"\d{2}-[A-Za-z]{3}-\d{2}", "%d-%b-%y"),
     (r"\d{4}年\d{1,2}月\d{1,2}日", "%Y年%m月%d日"),
 ]
-# неоднозначные: порядок день/месяц решаем по данным
+
 AMB = {
     "/": (r"\d{2}/\d{2}/\d{4}", "{}/{}/%Y"),
     ".": (r"\d{2}\.\d{2}\.\d{4}", "{}.{}.%Y"),
     "-": (r"\d{2}-\d{2}-\d{4}", "{}-{}-%Y"),
     "yy": (r"\d{2}-\d{2}-\d{2}", "{}-{}-%y"),
 }
+
 TIME_RE = r"[T\s]\d{1,2}:\d{2}(:\d{2})?\s*([APap][Mm])?\s*(Z|[+-]\d{2}:\d{2})?$"
 
 
@@ -475,30 +467,28 @@ def _try(v, fmt):
         d = datetime.strptime(v, fmt)
     except ValueError:
         return None
-    if "%y" in fmt and d.year > 2026:      # 99 -> 1999, а не 2099
+    if "%y" in fmt and d.year > 2026:
         d = d.replace(year=d.year - 100)
     return d
 
 
 def parse_dates(col):
     s = col.astype("string").str.strip()
-    s = s.str.replace(TIME_RE, "", regex=True).str.strip()   # время и пояс убираем
+    s = s.str.replace(TIME_RE, "", regex=True).str.strip()
 
-    # порядок день/месяц по однозначным значениям, отдельно для каждого шаблона
+    # порядок день/месяц для каждого разделителя по однозначным значениям
     order = {}
     for k, (pat, _) in AMB.items():
         x = s[s.str.fullmatch(pat).fillna(False)]
         a, b = x.str[:2].astype(int), x.str[3:5].astype(int)
-        d, m = int((a > 12).sum()), int((b > 12).sum())
-        order[k] = "dmy" if d >= m else "mdy"
-        print(f"{k:3s} всего {len(x):4d} | день первым: {d} | месяц первым: {m} -> {order[k]}")
+        order[k] = "dmy" if (a > 12).sum() >= (b > 12).sum() else "mdy"
 
     out, amb = [], []
     for v in s:
         r, flag = None, False
         if pd.isna(v):
             pass
-        elif re.fullmatch(r"\d{5}", v):                      # дата из Excel
+        elif re.fullmatch(r"\d{5}", v):
             r = datetime(1899, 12, 30) + timedelta(days=int(v))
         else:
             for pat, fmt in RULES:
@@ -510,10 +500,9 @@ def parse_dates(col):
                     if re.fullmatch(pat, v):
                         first, second = ("%d", "%m") if order[k] == "dmy" else ("%m", "%d")
                         r = _try(v, base.format(first, second))
-                        if r is None:                         # не подошло: пробуем наоборот
+                        if r is None:
                             r = _try(v, base.format(second, first))
-                        a, b = int(v[:2]), int(v[3:5])
-                        flag = a <= 12 and b <= 12            # оба <=12: порядок угадан
+                        flag = int(v[:2]) <= 12 and int(v[3:5]) <= 12
                         break
         out.append(r)
         amb.append(flag)
@@ -521,57 +510,35 @@ def parse_dates(col):
 
 
 parsed, amb = parse_dates(df["Registration Date"])
-bad = parsed.isna() & df["Registration Date"].notna()
-print("Разобрано:", parsed.notna().sum(), "| неоднозначных:", amb.sum(), "| не разобрано:", bad.sum())
-print(df.loc[bad, "Registration Date"].value_counts().to_string())
-print("Диапазон:", parsed.min(), "...", parsed.max())
+df["Registration Date"] = parsed
 
-
-
-print(df.loc[[673, 854, 1154, 1314], "Registration Date"].to_string())
-
-
-print((parsed > "2025-03-01").sum())
-
-
-late = parsed > "2025-03-01"
-cand = late & amb                                   # поздние и неоднозначные: у них оба числа <= 12, перевернуть можно
-flip = parsed[cand].map(lambda d: pd.Timestamp(d.year, d.day, d.month))   # меняем день и месяц местами
-fixable = flip.between("2024-09-01", "2025-03-01") & (flip != parsed[cand])
-
-print("Поздних всего:", late.sum())
-print("  из них неоднозначных (можно перевернуть):", cand.sum())
-print("  из них после переворота попадают в 2024-09-01...2025-03-01:", fixable.sum())
-print("  поздние, которые перевернуть нельзя (день > 12 или формат с годом первым):", (late & ~amb).sum())
-
-show = pd.DataFrame({"исходник": df.loc[cand, "Registration Date"], "сейчас": parsed[cand], "если перевернуть": flip})
-print(show[fixable].to_string())
-
-print("Общий:", parsed.min().date(), "...", parsed.max().date())
-
-real = parsed[~parsed.isin(pd.to_datetime(["1900-01-01", "1970-01-01"]))]
-print("Без заглушек:", real.min().date(), "...", real.max().date())
-
-
-s = df["Registration Date"].dropna().astype(str).str.strip()
-print(s[s.str.fullmatch(r"\d{2}-\d{2}-\d{2}")].to_string())
-
-print(s.str.fullmatch(r"\d{2}-\d{2}-\d{2}").sum())
-
-
-
+df.loc[df['Registration Date'] < '2023-01-01', 'Registration Date'] = None
 
 # ── Cleaning Fee Paid (EUR) column ──
-df['Fee Paid (EUR)'] = (df['Fee Paid (EUR)']
-    .str.strip()
-    .str.replace({r'[^0-9/./-/,]': ''}, regex=True)
-    .replace('', pd.NA)
-    .str.replace(',', '.')
-)
+df['Fee Raw'] = df['Fee Paid (EUR)']
+raw = df['Fee Raw'].astype(str)
 
-df['Fee Paid (EUR)'] = pd.to_numeric(df['Fee Paid (EUR)'], errors='coerce')
-df['Fee Paid (EUR)'] = df['Fee Paid (EUR)'].where(df['Fee Paid (EUR)'] > 0.0)
+neg = raw.str.contains(r'-\s*\d')
+s = raw.str.extract(r'(\d[\d.,]*)')[0].str.rstrip('.,')
 
+after = s.str.extract(r'[.,](\d+)$')[0].str.len()
+mixed = s.str.contains(',') & s.str.contains('.', regex=False)
+is_dec = after.notna() & ((after != 3) | mixed)
+
+as_dec = (s.str.replace(r'[.,](\d+)$', r'#\1', regex=True)
+            .str.replace(r'[.,]', '', regex=True)
+            .str.replace('#', '.', regex=False))
+as_int = s.str.replace(r'[.,]', '', regex=True)
+
+df['Fee Paid (EUR)'] = pd.to_numeric(as_dec.where(is_dec, as_int), errors='coerce')
+df['Fee Paid (EUR)'] = df['Fee Paid (EUR)'].where(~neg & (df['Fee Paid (EUR)'] > 0))
+
+
+q1 = df['Fee Paid (EUR)'].quantile(0.25)
+q3 = df['Fee Paid (EUR)'].quantile(0.75)
+upper = q3 + 1.5 * (q3 - q1)
+
+df['Fee Paid (EUR)'] = df['Fee Paid (EUR)'].where(df['Fee Paid (EUR)'] <= 1000)
 
 # ── Cleaning Payment Status column ──
 df['Payment Status'] = df['Payment Status'].str.strip().str.lower()
@@ -626,3 +593,106 @@ YES_NO_MAPPING = {
 }
 
 df['Newsletter Opt-in'] = df['Newsletter Opt-in'].map(YES_NO_MAPPING)
+
+# ── Finalizing ──
+df = df.drop_duplicates()
+
+# Reg. ID
+
+dup = df["Registration ID"].notna() & df.duplicated("Registration ID", keep=False)
+part = df[dup].sort_values("Registration Date", na_position="first")
+merged = part.groupby("Registration ID", as_index=False).last()[df.columns]
+
+def longest(s):
+    s = s.dropna()
+    return s.loc[s.str.len().idxmax()] if len(s) else np.nan
+
+merged["Full Name"] = merged["Registration ID"].map(part.groupby("Registration ID")["Full Name"].agg(longest))
+
+def phone_ok(p, cc):
+    try:
+        return phonenumbers.region_code_for_number(phonenumbers.parse(p)) == cc
+    except Exception:
+        return False
+
+def pick_phone(g):
+    ok = g[[pd.notna(p) and phone_ok(p, cc) for p, cc in zip(g["Phone"], g["Country_code"])]]
+    return ok["Phone"].iloc[-1] if len(ok) else np.nan
+
+phones = part.groupby("Registration ID").apply(pick_phone)
+merged["Phone"] = merged["Registration ID"].map(phones).fillna(merged["Phone"])
+df = pd.concat([df[~dup], merged], ignore_index=True)
+
+# Emails
+
+def toks(n):
+    n = unicodedata.normalize("NFKD", str(n).lower())
+    n = "".join(c for c in n if not unicodedata.combining(c))
+    return re.sub(r"[^a-z ]", " ", n.replace("-", " ")).split()
+
+def names_match(a, b):
+    if pd.isna(a) or pd.isna(b):
+        return False
+    ta, tb = toks(a), toks(b)
+    def fits(x, y):
+        return all(any(w.startswith(p) for w in y) for p in x)
+    return fits(ta, tb) or fits(tb, ta)
+
+dups = df[df["Email"].notna() & df.duplicated("Email", keep=False)]
+drop_idx = []
+for email, g in dups.groupby("Email"):
+    if len(g) != 2:
+        continue
+    a, b = g.iloc[0], g.iloc[1]
+    same_race = a["Race"] == b["Race"] or pd.isna(a["Race"]) or pd.isna(b["Race"])
+    if names_match(a["Full Name"], b["Full Name"]) and same_race:
+        keep, drop = (a, b) if pd.notna(a["Registration ID"]) or pd.isna(b["Registration ID"]) else (b, a)
+        for c in df.columns:
+            if pd.isna(keep[c]):
+                df.at[keep.name, c] = drop[c]
+        if len(str(drop["Full Name"])) > len(str(keep["Full Name"])):
+            df.at[keep.name, "Full Name"] = drop["Full Name"]
+        drop_idx.append(drop.name)
+df = df.drop(index=drop_idx)
+
+# Phones
+
+def fake_phone(p):
+    if pd.isna(p):
+        return False
+    d = re.sub(r"\D", "", p)
+    return len(d) > 15 or len(set(d[3:])) <= 2 or "1234567" in d
+
+fk = df["Phone"].map(fake_phone)
+df.loc[fk, "Phone"] = np.nan
+
+dups = df[df["Phone"].notna() & df.duplicated("Phone", keep=False)]
+drop_idx = []
+for phone, g in dups.groupby("Phone"):
+    rows = list(g.index)
+    for x in range(len(rows)):
+        for y in range(x + 1, len(rows)):
+            i, j = rows[x], rows[y]
+            if i in drop_idx or j in drop_idx:
+                continue
+            a, b = df.loc[i], df.loc[j]
+            same_race = a["Race"] == b["Race"] or pd.isna(a["Race"]) or pd.isna(b["Race"])
+            if names_match(a["Full Name"], b["Full Name"]) and same_race:
+                keep, drop = (i, j) if pd.notna(a["Registration ID"]) or pd.isna(b["Registration ID"]) else (j, i)
+                ke, de = df.at[keep, "Email"], df.at[drop, "Email"]
+                if pd.notna(de) and de != ke:
+                    old = df.at[keep, "Email_extra"]
+                    df.at[keep, "Email_extra"] = de if pd.isna(old) else old + "; " + de
+                for c in df.columns:
+                    if pd.isna(df.at[keep, c]):
+                        df.at[keep, c] = df.at[drop, c]
+                if len(str(df.at[drop, "Full Name"])) > len(str(df.at[keep, "Full Name"])):
+                    df.at[keep, "Full Name"] = df.at[drop, "Full Name"]
+                drop_idx.append(drop)
+df = df.drop(index=drop_idx)
+
+
+# Deleting
+df = df.drop(columns=["Country_code"])
+df.to_csv('20-Marathon-Registrations-data-cleaning/marathon_registrations_cleaned.csv',
+           index=False)
